@@ -2,15 +2,14 @@
 - [ ] AMR-related stuff:
     - [x] Find AMR2TEXT/TEXT2AMR-parser
     - [x] API for computing SMATCH
-    - [ ] API for computing SemBleu
     - [ ] API for computing S^2MATCH
-- [ ] Syntactic parsing:
+- [ ] Method:
     - [x] Find constituency/dependency parser
-    - [ ] Dependency or constituency?
-    - [ ] If constituency, then which subtrees for which XPs? 
-    - [ ] Method for finding the best matching subtree 
+    - [x] Dependency or constituency? --> dependency
+    - [ ] Apply Szubert et al. (2018) AMR2DP-mapping
+    - [ ] Map text to DP to AMR
 - [ ] Datasets:
-    - [ ] Format STS2016 to SICK2014 Format (s1, s2, score)
+    - [x] Format STS2016 to a format similar to SICK2014 (s1, s2, theme, score)
     - [ ] MSRP?
     - [ ] PAWS?
 - [ ] Analysis:
