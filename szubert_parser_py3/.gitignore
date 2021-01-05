@@ -1,0 +1,7 @@
+*.pyc
+.DS_Store
+.idea/*
+parsed_datasets/.DS_Store
+.ipynb_checkpoints/
+configurations.txt
+presentation.ipynb
