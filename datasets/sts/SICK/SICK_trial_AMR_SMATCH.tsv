@@ -1,0 +1,501 @@
+pair_ID	sentence_A	sentence_B	relatedness_score	f_score	mse
+8678	A skateboarder is jumping off a ramp	A skateboarder is making a jump off a ramp	0.960	0.250	0.504
+218	A girl in white is dancing	A girl is wearing white clothes and is dancing	0.980	0.316	0.441
+765	The kid is happily sliding in the snow	A boy on a hill covered in snow is wearing a red jacket and a black hat and is sliding on his knees	0.800	0.167	0.401
+3122	A woman is using a pencil for eyes and is applying eye liner to her eyelid	A woman is applying cosmetics to her eyelid	0.920	0.296	0.389
+1584	A hole is being burrowed by the badger	A badger is shrewdly digging the earth	0.900	0.286	0.377
+9571	An elder man is sitting on a bench and is wearing a gray jacket and black pants	An elderly man is sitting on a bench	0.900	0.286	0.377
+4505	The doctors are healing a man	The doctor is helping the patient	0.840	0.235	0.366
+9188	A dog is turning on the grass and pursuing a flying tennis ball	A yellow dog is chasing a ball	0.880	0.320	0.314
+450	A lady is surfing and riding a wave	A blond girl is looking at the waves	0.660	0.105	0.308
+5352	A man is playing a large flute	There is no man playing a flute	0.820	0.267	0.306
+8383	A girl in blue is sliding down a green slide	The young girl in blue is enjoying a slide	0.860	0.308	0.305
+8963	A small group of people are standing and two are sitting on the sofa	A group of five young adults are lounging indoors	0.760	0.214	0.298
+2795	A small guinea pig is gnawing and eating a piece of carrot on the floor	A guinea pig is devouring a carrot	0.900	0.370	0.281
+8658	No group of people is gathering at a stand at the fair	The people are standing at a carnival	0.760	0.235	0.275
+2527	People are riding and paddling a raft	Four people are floating on a raft	0.840	0.316	0.275
+9425	No dog is in the sand that is blowing in the wind	A dog is in a sandy area with the sand that is being stirred up into the air and several plants are in the background	0.800	0.286	0.264
+7448	A small child is showing excitement on a swing set at the park	The girl, who is little, is swinging and the woman is standing behind	0.720	0.207	0.263
+6932	The snowboarder is doing a flip over a mound of snow	Somebody is jumping in the air on a board	0.760	0.250	0.260
+2721	The man is kick boxing with a trainer	A karate practitioner is kicking at another man who is wearing protective boxing gloves	0.800	0.303	0.247
+6634	A hurdle is being leapt by a horse that has a rider on its back	A horse and its rider are leaping over a barrier	0.900	0.414	0.236
+6287	A black dog is running in the grass and its tongue is hanging out	A black dog is running in the grass	0.980	0.500	0.230
+9242	The man in blue is posing for a picture next to a vehicle	A man is standing at the wheel of a classic American car that has its door and trunk open	0.640	0.162	0.228
+7464	A surfer is riding the wave	A man is falling off a surfboard in the water	0.700	0.222	0.228
+1861	The microphone in front of the talking parrot is being muted	The parrot is talking into the microphone	0.800	0.333	0.218
+8855	The dog is on a leash and is walking near the water	A black dog on a leash is walking in the water	0.900	0.435	0.216
+9713	A black and white dog is carrying a huge stick on the green grass	A black and white dog with a large branch is running in the field	0.900	0.438	0.214
+9287	A man is skiing down a hill and jumping a red obstacle	A man is snowboarding down a railing in the snow	0.620	0.160	0.212
+2525	A few people are floating on a raft	People are riding and paddling a raft	0.760	0.300	0.212
+2166	A woman is sewing with a machine	A woman is using a machine made for sewing	0.960	0.500	0.212
+2058	A lady is cutting up some meat precisely	Some meat is being cut into pieces by a woman	0.960	0.500	0.212
+6729	A kid in orange is playing outside with a snowball	A snow ball is being made by a child	0.660	0.200	0.212
+3861	A man from the wilderness is on a walking path	A man is walking down a road	0.680	0.222	0.210
+285	A bald person is playing a guitar	A person has blonde and flyaway hair and is playing a guitar	0.780	0.333	0.200
+4135	A dog is bouncing on a trampoline	A dog is jumping on a trampoline	0.940	0.500	0.194
+2476	Some people are singing	A group of people is singing	0.940	0.500	0.194
+8576	A black dog and a small white and black dog are looking up at a kitchen countertop	A large dog and a small dog are standing next to the kitchen counter and are investigating	0.840	0.400	0.194
+7820	Two dogs are looking at something that is splashing in the water	Some dogs are not playing in a stream	0.740	0.300	0.194
+687	One white dog is staring at the black street	Two dogs of different breeds are looking at each other across a street	0.680	0.250	0.185
+9677	A young girl is playing on the edge of a fountain and an older woman is watching her	A little girl and a woman wearing a yellow shirt are getting splashed by a city fountain	0.700	0.273	0.183
+7951	A boy in a white t-shirt is splashing in shallow water	A boy is running through the water at the beach	0.700	0.273	0.183
+5052	A door is being opened by a man	A man is cutting an onion	0.240	0.667	0.182
+7471	A man and two women in a dark room are sitting at a table with candles	The group of people is sitting in a dim room	0.720	0.296	0.180
+24	A person in a black jacket is doing tricks on a motorbike	A skilled person is riding a bicycle on one wheel	0.680	0.261	0.176
+9224	A dog is running with a ball	The black dog is carrying a blue and white ball in its mouth	0.800	0.381	0.176
+9745	Two young boys are looking up at the camera and one is sticking out his tongue	The little boy is sticking his tongue out for the camera and another boy is looking on	0.880	0.462	0.175
+9722	A boy is running through the sand	A boy wearing a striped shirt is running barefoot on the sandy hill	0.780	0.364	0.173
+197	Someone is on a black and white motorcycle and is standing on the seat	A motorcycle is riding standing up on the seat of the vehicle	0.633	0.222	0.169
+8938	One boy in orange shorts is standing on a rock cliff over the water and the other boy in black shorts is jumping of it into the water	Two males are standing on a cliff edge and one is jumping into the water	0.800	0.391	0.167
+9424	A dog is in a sandy area with the sand that is being stirred up into the air and several plants are in the background	A dog is in the sand that is blowing in the air	0.820	0.412	0.167
+7947	A kid in a white t-shirt is splashing in shallow water	A boy is running through the water at the beach	0.680	0.273	0.166
+4963	Garlic is being chopped by a woman	A woman is chopping garlic	0.940	0.533	0.165
+873	Not a lot of people are in an ice skating park	An ice skating rink placed outdoors is full of people	0.700	0.296	0.163
+647	One man is climbing a cliff with a rope	A person with pink climbing gear roped the rock	0.660	0.261	0.159
+1190	A man and a woman are hiking through a wooded area	A man and a woman are walking together through the woods	0.860	0.462	0.159
+9747	A little boy is sticking his tongue out for the camera and another boy is looking on	Two kids are looking up at the camera and one is sticking out his tongue	0.880	0.486	0.155
+2485	The man is playing a guitar	A man is playing a trumpet	0.440	0.833	0.155
+6544	The ice hockey goalkeeper is wearing a yellow jersey and is defending the goal	There is no hockey player in a yellow jersey guarding the goal	0.800	0.410	0.152
+3909	The man is singing and playing the guitar	The guitar is being played by a man	0.860	0.471	0.152
+6146	Two people are standing in the ocean and watching the sunset	Nobody is standing in the ocean and watching the sunset	0.500	0.889	0.151
+9198	A woman in blue jeans is standing in front of a group of children beside a stone built house	No lady is standing on the street and is surrounded by school children	0.640	0.256	0.147
+2392	The man is not slicing the potato	The man is slicing a potato	0.540	0.923	0.147
+4814	A monkey is pulling a dog's tail	A monkey is teasing a dog at the zoo	0.880	0.500	0.144
+9500	A big brown and white spotted dog is lying on a jacket on the street	The dog is having a nap in the park	0.580	0.200	0.144
+8313	A young girl with painted face is standing next to some other children	Children are being dressed in costumes and playing a game	0.620	0.242	0.143
+619	A boy is climbing up a wall artificially built for climbing and is attached to a rope	A little boy, who looks fearful, is on a climbing wall.	0.700	0.324	0.141
+7064	A trick is being performed by a rollerblader on a ramp	A rollerblader is performing a trick on a ramp	1.000	0.632	0.136
+8727	A group of people are standing around a sound mixing table	Some people is looking at sound equipment	0.700	0.333	0.134
+9490	A cluster of four brown dogs are playing in a field of brown grass	Four dogs are not playing in a grassy area	0.800	0.435	0.133
+3275	A child is running in and out of the waves of the ocean	A child is running in and out of the ocean waves	0.980	0.615	0.133
+4140	Several boys are jumping on a trampoline	A man is doing back flips on a trampoline	0.680	0.316	0.133
+6042	The small child is walking through the water and is being guided by another person	A young child is splashing in the water	0.680	0.320	0.130
+5113	Two sumo ringers are fighting	Two sumo wrestlers are fighting	0.800	0.444	0.126
+4803	There is no monkey teasing a dog at the zoo	A monkey is teasing a dog at the zoo	0.587	0.941	0.125
+4638	A keyboard is being played by a man	A man is playing a harp	0.480	0.833	0.125
+2687	The person is slicing a clove of garlic into pieces	The person is not slicing a clove of garlic into pieces	0.600	0.952	0.124
+4866	A person is dancing	A woman is exercising	0.600	0.250	0.122
+7356	Small children are climbing a statue in a park	Two children are playing on a statue	0.820	0.471	0.122
+780	A woman, who is old, is near a white dog	A woman and a dog are sitting on a tree stump	0.620	0.273	0.121
+3143	A monkey is kicking at a person's glove	The monkey is practicing martial arts	0.720	0.375	0.119
+116	A player is throwing the ball	Two teams are competing in a football match	0.580	0.235	0.119
+7394	A child is smiling at the camera and swimming underwater	A child is swimming underwater in a pool	0.820	0.476	0.118
+9545	A man on a yellow sport bike is doing a wheelie and a friend on a black bike is catching up	The rider dressed in orange is driving a motorcycle on one wheel	0.560	0.216	0.118
+9380	The players is maneuvering for the soccer ball	A man in green is kicking a soccer ball and a man in purple and white is rising up	0.700	0.357	0.118
+2720	The man is kick boxing with a trainer	There is no karate practitioner kicking at another man who is wearing protective boxing gloves	0.600	0.258	0.117
+382	A brown and white dog is running through the tall grass	A brown and white dog is moving through the wild grass	0.880	0.538	0.117
+7743	A dog is playing alone on a beach covered by snow	A dog is walking along a snowdrift	0.640	0.300	0.116
+1039	The snowboarder isn't leaping over white snow	A person who is practicing snowboarding jumps into the air	0.660	0.320	0.116
+6912	The woman wearing the blue and white uniform with a white and blue hat is keeping her mouth open and is near others who are dressed in the same fashion	A woman is wearing a blue shirt with a white vest and a white cap and is talking and marching	0.680	0.344	0.113
+6849	Two children, who are small, are playing with a toy car in the street	A father is pushing his daughter on a go-kart and another girl is watching	0.440	0.105	0.112
+1266	A band is playing on a stage	A band is playing onstage	1.000	0.667	0.111
+8700	A black and orange bird is standing in the grass	The black bird with a yellow beak is standing in the green grass	0.800	0.467	0.111
+3910	A man is packing the guitar	The man is singing and playing the guitar	0.680	0.353	0.107
+3598	One man is doing floor exercises	A man is doing exercises	0.860	0.533	0.107
+105	Four children are doing backbends in the gym	Four girls are doing backbends and playing outdoors	0.760	0.435	0.106
+3123	There is no woman using an eye pencil and applying eye liner to her eyelid	A woman is applying cosmetics to her eyelid	0.620	0.296	0.105
+3996	There is no man singing and playing a guitar	A boy is playing a piano	0.440	0.118	0.104
+698	A dog which is furry and black is in a back yard and is carrying a basket in its mouth	A dog next to a tree, which is probably a pine, is biting a bucket	0.557	0.235	0.103
+8500	The man is going into the water	The person is going into the sea	0.820	0.500	0.102
+9056	Two young girls are wearing hats and sticking their colored tongues out	Two kids are sticking out blue and green colored tongues	0.720	0.400	0.102
+7311	A cigarette is being smoked by the man in the straw hat	A man is wearing a straw hat and smoking a cigarette	0.960	0.640	0.102
+402	A group of scouts are hiking through the grass	A group of explorers are walking through the grass	0.820	0.500	0.102
+1506	Three men are practicing karate outdoors	Three boys in karate costumes are fighting	0.760	0.444	0.100
+1333	The woman is measuring the other woman	A woman is being measured by another woman	0.980	0.667	0.098
+5030	The man is talking on the telephone	The man is speaking on the telephone	0.980	0.667	0.098
+3670	It is raining on a walking man	A man is walking in the rain	0.980	0.667	0.098
+6705	A child, who is small, is outdoors climbing steps outdoors in an area full of grass	A small child is outdoors climbing steps in a grassy area	0.980	0.667	0.098
+7938	An Asian woman is holding a fur scarf	An elegant woman is inside a crowd of people and is looking down	0.440	0.133	0.094
+9401	The man dressed in leather chaps and a purple shirt is standing in front of someone lookers	A man is wearing a purple shirt and black leather chaps and is posing for the camera	0.660	0.356	0.093
+7228	There is no young boy jumping in the air with his knees bent and arms spread	A person with a green shirt is jumping high over the grass	0.520	0.216	0.092
+3036	The puppy is not playing with a plastic container	The puppy is playing with a plastic container	0.640	0.941	0.091
+5938	Vegetables are being put into a pot by a man	Someone is pouring ingredients into a pot	0.800	0.500	0.090
+4891	A man is doing pull-ups	The man is doing exercises in a gym	0.800	0.500	0.090
+6709	A little child in a pink sweater is climbing a concrete staircase	A small child is outdoors climbing steps in a grassy area	0.700	0.400	0.090
+7533	A child is watching someone playing outdoors and is spouting water over the rest of his family 	A boy is holding a hose next to a man and another boy is watching	0.600	0.300	0.090
+5920	A horse is being ridden by a person	A woman is slicing potatoes	0.200	0.500	0.090
+7044	The rider on the blue and black motocross bike is not wearing the pants	A biker with a blue jacket, black pants and a white helmet is driving on dirt and people are watching	0.640	0.340	0.090
+4187	There is no dog playing with a toy	A dog is eating a doll	0.760	0.462	0.089
+8841	A small white dog is running across a lawn	A big white dog is running across a lawn	0.620	0.917	0.088
+7018	A child in clothing which is light colored is standing with his arms extended outward	A child in light colored clothing is standing with his arms extended outward	1.000	0.706	0.087
+947	Some corndogs are being eaten by two toddlers who are in a wagon, which is really small	Two toddlers are eating corndogs in a wagon, which is really small	0.960	0.667	0.086
+651	A person is climbing a rock with a rope, which is pink	One man is climbing a cliff with a rope	0.920	0.632	0.083
+9336	A group of people is walking down the street and a person in a green hat is on the phone	Four people are walking along a city sidewalk and the one in the green hat is phoning someone	0.840	0.553	0.082
+8212	A girl has colored patches on the cheeks	A girl is standing in a group and is wearing a black shirt and pink beads	0.480	0.194	0.082
+7546	A young girl in a blue leotard is jumping in the air	A young girl in a leotard colored in blue is jumping in the air	1.000	0.714	0.082
+7363	A tower is being looked at by a blonde lady	A woman is looking at the view of a city	0.660	0.375	0.081
+6866	A golden dog is running through a field of tall grass	There is no brown dog running through tall green grass	0.800	0.519	0.079
+8326	There is no bmx biker jumping dirt ramps in front of a body of water	Two bmx bikers are jumping dirt ramps in front of a body of water	0.880	0.600	0.078
+7590	A person is looking at a bike designed for motocross that is lying on its side and another is racing by	The bike rider is looking at an accident of another bike rider	0.620	0.343	0.077
+7043	The motocross rider is standing naked	A biker with a blue jacket, black pants and a white helmet is driving on dirt and people are watching	0.520	0.244	0.076
+8633	A man is rock climbing, pausing and calculating the route	A man is rock climbing, stopping and calculating the route	0.960	0.686	0.075
+2405	The lady is slicing a tomato	Someone is cutting a tomato	0.940	0.667	0.075
+7374	A man is standing on the top of the rocks with clouds behind them	Somebody is standing on a mountain top	0.620	0.348	0.074
+7319	A man is wearing a blue shirt which has long sleeves and jeans and is riding a unicycle down a street	A man is wearing a blue checkered shirt and riding a unicycle in the street	0.860	0.588	0.074
+1302	A man is playing flute	A man is playing a game with a ball	0.300	0.571	0.074
+2402	Someone is cutting a tomato	The woman is holding a whole tomato	0.700	0.429	0.074
+1137	A fish is hunting for a turtle in the sea	The turtle is following the fish	0.700	0.429	0.074
+1881	The food on the trays is being eaten by the kittens	A few kittens are eating	0.840	0.571	0.072
+6961	A white man is staging a hat and a playing guitar	A man in a white hat is playing guitar on stage	0.600	0.333	0.071
+630	A man isn't tossing a kid into the swimming pool that is near the ocean	The man is tossing a kid into the swimming pool that is near the ocean	0.700	0.966	0.070
+3855	A man is stopping in the middle of a road	A man is walking down a road	0.640	0.375	0.070
+8558	A grey silky dog is lying in the grass and a brown dog is looking on	The brown dog is spotting a black dog lying in the dry grass	0.640	0.375	0.070
+2430	One man is running down the road	A man is running	0.880	0.615	0.070
+7582	The bunch of men are playing rugby on a field full of mud	Some men are playing rugby	0.900	0.636	0.070
+3625	A woman is putting meat in a pan	There is no woman putting meat in a pan	0.680	0.941	0.068
+1443	A man is talking on the radio	A man is spitting	0.340	0.600	0.068
+4196	A man is dancing	A man is praying fervently	0.340	0.600	0.068
+5657	A person is eating in a restaurant	A person is making a bed	0.240	0.500	0.068
+9136	A man in a black jersey is standing in a gym	A man is standing in a gym and is wearing a jersey	0.900	0.640	0.068
+3711	A toy train is striking a toy car	A toy train is missing a toy car	0.760	0.500	0.068
+7541	There is no football player in a purple jersey running with the ball for a touchdown	A football player is running past an official carrying a football	0.660	0.400	0.068
+6394	A waterfall is flowing into a shallow pool	The people are walking on the road beside a beautiful waterfall	0.460	0.200	0.068
+9314	A snowboarder is grinding down a long concrete rail	A person is doing acrobatics on a snowboard	0.660	0.400	0.068
+6590	A young girl is standing on one leg	A young female is dancing	0.660	0.400	0.068
+2766	A man and woman are talking	A man and a woman are eating happily	0.520	0.778	0.066
+8389	A white man is walking next to a building in a big city	A black man is walking next to a building in a big city	0.660	0.917	0.066
+384	A white and tan dog is running through the tall and green grass	A white and tan dog is running through a field	0.870	0.615	0.065
+5540	A group of people are dancing in a show	A group of people are marching	0.460	0.714	0.065
+9093	A large man is sitting in a military accessories store	A veteran is showing different things from a war to some people	0.560	0.308	0.064
+8122	A female cheerleader is sitting on the knee of a male cheerleader	Some cheerleaders are relaxing	0.600	0.348	0.064
+2364	Some cameras are being burned by a person with a blow torch	The person is setting fire to the cameras	0.840	0.588	0.063
+2679	A man is parking a car in a garage	A man is getting into a car	0.680	0.429	0.063
+7477	A man in a white shirt and sunglasses and a man in a black shirt and sunglasses are sitting at a table with four bottles of beer	A man in a white shirt and sunglasses and a man in a black shirt and sunglasses are sitting at a table with four beer bottles	0.980	0.730	0.062
+7088	A group of football players is standing still in the field	The crowd is watching a football game	0.520	0.273	0.061
+6649	Two teenage girls are wearing fancy dresses at an event	Two girls in their teens are wearing fancy dresses at an event	0.960	0.714	0.060
+5110	A chef is preparing some food	A chef is preparing a meal	0.960	0.714	0.060
+9433	The black and white dog is running in a green yard	A black and white dog is running outdoors	0.880	0.636	0.059
+7937	A woman dressed in elegant clothing is inside a crowd of people and is looking up	A woman dressed in elegant clothing is inside a crowd of people and is looking down	0.620	0.864	0.059
+2965	A big green ball is missing a potato	A big green ball is knocking a potato	0.660	0.900	0.058
+3897	There is no man exercising	A man is exercising	0.680	0.444	0.055
+9102	A dog with a blue collar is playing with the ball outside	A grey dog is bouncing a soccer ball on its head in a grass field	0.680	0.444	0.055
+1170	A potato is being sliced by a woman	A woman is slicing a carrot	0.600	0.833	0.054
+1412	Men are sawing logs	Men are cutting wood	0.900	0.667	0.054
+2557	Someone is strumming the guitar	Someone is playing the guitar	0.900	0.667	0.054
+1470	Three men are jumping off a wall	Three young men are furiously running, jumping and kicking near a vending machine	0.500	0.267	0.054
+6358	The woman in a red costume is leaning against a brick wall and playing an instrument	The woman in a red costume is not leaning against a brick wall and is not playing an instrument	0.640	0.870	0.053
+4966	A woman is slicing a fish	There is no woman slicing a fish	0.540	0.769	0.053
+860	One white dog and one black one are running side by side on the grass	A dog, which has a black coat, and a white dog are running on the grass	0.840	0.611	0.052
+9763	A person is slicing some mushrooms	The elephant is being ridden by the woman	0.200	0.429	0.052
+1192	A man and a woman are walking together through the woods	A man and a woman are walking through a wooded area	0.920	0.692	0.052
+219	There is no girl in white dancing	A girl in white is dancing	0.840	0.615	0.050
+3338	There is no man standing on a roof top and playing a violin	A man is standing on a roof top and playing a violin	0.680	0.903	0.050
+1396	A man is screaming	A man is scared	0.720	0.500	0.048
+1628	Some ingredients are being mixed in a bowl by a person	Some ingredients are being separated in a bowl by a person	0.920	0.700	0.048
+4191	A dog is eating a doll	A dog is playing with a toy	0.720	0.500	0.048
+816	A group of people is equipped with protective gear	A group of people is equipped with gear used for protection	1.000	0.783	0.047
+2366	A person by some cameras is blowing on a burning torch	The person is setting fire to the cameras	0.660	0.444	0.046
+228	A girl in white is dancing	The blond girl is dancing in front of the sound equipment	0.660	0.444	0.046
+4067	The man is removing knives from a tree	The man is throwing knives at a tree	0.660	0.875	0.046
+3880	A man is dancing on the ceiling of a room	The man is dancing upside-down on the ceiling	0.880	0.667	0.046
+8334	A man is doing a trick on a skateboard	A person is doing a trick on a skateboard	0.880	0.667	0.046
+8986	A young girl in a bikini is jumping on the beach	A young girl in swimming suite is jumping on the beach	0.880	0.667	0.046
+3680	Racers are running down a track	There are no racers running down a track	0.740	0.952	0.045
+4734	A man is fitting a silencer to a pistol	A man is applying a silencer to a gun	0.960	0.750	0.044
+7720	There is no man spraying a super soaker into the mouth of a dog	A man is squirting water into the mouth of a white dog with a squirt gun	0.580	0.370	0.044
+6598	A bee is clinging to a yellow flower	There is no small bee landing on a bunch of yellow flowers	0.780	0.571	0.044
+225	The equipment in front of the blond dancing girl is sound	A girl in white is dancing	0.540	0.333	0.043
+4477	A man is punching a soccer ball	A man is mixing the content of a bowl	0.240	0.444	0.042
+2842	A little girl is playing a grand piano on stage	A girl is practicing the piano	0.760	0.556	0.042
+2362	A person is burning some cameras with a blow torch	The tall person is setting fire to the cameras	0.760	0.556	0.042
+7475	A man and two women in a darkened room are sitting at a table with candles	The group of dim people is sitting in a room	0.500	0.296	0.041
+8548	The child is splashing water in a big red pool	A toddler is making a splash inside a blue paddling pool	0.620	0.417	0.041
+7649	There is no little boy wearing a green soccer strip and running on the grass	A little boy is wearing a green soccer strip and is running on the grass	0.720	0.923	0.041
+5051	A man is opening a door	There is no man opening a door	0.720	0.923	0.041
+4155	A man is playing a wooden flute	There is no man playing a wooden flute	0.740	0.941	0.040
+3222	There is no boy walking across a bridge	A boy is walking across a bridge	0.740	0.941	0.040
+1711	A man is emptying a container made of plastic	A man is carelessly holding a frog	0.220	0.421	0.040
+7718	A man is spraying a super soaker into the mouth of a dog	There is no man spraying a super soaker into the mouth of a dog	0.760	0.960	0.040
+2968	A large green ball is missing a potato	A large green ball is hitting a potato	0.700	0.900	0.040
+6955	A blonde boy in green is sitting on a swing	There is no little girl with blond hair smiling and sitting on a swing	0.637	0.438	0.040
+9036	A white dog is approaching a golden dog on pebbly beach	Two dogs are playing on a rocky beach	0.580	0.381	0.040
+6228	People at a drag race are running away from the flames that are coming out of the cars	The crowd is watching two racing cars that are leaving the starting line	0.520	0.323	0.039
+8057	A young girl is wearing a blue patterned swim suit, a black and yellow swim cap and has blue swimming goggles on her head	A little girl is wearing a blue patterned swim suit, a black and yellow swim cap and has blue swimming goggles on the head	0.960	0.765	0.038
+9200	A lady is standing on the street and is surrounded by school children	A man in blue jeans is standing in front of a group of children beside a stone built house	0.400	0.205	0.038
+4411	Two men in a race are flipping the tires of a tractor	Two men are competing in a tire rolling race	0.740	0.545	0.038
+4060	A man is running on the road	A dog is running breathlessly on the road	0.520	0.714	0.038
+4650	A man is cutting a thick rope with a sword	There is no man cutting a rope with a sword	0.720	0.526	0.038
+9211	A guy is leaping into the air in wood	A guy is leaping into the air in a wooded area	0.860	0.667	0.037
+3733	Swimmers are racing in a lake	Some racers are swimming in a lake	0.860	0.667	0.037
+8786	A girl is skipping rope on a sidewalk	A girl is skipping rope on near a street	0.860	0.667	0.037
+2566	Three women are dancing	A few women are dancing	0.920	0.727	0.037
+3922	Boys are not dancing in front of some people	Boys are dancing in front of some people	0.760	0.952	0.037
+6625	There is no white dog with beige spots running through a field	A tan dog is running through the brush	0.540	0.348	0.037
+2221	Someone is falling off a horse	The man is not knocked off of a horse	0.780	0.588	0.037
+5909	A woman is pouring ingredients into a bowl	The chef is seasoning the oil	0.620	0.429	0.037
+1525	A woman is planting some flowers	A woman is cutting broccoli	0.240	0.429	0.036
+185	Few people are eating at red tables in a restaurant without lights	A large group of Asian people is eating at a restaurant	0.520	0.333	0.035
+2932	The woman is cutting a carrot	An onion is being sliced by a woman	0.480	0.667	0.035
+9452	A dog is jumping into the air in the country	A dog is jumping in the shade of some trees	0.740	0.556	0.034
+3485	The cat is looking out the window at the table on the perch	The cat perched on the table is looking out the window	0.820	0.636	0.034
+4767	A man is cooking a snake	There is no man cooking a snake	0.740	0.923	0.034
+7027	The boy and girl are not playing on a playground	The boy and girl are playing on the outdoor gym	0.600	0.783	0.033
+4852	A band is not playing some instruments	A band is playing some instruments	0.760	0.941	0.033
+7795	A tennis player is lunging to the left	A tennis player is jumping to the left	0.880	0.700	0.032
+7877	A man in a blue cowboy hat is riding a white horse	A man in blue is riding a horse on a dirt road	0.780	0.600	0.032
+7466	The group of people is sitting in a dim room	The group of people is sitting in a room which is dim	0.980	0.800	0.032
+8660	A group of rollerbladers is lining up on the street	A group of rollerbladers is lining up on the road	0.980	0.800	0.032
+4934	Recruits are talking to an officer	An officer is talking to the recruits	0.740	0.917	0.031
+5806	A man is rowing a canoe	A man is rowing a boat	0.840	0.667	0.030
+4823	A person is cutting some ginger	A person is slicing an onion	0.600	0.429	0.029
+8193	The adults and children are not gathered near an outdoor seating arrangement	The adults and children are being gathered near an outdoor seating arrangement	0.880	0.710	0.029
+7501	The woman is not wearing a red jacket and is not holding a glass in front of the man in a white t-shirt	A person is wearing a red jacket and holding a beer	0.480	0.650	0.029
+1754	A flute is being played in a lovely way by a girl	A flute is being played by a girl	0.920	0.750	0.029
+6396	A dog is scattering a pack of white sheep on a dusty farm	A dog is herding a pack of white sheep on a dusty farm	0.760	0.929	0.028
+9169	A little brown and white dog is running on the sidewalk	A little brown and white dog is running on the road	0.740	0.571	0.028
+3433	A tray is being buttered by a person	A person is buttering a tray	1.000	0.833	0.028
+2829	The lady is penciling on eyeshadow	The woman is penciling on eyeshadow	1.000	0.833	0.028
+7677	A young mother is playing with her boy in the park	A young boy is playing in the park with his mother	0.900	0.733	0.028
+4288	The woman is slicing cooked octopus	A woman is chopping up an octopus	0.880	0.714	0.027
+5924	The man is not doing exercises	The man is doing exercises	0.760	0.923	0.027
+417	Two men are taking a break from a trip on a snowy road	Two men with cars are on the side of a snowy road	0.800	0.640	0.026
+3291	A woman is putting away carrots	A woman is coating a pork chop	0.340	0.500	0.026
+6673	A classroom full of students is looking attentively in the same direction inside a bamboo structure	A group of students in uniforms is listening attentively at the front of the class	0.560	0.400	0.026
+3384	A panda bear is eating some bamboo	Some bamboo is being eaten by a panda bear	0.960	0.800	0.026
+3862	The man is walking along a path through the wilderness	A man is lazily walking down a road	0.657	0.500	0.025
+8792	A girl is jumping rope on a sidewalk near a parking garage	A girl is skipping rope on near a street	0.740	0.583	0.025
+9125	A young woman with Indian clothing and henna on her hand is going through paperwork	A woman is wearing a colorful shirt and a lot of jewelry	0.480	0.324	0.024
+2936	Two men are fighting in a cattle pen	Two men are outside a cattle pen	0.600	0.444	0.024
+2096	The man is granting an interview	A man's white car is being driven away	0.220	0.375	0.024
+7214	A brown dog is running across the yard with a toy in its mouth	There is no brown dog running across the yard with a toy in its mouth	0.760	0.606	0.024
+980	A man is getting on a horse on a track laid in the wild	A horse is tossing the cowboy wearing pants of blue and red color	0.420	0.267	0.024
+6219	A man is standing on a boat in front of the sunset near a flag	A man is on a boat in front of the sunset	0.820	0.667	0.024
+8806	A dog is swimming in a body of water	An animal is swimming in a body of water	0.900	0.750	0.023
+5745	A tiger cub is playing with a ball	A baby is playing with a doll	0.280	0.429	0.022
+394	A man is sitting near a bike and is writing a note	A man is standing near a bike and is writing on a piece paper	0.720	0.867	0.022
+1495	A man is playing a guitar	A man is strumming a guitar	0.980	0.833	0.022
+3721	The person is slicing onions	Onions are being sliced by the person	0.980	0.833	0.022
+4015	The lady is picking up the kangaroo	The woman is picking up the kangaroo	0.980	0.833	0.022
+4001	A man is recklessly climbing a rope	A man is climbing a rope	0.860	0.714	0.021
+5349	A large flute is being played by a man	A man is playing a flute	0.860	0.714	0.021
+2157	The picture of a camera set up is being taken by a man on the beach at the sunset	A man is taking pictures of a lake	0.600	0.455	0.021
+9623	A man is wearing a blue shirt and walking barefoot on a tennis court	A woman is wearing a blue shirt and walking barefoot on a tennis court	0.720	0.865	0.021
+1877	The kittens on the trays are being eaten as food for an advertisement	The food on the trays is being eaten by the kittens	0.700	0.556	0.021
+6482	The person is not standing on white ice	A person is standing in a vast field of glacial ice	0.620	0.476	0.021
+6158	A race car driver is standing up and is fiercely pointing his hand at the sky	The person in the blue jacket is wearing a colorful helmet	0.320	0.176	0.021
+1690	The milk is being drunk by a cat	The cat is drinking some milk	1.000	0.857	0.020
+2772	A person is pouring oil for cooking into a pot	A person is pouring cooking oil into a pot	1.000	0.857	0.020
+2967	A large green ball is hitting a potato	A large green colored ball is hitting a potato	0.960	0.818	0.020
+7007	A white dog is standing on fallen leaves	A white dog is lying on fallen leaves	0.760	0.900	0.020
+3322	The woman is chopping some bread and fried pork	A woman is cooking a breaded pork chop	0.640	0.500	0.020
+2812	A plane is landing	An animated airplane is taking off	0.540	0.400	0.020
+304	An old, topless woman is covered in paint	A young, topless woman is covered in paint	0.760	0.900	0.020
+988	A talk about an adult and a boy is given in the amphitheater	An adult is in the amphitheater and is talking to a boy	0.620	0.480	0.020
+7932	A person in a pink jacket is running onto the field	Four athletes are with a woman in a crowded stadium	0.400	0.261	0.019
+6047	A man and a woman are in a room painted beige, wearing dark colored shirts and a monitor is in the background	A man and a woman are in a beige room, wearing dark colored shirts and a monitor is in the background	1.000	0.862	0.019
+8632	A man is not rock climbing and a city and a bay are in the background	A man is rock climbing and a city and a bay are in the background	0.880	0.743	0.019
+7410	An American footballer is wearing the red and white strip	A football player is wearing black armbands	0.480	0.343	0.019
+7772	A surfer is riding a big wave across dark green water	The surfer is riding a small wave	0.780	0.643	0.019
+5003	A big cat is opening a plastic drawer with its paws and is jumping inside	A cat is opening a drawer and jumping inside	0.880	0.743	0.019
+526	The woman wearing silver pants, pink bellbottoms and a pink scarf is riding a bike	A pedestrian woman is building pink bicycles for boa wearing riders	0.480	0.343	0.019
+317	A group of children in uniforms is standing at a gate and there is no one kissing the mother	A crowd of people is near the water	0.260	0.125	0.018
+4831	A man is slicing a potato into pieces	A man is not cutting a potato	0.800	0.667	0.018
+5047	A man is cutting onions	A woman is cutting an onion	0.700	0.833	0.018
+1102	A woman is riding a horse	A man is opening a small package that contains headphones	0.200	0.333	0.018
+882	The girl in the blue and white uniform is cheering	The girl is cheering the man in the blue and white uniform	0.620	0.750	0.017
+2231	A woman is tapping her fingers	A woman is resting her fingers on a table	0.620	0.750	0.017
+2738	The woman is not playing an electric guitar	A man is playing an acoustic guitar	0.600	0.471	0.017
+4114	There is no man eating food	A man is eating a pizza	0.640	0.769	0.017
+2886	A woman is playing a flute	The woman is not playing the flute	0.640	0.769	0.017
+280	A boy is standing outside the water	The boy is wading through the blue ocean	0.627	0.500	0.016
+4661	A woman is slicing a potato	A woman is cutting a potato	0.960	0.833	0.016
+3501	A dog is licking a baby	The dog is licking the baby	0.960	0.833	0.016
+6078	A person wearing jeans is sitting happily on the top of a horse saddle	A woman in jeans is sitting on the saddle of a horse	0.840	0.714	0.016
+2704	Noodles are being boiled in water by a woman	A woman is boiling noodles in water	1.000	0.875	0.016
+6280	A dog, which is black, is running in the grass	A black dog is running in the grass	1.000	0.875	0.016
+4851	Some instruments are being played by a band	A band is playing some instruments	1.000	0.875	0.016
+2911	A woman is putting on makeup	There is no woman putting on makeup	0.800	0.923	0.015
+4157	There is no man playing the piano	A man is playing the piano	0.800	0.923	0.015
+3536	Someone is cooking okra in a pan	Okra is being cooked in a pan	0.980	0.857	0.015
+1493	A man is playing an electric guitar	A man is playing guitar	0.980	0.857	0.015
+6153	A race car driver is standing up and pointing his hand at the sky	A race car driver is sitting down and is motionless	0.600	0.722	0.015
+2019	A man is dangerously throwing knives at a tree	Some dangerous men with knives are throwing a bike against a tree	0.660	0.538	0.015
+2972	A large green ball is hitting a potato	A big green ball is missing a potato	0.680	0.800	0.014
+4031	A man is breaking tiles with his hands	There is no man breaking wooden boards with his hand	0.580	0.700	0.014
+7997	The kids are not wearing suits and water is splashing around	Children in swimming suits are playing in the water	0.560	0.444	0.013
+3174	A kid is throwing away an instrument	A young boy is playing a wind instrument	0.560	0.444	0.013
+8832	A woman is leaning on the ledge of a balcony	A man is leaning on the ledge of a balcony	0.760	0.875	0.013
+2410	A man is preparing some dish	An onion is being sliced with a knife by the woman	0.260	0.375	0.013
+9931	A woman is playing an electric guitar	A kid is playing guitar	0.600	0.714	0.013
+1232	A man is slicing a bun	A man is slicing a tomato	0.720	0.833	0.013
+5904	A man and a woman are driving down the street in a jeep	A man and a woman are driving down the road in an open-air vehicle	0.800	0.688	0.013
+6131	A young boy wearing a red swimsuit is jumping into a blue kiddies pool	A boy wearing red shorts is jumping into a paddling pool	0.800	0.688	0.013
+8220	Two dogs are running through water	Two dogs are running through high grass	0.667	0.556	0.012
+4614	There is no man driving a car	A man is driving a car	0.880	0.769	0.012
+987	An adult is in the amphitheater and is talking to a boy	There is no adult in the amphitheater talking to a boy	0.860	0.750	0.012
+3398	Someone is beating an egg	The woman isn't stirring eggs in a bowl	0.640	0.533	0.011
+8263	Some people and vehicles are on a crowded street	Some people and vehicles are on a almost empty street	0.840	0.733	0.011
+1177	A woman is combing her hair	A woman is arranging her hair	0.820	0.714	0.011
+5310	There is no girl playing a flute	A girl is playing a flute	0.720	0.615	0.011
+6231	Two dogs are playing together on the grass	Two dogs are resting together in the grass	0.660	0.556	0.011
+4006	A man is climbing a rope	The man is climbing up a rope	0.960	0.857	0.011
+4011	A man is climbing a rope	A man is climbing up a rope	0.960	0.857	0.011
+6330	A girl is wearing jeans and a pink shirt and is running	A little boy in a pink shirt is running under a tree in the desert	0.560	0.457	0.011
+3459	The man is chopping a tree trunk with an axe	A man is chopping a log with an axe	0.880	0.778	0.010
+4429	The men are talking	Some old women are talking	0.600	0.500	0.010
+1241	A woman is dancing and singing with other women	A woman is dancing and singing in the rain	0.820	0.720	0.010
+8375	Two large dogs, a light colored one and a dark one, are sleeping on a snowy terrain	Two dogs are leaping through snowy grass and rocks	0.480	0.381	0.010
+7950	A girl is running through the water at the beach	A boy in a white t-shirt is splashing in shallow water	0.460	0.364	0.009
+3661	A woman is collecting the water from a tap in a mug	A boy is filling a pitcher with water	0.540	0.444	0.009
+1410	A woman is cutting shrimps	A man is chopping butter into a small container	0.280	0.375	0.009
+4321	A man is drawing	There is no man drawing	0.760	0.667	0.009
+3258	A man is playing the guitar	Nobody is playing the guitar	0.740	0.833	0.009
+5706	A man is reloading a shotgun	A man is firing a shotgun	0.740	0.833	0.009
+3982	A woman is peeling a potato	A woman is refrigerating a potato	0.740	0.833	0.009
+5461	A woman is playing the flute	A man is playing a flute	0.740	0.833	0.009
+8505	Two people are sitting on a park bench on a sunny day	Two people are sitting on a park bench on a hot day	0.860	0.769	0.008
+3107	A man is flooring a sitting guitar player	A man is sitting on the floor in a room and strumming a guitar	0.460	0.370	0.008
+2535	There is no cat eating corn on the cob	A cat is eating some corn	0.500	0.588	0.008
+2712	There is no karate practitioner kicking at another man who is wearing protective boxing gloves	A karate practitioner is kicking at another man who is wearing protective boxing gloves	0.860	0.773	0.008
+4342	A man is eating a banana	A man is eating a fruit	0.920	0.833	0.008
+3586	A man is playing the drum	A man is practicing the drum	0.920	0.833	0.008
+9963	The animal is grazing on the grass	The cop is sitting on a police bike	0.200	0.286	0.007
+2604	A bull dog is being brushed by the monkey	The monkey is brushing a bull dog	0.960	0.875	0.007
+6001	There is no brown dog standing in the water	A dog with golden fur is in the water	0.560	0.476	0.007
+913	A woman is being kissed by a man	There is no woman being kissed by a man	0.840	0.923	0.007
+2284	The cat is playing passionately with a watermelon	The cat is playing with a watermelon	0.940	0.857	0.007
+3626	Someone is dropping the meat into a pan	The meat is being dropped into a pan	0.940	0.857	0.007
+9359	A surfer is surfing a big wave	A surfer is surfing a huge wave	0.980	0.900	0.006
+718	A few men in a competition are running outside	A few men are running competitions outside	0.780	0.700	0.006
+4066	The man is hurling knives at a tree	The man is throwing knives at a tree	0.920	1.000	0.006
+4755	The girl is sitting on the couch and is crocheting	There is no girl playing the violin on a beach	0.280	0.200	0.006
+7544	A football player is carrying an official past a rolling football	A football player in a purple jersey is running with the ball for a touchdown	0.580	0.500	0.006
+4	The young boys are playing outdoors and the man is smiling nearby	There is no boy playing outdoors and there is no man smiling	0.720	0.800	0.006
+1469	Three young men are running, jumping and kicking near a vending machine	There is no man running, jumping and kicking near a vending machine	0.760	0.684	0.006
+5148	A man is buttering a piece of bread	A woman is buttering a piece of bread	0.700	0.625	0.006
+3747	A talented man is playing the guitar	A woman is playing a guitar	0.640	0.714	0.006
+6203	A bicyclist is holding a bike over his head in a group of people	A cyclist is being held over the heads of a group of people with the bike	0.680	0.606	0.005
+3250	A woman is placing two eggs into a pot of water	A woman is putting two eggs into a pot of water	0.980	0.909	0.005
+5454	A man is playing a flute	A man is not playing a flute	0.840	0.769	0.005
+2678	A man is hurriedly getting into a car in a garage	A man is getting into a car	0.820	0.750	0.005
+8461	A man with no hat is sitting on the ground	A man with a backwards hat is sitting on the ground	0.800	0.870	0.005
+2229	A woman is tapping her fingers on a table	A woman is resting her fingers on a table	0.820	0.889	0.005
+5747	A baby is playing with a toy	A baby tiger is playing with a ball	0.640	0.571	0.005
+6213	A man is sitting on a boat in font of the sunset, near a flag	A man is standing on a boat in front of the sunset near a flag	0.760	0.692	0.005
+4916	A man is singing and playing a guitar	A man is singing and playing a musical instrument	0.900	0.833	0.004
+2404	The lady is slicing a tomato	There is no one cutting a tomato	0.600	0.667	0.004
+2668	A few ferrets are climbing out of the cage	Ferrets are climbing down from a shelf	0.620	0.556	0.004
+4843	A man is opening a box with a knife	There is no man opening a box with a knife	0.760	0.824	0.004
+9132	A man in a jersey which is black is standing in a gym	A man in a black jersey is standing in a gym	0.980	0.917	0.004
+9584	The woman is holding the paintbrush next to the artist's easel 	The lady is holding the paintbrush next to the artist's easel 	0.980	0.917	0.004
+1236	A woman is dancing and singing alone	A woman is dancing and singing with other women	0.657	0.720	0.004
+1839	The girl, who is little, is carefully combing her hair into a pony tail	The girl, who is little, is combing her hair into a pony tail.	0.920	0.857	0.004
+211	Two dogs are playing by a tree	Two dogs are playing by a plant	0.920	0.857	0.004
+6784	There is no man dressed in black wearing an elaborate black mask	A man dressed in black is wearing an elaborate black mask	0.680	0.741	0.004
+6971	There is no man in a red uniform making a jump in a dirt bike race	A man in a red uniform is making a jump in a dirt bike race	0.680	0.741	0.004
+4164	The man is erasing the drawing on the board	The woman is erasing the drawing on the board	0.740	0.800	0.004
+933	The girl in the red shirt is blowing a bubble 	The young girl is blowing a bubble that is huge	0.760	0.700	0.004
+9869	A bike is being ridden over a monkey	A person is riding a dirt bike down a dirt hill	0.560	0.500	0.004
+6756	A large brown dog and a small grey dog are standing on a rocky surface	A big brown dog and a small grey dog are standing on a rocky surface	0.960	0.900	0.004
+1237	Some women are dancing and singing 	A woman is dancing and singing in the rain	0.760	0.818	0.003
+236	The children of a family are playing and waiting	An Asian man is dancing and three kids are looking	0.380	0.323	0.003
+8163	Two people are driving a jeep and a lady is sitting on the top of it	Two people are driving a jeep and a girl is sitting on the top of it	0.960	0.903	0.003
+3373	A woman is riding a water scooter	A woman is riding a scooter for water	0.820	0.875	0.003
+2130	A small boy is scolding a dog	A small boy is playing with a dog	0.680	0.625	0.003
+2385	A person is cutting an onion into pieces	A person is slicing a carrot into pieces	0.680	0.625	0.003
+2996	A man is playing a guitar	A man is laying down a guitar	0.660	0.714	0.003
+4816	There is no person cutting some ginger	A person is cutting some ginger	0.760	0.706	0.003
+1178	A woman is combing her hair	There is no woman combing her hair	0.720	0.667	0.003
+1811	A man is playing the guitar loudly	A flute isn't being played by a man	0.480	0.533	0.003
+6450	A little boy is wearing a yellow tank top and is laughing	A laughing boy is in a yellow tank and is wearing a top	0.700	0.647	0.003
+9822	Two people are riding a bike	A practicing jumper is tossing a person's snowboard into the air	0.400	0.348	0.003
+7445	The little girl is swinging and the woman is standing behind her	The girl, who is little, is swinging and the woman is standing behind	0.980	0.929	0.003
+1807	The adult is playing the guitar loudly	A flute is being played by a man	0.480	0.429	0.003
+1847	One man is sitting on the chair	The girl, who is little, is ruffling her hair	0.200	0.250	0.002
+9988	A young man is pushing a motocross bike down a dirt hill	A dog is swimming after a tennis ball	0.200	0.250	0.002
+9771	Two small children are playing with a toy car in the street	A dog is running through a field and is chasing a toy	0.280	0.231	0.002
+4520	There is no man playing a guitar	A man is playing a guitar	0.720	0.769	0.002
+3420	A woman is deboning a fish	A big fish is catching a man	0.380	0.429	0.002
+4360	A man is cutting a note	A man is cutting a paper	0.880	0.833	0.002
+2544	The person is slicing a vegetable	Nobody is slicing a tomato	0.620	0.667	0.002
+1390	A person is standing near a motorcycle	A person is chopping an onion	0.240	0.286	0.002
+3292	A woman is grating carrots	A cook is coating a pork chop	0.420	0.375	0.002
+7726	A boy under an umbrella is being held by his father who is wearing a blue coat	A boy, who is wearing a blue coat, is being held by his father under an umbrella 	0.860	0.905	0.002
+6119	A brown and white dog is holding a baseball in its mouth	A black and white dog is dropping a baseball from its mouth	0.660	0.615	0.002
+8471	A girl in blue sweater is holding a multicolor toy and is sitting on the shoulders of an old man with grey hair	A girl in blue sweater is holding a multicolor toy and is sitting on the shoulders of a man with grey hair	0.920	0.964	0.002
+2286	The cat is playing passionately with a watermelon	A cat is playing with a watermelon	0.900	0.857	0.002
+4054	A dog is running breathlessly on the road	A dog is running on the road	0.900	0.857	0.002
+5082	A woman is playing the violin	There is no man playing the piano	0.420	0.462	0.002
+2726	A woman on a rock is lying on a blanket and reading a book	A woman is rocking over a blanket lying on someone reading a book	0.540	0.581	0.002
+119	Five children are standing in front of a wooden hut	Five children are standing in a wooden hut	0.840	0.800	0.002
+5930	The man is not doing exercises	Two men are fighting	0.460	0.500	0.002
+3002	A woman is playing an electric guitar	A man is laying down a guitar	0.460	0.500	0.002
+4376	A man is playing a guitar	There is no one playing a piano	0.540	0.500	0.002
+9669	The young girl is playing on the edge of a fountain and an older woman is watching her	A young girl is playing on the edge of a fountain and an older woman is watching her	0.960	1.000	0.002
+2791	A guinea pig, which is small, is gnawing and eating a piece of carrot on the floor	A small guinea pig is gnawing and eating a piece of carrot on the floor	0.960	1.000	0.002
+2822	A woman is taking a mixture out of a bowl	A woman is preparing an egg in a skillet	0.540	0.500	0.002
+3812	A woman is slicing a pepper which is green	A woman is slicing a green pepper	0.960	1.000	0.002
+9843	A family is buying something at the vending machine	A man in a suit is standing at a microphone and singing	0.200	0.160	0.002
+9029	Two dogs are playing in a forest	A brown dog is running after a black dog on a rocky shore	0.460	0.421	0.002
+7002	Rugby players are not tackling each other	A soccer player is being tackled by his opponent	0.500	0.538	0.001
+5206	A woman is pulling some sticky goo out of a bowl	The woman is not putting pasta into a dish	0.440	0.476	0.001
+7667	The man at the beach is not doing a handstand on the wet sand at the edge of the water	The man is doing a handstand on the wet sand at the edge of the water at the beach	0.740	0.774	0.001
+1703	A man is emptying a container made of plastic completely	A man is emptying a container made of plastic	0.940	0.909	0.001
+2606	The monkey is brushing a bull dog	A bull dog is brushing the monkey	0.780	0.750	0.001
+1676	A boat is sailing peacefully over the water	The guitar is being played by the man	0.220	0.250	0.001
+9069	Two boys are laying in the ocean close to the beach	Two boys are laying in the water close to the beach	0.880	0.909	0.001
+8138	The girl has red hair and eyebrows, several piercings in a ear and a drawing on the back	The girl has red hair and eyebrows, several piercings in a ear and a tattoo on the back	0.880	0.909	0.001
+9706	A black and white dog with a large branch is standing in the field	A black and white dog with a large branch is running in the field	0.840	0.812	0.001
+2898	The man is lifting barbells	The man is lifting weights	0.860	0.833	0.001
+9788	A man is playing an electric guitar	A group of people is holding drinks and pointing at the camera	0.200	0.174	0.001
+2089	The man is denying an interview	The man is granting an interview	0.640	0.615	0.001
+6740	The people are not sitting on a bench in front of a restaurant	Three people are sitting on a bench under some palm trees	0.640	0.615	0.001
+7734	A boy under an umbrella is being held by his father who is wearing a blue coat	A child is experiencing a new world	0.300	0.276	0.001
+1503	Three boys in karate costumes aren't fighting	Three boys in karate costumes are fighting	0.660	0.636	0.001
+1487	The man is not stirring the sauce for the chicken	The man is stirring the sauce for the chicken	0.800	0.824	0.001
+1964	One person is playing the guitar and singing	A person is playing a guitar and singing	0.980	0.957	0.001
+5698	The cook is sprinkling cheese on the pizza	The man is sprinkling cheese on the pizza	0.800	0.778	0.000
+9975	The dog is snapping at some droplets of water	A girl in a band is playing an instrument	0.200	0.222	0.000
+9838	Some instruments are being played by a band	A young, topless woman is covered in paint	0.200	0.222	0.000
+5119	Two sumo ringers are fighting	A man is riding a water toy in the water	0.200	0.222	0.000
+9371	A person with a red hooded jacket and a black backpack is walking near a rocky wall	A man in a red jacket and khaki pants is walking through an European state	0.600	0.578	0.000
+520	The woman wearing silver pants, pink bellbottoms and a pink scarf is riding a bike	Pink bellbottoms and a pink scarf aren't to be worn by women with silver pants or bike riding people	0.660	0.681	0.000
+717	A few men in a competition are running outside	A few men in a competition are running indoors	0.780	0.800	0.000
+9453	A dog is jumping in the shade of some trees	A cat is jumping high into the air in the country	0.320	0.300	0.000
+1400	A sad man is crying	A man is screaming	0.580	0.600	0.000
+4707	A group of men is playing soccer on the beach	A group of boys is playing soccer on the beach	0.880	0.900	0.000
+3364	A woman is cleaning a shrimp	The woman is cleaning a shrimp	0.980	1.000	0.000
+8714	Two white dogs are quickly running together	Two white dogs are running together	0.920	0.900	0.000
+9303	The skateboarder is jumping in the air	A skateboarder is jumping in the air	0.980	1.000	0.000
+6764	Three boys are resting on rocks along a river	Three boys are walking on rocks along a river	0.760	0.778	0.000
+9014	A blond child is going down a slide and throwing up his arms	A child with dark hair is going down a slide and throwing up his arms	0.740	0.722	0.000
+6005	A young girl in a blue shirt is walking on the sidewalk and holding up a pink sign	A young girl by a pink sign is holding up a blue shirt and is walking on the sidewalk	0.680	0.698	0.000
+8362	A boy in a striped shirt is jumping behind a water fountain	A boy in a striped shirt is jumping in front of a water fountain	0.840	0.857	0.000
+4079	One man is riding a horse	A man is riding a horse	0.940	0.923	0.000
+530	A biker is wearing gear which is black	A biker wearing black is breaking the gears	0.620	0.636	0.000
+8141	The girl has red hair and eyebrows, several piercings in a ear and no tattoo on the back	A girl with red hair and red eyebrows is in midspeech	0.600	0.615	0.000
+9759	A laughing child is holding a water gun and getting sprayed with water	A person in a blue jacket is jumping onto a tall cement wall	0.220	0.235	0.000
+9789	A girl in gold and purple is holding a rainbow afghan	A man is squatting in brush and taking a photo	0.200	0.214	0.000
+592	A woman is taking off a cloak, which is very large, and revealing an extravagant dress	A woman is putting on a cloak, which is very large, and concealing an extravagant dress	0.700	0.686	0.000
+4330	The man is drawing	There is no man drawing	0.680	0.667	0.000
+6315	A yellow dog is running on white snow on a very sunny day	A yellow dog is running on white snow on a sunny day	0.920	0.933	0.000
+6568	A woman is wearing a blue helmet and is riding a bicycle in a parking lot	A woman is parking a blue bicycle and is wearing lots of riding helmets	0.620	0.632	0.000
+3941	A boy is looking at a calendar	There is no boy checking a calendar	0.780	0.769	0.000
+4086	There is no man drawing a picture	A man is drawing a picture	0.780	0.769	0.000
+3061	A woman is driving a car and is talking to the man who is seated beside her	There is no woman driving a car and talking to the man seated beside her	0.940	0.950	0.000
+5955	A dog is leaving a ball in the dirt	A dog is chasing a ball through dirt	0.740	0.750	0.000
+9880	A biker is riding away from a fence	A man is dancing on the road	0.240	0.250	0.000
+3181	A man is trekking in the woods	The man is not hiking in the woods	0.760	0.769	0.000
+4776	There is no boy playing guitar	A boy is playing guitar	0.760	0.769	0.000
+8343	A man in a motocross uniform is wearing a helmet and rides a red motorcycle	A person in a motocross uniform is wearing a helmet and rides a red motorcycle	0.960	0.952	0.000
+6592	A young girl is standing on one leg	A young girl is dancing	0.540	0.533	0.000
+5498	A woman is cutting a lemon	A woman is cutting fruit	0.840	0.833	0.000
+3518	The man is not dancing	A woman is dancing	0.660	0.667	0.000
+3505	A woman is putting away the garlic	A woman is chopping up garlic	0.720	0.714	0.000
+2662	The lady isn't cracking an egg for the mixer	The lady is slicing up the meat	0.467	0.471	0.000
+7889	Two white dogs are playing with a brown dog and a tennis ball	Two white dogs are playing with a brown dog and a ball	0.940	0.938	0.000
+1608	A snake is being fed a mouse by a man	No snake is being fed a mouse by a man	0.940	0.941	0.000
+253	A hiker is on top of the mountain and is doing a joyful dance	A hiker is on top of the mountain and is dancing	0.940	0.941	0.000
+6344	A white dog is wearing a Christmas reindeer headband and is playing with a brown dog in the grass	The white reindeer wearing dog ears is near a brown reindeer	0.440	0.439	0.000
+4983	A woman is riding a horse	A horse is being ridden by a woman	1.000	1.000	0.000
+2722	A woman, who is seated, is singing a song and playing the guitar	A seated woman is singing a song and playing the guitar	1.000	1.000	0.000
+7548	The young girl in blue is jumping in the air	A young girl in blue is jumping in the air	1.000	1.000	0.000
+3790	A person is scrubbing a zucchini	The person is scrubbing a zucchini	1.000	1.000	0.000
+3657	A boy is filling a pitcher with water	A pitcher is being filled with water by a boy	1.000	1.000	0.000
+5914	A horse is being ridden by a person	A person is riding a horse	1.000	1.000	0.000
+5799	A person is peeling a potato	A potato is being peeled by a person	1.000	1.000	0.000
+2001	The horse is being ridden by a man	A man is riding the horse	1.000	1.000	0.000
+5203	The woman is putting pasta into a dish	Pasta is being put into a dish by a woman	1.000	1.000	0.000
+5588	A cupcake is being eaten by a girl	A girl is eating a cupcake	1.000	1.000	0.000
+5374	An octopus is being sliced by a woman	A woman is slicing an octopus	1.000	1.000	0.000
+7093	The group of people is standing together and looking at the camera	A group of people is standing together and looking at the camera	1.000	1.000	0.000

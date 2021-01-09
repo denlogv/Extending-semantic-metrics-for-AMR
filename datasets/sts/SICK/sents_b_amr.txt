@@ -1,0 +1,3323 @@
+(a0 / and
+      :op1 (p0 / play-01
+            :ARG0 (b0 / boy)
+            :location (o0 / outdoors))
+      :op2 (s0 / smile-01
+            :ARG0 (m0 / man
+                  :polarity - )
+            :polarity - ))
+
+(r0 / ride-01
+      :ARG1 (b0 / bicycle)
+      :ARG0 (p0 / person
+            :mod (s0 / skill))
+      :instrument (w0 / wheel
+            :quant 1 ))
+
+(a0 / and
+      :op1 (d0 / do-02
+            :ARG1 (b0 / backbend)
+            :ARG0 (g0 / girl
+                  :quant 4 ))
+      :op2 (p0 / play-01
+            :ARG0 g0
+            :location (o0 / outdoors)))
+
+(c0 / compete-01
+      :ARG0 (t0 / team
+            :quant 2 )
+      :ARG2 (m0 / match-03
+            :ARG3 (f0 / football)))
+
+(s0 / stand-01
+      :ARG1 (c0 / child
+            :quant 5 )
+      :ARG2 (h0 / hut
+            :mod (w0 / wooden)))
+
+(e0 / eat-01
+      :ARG0 (r0 / restaurant)
+      :ARG0 (g0 / group
+            :consist-of (l0 / large)
+            :consist-of (p0 / person
+                  :mod (c0 / continent
+                        :name (n0 / name
+                              :op1 "Asia" )))))
+
+(r0 / ride-01
+      :ARG1 (s0 / seat
+            :part-of (v0 / vehicle))
+      :ARG0 (m0 / motorcycle)
+      :ARG1-of (u0 / up-03))
+
+(p0 / play-01
+      :ARG0 (d0 / dog
+            :quant 2 )
+      :ARG2 (p1 / plant))
+
+(a0 / and
+      :op1 (w0 / wear-01
+            :ARG1 (c0 / clothes
+                  :ARG1-of (w1 / white-03))
+            :ARG0 (g0 / girl))
+      :op2 (d0 / dance-01
+            :ARG0 g0))
+
+(d0 / dance-01
+      :ARG0 (g0 / girl
+            :ARG1-of (w0 / white-02)))
+
+(d0 / dance-01
+      :ARG0 (g0 / girl
+            :ARG1-of (w0 / white-02)))
+
+(d0 / dance-01
+      :ARG0 (g0 / girl
+            :mod (b0 / blond))
+      :location (i0 / in-front-of
+            :op1 (e0 / equipment
+                  :ARG2-of (s0 / sound-02))))
+
+(a0 / and
+      :op1 (d0 / dance-01
+            :ARG0 (m0 / man
+                  :mod (c0 / continent
+                        :name (n0 / name
+                              :op1 "Asia" ))))
+      :op2 (l0 / look-01
+            :ARG1 (k0 / kid
+                  :quant 3 )))
+
+(a0 / and
+      :op1 (b0 / be-located-at-91
+            :ARG1 (t0 / top
+                  :part-of (m0 / mountain))
+            :ARG1 (p0 / person
+                  :ARG0-of (f0 / fish-01)))
+      :op2 (d0 / dance-01
+            :ARG0 t0
+            :ARG0 p0))
+
+(w0 / wander-01
+      :ARG1 (b0 / boy)
+      :ARG1 (o0 / ocean
+            :mod (b1 / blue)))
+
+(a0 / and
+      :op1 (h0 / have-03
+            :ARG1 (p1 / person)
+            :ARG1 (h1 / hair
+                  :mod (b0 / blonde)
+                  :mod (f0 / flyaway)))
+      :op2 (p0 / play-11
+            :ARG1 (g0 / guitar)))
+
+(c0 / cover-02
+      :ARG1 (w0 / woman
+            :mod (y0 / young)
+            :mod (t0 / topless))
+      :ARG2 (p0 / paint))
+
+(n0 / near-02
+      :ARG1 (w0 / water)
+      :ARG1 (c0 / crowd
+            :consist-of (p0 / person)))
+
+(m0 / move-01
+      :ARG1 (d0 / dog
+            :ARG1-of (w0 / white-02)
+            :mod (b0 / brown))
+      :path (t0 / through
+            :op1 (g0 / grass
+                  :mod (w1 / wild))))
+
+(r0 / run-02
+      :ARG0 (f0 / field)
+      :ARG0 (d0 / dog
+            :ARG1-of (w0 / white-02)
+            :ARG1-of (t0 / tan)))
+
+(a0 / and
+      :op1 (s0 / stand-01
+            :ARG1 (m0 / man)
+            :ARG2 (n0 / near-02
+                  :ARG2 (b0 / bike)))
+      :op2 (w0 / write-01
+            :ARG0 m0
+            :ARG1 (p0 / piece)))
+
+(w0 / walk-01
+      :ARG0 (g0 / group
+            :consist-of (p0 / person
+                  :ARG0-of (e0 / explore-01)))
+      :ARG2 (t0 / through
+            :op1 (g1 / grass)))
+
+(b0 / be-located-at-91
+      :ARG1 (m0 / man
+            :ARG0-of (h0 / have-03
+                  :ARG1 (c0 / car))
+            :quant 2 )
+      :ARG2 (r0 / road
+            :mod (s0 / snowy)))
+
+(l0 / look-01
+      :ARG1 (g0 / girl
+            :mod (b0 / blond))
+      :ARG1 (w0 / wave-04))
+
+(w0 / wear-01
+      :ARG1 (a0 / and
+            :op1 (b0 / bellbottom
+                  :ARG1-of (p0 / pink-04
+                        :ARG1 s0))
+            :op2 (s0 / scarf))
+      :ARG0 (w1 / woman
+            :ARG0-of (h0 / have-03
+                  :ARG1 (o0 / or
+                        :op1 (p1 / pant
+                              :consist-of (s1 / silver))
+                        :op2 (r0 / ride-01
+                              :ARG1 (b1 / bike)))))
+      :polarity - )
+
+(b0 / build-01
+      :ARG1 (b1 / bicycle
+            :ARG1-of (p0 / pink-04))
+      :ARG0 (w0 / woman
+            :mod (p1 / pedestrian))
+      :purpose (r0 / ride-01
+            :ARG1 (b2 / boa)))
+
+(b0 / break-01
+      :ARG1 (g0 / gear)
+      :ARG0 (p0 / person
+            :ARG0-of (w0 / wear-01
+                  :ARG1 (b1 / black-04))
+            :ARG0-of (f0 / fight-01)))
+
+(p0 / put-on-08
+      :ARG1 (c0 / cloak
+            :mod (l0 / large
+                  :degree (v0 / very))
+            :ARG0-of (c1 / conceal-01
+                  :ARG1 (d0 / dress
+                        :mod (e0 / extravagant))))
+      :ARG0 (w0 / woman))
+
+(b0 / be-located-at-91
+      :ARG1 (w0 / wall
+            :mod (c0 / climb-01))
+      :ARG1 (b1 / boy
+            :ARG0-of (l0 / look-02
+                  :ARG1 f0)
+            :mod (l1 / little)
+            :ARG0-of (f0 / fear-01)))
+
+(t0 / toss-01
+      :ARG1 (k0 / kid)
+      :ARG0 (m0 / man)
+      :location (p0 / pool
+            :mod (n0 / near-02
+                  :ARG2 (o0 / ocean))
+            :mod (s0 / swim-01)))
+
+(w0 / wrap-01
+      :ARG1 (r0 / rock)
+      :ARG0 (p0 / person
+            :ARG0-of (h0 / have-03
+                  :ARG1 (g0 / gear
+                        :mod (p1 / pink-04)
+                        :mod (c0 / climb-01)))))
+
+(c0 / climb-01
+      :ARG1 (c1 / cliff)
+      :ARG0 (m0 / man
+            :quant 1 )
+      :instrument (r0 / rope))
+
+(l0 / look-01
+      :ARG1 (d0 / dog
+            :quant (b0 / breed
+                  :ARG1-of (d1 / differ-02))
+            :quant 2 )
+      :location (a0 / across
+            :op1 (s0 / street)))
+
+(b0 / bite-01
+      :ARG1 (b1 / bucket)
+      :ARG0 (d0 / dog
+            :location (n0 / next-to
+                  :op1 (t0 / tree
+                        :mod (p0 / probable)))))
+
+(r0 / run-02
+      :ARG1 (m0 / man
+            :ARG0-of (f0 / few)
+            :ARG0-of (c0 / compete-01))
+      :location (i0 / indoors))
+
+(r0 / run-02
+      :ARG1 (o0 / outside)
+      :ARG0 (m0 / man
+            :quant (f0 / few))
+      :ARG1 (c0 / compete-01))
+
+(a0 / and
+      :op1 (w0 / wear-01
+            :ARG1 (a1 / and
+                  :op1 (j0 / jacket
+                        :ARG1-of (r0 / red-02))
+                  :op2 (h0 / hat
+                        :ARG1-of (b1 / black-04)))
+            :ARG0 (b0 / boy
+                  :ARG1-of (h1 / hill
+                        :ARG1-of (c0 / cover-02
+                              :ARG2 (s1 / snow)))))
+      :op2 (s0 / slide-01
+            :ARG0 b0
+            :ARG1 (k0 / kneel-01
+                  :ARG0 b0)))
+
+(s0 / sit-01
+      :ARG1 (a0 / and
+            :op1 (w0 / woman)
+            :op2 (d0 / dog))
+      :ARG2 (s1 / stump
+            :part-of (t0 / tree)))
+
+(e0 / equip-01
+      :ARG1 (g0 / group
+            :consist-of (p0 / person
+                  :ARG1-of (p1 / protect-01)))
+      :ARG2 (g1 / gear
+            :ARG1-of (u0 / use-01
+                  :ARG2 p1)))
+
+(r0 / run-02
+      :ARG0 (a0 / and
+            :op1 (d0 / dog
+                  :ARG0-of (h0 / have-03
+                        :ARG1 (c0 / coat
+                              :ARG1-of (b0 / black-04))))
+            :op2 (d1 / dog
+                  :ARG1-of (w0 / white-02)))
+      :location (g0 / grass))
+
+(f0 / full-09
+      :ARG1 (r0 / rink
+            :mod (p1 / place-01
+                  :ARG2 (o0 / outdoor))
+            :purpose (s0 / shine-01
+                  :ARG1 (i0 / ice)))
+      :ARG2 (p0 / person))
+
+(c0 / cheer-02
+      :ARG1 (m0 / man
+            :ARG0-of (h0 / have-03
+                  :ARG1 (u0 / uniform
+                        :mod (b0 / blue))))
+      :ARG0 (g0 / girl))
+
+(k0 / kiss-01
+      :ARG1 (w0 / woman)
+      :ARG0 (m0 / man)
+      :polarity - )
+
+(b0 / blow-01
+      :ARG1 (b1 / bubble
+            :mod (h0 / huge))
+      :ARG0 (g0 / girl
+            :mod (y0 / young)))
+
+(e0 / eat-01
+      :ARG1 (c0 / corndog)
+      :ARG0 (t0 / toddler
+            :quant 2 )
+      :location (w0 / wagon
+            :mod (s0 / small
+                  :degree (r0 / really))))
+
+(t0 / toss-01
+      :ARG1 (c0 / cowboy)
+      :ARG0 (h0 / horse)
+      :purpose (w0 / wear-01
+            :ARG1 (p0 / pant
+                  :ARG1-of (a0 / and
+                        :op1 (b0 / blue)
+                        :op2 (c1 / color
+                              :mod (r0 / red-02))))))
+
+(b0 / be-located-at-91
+      :ARG1 (a0 / adult
+            :ARG0-of (t0 / talk-01
+                  :ARG2 (b1 / boy)))
+      :ARG2 (a1 / amphitheater)
+      :polarity - )
+
+(a0 / and
+      :op1 (b0 / be-located-at-91
+            :ARG1 (a1 / adult)
+            :ARG2 (a2 / amphitheater))
+      :op2 (t0 / talk-01
+            :ARG0 a1
+            :ARG2 (b1 / boy)))
+
+(j0 / jump-01
+      :ARG1 (a0 / air)
+      :ARG0 (p0 / person
+            :ARG0-of (p1 / practice-01
+                  :ARG1 (s0 / snowboard))))
+
+(o0 / open-01
+      :ARG1 (p0 / package
+            :mod (s0 / small)
+            :ARG0-of (c0 / contain-01
+                  :ARG1 (h0 / headphone)))
+      :ARG0 (m0 / man))
+
+(f0 / follow-02
+      :ARG1 (f1 / fish)
+      :ARG0 (t0 / turtle))
+
+(s0 / slice-01
+      :ARG1 (c0 / carrot)
+      :ARG0 (w0 / woman))
+
+(a0 / arrange-01
+      :ARG1 (h0 / hair)
+      :ARG0 (w0 / woman
+            :part h0))
+
+(c0 / combust-01
+      :ARG1 (h0 / hair)
+      :ARG0 (w0 / woman
+            :part h0)
+      :polarity - )
+
+(w0 / walk-01
+      :ARG0 (a0 / and
+            :op1 (m0 / man)
+            :op2 (w2 / woman))
+      :mod (t0 / together)
+      :ARG2 (w1 / wood))
+
+(w0 / walk-01
+      :ARG0 (a0 / and
+            :op1 (m0 / man)
+            :op2 (w1 / woman))
+      :ARG2 (t0 / through
+            :op1 (a1 / area
+                  :ARG1-of (w2 / wet-01))))
+
+(s0 / slice-01
+      :ARG1 (t0 / tomato)
+      :ARG0 (m0 / man))
+
+(a0 / and
+      :op1 (d0 / dance-01
+            :ARG0 (w0 / woman)
+            :accompanier (w1 / woman
+                  :mod (o0 / other)))
+      :op2 (s0 / sing-01
+            :ARG0 w0
+            :accompanier w1))
+
+(a0 / and
+      :op1 (d0 / dance-01
+            :ARG0 (w0 / woman))
+      :op2 (s0 / sing-01
+            :ARG0 w0)
+      :location (r0 / rain-01))
+
+(a0 / and
+      :op1 (d0 / dance-01
+            :ARG0 (w0 / woman))
+      :op2 (s0 / sing-01
+            :ARG0 w0)
+      :location (r0 / rain-01))
+
+(p0 / play-01
+      :ARG0 (o0 / onstage)
+      :ARG0 (b0 / band))
+
+(p0 / play-01
+      :ARG1 (g0 / game)
+      :ARG0 (m0 / man)
+      :ARG2 (b0 / ball))
+
+(m0 / measure-01
+      :ARG1 (w0 / woman
+            :mod (a0 / another))
+      :ARG0 (w1 / woman))
+
+(c0 / cook-01
+      :ARG1 (o0 / onion)
+      :ARG0 (p0 / person))
+
+(s0 / scare-01
+      :ARG1 (m0 / man))
+
+(s0 / scream-01
+      :ARG0 (m0 / man))
+
+(c0 / cook-01
+      :ARG1 (b0 / butter)
+      :ARG0 (m0 / man)
+      :ARG2 (c1 / container
+            :mod (s0 / small)))
+
+(c0 / cut-01
+      :ARG1 (w0 / wood)
+      :ARG0 (m0 / man))
+
+(s0 / spit-01
+      :ARG0 (m0 / man))
+
+(a0 / and
+      :op1 (r0 / run-02
+            :polarity - )
+      :op2 (r1 / resemble-01
+            :ARG2 (m1 / machine
+                  :ARG0-of (v0 / vending)))
+      :op2 (j0 / jump-03)
+      :op3 (k0 / kick-01)
+      :location (m0 / man
+            :polarity - ))
+
+(a0 / and
+      :op1 (r0 / run-02
+            :manner (f0 / furious-02))
+      :op2 (j0 / jump-03)
+      :op3 (k0 / kick-01)
+      :ARG1-of (n0 / near-02
+            :ARG2 (m1 / machine
+                  :ARG0-of (v0 / vending)))
+      :ARG1-of (m0 / man
+            :mod (y0 / young)
+            :quant 3 ))
+
+(s0 / stir-up-04
+      :ARG1 (s1 / sauce)
+      :ARG0 (m0 / man)
+      :beneficiary (c0 / chicken))
+
+(p0 / play-11
+      :ARG1 (g0 / guitar)
+      :ARG0 (m0 / man))
+
+(s0 / sigh-02
+      :ARG1 (g0 / guitar)
+      :ARG0 (m0 / man))
+
+(f0 / fight-01
+      :ARG0 (b0 / boy
+            :quant (c0 / costume
+                  :mod (k0 / karate))
+            :quant 3 ))
+
+(f0 / fight-01
+      :ARG0 (b0 / boy
+            :quant (c0 / costume
+                  :mod (k0 / karate))
+            :quant 3 ))
+
+(c0 / cut-01
+      :ARG1 (b0 / broccoli)
+      :ARG0 (w0 / woman))
+
+(d0 / dig-01
+      :ARG1 (e0 / earth)
+      :ARG0 (b0 / badger)
+      :manner (s0 / shrewdly))
+
+(f0 / feed-01
+      :ARG1 (m0 / mouse)
+      :ARG0 (s0 / snake
+            :polarity - )
+      :ARG2 (m1 / man))
+
+(s0 / separate-01
+      :ARG1 (i0 / ingredient
+            :quant (s1 / some))
+      :ARG0 (p0 / person)
+      :location (b0 / bowl))
+
+(p0 / play-11
+      :ARG1 (g0 / guitar)
+      :ARG0 (m0 / man))
+
+(d0 / drink-01
+      :ARG1 (m0 / milk
+            :quant (s0 / some))
+      :ARG0 (c0 / cat))
+
+(e0 / empty-01
+      :ARG1 (c0 / container
+            :ARG1-of (m1 / make-01
+                  :ARG2 (p0 / plastic)))
+      :ARG0 (m0 / man))
+
+(h0 / hold-01
+      :ARG1 (f0 / frog)
+      :ARG0 (m0 / man)
+      :manner (c0 / care-04
+            :polarity - ))
+
+(p0 / play-11
+      :ARG1 (f0 / flute)
+      :ARG0 (g0 / girl))
+
+(p0 / play-11
+      :ARG1 (f0 / flute)
+      :ARG0 (m0 / man))
+
+(p0 / play-11
+      :ARG1 (f0 / flute)
+      :ARG0 (m0 / man)
+      :polarity - )
+
+(c0 / comb
+      :ARG1 (h0 / hair)
+      :ARG0 (g0 / girl
+            :part h0
+            :mod (l0 / little))
+      :location (t0 / tail
+            :mod (p0 / pony)))
+
+(w0 / wrap-01
+      :ARG1 (h0 / hair)
+      :ARG0 (g0 / girl
+            :part h0
+            :mod (l0 / little)))
+
+(t0 / talk-01
+      :ARG0 (m0 / microphone)
+      :ARG0 (p0 / parrot-01))
+
+(e0 / eat-01
+      :ARG1 (f0 / food
+            :location (t0 / tray))
+      :ARG0 (k0 / kitten))
+
+(e0 / eat-01
+      :ARG0 (k0 / kitten
+            :quant (f0 / few)))
+
+(a0 / and
+      :op1 (p0 / play-01
+            :ARG1 (g0 / guitar)
+            :ARG0 (p1 / person))
+      :op2 (s0 / sing-01
+            :ARG0 p1))
+
+(r0 / ride-01
+      :ARG1 (h0 / horse)
+      :ARG0 (m0 / man))
+
+(t0 / throw-01
+      :ARG1 (b0 / bike)
+      :ARG0 (m0 / man
+            :ARG0-of (s0 / some)
+            :ARG0-of (e0 / endanger-01)
+            :ARG0-of (h0 / have-03
+                  :ARG1 (k0 / knife)))
+      :ARG2 (t1 / tree))
+
+(c0 / cut-01
+      :ARG1 (p0 / piece)
+      :ARG0 (w0 / woman)
+      :ARG1 (m0 / meat
+            :mod (s0 / some)))
+
+(g0 / grant-01
+      :ARG1 (i0 / interview-01)
+      :ARG2 (m0 / man))
+
+(d0 / drive-02
+      :ARG1 (c0 / car
+            :poss (m0 / man)
+            :ARG1-of (w0 / white-03))
+      :direction (a0 / away))
+
+(p0 / play-01
+      :ARG0 (b0 / boy
+            :mod (s0 / small))
+      :ARG2 (d0 / dog))
+
+(p0 / photograph-01
+      :ARG1 (p1 / picture
+            :topic (l0 / lake))
+      :ARG0 (m0 / man))
+
+(u0 / use-01
+      :ARG1 (m0 / machine
+            :ARG1-of (m1 / make-01
+                  :purpose (s0 / sewing)))
+      :ARG0 (w0 / woman))
+
+(k0 / knock-01
+      :ARG1 (m0 / man)
+      :mod (o0 / off
+            :op1 (h0 / horse))
+      :polarity - )
+
+(r0 / rest-01
+      :ARG1 (f0 / finger)
+      :ARG0 (w0 / woman
+            :part f0)
+      :ARG2 (t0 / table))
+
+(r0 / rest-01
+      :ARG1 (f0 / finger)
+      :ARG0 (w0 / woman
+            :part f0)
+      :ARG2 (t0 / table))
+
+(p0 / play-01
+      :ARG0 (c0 / cat)
+      :ARG2 (w0 / watermelon))
+
+(p0 / play-01
+      :ARG0 (c0 / cat)
+      :ARG2 (w0 / watermelon))
+
+(s0 / set-on-fire-09
+      :ARG1 (c0 / camera)
+      :ARG0 (p0 / person
+            :mod (t0 / tall)))
+
+(s0 / set-on-fire-09
+      :ARG1 (c0 / camera)
+      :ARG0 (p0 / person))
+
+(s0 / set-on-fire-09
+      :ARG1 (c0 / camera)
+      :ARG0 (p0 / person))
+
+(s0 / slice-01
+      :ARG1 (c0 / carrot)
+      :ARG0 (p0 / person)
+      :ARG2 (p1 / piece))
+
+(s0 / slice-01
+      :ARG1 (p0 / potato)
+      :ARG0 (m0 / man))
+
+(h0 / hold-01
+      :ARG1 (w0 / woman)
+      :ARG1 (t0 / tomato
+            :mod (w1 / whole)))
+
+(c0 / cut-02
+      :ARG1 (t0 / tomato)
+      :ARG0 (n0 / no-one))
+
+(c0 / cut-01
+      :ARG1 (t0 / tomato)
+      :ARG0 (s0 / someone))
+
+(s0 / slice-01
+      :ARG1 (o0 / onion)
+      :ARG0 (w0 / woman)
+      :instrument (k0 / knife))
+
+(r0 / run-02
+      :ARG0 (m0 / man))
+
+(s0 / sing-01
+      :ARG0 (g0 / group
+            :consist-of (p0 / person)))
+
+(p0 / play-11
+      :ARG1 (t0 / trumpet)
+      :ARG0 (m0 / man))
+
+(a0 / and
+      :op1 (r0 / ride-01
+            :ARG1 (r1 / raft)
+            :ARG0 (p1 / person))
+      :op2 (p0 / paddle-01
+            :ARG1 r1
+            :ARG0 p1))
+
+(f0 / float-01
+      :ARG1 (p0 / person
+            :quant 4 )
+      :ARG2 (r0 / raft))
+
+(e0 / eat-01
+      :ARG1 (c0 / cat)
+      :ARG1 (c1 / corn
+            :quant (s0 / some)))
+
+(s0 / slice-01
+      :ARG1 (t0 / tomato)
+      :ARG0 (n0 / nobody))
+
+(p0 / play-11
+      :ARG1 (g0 / guitar)
+      :ARG0 (s0 / someone))
+
+(d0 / dance-01
+      :ARG0 (w0 / woman
+            :quant (f0 / few)))
+
+(b0 / bark-01
+      :ARG0 (m0 / monkey)
+      :mod (d0 / dog
+            :mod (b1 / bull)))
+
+(b0 / bark-01
+      :ARG1 (m0 / monkey)
+      :ARG0 (d0 / dog
+            :mod (b1 / bull)))
+
+(s0 / slice-01
+      :ARG1 (m0 / meat)
+      :ARG0 (l0 / lady))
+
+(c0 / climb-01
+      :ARG1 (f0 / ferret)
+      :direction (d0 / down)
+      :direction (s0 / shelf))
+
+(g0 / get-05
+      :ARG1 (m0 / man)
+      :ARG2 (c0 / car))
+
+(g0 / get-05
+      :ARG1 (m0 / man)
+      :ARG2 (c0 / car))
+
+(s0 / slice-01
+      :ARG1 (c0 / clove
+            :consist-of (g0 / garlic))
+      :ARG0 (p0 / person)
+      :ARG2 (p1 / piece)
+      :polarity - )
+
+(b0 / boil-01
+      :ARG1 (n0 / noodle)
+      :ARG0 (w0 / woman)
+      :ARG2 (w1 / water))
+
+(k0 / kick-01
+      :ARG1 (m0 / man
+            :mod (a0 / another)
+            :ARG0-of (w0 / wear-01
+                  :ARG1 (g0 / glove
+                        :consist-of (b0 / boxing)
+                        :ARG1-of (p2 / protect-01))))
+      :ARG0 (p0 / person
+            :ARG0-of (p1 / practice-01
+                  :ARG1 (s0 / show
+                        :name (n0 / name
+                              :op1 "karate" )))))
+
+(p0 / person
+      :polarity - 
+      :ARG0-of (k0 / kick-01
+            :ARG1 (m0 / man
+                  :mod (a0 / another)
+                  :ARG0-of (w0 / wear-01
+                        :ARG1 (g0 / glove
+                              :mod (b0 / boxing)
+                              :ARG1-of (p2 / protect-01)))))
+      :ARG0-of (p1 / practice-01
+            :ARG1 (k1 / karate)))
+
+(k0 / kick-01
+      :ARG1 (m0 / man
+            :mod (a0 / another)
+            :ARG0-of (w0 / wear-01
+                  :ARG1 (g0 / glove
+                        :consist-of (b0 / boxing)
+                        :ARG1-of (p2 / protect-01))))
+      :ARG0 (p0 / person
+            :ARG0-of (p1 / practice-01
+                  :ARG1 (s0 / show
+                        :name (n0 / name
+                              :op1 "karate" )))))
+
+(a0 / and
+      :op1 (s0 / sing-01
+            :ARG1 (s1 / song)
+            :ARG0 (w0 / woman
+                  :ARG1-of (s2 / seat-01)))
+      :op2 (p0 / play-11
+            :ARG0 w0
+            :ARG1 (g0 / guitar)))
+
+(r0 / roll-01
+      :ARG1 (w0 / woman
+            :ARG1-of (l0 / lie-07
+                  :ARG2 (s0 / someone))
+            :ARG0-of (r1 / read-01
+                  :ARG1 (b1 / book)))
+      :location (o0 / over
+            :op1 (b0 / blanket)))
+
+(p0 / play-11
+      :ARG1 (m0 / man)
+      :ARG2 (g0 / guitar
+            :mod (a0 / acoustic)))
+
+(e0 / eat-01
+      :ARG0 (a0 / and
+            :op1 (m0 / man)
+            :op2 (w0 / woman))
+      :ARG0-of (h0 / happy-01))
+
+(p0 / pour-01
+      :ARG1 (o0 / oil
+            :ARG0-of (c0 / cook-01))
+      :ARG0 (p1 / person)
+      :ARG3 (p2 / pot))
+
+(a0 / and
+      :op1 (c0 / chew-01
+            :ARG0 (p0 / pig
+                  :mod (s0 / small)
+                  :mod (g0 / guinea)))
+      :op2 (e0 / eat-01
+            :ARG0 p0
+            :ARG1 (p1 / piece
+                  :part-of (c1 / carrot)
+                  :location (f0 / floor))))
+
+(r0 / reproduce-01
+      :ARG1 (c0 / carrot)
+      :ARG0 (p0 / pig
+            :mod (g0 / guinea)))
+
+(t0 / take-off-07
+      :ARG1 (a0 / airplane
+            :ARG1-of (a1 / amaze-01)))
+
+(p0 / prepare-01
+      :ARG1 (e0 / egg)
+      :ARG0 (w0 / woman)
+      :location (s0 / skillet))
+
+(p0 / pontificate-01
+      :ARG1 (e0 / eyeshadow)
+      :ARG0 (w0 / woman))
+
+(p0 / practice-01
+      :ARG1 (p1 / piano)
+      :ARG0 (g0 / girl))
+
+(p0 / play-11
+      :ARG0 (f0 / flute)
+      :ARG0 (w0 / woman)
+      :polarity - )
+
+(l0 / lift-01
+      :ARG1 (w0 / weight)
+      :ARG0 (m0 / man))
+
+(p0 / put-on-08
+      :ARG1 (m0 / makeup)
+      :ARG0 (w0 / woman
+            :polarity - ))
+
+(s0 / slice-01
+      :ARG1 (o0 / onion)
+      :ARG0 (w0 / woman))
+
+(b0 / be-located-at-91
+      :ARG1 (m0 / man
+            :quant 2 )
+      :ARG2 (o0 / outside
+            :op1 (p0 / pen
+                  :mod (c0 / cattle))))
+
+(k0 / knock-01
+      :ARG1 (p0 / potato)
+      :ARG0 (b0 / ball
+            :mod (b1 / big)
+            :ARG1-of (g0 / green-02)))
+
+(h0 / hit-01
+      :ARG1 (p0 / potato)
+      :ARG0 (b0 / ball
+            :mod (l0 / large)
+            :ARG1-of (c0 / color
+                  :ARG1-of (g0 / green-02))))
+
+(h0 / hit-01
+      :ARG1 (p0 / potato)
+      :ARG0 (b0 / ball
+            :mod (l0 / large)
+            :ARG1-of (g0 / green-02)))
+
+(m0 / miss-01
+      :ARG1 (p0 / potato)
+      :ARG0 (b0 / ball
+            :mod (b1 / big)
+            :ARG1-of (g0 / green-02)))
+
+(l0 / lay-01
+      :ARG1 (g0 / guitar)
+      :ARG0 (m0 / man)
+      :ARG2 (d0 / down))
+
+(l0 / lay-01
+      :ARG1 (g0 / guitar)
+      :ARG0 (m0 / man)
+      :ARG2 (d0 / down))
+
+(p0 / play-01
+      :ARG0 (p1 / puppy)
+      :ARG2 (c0 / container
+            :consist-of (p2 / plastic)))
+
+(a0 / and
+      :op1 (d0 / drive-01
+            :ARG1 (c0 / car)
+            :ARG0 (w0 / woman
+                  :op1-of (b0 / beside))
+            :polarity - )
+      :op2 (t0 / talk-01
+            :ARG0 w0
+            :ARG2 (m0 / man
+                  :location b0
+                  :ARG1-of (s0 / seat-01
+                        :ARG2 b0))))
+
+(a0 / and
+      :op1 (s0 / sit-01
+            :ARG1 (m0 / man)
+            :ARG2 (f0 / floor
+                  :location (r0 / room)))
+      :op2 (s1 / strum
+            :ARG0 m0
+            :ARG1 (g0 / guitar)))
+
+(a0 / apply-02
+      :ARG1 (c0 / cosmetic)
+      :ARG0 (w0 / woman
+            :part e0)
+      :ARG2 (e0 / eyelid))
+
+(a0 / apply-02
+      :ARG1 (c0 / cosmetic)
+      :ARG0 (w0 / woman
+            :part e0)
+      :ARG2 (e0 / eyelid))
+
+(p0 / practice-01
+      :ARG1 (a0 / art
+            :mod (m1 / martial))
+      :ARG0 (m0 / monkey))
+
+(p0 / play-11
+      :ARG1 (i0 / instrument
+            :mod (w0 / wind))
+      :ARG0 (b0 / boy
+            :mod (y0 / young)))
+
+(h0 / hike-02
+      :ARG1 (m0 / man)
+      :polarity - 
+      :location (w0 / wood))
+
+(w0 / walk-01
+      :ARG0 (b0 / boy)
+      :ARG2 (a0 / across
+            :op1 (b1 / bridge)))
+
+(p0 / put-01
+      :ARG1 (e0 / egg
+            :quant 2 )
+      :ARG0 (w0 / woman)
+      :ARG2 (p1 / pot
+            :consist-of (w1 / water)))
+
+(p0 / play-11
+      :ARG1 (g0 / guitar)
+      :ARG0 (n0 / nobody))
+
+(a0 / and
+      :op1 (r0 / run-02
+            :ARG0 (c0 / child)
+            :direction (o1 / ocean))
+      :op2 (o0 / out-06
+            :ARG1 c0
+            :ARG2 o1))
+
+(c0 / coat-01
+      :ARG1 (c1 / chop
+            :mod (p0 / pork))
+      :ARG0 (w0 / woman))
+
+(c0 / coat-01
+      :ARG1 (c1 / chop
+            :mod (p1 / pork))
+      :ARG0 (p0 / person
+            :ARG0-of (c2 / cook-01)))
+
+(c0 / cook-01
+      :ARG1 (c1 / chop
+            :ARG1-of (w1 / wrap-01)
+            :consist-of (p0 / pork))
+      :ARG0 (w0 / woman))
+
+(a0 / and
+      :op1 (s0 / stand-01
+            :ARG1 (m0 / man)
+            :ARG2 (t0 / top
+                  :mod (r0 / roof)))
+      :op2 (p0 / play-11
+            :ARG0 m0
+            :ARG2 (v0 / violin)))
+
+(c0 / clean-01
+      :ARG1 (w0 / woman)
+      :ARG1 (s0 / shrimp))
+
+(r0 / ride-01
+      :ARG1 (s0 / scooter)
+      :ARG0 (w0 / woman)
+      :purpose (w1 / water))
+
+(e0 / eat-01
+      :ARG1 (b0 / bamboo
+            :quant (s0 / some))
+      :ARG0 (b1 / bear
+            :mod (p0 / panda)))
+
+(r0 / rain-01
+      :ARG1 (e0 / egg)
+      :ARG0 (w0 / woman)
+      :polarity - 
+      :location (b0 / bowl))
+
+(c0 / catch-03
+      :ARG1 (m0 / man)
+      :ARG0 (f0 / fish
+            :mod (b0 / big)))
+
+(b0 / butter
+      :ARG1 (t0 / tray)
+      :ARG0 (p0 / person))
+
+(c0 / chew-01
+      :ARG1 (l0 / log)
+      :ARG0 (m0 / man)
+      :instrument (a0 / axe))
+
+(l0 / look-01
+      :ARG1 (w0 / window
+            :direction (p0 / perch
+                  :location (t0 / table)))
+      :ARG0 (c0 / cat))
+
+(w0 / walk-01
+      :ARG0 (d0 / dog)
+      :ARG2 (b0 / baby))
+
+(c0 / cook-01
+      :ARG1 (g0 / garlic)
+      :ARG0 (w0 / woman))
+
+(d0 / dance-01
+      :ARG0 (w0 / woman))
+
+(c0 / cook-01
+      :ARG1 (o0 / okra)
+      :location (p0 / pan))
+
+(p0 / practice-01
+      :ARG1 (d0 / drum)
+      :ARG0 (m0 / man))
+
+(d0 / do-02
+      :ARG1 (m0 / man)
+      :ARG1 (e0 / exercise))
+
+(p0 / put-01
+      :ARG1 (m0 / meat)
+      :ARG0 (w0 / woman)
+      :ARG2 (p1 / pan)
+      :polarity - )
+
+(d0 / drop-01
+      :ARG1 (m0 / meat)
+      :ARG4 (p0 / pan))
+
+(f0 / fill-01
+      :ARG1 (p0 / pitcher)
+      :ARG0 (b0 / boy)
+      :ARG2 (w0 / water))
+
+(f0 / fill-01
+      :ARG1 (p0 / pitcher)
+      :ARG0 (b0 / boy)
+      :ARG2 (w0 / water))
+
+(w0 / walk-01
+      :ARG0 (m0 / man)
+      :ARG2 (r0 / rain-01))
+
+(r0 / run-02
+      :ARG0 (d0 / down
+            :op1 (t0 / track))
+      :ARG0 (p0 / person
+            :ARG0-of (r1 / race-02
+                  :polarity - )))
+
+(m0 / miss-01
+      :ARG1 (c0 / car
+            :mod (t1 / toy))
+      :ARG0 (t0 / train))
+
+(s0 / slice-01
+      :ARG1 (p0 / person)
+      :ARG1 (o0 / onion))
+
+(s0 / swim-01
+      :ARG0 (l0 / lake)
+      :ARG0 (p0 / person
+            :mod (s1 / some)
+            :ARG0-of (r0 / race-02)))
+
+(p0 / play-11
+      :ARG1 (g0 / guitar)
+      :ARG0 (w0 / woman))
+
+(s0 / scrub-01
+      :ARG1 (z0 / zucchini)
+      :ARG0 (p0 / person))
+
+(s0 / slice-01
+      :ARG1 (p0 / pepper
+            :ARG1-of (g0 / green-02))
+      :ARG0 (w0 / woman))
+
+(w0 / walk-01
+      :ARG0 (m0 / man)
+      :direction (d0 / down
+            :op1 (r0 / road)))
+
+(w0 / walk-01
+      :ARG0 (m0 / man)
+      :direction (d0 / down
+            :op1 (r0 / road)))
+
+(w0 / walk-01
+      :ARG0 (m0 / man)
+      :ARG2 (r0 / road)
+      :direction (d0 / down)
+      :manner (l0 / lazily))
+
+(d0 / dance-01
+      :ARG0 (m0 / man)
+      :mod (u0 / upside
+            :mod (d1 / down))
+      :location (c0 / ceiling))
+
+(e0 / exercise-02
+      :ARG0 (m0 / man))
+
+(p0 / play-11
+      :ARG1 (g0 / guitar)
+      :ARG0 (m0 / man))
+
+(a0 / and
+      :op1 (s0 / sing-01
+            :ARG0 (m0 / man))
+      :op2 (p0 / play-11
+            :ARG0 m0
+            :ARG2 (g0 / guitar)))
+
+(d0 / dance-01
+      :ARG0 (b0 / boy)
+      :location (i0 / in-front-of
+            :op1 (p0 / person
+                  :quant (s0 / some))))
+
+(c0 / check-01
+      :ARG1 (c1 / calendar)
+      :ARG0 (b0 / boy)
+      :polarity - )
+
+(r0 / retire-01
+      :ARG1 (p0 / potato)
+      :ARG0 (w0 / woman))
+
+(p0 / play-11
+      :ARG0 (p1 / piano)
+      :ARG0 (b0 / boy))
+
+(c0 / climb-01
+      :ARG1 (r0 / rope)
+      :ARG0 (m0 / man))
+
+(c0 / climb-01
+      :ARG1 (r0 / rope)
+      :ARG0 (m0 / man)
+      :direction (u0 / up))
+
+(c0 / climb-01
+      :ARG1 (r0 / rope)
+      :ARG0 (m0 / man)
+      :direction (u0 / up))
+
+(p0 / pick-up-04
+      :ARG1 (k0 / kangaroo)
+      :ARG0 (w0 / woman))
+
+(b0 / break-01
+      :ARG1 (b1 / board
+            :mod - 
+            :mod (w0 / wooden))
+      :ARG0 (m0 / man
+            :part h0)
+      :ARG2 (h0 / hand))
+
+(r0 / run-02
+      :ARG0 (d0 / dog)
+      :location (r1 / road))
+
+(r0 / run-02
+      :ARG0 (d0 / dog)
+      :location (d1 / drug-01)
+      :location (r1 / road))
+
+(t0 / throw-01
+      :ARG1 (k0 / knife)
+      :ARG0 (m0 / man)
+      :ARG2 (t1 / tree))
+
+(t0 / throw-01
+      :ARG1 (k0 / knife)
+      :ARG0 (m0 / man)
+      :ARG2 (t1 / tree))
+
+(r0 / ride-01
+      :ARG1 (h0 / horse)
+      :ARG0 (m0 / man))
+
+(d0 / draw-02
+      :ARG1 (p0 / picture)
+      :ARG0 (m0 / man))
+
+(e0 / eat-01
+      :ARG1 (p0 / pizza)
+      :ARG0 (m0 / man))
+
+(j0 / jump-on-bandwagon-09
+      :ARG1 (t0 / trampoline)
+      :ARG0 (d0 / dog))
+
+(h0 / have-04
+      :ARG1 (f0 / flip-01
+            :ARG0 m0
+            :ARG1 (b0 / back)
+            :location (t0 / trampoline))
+      :ARG0 (m0 / man))
+
+(p0 / play-11
+      :ARG1 (m0 / man
+            :polarity - )
+      :ARG2 (f0 / flute
+            :mod (w0 / wooden)))
+
+(p0 / play-11
+      :ARG0 (p1 / piano)
+      :ARG0 (m0 / man))
+
+(a0 / address-02
+      :ARG1 (t0 / thing
+            :ARG1-of (d0 / draw-02
+                  :location (b0 / board)))
+      :ARG0 (w0 / woman))
+
+(e0 / eat-01
+      :ARG1 (d0 / doll)
+      :ARG0 (d1 / dog))
+
+(p0 / play-01
+      :ARG0 (d0 / dog)
+      :ARG2 (t0 / toy))
+
+(p0 / pray-01
+      :ARG0 (m0 / man)
+      :manner (s0 / sincere))
+
+(w0 / work-07
+      :ARG1 (o0 / octopus)
+      :ARG0 (w1 / woman))
+
+(d0 / draw-02
+      :ARG1 (m0 / man)
+      :polarity - )
+
+(d0 / draw-02
+      :ARG1 (m0 / man)
+      :polarity - )
+
+(e0 / eat-01
+      :ARG1 (f0 / fruit)
+      :ARG0 (m0 / man))
+
+(c0 / cut-01
+      :ARG1 (p0 / paper)
+      :ARG0 (m0 / man))
+
+(p0 / play-02
+      :ARG1 (p1 / piano)
+      :ARG0 (n0 / no-one))
+
+(c0 / compete-01
+      :ARG0 (m0 / man
+            :quant 2 )
+      :ARG2 (r0 / race-02
+            :ARG1-of (r1 / roll-01
+                  :ARG1 (t0 / tire))))
+
+(t0 / talk-01
+      :ARG0 (w0 / woman
+            :mod (o0 / old)
+            :quant (s0 / some)))
+
+(m0 / mix-01
+      :ARG1 (t0 / thing
+            :ARG2-of (c0 / contain-01
+                  :ARG0 (b0 / bowl)))
+      :ARG0 (m1 / man))
+
+(h0 / help-01
+      :ARG1 (d0 / doctor
+            :ARG1-of (h1 / have-rel-role-91
+                  :ARG0 p0
+                  :ARG2 (p1 / patient)))
+      :ARG2 (p0 / person))
+
+(p0 / play-11
+      :ARG1 (g0 / guitar)
+      :ARG0 (m0 / man))
+
+(d0 / drive-01
+      :ARG1 (c0 / car)
+      :ARG0 (m0 / man))
+
+(p0 / play-11
+      :ARG1 (h0 / harp)
+      :ARG0 (m0 / man))
+
+(m0 / man
+      :ARG0-of (c0 / cut-02
+            :ARG1 (s0 / sword)
+            :ARG1 (r0 / rope))
+      :polarity - )
+
+(c0 / cut-01
+      :ARG1 (p0 / potato)
+      :ARG0 (w0 / woman))
+
+(p0 / play-01
+      :ARG1 (s0 / soccer)
+      :ARG0 (g0 / group
+            :consist-of (b1 / boy))
+      :location (b0 / beach))
+
+(a0 / apply-02
+      :ARG1 (s0 / silencer)
+      :ARG0 (m0 / man)
+      :ARG2 (g0 / gun))
+
+(p0 / play-01
+      :ARG1 (v0 / violin)
+      :ARG0 (g0 / girl
+            :polarity - )
+      :location (b0 / beach))
+
+(c0 / cook-01
+      :ARG1 (s0 / snake)
+      :ARG0 (m0 / man)
+      :polarity - )
+
+(p0 / play-11
+      :ARG1 (g0 / guitar)
+      :ARG0 (b0 / boy))
+
+(e0 / eat-01
+      :ARG1 (d0 / dog)
+      :ARG0 (m0 / monkey)
+      :location (z0 / zoo))
+
+(e0 / eat-01
+      :ARG1 (d0 / dog)
+      :ARG0 (m0 / monkey)
+      :location (z0 / zoo))
+
+(c0 / cut-02
+      :ARG1 (p0 / person)
+      :ARG1 (g0 / ginger
+            :mod (s0 / some)))
+
+(s0 / slice-01
+      :ARG1 (o0 / onion)
+      :ARG0 (p0 / person))
+
+(c0 / cut-02
+      :ARG1 (p0 / potato)
+      :ARG0 (m0 / man)
+      :polarity - )
+
+(o0 / open-01
+      :ARG1 (b0 / box)
+      :ARG0 (m0 / man)
+      :ARG3 (k0 / knife)
+      :polarity - )
+
+(p0 / play-02
+      :ARG1 (i0 / instrument
+            :quant (s0 / some))
+      :ARG0 (b0 / band))
+
+(p0 / play-02
+      :ARG1 (i0 / instrument
+            :quant (s0 / some))
+      :ARG0 (b0 / band))
+
+(e0 / exercise-02
+      :ARG0 (w0 / woman))
+
+(d0 / do-02
+      :ARG1 (g0 / gym)
+      :ARG0 (m0 / man)
+      :ARG1 (e0 / exercise-02))
+
+(a0 / and
+      :op1 (s0 / sing-01
+            :ARG0 (m0 / man))
+      :op2 (p0 / play-11
+            :ARG0 m0
+            :ARG2 (i0 / instrument
+                  :mod (m1 / music))))
+
+(t0 / talk-01
+      :ARG0 (p0 / person
+            :ARG1-of (r0 / recruit-01))
+      :ARG2 (p1 / person
+            :ARG0-of (h0 / have-org-role-91
+                  :ARG2 (o0 / officer))))
+
+(c0 / chew-01
+      :ARG1 (g0 / garlic)
+      :ARG0 (w0 / woman))
+
+(k0 / kill-01
+      :ARG1 (f0 / fish)
+      :ARG0 (w0 / woman)
+      :polarity - )
+
+(r0 / ride-01
+      :ARG1 (h0 / horse)
+      :ARG0 (w0 / woman))
+
+(a0 / and
+      :op1 (o0 / open-01
+            :ARG1 (d0 / drawer)
+            :ARG0 (c0 / cat))
+      :op2 (j0 / jump-03
+            :ARG0 d0
+            :ARG0 c0
+            :destination (i0 / inside)))
+
+(s0 / speak-01
+      :ARG0 (m0 / man)
+      :ARG3 (t0 / telephone))
+
+(c0 / cut-02
+      :ARG1 (o0 / onion)
+      :ARG0 (w0 / woman))
+
+(o0 / open-01
+      :ARG1 (d0 / door)
+      :ARG0 (m0 / man)
+      :polarity - )
+
+(c0 / cut-02
+      :ARG1 (o0 / onion)
+      :ARG0 (m0 / man))
+
+(p0 / play-11
+      :ARG0 (p1 / piano)
+      :ARG0 (m0 / man)
+      :polarity - )
+
+(p0 / prepare-02
+      :ARG1 (m0 / meal)
+      :ARG0 (c0 / chef))
+
+(f0 / fight-01
+      :ARG0 (p0 / person
+            :quant 2 
+            :ARG0-of (h0 / have-org-role-91
+                  :ARG2 (s0 / sumo)
+                  :ARG2 (w0 / wrestler))))
+
+(r0 / ride-01
+      :ARG1 (w0 / water)
+      :ARG0 (m0 / man)
+      :ARG1 (c0 / car-make
+            :name (n0 / name
+                  :op1 "toy" )))
+
+(b0 / butter
+      :domain (b1 / bread
+            :part (p0 / piece))
+      :domain (w0 / woman))
+
+(p0 / put-01
+      :ARG1 (P0 / Pasta)
+      :ARG0 (w0 / woman)
+      :ARG2 (d0 / dish))
+
+(p0 / put-01
+      :ARG1 (p1 / pasta)
+      :ARG0 (w0 / woman)
+      :ARG2 (d0 / dish)
+      :polarity - )
+
+(p0 / play-11
+      :ARG1 (f0 / flute)
+      :ARG0 (g0 / girl))
+
+(p0 / play-11
+      :ARG1 (f0 / flute)
+      :ARG0 (m0 / man))
+
+(m0 / man
+      :ARG0-of (p0 / play-01
+            :ARG1 (f0 / flute))
+      :polarity - )
+
+(s0 / slice-01
+      :ARG1 (o0 / octopus)
+      :ARG0 (w0 / woman))
+
+(p0 / play-11
+      :ARG0 (f0 / flute)
+      :ARG0 (m0 / man)
+      :polarity - )
+
+(p0 / play-11
+      :ARG1 (f0 / flute)
+      :ARG0 (m0 / man))
+
+(c0 / cut-01
+      :ARG1 (f0 / fruit)
+      :ARG0 (w0 / woman))
+
+(m0 / march-01
+      :ARG0 (g0 / group
+            :consist-of (p0 / person)))
+
+(e0 / eat-01
+      :ARG1 (c0 / cupcake)
+      :ARG0 (g0 / girl))
+
+(m0 / make-01
+      :ARG1 (b0 / bed)
+      :ARG0 (p0 / person))
+
+(s0 / split-01
+      :ARG1 (c0 / cheese)
+      :ARG0 (m0 / man)
+      :ARG2 (p0 / pizza))
+
+(f0 / fire-01
+      :ARG1 (s0 / shotgun)
+      :ARG0 (m0 / man))
+
+(p0 / play-01
+      :ARG0 (b0 / baby)
+      :ARG2 (d0 / doll))
+
+(p0 / play-01
+      :ARG0 (t0 / tiger
+            :mod (b1 / baby))
+      :ARG2 (b0 / ball))
+
+(w0 / wipe-01
+      :ARG1 (p0 / potato)
+      :ARG0 (p1 / person))
+
+(d0 / drive-01
+      :ARG1 (b0 / boat)
+      :ARG0 (m0 / man))
+
+(d0 / drive-01
+      :ARG1 (r0 / road)
+      :ARG0 (a0 / and
+            :op1 (m0 / man)
+            :op2 (w0 / woman))
+      :direction (d1 / down)
+      :instrument (v0 / vehicle
+            :mod (a1 / air
+                  :ARG1-of (o0 / open-06))))
+
+(c0 / coat-01
+      :ARG1 (o0 / oil)
+      :ARG0 (c1 / chef))
+
+(r0 / ride-01
+      :ARG1 (h0 / horse)
+      :ARG0 (p0 / person))
+
+(s0 / slice-01
+      :ARG1 (p0 / potato)
+      :ARG0 (w0 / woman))
+
+(d0 / do-02
+      :ARG1 (e0 / exercise-02)
+      :ARG0 (m0 / man))
+
+(f0 / fight-01
+      :ARG0 (m0 / man
+            :quant 2 ))
+
+(p0 / pour-01
+      :ARG1 (i0 / ingredient)
+      :ARG0 (s0 / someone)
+      :ARG3 (p1 / pot))
+
+(c0 / chase-01
+      :ARG1 (d0 / dirt)
+      :ARG0 (d1 / dog)
+      :ARG1 (b0 / ball))
+
+(b0 / be-located-at-91
+      :ARG1 (d0 / dog
+            :ARG0-of (h0 / have-03
+                  :ARG1 (f0 / fur
+                        :consist-of (g0 / golden))))
+      :ARG2 (w0 / water))
+
+(a0 / and
+      :op1 (h0 / hold-01
+            :ARG1 (g0 / girl
+                  :mod (y0 / young)
+                  :ARG1-of (s2 / sign
+                        :ARG1-of (p0 / pink-04)))
+            :ARG1 (s0 / shirt
+                  :mod (b0 / blue)))
+      :op2 (w0 / walk-01
+            :ARG2 (s1 / sidewalk)))
+
+(s0 / splash
+      :location (w0 / water)
+      :domain (c0 / child
+            :mod (y0 / young)))
+
+(a0 / and
+      :op1 (b0 / be-located-at-91
+            :ARG1 (a1 / and
+                  :op1 (m1 / man)
+                  :op2 (w0 / woman)
+                  :ARG0-of (w1 / wear-01
+                        :ARG1 (s0 / shirt
+                              :ARG1-of (c0 / color-01
+                                    :ARG1-of (d0 / dark-02)))))
+            :ARG2 (r0 / room
+                  :mod (b3 / beige)))
+      :op2 (b1 / be-located-at-91
+            :ARG1 (m0 / monitor)
+            :ARG2 (b2 / background)))
+
+(s0 / sit-01
+      :ARG1 (w0 / woman
+            :ARG0-of (w1 / wear-01
+                  :ARG1 (j0 / jean)))
+      :ARG2 (s1 / saddle
+            :part-of (h0 / horse)))
+
+(d0 / drop-01
+      :ARG1 (b0 / baseball)
+      :ARG0 (d1 / dog
+            :ARG1-of (b1 / black-05)
+            :ARG1-of (w0 / white-02))
+      :ARG3 (m0 / mouth
+            :poss d1))
+
+(j0 / jump-03
+      :ARG0 (b0 / boy
+            :ARG0-of (w0 / wear-01
+                  :ARG1 (s0 / short-07
+                        :ARG1-of (r0 / red-02))))
+      :destination (p0 / pool
+            :location-of (p1 / paddle-01)))
+
+(a0 / and
+      :op1 (s0 / stand-01
+            :ARG1 (n0 / nobody)
+            :ARG2 (o0 / ocean))
+      :op2 (w0 / watch-01
+            :ARG0 n0
+            :ARG1 (s1 / sunset)))
+
+(a0 / and
+      :op1 (s0 / sit-down-02
+            :ARG1 (p0 / person
+                  :ARG0-of (d0 / drive-01
+                        :ARG1 (c0 / car
+                              :mod (r0 / race)))))
+      :op2 (k0 / kneel-01
+            :ARG0 p0
+            :polarity - ))
+
+(w0 / wear-01
+      :ARG1 (h0 / helmet
+            :mod (c0 / colorful))
+      :ARG0 (p0 / person
+            :location (j0 / jacket
+                  :mod (b0 / blue))))
+
+(h0 / hold-01
+      :ARG1 (p0 / person
+            :ARG0-of (c0 / cycle-01))
+      :location (o0 / over
+            :op1 (h1 / head
+                  :part-of (g0 / group
+                        :consist-of (p1 / person
+                              :ARG0-of (h2 / have-03
+                                    :ARG1 (b0 / bike)))))))
+
+(s0 / stand-01
+      :ARG1 (m0 / man)
+      :ARG2 (n0 / near-02
+            :ARG2 (i0 / in-front-of
+                  :op1 (s1 / sunset))
+            :ARG2 (f0 / flag))
+      :ARG2 (b0 / boat))
+
+(b0 / be-located-at-91
+      :ARG1 (m0 / man)
+      :ARG2 (b1 / boat)
+      :ARG2 (i0 / in-front-of
+            :op1 (s0 / sunset)))
+
+(w0 / watch-01
+      :ARG1 (c0 / car
+            :ARG0-of (r0 / race-02)
+            :ARG0-of (l0 / leave-11
+                  :ARG1 (l1 / line
+                        :location-of (s0 / start-01)))
+            :quant 2 )
+      :ARG0 (c1 / crowd))
+
+(r0 / rest-01
+      :ARG1 (d0 / dog
+            :quant 2 )
+      :mod (t0 / together)
+      :location (g0 / grass))
+
+(r0 / run-02
+      :ARG0 (g0 / grass)
+      :ARG0 (d0 / dog
+            :ARG1-of (b0 / black-04)))
+
+(r0 / run-02
+      :ARG0 (g0 / grass)
+      :ARG0 (d0 / dog
+            :ARG1-of (b0 / black-04)))
+
+(r0 / run-02
+      :ARG0 (d0 / dog
+            :mod (y0 / yellow))
+      :location (d1 / day
+            :mod (s1 / sunny))
+      :prep-on (s0 / snow
+            :ARG1-of (w0 / white-03)))
+
+(r0 / run-02
+      :ARG0 (u0 / under
+            :op1 (d0 / desert)
+            :op1 (t0 / tree))
+      :ARG0 (b0 / boy
+            :mod (l0 / little)
+            :ARG0-of (w0 / wear-01
+                  :ARG1 (s0 / shirt
+                        :ARG1-of (p0 / pink-04)))))
+
+(n0 / near-02
+      :ARG1 (r0 / reindeer
+            :mod (b0 / brown))
+      :ARG1 (r1 / reindeer
+            :ARG1-of (w0 / wear-01
+                  :ARG1 (e0 / ear
+                        :part-of (d0 / dog)))
+            :ARG1-of (w1 / white-02)))
+
+(a0 / and
+      :op1 (l0 / lean-01
+            :ARG1 (w0 / woman
+                  :mod (c0 / costume
+                        :ARG1-of (r0 / red-02)))
+            :ARG2 (a1 / against
+                  :op1 (w1 / wall
+                        :mod (b0 / brick)))
+            :polarity - )
+      :op2 (p0 / play-11
+            :ARG0 w0
+            :ARG1 (i0 / instrument)
+            :polarity - ))
+
+(w0 / walk-01
+      :ARG0 (p0 / person)
+      :location (b0 / beside
+            :op1 (w1 / waterfall
+                  :ARG1-of (b1 / beautiful-02))
+            :op1 (r0 / road)))
+
+(r0 / ride-01
+      :ARG1 (p0 / pack
+            :consist-of (s0 / sheep
+                  :ARG1-of (w0 / white-02)))
+      :ARG0 (d0 / dog)
+      :location (f0 / farm
+            :mod (d1 / dusty)))
+
+(a0 / and
+      :op1 (w0 / wear-01
+            :ARG0 (b0 / boy
+                  :ARG0-of (l0 / laugh-01))
+            :ARG1 (t0 / tank
+                  :mod (y0 / yellow)))
+      :op2 (w1 / wear-01
+            :ARG1 (t1 / top)))
+
+(s0 / stand-01
+      :ARG1 (p0 / person)
+      :ARG2 (f0 / field
+            :mod (v0 / vast)
+            :mod (i0 / ice
+                  :mod (g0 / glacial))))
+
+(p0 / person
+      :polarity - 
+      :ARG0-of (g0 / guard-01
+            :ARG1 (g1 / goal))
+      :ARG0-of (p1 / play-01
+            :ARG1 (h0 / hockey))
+      :location (j0 / jersey
+            :ARG1-of (y0 / yellow)))
+
+(a0 / and
+      :op1 (p0 / park-01
+            :ARG1 (b0 / bicycle
+                  :mod (b1 / blue))
+            :ARG0 (w1 / woman))
+      :op2 (w0 / wear-01
+            :ARG0 w1
+            :ARG1 (h0 / helmet
+                  :quant (r0 / ride-01)
+                  :quant (l0 / lot))))
+
+(d0 / dance-01
+      :ARG0 (f0 / female
+            :mod (y0 / young)))
+
+(d0 / dance-01
+      :ARG0 (g0 / girl
+            :mod (y0 / young)))
+
+(l0 / land-01
+      :ARG1 (b0 / bee
+            :mod (s0 / small))
+      :location (b1 / bunch
+            :consist-of (f0 / flower
+                  :ARG1-of (y0 / yellow)))
+      :polarity - )
+
+(r0 / run-02
+      :ARG0 (d0 / dog
+            :mod (t0 / tan))
+      :location (b0 / brush))
+
+(l0 / leap-03
+      :ARG0 (o0 / over
+            :op1 (b0 / barrier))
+      :ARG0 (a0 / and
+            :op1 (h0 / horse
+                  :ARG1-of (r0 / ride-01
+                        :ARG0 p0))
+            :op2 (p0 / person)))
+
+(w0 / wear-01
+      :ARG1 (d0 / dress
+            :mod (f0 / fancy))
+      :ARG0 (g0 / girl
+            :age (t0 / temporal-quantity
+                  :quant 2 
+                  :unit (y0 / year)))
+      :location (e0 / event))
+
+(l0 / listen-01
+      :ARG0 (g0 / group
+            :consist-of (p1 / person
+                  :ARG0-of (s0 / study-01)
+                  :ARG0-of (w0 / wear-01
+                        :ARG1 (u0 / uniform))))
+      :location (i0 / in-front-of
+            :op1 (c0 / class))
+      :manner (p0 / patient-01))
+
+(c0 / climb-01
+      :ARG1 (s0 / step-01
+            :location (a0 / area
+                  :mod (g0 / grassy)))
+      :ARG0 (c1 / child
+            :mod (s1 / small))
+      :location (o0 / outdoors))
+
+(c0 / climb-01
+      :ARG1 (s0 / step-01
+            :location (a0 / area
+                  :mod (g0 / grassy)))
+      :ARG0 (c1 / child
+            :mod (s1 / small))
+      :location (o0 / outdoors))
+
+(m0 / make-01
+      :ARG1 (b0 / ball
+            :mod (s0 / snow))
+      :ARG0 (c0 / child))
+
+(s0 / sit-01
+      :ARG1 (p0 / person
+            :quant 3 )
+      :ARG2 (b0 / bench
+            :location (u0 / under
+                  :op1 (t0 / tree
+                        :mod (p1 / palm)
+                        :quant (s1 / some)))))
+
+(s0 / stand-01
+      :ARG1 (a0 / and
+            :op1 (d0 / dog
+                  :mod (b0 / big)
+                  :ARG1-of (b1 / brown))
+            :op2 (d1 / dog
+                  :mod (s2 / small)
+                  :ARG1-of (g0 / gray-02)))
+      :ARG2 (s1 / surface
+            :mod (r0 / rocky)))
+
+(w0 / walk-01
+      :ARG0 (b0 / boy
+            :quant 3 )
+      :location (a0 / along
+            :op1 (r0 / river)))
+
+(w0 / wear-01
+      :ARG1 (m0 / mask
+            :mod (e0 / elaborate)
+            :ARG1-of (b0 / black-04))
+      :ARG0 (m1 / man
+            :ARG1-of (d0 / dress-01
+                  :ARG2 (b1 / black-05))))
+
+(a0 / and
+      :op1 (p0 / push-01
+            :ARG1 (p1 / person
+                  :ARG1-of (h0 / have-rel-role-91
+                        :ARG0 p2
+                        :ARG2 (d0 / daughter)))
+            :ARG0 (p2 / person
+                  :ARG0-of (h1 / have-rel-role-91
+                        :ARG2 (f0 / father)))
+            :ARG2 (k0 / kart))
+      :op2 (w0 / watch-01
+            :ARG1 (g0 / girl
+                  :mod (a1 / another))))
+
+(r0 / run-02
+      :ARG0 (d0 / dog
+            :ARG0-of (b0 / brown))
+      :polarity - 
+      :path (t0 / through
+            :op1 (g0 / grass
+                  :mod (t1 / tall)
+                  :ARG1-of (g1 / green-02))))
+
+(a0 / and
+      :op1 (w0 / wear-01
+            :ARG1 (s0 / shirt
+                  :mod (b0 / blue)
+                  :ARG0-of (h0 / have-03
+                        :ARG1 (a2 / and
+                              :op1 (v0 / vest
+                                    :ARG1-of (w2 / white-03))
+                              :op2 (c0 / cap))))
+            :ARG0 (w1 / woman))
+      :op2 (a1 / and
+            :op1 (t0 / talk-01
+                  :ARG0 w1)
+            :op2 (m0 / march-01
+                  :ARG0 w1)))
+
+(j0 / jump-on-bandwagon-09
+      :ARG0 (s0 / somebody))
+
+(a0 / and
+      :op1 (s0 / smile-01
+            :ARG0 (g0 / girl
+                  :mod (l0 / little)
+                  :ARG0-of (h0 / have-03
+                        :ARG1 (h1 / hair
+                              :ARG1-of (c0 / cold-02)))))
+      :op2 (s1 / sit-01
+            :ARG1 g0
+            :ARG2 (s2 / swing))
+      :polarity - )
+
+(p0 / play-11
+      :ARG1 (g0 / guitar)
+      :ARG0 (m0 / man
+            :ARG0-of (h0 / have-03
+                  :ARG1 (h1 / hat
+                        :ARG1-of (w0 / white-03))))
+      :location (s0 / stage))
+
+(j0 / jump-03
+      :ARG0 (m0 / man
+            :ARG0-of (w0 / wear-01
+                  :ARG1 (u0 / uniform
+                        :ARG1-of (r1 / red-02))))
+      :location (r0 / race
+            :mod (d0 / dirt)))
+
+(t0 / tackle-01
+      :ARG1 (p0 / person
+            :ARG1-of (o0 / oppose-01
+                  :ARG1 p1))
+      :ARG0 (p1 / person
+            :ARG0-of (p2 / play-01
+                  :ARG1 (s0 / soccer))))
+
+(l0 / lie-07
+      :ARG1 (d0 / dog
+            :ARG1-of (w0 / white-02))
+      :ARG2 (l1 / leave
+            :ARG1-of (f0 / fall-01)))
+
+(s0 / stand-01
+      :ARG1 (c0 / child
+            :ARG0-of (c1 / clothe-01
+                  :ARG2 (c2 / color-01
+                        :ARG1-of (l0 / light-06)))
+            :poss-of (a0 / arm))
+      :manner (e0 / extend-01
+            :ARG1 a0
+            :ARG4 (o0 / outward)))
+
+(p0 / play-01
+      :ARG0 (a0 / and
+            :op1 (b0 / boy)
+            :op2 (g1 / girl))
+      :location (g0 / gym
+            :location (o0 / outdoor)))
+
+(a0 / and
+      :op1 (d0 / drive-01
+            :ARG0 (p0 / person
+                  :ARG0-of (h0 / have-03
+                        :ARG1 (a1 / and
+                              :op2 (p2 / pant
+                                    :ARG1-of (b1 / black-04))
+                              :op3 (h1 / helmet
+                                    :ARG1-of (w1 / white-03))))
+                  :ARG0-of (d2 / drink-01
+                        :ARG1 (j0 / jacket
+                              :mod (b0 / blue))))
+            :location (d1 / dirt))
+      :op2 (w0 / watch-01
+            :ARG0 (p1 / person)))
+
+(a0 / and
+      :op1 (d0 / drive-01
+            :ARG0 (p0 / person
+                  :ARG0-of (h0 / have-03
+                        :ARG1 (a1 / and
+                              :op2 (p2 / pant
+                                    :ARG1-of (b1 / black-04))
+                              :op3 (h1 / helmet
+                                    :ARG1-of (w1 / white-03))))
+                  :ARG0-of (d2 / drink-01
+                        :ARG1 (j0 / jacket
+                              :mod (b0 / blue))))
+            :location (d1 / dirt))
+      :op2 (w0 / watch-01
+            :ARG0 (p1 / person)))
+
+(p0 / perform-01
+      :ARG1 (t0 / trick-01
+            :ARG0 r0
+            :prep-on (r1 / ramp))
+      :ARG0 (r0 / rollerblader))
+
+(w0 / watch-01
+      :ARG1 (g0 / game
+            :mod (f0 / football))
+      :ARG0 (c0 / crowd))
+
+(a0 / and
+      :op1 (s0 / stand-01
+            :ARG1 (g0 / group
+                  :consist-of (p0 / person))
+            :mod (t0 / together))
+      :op2 (l0 / look-01
+            :ARG0 g0
+            :ARG1 (c0 / camera)))
+
+(r0 / run-02
+      :ARG0 (d0 / dog
+            :ARG0-of (b0 / brown)
+            :ARG0-of (h0 / have-03
+                  :ARG1 m0
+                  :ARG1 (t0 / toy))
+            :poss-of (m0 / mouth))
+      :polarity - 
+      :manner (a0 / across
+            :op1 (y0 / yard)))
+
+(j0 / jump-03
+      :ARG0 (p0 / person
+            :ARG0-of (h1 / have-03
+                  :ARG1 (s0 / shirt
+                        :ARG1-of (g1 / green-02))))
+      :ARG1-of (h0 / high-02)
+      :destination (o0 / over
+            :op1 (g0 / grass)))
+
+(a0 / and
+      :op1 (w0 / wear-01
+            :ARG1 (h0 / hat
+                  :mod (s1 / straw))
+            :ARG0 (m0 / man))
+      :op2 (s0 / smoke-02
+            :ARG0 m0
+            :ARG1 (c0 / cigarette)))
+
+(a0 / and
+      :op1 (w0 / wear-01
+            :ARG1 (s1 / shirt
+                  :mod (c0 / checker
+                        :mod (b0 / blue)))
+            :ARG0 (m0 / man))
+      :op2 (r0 / ride-01
+            :ARG0 s1
+            :ARG0 m0
+            :ARG1 (h0 / happy-01
+                  :polarity - ))
+      :location (s0 / street))
+
+(p0 / play-01
+      :ARG0 (s0 / statue)
+      :ARG0 (c0 / child
+            :quant 2 ))
+
+(l0 / look-01
+      :ARG1 (w0 / woman)
+      :ARG1 (v0 / view-01
+            :ARG1 (c0 / city)))
+
+(s0 / stand-01
+      :ARG1 (s1 / somebody)
+      :ARG2 (t0 / top
+            :mod (m0 / mountain)))
+
+(s0 / swim-01
+      :ARG0 (c0 / child)
+      :location (u0 / underwater
+            :op1 (p0 / pool)))
+
+(w0 / wear-01
+      :ARG1 (a0 / armband
+            :ARG1-of (b0 / black-05))
+      :ARG0 (p0 / person
+            :ARG0-of (p1 / play-01
+                  :ARG1 (f0 / football))))
+
+(a0 / and
+      :op1 (s0 / swim-01
+            :ARG0 (g0 / girl
+                  :mod (l0 / little)))
+      :op2 (s1 / stand-01
+            :ARG1 (w0 / woman)
+            :ARG2 (b0 / behind)))
+
+(a0 / and
+      :op1 (s0 / swim-01
+            :ARG0 (g0 / girl
+                  :mod (l0 / little)))
+      :op2 (s1 / stand-01
+            :ARG1 (w0 / woman)
+            :ARG2 (b0 / behind)))
+
+(f0 / fall-01
+      :ARG1 (m0 / man)
+      :location (o0 / off
+            :op1 (s0 / surfboard))
+      :location (w0 / water))
+
+(s0 / sit-01
+      :ARG1 (g0 / group
+            :consist-of (p0 / person))
+      :ARG2 (r0 / room
+            :location-of (p1 / pin-01)))
+
+(s0 / sit-01
+      :ARG1 (g0 / group
+            :consist-of (p0 / person))
+      :ARG2 (r0 / room
+            :mod (d0 / dim)))
+
+(s0 / sit-01
+      :ARG1 (g0 / group
+            :consist-of (p0 / person
+                  :mod (s1 / shine-01)))
+      :ARG2 (r0 / room))
+
+(s0 / sit-01
+      :ARG1 (a0 / and
+            :op1 (m0 / man
+                  :ARG0-of (h0 / have-03
+                        :ARG1 (a1 / and
+                              :op2 (s2 / sunglass
+                                    :ARG1-of (b2 / black-04))))
+                  :ARG0-of (h1 / have-03))
+            :op2 (m1 / man
+                  :ARG0-of (h2 / have-03
+                        :ARG1 (s1 / shirt
+                              :ARG1-of (w0 / white-03)))))
+      :ARG2 (t0 / table
+            :part (b0 / bottle
+                  :quant 4 
+                  :consist-of (b1 / beer))))
+
+(a0 / and
+      :op1 (w0 / wear-01
+            :ARG1 (j0 / jacket
+                  :ARG1-of (r0 / red-02))
+            :ARG0 (p0 / person))
+      :op2 (h0 / hold-01
+            :ARG0 p0
+            :ARG1 (b0 / beer)))
+
+(a0 / and
+      :op1 (h0 / hold-01
+            :ARG1 (h1 / hose)
+            :ARG0 (b0 / boy)
+            :location (n0 / next-to
+                  :op1 (m0 / man)))
+      :op2 (w0 / watch-01
+            :ARG0 (b1 / boy
+                  :mod (a1 / another))))
+
+(r0 / run-02
+      :ARG0 (p0 / past
+            :op1 (p2 / person
+                  :ARG0-of (c0 / carry-01)
+                  :ARG0-of (h0 / have-org-role-91
+                        :ARG2 (o0 / official))))
+      :ARG0 (p1 / person
+            :ARG0-of (p3 / play-01
+                  :ARG1 (f0 / football))))
+
+(r0 / run-02
+      :ARG0 (b0 / ball)
+      :ARG0 (p0 / person
+            :ARG0-of (p1 / play-01
+                  :ARG1 (f0 / football))
+            :ARG0-of (j0 / jersey
+                  :ARG1-of (p2 / purple-02)))
+      :purpose (t0 / touchdown))
+
+(j0 / jump-03
+      :ARG0 (g0 / girl
+            :mod (y0 / young)
+            :ARG1-of (c0 / color-01
+                  :ARG2 (l0 / leotard)
+                  :ARG2 (b0 / blue)))
+      :location (a0 / air))
+
+(j0 / jump-03
+      :ARG0 (g0 / girl
+            :mod (y0 / young)
+            :mod (b0 / blue))
+      :location (a0 / air))
+
+(p0 / play-01
+      :ARG1 (r0 / rugby)
+      :ARG0 (m0 / man
+            :quant (s0 / some)))
+
+(l0 / look-01
+      :ARG1 (a0 / accident
+            :poss (p1 / person
+                  :mod (a1 / another)))
+      :ARG0 (p0 / person
+            :ARG0-of (r0 / ride-01
+                  :ARG1 (b0 / bike))))
+
+(a0 / and
+      :op1 (w0 / wear-01
+            :ARG1 (s0 / strip
+                  :mod (s1 / soccer)
+                  :ARG1-of (g1 / green-02))
+            :ARG0 (b0 / boy
+                  :mod (l0 / little)))
+      :op2 (r0 / run-02
+            :ARG0 b0
+            :location (g0 / grass)))
+
+(d0 / do-02
+      :ARG1 (h0 / handstand)
+      :ARG0 (m0 / man)
+      :location (s0 / sand
+            :ARG1-of (w0 / wet-01)
+            :location (e0 / edge
+                  :part-of (w1 / water)
+                  :part-of (b0 / beach))))
+
+(p0 / play-01
+      :ARG0 (b0 / boy
+            :mod (y0 / young
+                  :ARG0 p2)
+            :ARG1-of (h0 / have-rel-role-91
+                  :ARG0 p2
+                  :ARG2 (m0 / mother)))
+      :location (p1 / park)
+      :accompanier (p2 / person))
+
+(s0 / spray-01
+      :ARG1 (s1 / soaker
+            :mod (s2 / super))
+      :ARG0 (m0 / man)
+      :ARG2 (m1 / mouth
+            :part-of (d0 / dog))
+      :polarity - )
+
+(s0 / squirt
+      :instrument (w0 / water)
+      :instrument (m0 / man)
+      :source (m1 / mouth
+            :part-of (d0 / dog
+                  :ARG1-of (w1 / white-02)))
+      :instrument (s1 / squirt))
+
+(h0 / hold-01
+      :ARG1 (b0 / boy
+            :ARG1-of (w0 / wear-01
+                  :ARG1 (c0 / coat
+                        :mod (b1 / blue)))
+            :ARG1-of (h1 / have-rel-role-91
+                  :ARG0 p0
+                  :ARG2 (f0 / father)))
+      :ARG0 (p0 / person)
+      :location (u0 / under
+            :op1 (u1 / umbrella)))
+
+(e0 / experience-01
+      :ARG1 (w0 / world
+            :ARG1-of (n0 / new-01))
+      :ARG0 (c0 / child))
+
+(w0 / walk-01
+      :ARG0 (a0 / along
+            :op1 (s0 / snowdrift))
+      :ARG0 (d0 / dog))
+
+(r0 / ride-01
+      :ARG1 (w0 / wave
+            :mod (s0 / small))
+      :ARG0 (p0 / person
+            :ARG0-of (r1 / rescue-01)))
+
+(j0 / jump-03
+      :ARG0 (l0 / left-19)
+      :ARG0 (p0 / person
+            :ARG0-of (p1 / play-01
+                  :ARG1 (t0 / tennis))))
+
+(p0 / play-01
+      :ARG0 (d0 / dog
+            :quant (s1 / some))
+      :polarity - 
+      :location (s0 / stream))
+
+(r0 / ride-01
+      :ARG1 (h0 / horse)
+      :ARG0 (m0 / man
+            :ARG0-of (w0 / wear-01
+                  :ARG1 (b0 / blue)))
+      :location (r1 / road
+            :mod (d0 / dirt)))
+
+(p0 / play-01
+      :ARG0 (d0 / dog
+            :ARG1-of (w0 / white-02)
+            :quant 2 )
+      :accompanier (a0 / and
+            :op1 (d1 / dog
+                  :mod (b1 / brown))
+            :op2 (b0 / ball)))
+
+(a0 / accompany-01
+      :ARG1 (w0 / woman)
+      :ARG0 (s0 / stadium
+            :ARG1-of (c0 / crowd-01))
+      :ARG0 (a1 / athlete
+            :quant 4 ))
+
+(a0 / and
+      :op1 (b0 / be-located-at-91
+            :ARG1 (w0 / woman
+                  :ARG1-of (d1 / dress-01
+                        :ARG2 (c1 / clothing
+                              :mod (e0 / elegant))))
+            :ARG2 (i0 / inside
+                  :op1 (c0 / crowd
+                        :consist-of (p0 / person))))
+      :op2 (l0 / look-01
+            :ARG0 w0
+            :direction (d0 / down)))
+
+(a0 / and
+      :op1 (b0 / be-located-at-91
+            :ARG1 (w0 / woman
+                  :ARG1-of (i1 / intelligent-01))
+            :ARG2 (i0 / inside
+                  :op1 (c0 / crowd
+                        :consist-of (p0 / person))))
+      :op2 (l0 / look-01
+            :ARG0 w0
+            :direction (d0 / down)))
+
+(r0 / run-02
+      :ARG0 (w0 / water)
+      :ARG0 (b0 / boy)
+      :location (b1 / beach))
+
+(s0 / splash
+      :location (b0 / boy
+            :ARG0-of (h0 / have-03
+                  :ARG1 (t0 / t-shirt
+                        :ARG1-of (w1 / white-03))))
+      :location (w0 / water
+            :mod (s1 / shallow)))
+
+(r0 / run-02
+      :ARG0 (w0 / water)
+      :ARG0 (b0 / boy)
+      :location (b1 / beach))
+
+(p0 / play-01
+      :ARG0 (w0 / water)
+      :ARG0 (c0 / child
+            :ARG0-of (w1 / wear-01
+                  :ARG1 (s0 / suit
+                        :mod (s1 / swim-01)))))
+
+(a0 / and
+      :op1 (w0 / wear-01
+            :ARG1 (g0 / girl
+                  :mod (l0 / little))
+            :ARG1 (a1 / and
+                  :op1 (s0 / suit
+                        :ARG1-of (w1 / white-03))
+                  :op2 (c0 / cap
+                        :mod (b1 / black-04))
+                  :op3 (c1 / cap
+                        :mod (s2 / swim-01)
+                        :mod (y0 / yellow))))
+      :op2 (h0 / have-03
+            :ARG1 (g1 / goggle
+                  :mod (b0 / blue)
+                  :location (h1 / head)
+                  :purpose (s1 / swim-01))))
+
+(r0 / rally-01
+      :ARG1 (p0 / person
+            :ARG0-of (s0 / some)
+            :ARG0-of (p1 / preach-01)))
+
+(h0 / have-03
+      :ARG1 (a0 / and
+            :op1 (h1 / hair
+                  :ARG1-of (r0 / red-02))
+            :op2 (e0 / eyebrow)
+            :op3 (p0 / piercing
+                  :location (s0 / several)
+                  :location (e1 / ear))
+            :op3 (t0 / tattoo-01
+                  :location (b0 / back)))
+      :ARG0 (g0 / girl))
+
+(b0 / be-located-at-91
+      :ARG1 (g0 / girl
+            :ARG0-of (h0 / have-03
+                  :ARG1 (a0 / and
+                        :op1 (h1 / hair
+                              :ARG1-of (r0 / red-02))
+                        :op2 (e0 / eyebrow))))
+      :ARG2 (m0 / midspeech))
+
+(a0 / and
+      :op1 (d0 / drive-01
+            :ARG1 (j0 / jeep)
+            :ARG0 (p0 / person
+                  :quant 2 ))
+      :op2 (s0 / sit-01
+            :ARG1 (g0 / girl)
+            :ARG2 (t0 / top)))
+
+(g0 / gather-01
+      :ARG1 (a0 / and
+            :op1 (a1 / adult)
+            :op2 (c0 / child))
+      :ARG1-of (n0 / near-02
+            :ARG2 (t0 / thing
+                  :mod (o0 / outdoor)
+                  :ARG1-of (a2 / arrange-01))))
+
+(a0 / and
+      :op1 (s0 / stand-01
+            :ARG1 (g0 / girl)
+            :ARG2 (g1 / group))
+      :op2 (w0 / wear-01
+            :ARG0 g0
+            :ARG1 (a1 / and
+                  :op1 (s1 / shirt
+                        :ARG1-of (b1 / black-04))
+                  :op2 (b0 / bead
+                        :ARG1-of (p0 / pink-04)))))
+
+(r0 / run-02
+      :ARG0 (d0 / dog
+            :quant 2 )
+      :path (t0 / through
+            :op1 (g0 / grass
+                  :ARG1-of (h0 / high-02))))
+
+(b0 / be-located-at-91
+      :ARG1 (a0 / and
+            :op1 (p0 / person)
+            :op2 (v0 / vehicle)
+            :quant (s1 / some))
+      :ARG2 (s0 / street
+            :ARG1-of (e0 / empty-02
+                  :mod (a1 / almost))))
+
+(a0 / and
+      :op1 (d0 / dress-01
+            :ARG1 (c0 / child)
+            :ARG2 (c1 / costume))
+      :op2 (p0 / play-02
+            :ARG0 c0
+            :ARG1 (g0 / game)))
+
+(j0 / jump-03
+      :ARG0 (p0 / person
+            :ARG0-of (f0 / fight-01
+                  :ARG1 (p1 / product
+                        :name (n0 / name
+                              :op1 "Gulf" )))
+            :quant 2 )
+      :location (i0 / in-front-of
+            :op1 (b0 / body
+                  :consist-of (w0 / water)))
+      :ARG1 (r0 / ramp
+            :mod (d0 / dirt)))
+
+(t0 / trick-01
+      :ARG0 (s0 / skateboard)
+      :ARG0 (p0 / person))
+
+(a0 / and
+      :op1 (w0 / wear-01
+            :ARG1 (h0 / helmet)
+            :ARG0 (p0 / person
+                  :ARG0-of (w1 / wear-01
+                        :ARG1 (u0 / uniform
+                              :mod (m1 / motocross)))))
+      :op2 (r0 / ride-01
+            :ARG0 p0
+            :ARG1 (m0 / motorcycle
+                  :ARG1-of (r1 / red-02))))
+
+(j0 / jump-03
+      :ARG0 (b0 / boy
+            :ARG0-of (w0 / wear-01
+                  :ARG1 (s0 / shirt
+                        :mod "Cypress" )))
+      :location (i0 / in-front-of
+            :op1 (f0 / fountain
+                  :mod (w1 / water))))
+
+(l0 / leap-03
+      :ARG0 (d0 / dog
+            :quant 2 )
+      :path (t0 / through
+            :op1 (a0 / and
+                  :op1 (g0 / grass
+                        :ARG1-of (s0 / snowy))
+                  :op2 (r0 / rock))))
+
+(e0 / enjoy-01
+      :ARG1 (s0 / slide-01)
+      :ARG0 (g0 / girl
+            :mod (y0 / young)
+            :mod (b0 / blue)))
+
+(w0 / walk-01
+      :ARG0 (m0 / man
+            :ARG1-of (b0 / black-05))
+      :location (n0 / next-to
+            :op1 (b1 / building
+                  :location (b2 / big))))
+
+(s0 / sit-01
+      :ARG1 (m0 / man
+            :ARG0-of (h0 / have-03
+                  :ARG1 (h1 / hat
+                        :mod (b0 / backwards))))
+      :ARG2 (g0 / ground))
+
+(a0 / and
+      :op1 (h0 / hold-01
+            :ARG1 (t0 / toy
+                  :mod (m0 / multicolor))
+            :ARG0 (g0 / girl
+                  :mod (s2 / sweater
+                        :mod (b0 / blue))))
+      :op2 (s0 / sit-01
+            :ARG1 g0
+            :ARG2 (s1 / shoulder
+                  :part-of (m1 / man
+                        :ARG0-of (h1 / have-03
+                              :ARG1 (h2 / hair
+                                    :ARG1-of (g1 / gray-02)))))))
+
+(g0 / go-02
+      :ARG0 (s0 / sea)
+      :ARG0 (p0 / person))
+
+(s0 / sit-01
+      :ARG1 (p0 / person
+            :quant 2 )
+      :ARG2 (b0 / bench
+            :mod (p1 / park))
+      :time (d0 / day
+            :ARG1-of (h0 / hot-05)))
+
+(d0 / drink-01
+      :ARG0 (t0 / toddler)
+      :location (i0 / inside
+            :op1 (p0 / pool
+                  :mod (b0 / blue)
+                  :ARG0-of (p1 / paddle-01))))
+
+(s0 / spot-01
+      :ARG1 (d0 / dog
+            :ARG1-of (b0 / black-04)
+            :mod (b1 / brown))
+      :ARG1 (l0 / lie-08
+            :ARG2 (g0 / grass
+                  :ARG1-of (d1 / dry-02))))
+
+(a0 / and
+      :op1 (s0 / stand-01
+            :ARG1 (a1 / and
+                  :op1 (d0 / dog
+                        :mod (l0 / large))
+                  :op2 (d1 / dog
+                        :mod (s1 / small)))
+            :ARG2 (n0 / next-to
+                  :op1 (c0 / counter
+                        :mod (k0 / kitchen))))
+      :op2 (i0 / investigate-01
+            :ARG0 a1))
+
+(a0 / and
+      :op1 (c0 / climb-01
+            :ARG0 (r0 / rock)
+            :ARG0 (m0 / man))
+      :op2 (b0 / be-located-at-91
+            :ARG1 (a1 / and
+                  :op1 (c1 / city)
+                  :op2 (b2 / bay))
+            :ARG2 (b1 / background)))
+
+(a0 / and
+      :op1 (c0 / climb-01
+            :ARG0 (r0 / rock)
+            :ARG0 (m0 / man))
+      :op2 (s0 / stop-01
+            :ARG0 m0)
+      :op3 (c1 / calculate-01
+            :ARG0 m0
+            :ARG1 (r1 / route)))
+
+(s0 / stand-01
+      :ARG1 (p0 / person)
+      :ARG2 (c0 / carnival))
+
+(l0 / line-up-02
+      :ARG1 (r0 / road)
+      :ARG0 (g0 / group
+            :consist-of (p0 / person
+                  :ARG0-of (p1 / propel-01))))
+
+(j0 / jump-03
+      :ARG0 (p0 / person
+            :ARG0-of (w0 / wash-01
+                  :ARG1 (s0 / story)))
+      :direction (r0 / ramp)
+      :direction (o0 / off))
+
+(s0 / stand-01
+      :ARG1 (b0 / bird
+            :part (b1 / black-04)
+            :ARG0-of (h0 / have-03
+                  :ARG1 (b2 / beak
+                        :mod (y0 / yellow))))
+      :ARG2 (g0 / grass
+            :ARG1-of (g1 / green-02)))
+
+(r0 / run-02
+      :ARG0 (d0 / dog
+            :ARG1-of (w0 / white-02)
+            :quant 2 )
+      :mod (t0 / together))
+
+(l0 / look-01
+      :ARG1 (e0 / equipment
+            :mod (s0 / sound))
+      :ARG0 (p0 / person
+            :mod (s1 / some)))
+
+(s0 / skip-01
+      :ARG1 (r0 / rope)
+      :ARG0 (g0 / girl)
+      :ARG1-of (n0 / near-02
+            :ARG2 (s1 / street)))
+
+(s0 / skip-01
+      :ARG1 (r0 / rope)
+      :ARG0 (g0 / girl)
+      :ARG1-of (n0 / near-02
+            :ARG2 (s1 / street)))
+
+(s0 / swim-01
+      :ARG0 (a0 / animal)
+      :location (b0 / body
+            :consist-of (w0 / water)))
+
+(l0 / lean-01
+      :ARG1 (m0 / man)
+      :ARG2 (l1 / ledge
+            :part-of (b0 / balcony)))
+
+(r0 / run-02
+      :ARG0 (a0 / across
+            :op1 (l0 / lawn))
+      :ARG0 (d0 / dog
+            :ARG1-of (b0 / big)
+            :ARG1-of (w0 / white-03)))
+
+(w0 / walk-01
+      :ARG0 (w1 / water)
+      :ARG0 (d0 / dog
+            :ARG1-of (b0 / black-04)
+            :ARG0-of (l0 / leash)))
+
+(a0 / and
+      :op1 (s0 / stand-01
+            :ARG1 (m0 / male
+                  :quant 2 )
+            :ARG2 (e0 / edge
+                  :mod (c0 / cliff)))
+      :op2 (j0 / jump-03
+            :ARG0 (w0 / water)
+            :ARG0 1 ))
+
+(r0 / roam-01
+      :ARG0 (g0 / group
+            :consist-of (a0 / adult
+                  :mod (y0 / young)
+                  :quant 5 ))
+      :location (i0 / indoors))
+
+(j0 / jump-03
+      :ARG0 (g0 / girl
+            :mod (y0 / young)
+            :mod (s0 / suite
+                  :mod (s1 / swim-01)))
+      :location (b0 / beach))
+
+(a0 / and
+      :op1 (g0 / go-02
+            :ARG0 (c0 / child
+                  :part a1
+                  :ARG0-of (h0 / have-03
+                        :ARG1 (h1 / hair
+                              :ARG1-of (d1 / dark-02))))
+            :direction (d0 / down))
+      :op2 (t0 / throw-01
+            :ARG0 c0
+            :ARG1 (a1 / arm)))
+
+(r0 / run-02
+      :ARG0 (d0 / dog
+            :ARG1-of (b0 / black-04)
+            :mod (b1 / brown))
+      :location (s0 / shore
+            :mod (r1 / rocky)))
+
+(p0 / play-01
+      :ARG0 (b0 / beach
+            :mod (r0 / rocky))
+      :ARG0 (d0 / dog
+            :quant 2 ))
+
+(s0 / stick-01
+      :ARG1 (k0 / kid
+            :quant 2 )
+      :ARG2 (c0 / color-01
+            :ARG2 (a0 / and
+                  :op1 (b0 / blue)
+                  :op2 (g0 / green-02)))
+      :direction (o0 / out))
+
+(l0 / lay-01
+      :ARG1 (b0 / boy
+            :quant 2 )
+      :ARG2 (w0 / water
+            :ARG1-of (c0 / close-10
+                  :ARG2 (b1 / beach))))
+
+(s0 / show-01
+      :ARG1 (t0 / thing
+            :ARG1-of (w0 / war)
+            :ARG1-of (d0 / differ-02))
+      :ARG0 (v0 / veteran)
+      :ARG2 (p0 / person
+            :mod (s1 / some)))
+
+(b0 / bounce-01
+      :ARG1 (b1 / ball
+            :mod (s0 / soccer))
+      :ARG0 (f0 / field
+            :mod (g0 / grass))
+      :ARG0 (d0 / dog
+            :part h0
+            :ARG1-of (g1 / gray-02))
+      :location (h0 / head))
+
+(w0 / wear-01
+      :ARG1 (a0 / and
+            :op1 (s0 / shirt
+                  :mod (c0 / colorful))
+            :op2 (j0 / jewelry
+                  :quant (l0 / lot)))
+      :ARG0 (w1 / woman))
+
+(s0 / stand-01
+      :ARG1 (m0 / man
+            :ARG0-of (h0 / have-03
+                  :ARG1 (j0 / jersey
+                        :ARG1-of (b0 / black-04))))
+      :ARG2 (g0 / gym))
+
+(a0 / and
+      :op1 (s0 / stand-01
+            :ARG1 (m0 / man)
+            :ARG2 (g0 / gym))
+      :op2 (w0 / wear-01
+            :ARG0 m0
+            :ARG1 (j0 / jersey)))
+
+(r0 / run-02
+      :ARG0 (a0 / and
+            :op1 (d0 / dog
+                  :mod (l0 / little)
+                  :ARG1-of (b0 / brown))
+            :op2 (d1 / dog
+                  :ARG1-of (w0 / white-02)))
+      :location (r1 / road))
+
+(c0 / chase-01
+      :ARG1 (b0 / ball)
+      :ARG0 (d0 / dog
+            :mod (y0 / yellow)))
+
+(a0 / and
+      :op1 (s0 / stand-01
+            :ARG1 (l0 / lady
+                  :polarity - )
+            :ARG2 (s2 / street))
+      :op2 (s1 / surround-01
+            :ARG1 (c0 / child
+                  :mod (s3 / school))))
+
+(s0 / stand-01
+      :ARG1 (m0 / man
+            :ARG0-of (h0 / have-03
+                  :ARG1 (j0 / jeans
+                        :mod (b1 / blue))))
+      :ARG2 (i0 / in-front-of
+            :op1 (g0 / group
+                  :consist-of (c0 / child)
+                  :consist-of (b0 / beside
+                        :op1 (h1 / house
+                              :ARG1-of (b2 / build-01
+                                    :ARG0 (s1 / stone)))))))
+
+(l0 / leap-03
+      :ARG0 (g0 / guy)
+      :location (a0 / area
+            :ARG1-of (w0 / wet-01))
+      :direction (a1 / air))
+
+(c0 / carry-01
+      :ARG1 (b0 / ball
+            :mod (b1 / blue))
+      :ARG0 (d0 / dog
+            :part m0
+            :ARG1-of (w0 / white-03)
+            :ARG1-of (b2 / black-05))
+      :location (m0 / mouth))
+
+(s0 / stand-01
+      :ARG1 (m0 / man)
+      :ARG2 (w0 / wheel
+            :part-of (c0 / car
+                  :mod (c1 / classic)
+                  :mod (h0 / have-03
+                        :ARG1 (a0 / and
+                              :op1 (d0 / door)
+                              :op2 (t0 / trunk)
+                              :ARG1-of (o0 / open-01)))
+                  :location (c2 / country
+                        :name (n0 / name
+                              :op1 "America" )))))
+
+(d0 / down-01
+      :ARG1 (r0 / railing)
+      :location (m0 / man)
+      :location (s0 / snow-01))
+
+(j0 / jump-on-bandwagon-09
+      :ARG1 (p0 / person))
+
+(d0 / do-02
+      :ARG1 (a0 / acrobatic)
+      :ARG0 (p0 / person)
+      :location (s0 / snowboard))
+
+(a0 / and
+      :op1 (w0 / walk-01
+            :ARG0 (p1 / person
+                  :quant 4 )
+            :ARG2 (a1 / along
+                  :op1 (s1 / sidewalk
+                        :mod (c0 / city))))
+      :op2 (p0 / phone-01
+            :ARG1 (s0 / someone)
+            :ARG0 (p2 / person
+                  :ARG0-of (h0 / hat
+                        :ARG1-of (g0 / green-02)))))
+
+(s0 / surf-01
+      :ARG1 (w0 / wave
+            :mod (h0 / huge))
+      :ARG0 (p0 / person
+            :ARG0-of (r0 / rescue-01)))
+
+(w0 / walk-01
+      :ARG0 (s0 / state
+            :location (c0 / continent
+                  :name (n0 / name
+                        :op1 "Europe" )))
+      :ARG0 (m0 / man
+            :ARG0-of (h0 / have-03
+                  :ARG1 (a0 / and
+                        :op1 (j0 / jacket
+                              :ARG1-of (r0 / red-02))
+                        :op2 (k0 / khaki)))))
+
+(a0 / and
+      :op1 (k0 / kick-01
+            :ARG1 (b0 / ball
+                  :mod (s0 / soccer))
+            :ARG0 (m0 / man
+                  :ARG1-of (g0 / green-02)))
+      :op2 (r0 / rise-01
+            :ARG1 (m1 / man
+                  :ARG1-of (p0 / purple-02))))
+
+(a0 / and
+      :op1 (w0 / wear-01
+            :ARG1 (a1 / and
+                  :op1 (s0 / shirt
+                        :ARG1-of (p1 / purple-02))
+                  :op2 (c1 / chap
+                        :mod (l0 / leather)
+                        :ARG1-of (b0 / black-04)))
+            :ARG0 (m0 / man))
+      :op2 (p0 / pose-01
+            :ARG0 m0
+            :beneficiary (c0 / camera)))
+
+(b0 / be-located-at-91
+      :ARG1 (d0 / dog)
+      :ARG2 (s0 / sand
+            :ARG1-of (b1 / blow-01
+                  :location (a0 / air))))
+
+(a0 / and
+      :op1 (b0 / be-located-at-91
+            :ARG1 (d0 / dog)
+            :ARG2 (a1 / area
+                  :mod (s0 / sandy)
+                  :location-of (s1 / sand
+                        :ARG1-of (s3 / stir-up-04
+                              :location (a2 / air)))))
+      :op2 (b1 / be-located-at-91
+            :ARG1 (p0 / plant
+                  :quant (s2 / several))
+            :ARG2 (b2 / background)))
+
+(r0 / run-02
+      :ARG0 (o0 / outdoors)
+      :ARG0 (d0 / dog
+            :ARG1-of (b0 / black-05)
+            :ARG1-of (w0 / white-02)))
+
+(j0 / jump-03
+      :ARG0 (d0 / dog)
+      :location (s0 / shade
+            :part-of (t0 / tree
+                  :mod (s1 / some))))
+
+(j0 / jump-03
+      :ARG0 (c0 / cat)
+      :ARG1-of (h0 / high-02
+            :ARG2 (a0 / air))
+      :destination (c1 / country))
+
+(p0 / play-01
+      :ARG0 (d0 / dog
+            :quant 4 )
+      :polarity - 
+      :location (a0 / area
+            :mod (g0 / grassy)))
+
+(s0 / sleep-01
+      :ARG0 (d0 / dog)
+      :location (p0 / park))
+
+(d0 / drive-01
+      :ARG1 (m0 / motorcycle)
+      :ARG0 (p0 / person
+            :ARG1-of (d1 / dress-01
+                  :ARG2 (o0 / orange))
+            :ARG0-of (r0 / ride-01))
+      :location (w0 / wheel
+            :quant 1 ))
+
+(s0 / sit-01
+      :ARG1 (m0 / man
+            :mod (e0 / elderly))
+      :ARG2 (b0 / bench))
+
+(h0 / hold-01
+      :ARG1 (p0 / paintbrush)
+      :ARG0 (l0 / lady)
+      :location (n0 / next-to
+            :op1 (e0 / easel
+                  :poss (a0 / artist))))
+
+(a0 / and
+      :op1 (w0 / wear-01
+            :ARG1 (w2 / woman)
+            :ARG1 (s0 / shirt
+                  :mod (b1 / blue)))
+      :op2 (w1 / walk-01
+            :ARG2 (c0 / court
+                  :mod (t0 / tennis))
+            :manner (b0 / barefoot)))
+
+(a0 / and
+      :op1 (p0 / play-01
+            :ARG0 (g0 / girl
+                  :mod (y0 / young))
+            :location (e0 / edge
+                  :part-of (f0 / fountain)))
+      :op2 (w0 / watch-01
+            :ARG0 (w1 / woman
+                  :ARG1-of (h0 / have-degree-91
+                        :ARG2 (o0 / old)
+                        :ARG3 (m0 / more)))))
+
+(w0 / wash-01
+      :ARG1 (a0 / and
+            :op1 (g0 / girl
+                  :mod (l0 / little))
+            :op2 (w1 / woman
+                  :ARG0-of (w2 / wear-01
+                        :ARG1 (s0 / shirt
+                              :mod (y0 / yellow)))))
+      :ARG0 (p0 / person)
+      :ARG0 (f0 / fountain
+            :mod (c0 / city)))
+
+(r0 / run-02
+      :ARG0 (f0 / field)
+      :ARG0 (d0 / dog
+            :ARG1-of (b0 / black-04)
+            :ARG0-of (w0 / white-02)
+            :ARG0-of (h0 / have-03
+                  :ARG1 (b1 / branch
+                        :mod (l0 / large)))))
+
+(r0 / run-02
+      :ARG0 (f0 / field)
+      :ARG0 (d0 / dog
+            :ARG1-of (b0 / black-04)
+            :ARG0-of (w0 / white-02)
+            :ARG0-of (h0 / have-03
+                  :ARG1 (b1 / branch
+                        :mod (l0 / large)))))
+
+(r0 / run-02
+      :ARG0 (b0 / boy
+            :ARG0-of (w0 / wear-01
+                  :ARG1 (s1 / shirt
+                        :ARG1-of (s2 / stripe))))
+      :location (b1 / barefoot)
+      :location (h0 / hill
+            :mod (s0 / sandy)))
+
+(a0 / and
+      :op1 (s0 / stick-01
+            :ARG1 (t0 / tongue)
+            :ARG0 (b0 / boy
+                  :part t0
+                  :mod (l1 / little))
+            :ARG2 (o0 / out)
+            :purpose (c0 / camera))
+      :op2 (l0 / look-01
+            :ARG0 (b1 / boy
+                  :mod (a1 / another))))
+
+(a0 / and
+      :op1 (l0 / look-01
+            :ARG1 (k0 / kid
+                  :quant 1 
+                  :quant 2 )
+            :direction (c0 / camera))
+      :op2 (s0 / stick-01
+            :ARG2 (o0 / out)
+            :ARG1 (t0 / tongue)))
+
+(j0 / jump-on-bandwagon-09
+      :ARG1 (w0 / wall
+            :mod (c0 / cement)
+            :mod (t0 / tall))
+      :ARG0 (p0 / person
+            :ARG0-of (w1 / wear-01
+                  :ARG1 (j1 / jacket
+                        :mod (b0 / blue)))))
+
+(r0 / ride-01
+      :ARG1 (e0 / elephant)
+      :ARG0 (w0 / woman))
+
+(a0 / and
+      :op1 (r0 / run-02
+            :ARG0 (d0 / dog)
+            :location (f0 / field))
+      :op2 (c0 / chase-01
+            :ARG0 d0
+            :ARG1 (t0 / toy)))
+
+(a0 / and
+      :op1 (h0 / hold-01
+            :ARG1 (d0 / drink-01)
+            :ARG0 (g0 / group
+                  :consist-of (p1 / person)))
+      :op2 (p0 / point-01
+            :ARG0 g0
+            :ARG2 (c0 / camera)))
+
+(a0 / and
+      :op1 (s0 / squat
+            :domain (m0 / man)
+            :prep-in (b0 / brush))
+      :op2 (p0 / photograph-01
+            :ARG0 m0))
+
+(t0 / toss-01
+      :ARG1 (s0 / snowboard
+            :poss (p1 / person))
+      :ARG0 (p0 / person
+            :ARG0-of (h0 / have-org-role-91
+                  :ARG3 (p2 / practice-01)
+                  :ARG2 (j0 / jumper)))
+      :destination (a0 / air))
+
+(c0 / cover-02
+      :ARG1 (w0 / woman
+            :mod (y0 / young)
+            :mod (t0 / topless))
+      :ARG2 (p0 / paint))
+
+(a0 / and
+      :op1 (s0 / stand-01
+            :ARG1 (m0 / man
+                  :ARG0-of (w0 / wear-01
+                        :ARG1 (s2 / suit)))
+            :ARG2 (m1 / microphone))
+      :op2 (s1 / sing-01
+            :ARG0 m0))
+
+(r0 / ride-01
+      :ARG1 (b0 / bike
+            :mod (d1 / dirt))
+      :ARG0 (p0 / person)
+      :direction (d0 / down
+            :op1 (h0 / hill)))
+
+(d0 / dance-01
+      :ARG0 (m0 / man)
+      :location (r0 / road))
+
+(p0 / play-11
+      :ARG1 (g0 / guitar)
+      :ARG0 (k0 / kid))
+
+(s0 / sit-01
+      :ARG1 (c0 / cop)
+      :ARG2 (b0 / bike
+            :mod (p0 / police)))
+
+(p0 / play-11
+      :ARG1 (i0 / instrument)
+      :ARG0 (g0 / girl
+            :location (b0 / band)))
+
+(s0 / swim-01
+      :ARG0 (b0 / ball
+            :mod (t0 / tennis))
+      :ARG0 (d0 / dog))
+
