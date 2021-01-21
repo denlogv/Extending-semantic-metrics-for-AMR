@@ -1,0 +1,28 @@
+# ::id 20001001
+# ::snt Pierre Vinken, 61 years old, will join the board as a nonexecutive director Nov. 29.
+(MRPNode-0 / join-01
+      :ARG0 (MRPNode-1 / person
+            :name (MRPNode-2 / name :op1 Pierre :op2 Vinken)
+            :age (MRPNode-3 / temporal-quantity :quant 61
+                  :unit (MRPNode-4 / year)))
+      :ARG1 (MRPNode-5 / board
+            :ARG1-of (MRPNode-6 / have-org-role-91
+                  :ARG2 (MRPNode-7 / director
+                        :mod (MRPNode-8 / executive :polarity -))
+                  :ARG0 MRPNode-1))
+      :time (MRPNode-9 / date-entity :month 11 :day 29))
+
+# ::id 20001002
+# ::snt Pierre Vinken, 61 years old, will join the board as a nonexecutive director Nov. 29.
+(MRPNode-0 / join-01
+      :ARG0 (MRPNode-1 / person
+            :name (MRPNode-2 / name :op1 Pierre :op2 Vinken)
+            :age (MRPNode-3 / temporal-quantity :quant 61
+                  :unit (MRPNode-4 / year)))
+      :ARG1 (MRPNode-5 / board
+            :ARG1-of (MRPNode-6 / have-org-role-91
+                  :ARG2 (MRPNode-7 / director
+                        :mod (MRPNode-8 / executive :polarity -))
+                  :ARG0 MRPNode-1))
+      :time (MRPNode-9 / date-entity :month 11 :day 29))
+

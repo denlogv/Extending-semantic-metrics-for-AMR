@@ -100,8 +100,9 @@ def process_amr_line(line):
                 final_tokens.append(t)
     else:
         final_tokens = line.replace('(', ' ( ').replace(')', ' ) ').split()
-    return final_tokens
-
+    #return final_tokens
+    return list(filter(lambda x: x!='', final_tokens))
+	
 
 def dep_parse(sentence):
     """
@@ -154,7 +155,7 @@ def process_amr(amr_string, jamr=False, isi=False):
     :return: a dictionary whose keys are node ids and values are node concepts; a list of edges
     """
     amr_string = [token.lstrip('"').rstrip('"') for token in amr_string]
-    concept_dict = extract_all_concepts(amr_string)
+    concept_dict = extract_all_concepts(amr_string)	
     # concept_dict_combined = concept_dict.copy()
     concept_dict_jamr = {}
     concept_dict_isi = {}
@@ -221,7 +222,7 @@ def parse_amr(tokens, concept_dict, relations, current_relation, open_concepts, 
             amr_edge_dict[(edge['parent'], edge['child'])] = edge['relation']
         return concept_dict, amr_edge_dict
     else:
-        first = tokens[0]
+        first = tokens[0]	
         if first == '(':
             if jamr or isi:
                 if nesting_level == 0:
@@ -482,6 +483,7 @@ def read_conllu(dep_file):
             dependencies[(int(parent_index), int(word_index))] = edge_label
             sentence.append(word)
         else:
+            #print('IN!!!')
             lemmas[0] = 'ROOT'
             words[0] = 'ROOT'
             parses[sent_id] = {'sentence': ' '.join(sentence), 'dep_graph': dependencies,
@@ -511,6 +513,7 @@ def reorder_conllu_file(parse_file, out_file):
 
 def read_in_fixed_parses(sent_dict, filename):
     fixed_parses = read_conllu(filename)
+
     for s_id in sent_dict:
         sent_dict[s_id]['dep_graph'] = fixed_parses[s_id]['dep_graph']
         sent_dict[s_id]['lemmas'] = fixed_parses[s_id]['lemmas']

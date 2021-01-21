@@ -1,0 +1,638 @@
+# ::id 0
+# ::snt How do you remove mold from a tent?
+# ::tok How do you remove mold from a tent ?
+# ::alignments 3-4|0 0-1|0.3 7-8|0.2 2-3|0.1 4-5|0.0 ::annotator Aligner v.03 ::date 2021-01-21T20:07:54.577
+# ::node	0	remove-01	3-4
+# ::node	0.0	mold	4-5
+# ::node	0.1	you	2-3
+# ::node	0.2	tent	7-8
+# ::node	0.3	amr-unknown	0-1
+# ::root	0	remove-01
+# ::edge	remove-01	ARG0	you	0	0.1	
+# ::edge	remove-01	ARG1	mold	0	0.0	
+# ::edge	remove-01	ARG2	tent	0	0.2	
+# ::edge	remove-01	manner	amr-unknown	0	0.3	
+(MRPNode-0 / remove-01
+      :ARG1 (MRPNode-1 / mold)
+      :ARG0 (MRPNode-2 / you)
+      :ARG2 (MRPNode-3 / tent)
+      :manner (MRPNode-4 / amr-unknown))
+
+# ::id 1
+# ::snt What could be wrong with my air conditioner?
+# ::tok What could be wrong with my air conditioner ?
+# ::alignments 1-2|0 3-4|0.0 7-8|0.0.1 6-7|0.0.1.1 5-6|0.0.1.0 0-1|0.0.0 ::annotator Aligner v.03 ::date 2021-01-21T20:07:54.600
+# ::node	0	possible-01	1-2
+# ::node	0.0	wrong-02	3-4
+# ::node	0.0.0	amr-unknown	0-1
+# ::node	0.0.1	conditioner	7-8
+# ::node	0.0.1.0	i	5-6
+# ::node	0.0.1.1	air	6-7
+# ::root	0	possible-01
+# ::edge	conditioner	mod	air	0.0.1	0.0.1.1	
+# ::edge	conditioner	mod	i	0.0.1	0.0.1.0	
+# ::edge	possible-01	ARG1	wrong-02	0	0.0	
+# ::edge	wrong-02	ARG1	amr-unknown	0.0	0.0.0	
+# ::edge	wrong-02	ARG2	conditioner	0.0	0.0.1	
+(MRPNode-0 / possible-01
+      :ARG1 (MRPNode-1 / wrong-02
+            :ARG1 (MRPNode-2 / amr-unknown)
+            :ARG2 (MRPNode-3 / conditioner
+                  :mod (MRPNode-4 / i)
+                  :mod (MRPNode-5 / air))))
+
+# ::id 2
+# ::snt Senate confirms Obama nominee to key appeals court
+# ::tok Senate confirms Obama nominee to key appeals court
+# ::alignments 2-3|0.0.0+0.0.0.0+0.0.0.0.0 0-1|0.1+0.1.0+0.1.0.0 1-2|0 7-8|0.0.1 5-6|0.0.1.1 6-7|0.0.1.0 3-4|0.0 ::annotator Aligner v.03 ::date 2021-01-21T20:07:54.643
+# ::node	0	confirm-01	1-2
+# ::node	0.0	nominate-01	3-4
+# ::node	0.0.0	person	2-3
+# ::node	0.0.0.0	name	2-3
+# ::node	0.0.0.0.0	obama	2-3
+# ::node	0.0.1	court	7-8
+# ::node	0.0.1.0	appeal-01	6-7
+# ::node	0.0.1.1	key-02	5-6
+# ::node	0.1	government-organization	0-1
+# ::node	0.1.0	name	0-1
+# ::node	0.1.0.0	senate	0-1
+# ::root	0	confirm-01
+# ::edge	confirm-01	ARG0	government-organization	0	0.1	
+# ::edge	confirm-01	ARG1	nominate-01	0	0.0	
+# ::edge	court	ARG1-of	key-02	0.0.1	0.0.1.1	
+# ::edge	court	mod	appeal-01	0.0.1	0.0.1.0	
+# ::edge	government-organization	name	name	0.1	0.1.0	
+# ::edge	name	op1	obama	0.0.0.0	0.0.0.0.0	
+# ::edge	name	op1	senate	0.1.0	0.1.0.0	
+# ::edge	nominate-01	ARG1	person	0.0	0.0.0	
+# ::edge	nominate-01	ARG2	court	0.0	0.0.1	
+# ::edge	person	name	name	0.0.0	0.0.0.0	
+(MRPNode-0 / confirm-01
+      :ARG1 (MRPNode-1 / nominate-01
+            :ARG1 (MRPNode-2 / person
+                  :name (MRPNode-3 / name :op1 obama))
+            :ARG2 (MRPNode-4 / court
+                  :mod (MRPNode-5 / appeal-01)
+                  :ARG1-of (MRPNode-6 / key-02)))
+      :ARG0 (MRPNode-7 / government-organization
+            :name (MRPNode-8 / name :op1 senate)))
+
+# ::id 3
+# ::snt What more can I do to improve my credit score?
+# ::tok What more can I do to improve my credit score ?
+# ::alignments 2-3|0 4-5|0.0 0-1|0.0.1 1-2|0.0.1.0 6-7|0.0.0 9-10|0.0.0.0 3-4|0.0.0.0.1 8-9|0.0.0.0.0 ::annotator Aligner v.03 ::date 2021-01-21T20:07:54.661
+# ::node	0	possible-01	2-3
+# ::node	0.0	do-02	4-5
+# ::node	0.0.0	improve-01	6-7
+# ::node	0.0.0.0	score	9-10
+# ::node	0.0.0.0.0	credit	8-9
+# ::node	0.0.0.0.1	i	3-4
+# ::node	0.0.1	amr-unknown	0-1
+# ::node	0.0.1.0	more	1-2
+# ::root	0	possible-01
+# ::edge	amr-unknown	mod	more	0.0.1	0.0.1.0	
+# ::edge	do-02	ARG0	amr-unknown	0.0	0.0.1	
+# ::edge	do-02	ARG0	i	0.0	0.0.0.0.1	
+# ::edge	do-02	ARG1	improve-01	0.0	0.0.0	
+# ::edge	improve-01	ARG0	i	0.0.0	0.0.0.0.1	
+# ::edge	improve-01	ARG1	score	0.0.0	0.0.0.0	
+# ::edge	possible-01	ARG1	do-02	0	0.0	
+# ::edge	score	mod	credit	0.0.0.0	0.0.0.0.0	
+# ::edge	score	poss	i	0.0.0.0	0.0.0.0.1	
+(MRPNode-0 / possible-01
+      :ARG1 (MRPNode-1 / do-02
+            :ARG1 (MRPNode-2 / improve-01
+                  :ARG1 (MRPNode-3 / score
+                        :mod (MRPNode-4 / credit)
+                        :poss (MRPNode-7 / i))
+                  :ARG0 MRPNode-7)
+            :ARG0 (MRPNode-5 / amr-unknown
+                  :mod (MRPNode-6 / more))
+            :ARG0 MRPNode-7))
+
+# ::id 4
+# ::snt Chinese lunar rover lands on moon
+# ::tok Chinese lunar rover lands on moon
+# ::alignments 0-1|0.0.2+0.0.2.0 3-4|0 5-6|0.1 2-3|0.0 ::annotator Aligner v.03 ::date 2021-01-21T20:07:54.675
+# ::node	0	land-01	3-4
+# ::node	0.0	rover	2-3
+# ::node	0.0.0	country	
+# ::node	0.0.1	moon	
+# ::node	0.0.2	name	0-1
+# ::node	0.0.2.0	china	0-1
+# ::node	0.1	moon	5-6
+# ::root	0	land-01
+# ::edge	land-01	ARG1	rover	0	0.0	
+# ::edge	land-01	location	moon	0	0.1	
+# ::edge	name	op1	china	0.0.2	0.0.2.0	
+# ::edge	rover	mod	country	0.0	0.0.0	
+# ::edge	rover	mod	moon	0.0	0.0.1	
+# ::edge	rover	mod	name	0.0	0.0.2	
+(MRPNode-0 / land-01
+      :ARG1 (MRPNode-1 / rover
+            :mod (MRPNode-2 / country)
+            :mod (MRPNode-3 / moon)
+            :mod (MRPNode-4 / name :op1 china))
+      :location (MRPNode-5 / moon))
+
+# ::id 5
+# ::snt How do I pump up water pressure in my shower?
+# ::tok How do I pump up water pressure in my shower ?
+# ::alignments 3-4|0 0-1|0.3 9-10|0.2 2-3|0.1 6-7|0.0 5-6|0.0.0 ::annotator Aligner v.03 ::date 2021-01-21T20:07:54.691
+# ::node	0	pump-01	3-4
+# ::node	0.0	pressure	6-7
+# ::node	0.0.0	water	5-6
+# ::node	0.1	i	2-3
+# ::node	0.2	shower	9-10
+# ::node	0.3	amr-unknown	0-1
+# ::root	0	pump-01
+# ::edge	pressure	mod	water	0.0	0.0.0	
+# ::edge	pump-01	ARG0	i	0	0.1	
+# ::edge	pump-01	ARG2	shower	0	0.2	
+# ::edge	pump-01	manner	amr-unknown	0	0.3	
+# ::edge	pump-01	manner	pressure	0	0.0	
+(MRPNode-0 / pump-01
+      :manner (MRPNode-1 / pressure
+            :mod (MRPNode-2 / water))
+      :ARG0 (MRPNode-3 / i)
+      :ARG2 (MRPNode-4 / shower)
+      :manner (MRPNode-5 / amr-unknown))
+
+# ::id 6
+# ::snt How can I locate and repair a leak?
+# ::tok How can I locate and repair a leak ?
+# ::alignments 1-2|0 4-5|0.0 5-6|0.0.2 3-4|0.0.1 7-8|0.0.1.1 2-3|0.0.1.0 0-1|0.0.0 ::annotator Aligner v.03 ::date 2021-01-21T20:07:54.707
+# ::node	0	possible-01	1-2
+# ::node	0.0	and	4-5
+# ::node	0.0.0	amr-unknown	0-1
+# ::node	0.0.1	locate-01	3-4
+# ::node	0.0.1.0	i	2-3
+# ::node	0.0.1.1	leak	7-8
+# ::node	0.0.2	repair-01	5-6
+# ::root	0	possible-01
+# ::edge	and	op1	amr-unknown	0.0	0.0.0	
+# ::edge	and	op1	locate-01	0.0	0.0.1	
+# ::edge	and	op2	repair-01	0.0	0.0.2	
+# ::edge	locate-01	ARG1	i	0.0.1	0.0.1.0	
+# ::edge	locate-01	ARG1	leak	0.0.1	0.0.1.1	
+# ::edge	possible-01	ARG1	and	0	0.0	
+# ::edge	repair-01	ARG0	i	0.0.2	0.0.1.0	
+# ::edge	repair-01	ARG1	leak	0.0.2	0.0.1.1	
+(MRPNode-0 / possible-01
+      :ARG1 (MRPNode-1 / and
+            :op1 (MRPNode-2 / amr-unknown)
+            :op1 (MRPNode-3 / locate-01
+                  :ARG1 (MRPNode-4 / i)
+                  :ARG1 (MRPNode-5 / leak))
+            :op2 (MRPNode-6 / repair-01
+                  :ARG0 MRPNode-4
+                  :ARG1 MRPNode-5)))
+
+# ::id 7
+# ::snt The way that a 'term' is defined depends on the application.
+# ::tok The way that a ' term ' is defined depends on the application .
+# ::alignments 9-10|0 12-13|0.1 1-2|0.0 8-9|0.0.0 5-6|0.0.0.0 ::annotator Aligner v.03 ::date 2021-01-21T20:07:54.726
+# ::node	0	depend-01	9-10
+# ::node	0.0	way	1-2
+# ::node	0.0.0	define-01	8-9
+# ::node	0.0.0.0	term	5-6
+# ::node	0.1	application	12-13
+# ::root	0	depend-01
+# ::edge	define-01	ARG1	term	0.0.0	0.0.0.0	
+# ::edge	depend-01	ARG1	application	0	0.1	
+# ::edge	depend-01	ARG1	way	0	0.0	
+# ::edge	way	manner-of	define-01	0.0	0.0.0	
+(MRPNode-0 / depend-01
+      :ARG1 (MRPNode-1 / way
+            :manner-of (MRPNode-2 / define-01
+                  :ARG1 (MRPNode-3 / term)))
+      :ARG1 (MRPNode-4 / application))
+
+# ::id 8
+# ::snt The methodology takes much less time rather than naive methods.
+# ::tok The methodology takes much less time rather than naive methods .
+# ::alignments 2-3|0 1-2|0.1 5-6|0.0 4-5|0.0.1.0 3-4|0.0.1.0.0 9-10|0.0.0.0 8-9|0.0.0.0.0 ::annotator Aligner v.03 ::date 2021-01-21T20:07:54.744
+# ::node	0	take-10	2-3
+# ::node	0.0	time	5-6
+# ::node	0.0.0	instead-of-91	
+# ::node	0.0.0.0	method	9-10
+# ::node	0.0.0.0.0	naive	8-9
+# ::node	0.0.1	have-quant-91	
+# ::node	0.0.1.0	less	4-5
+# ::node	0.0.1.0.0	much	3-4
+# ::node	0.1	methodology	1-2
+# ::root	0	take-10
+# ::edge	have-quant-91	ARG3	less	0.0.1	0.0.1.0	
+# ::edge	instead-of-91	ARG2	method	0.0.0	0.0.0.0	
+# ::edge	less	quant	much	0.0.1.0	0.0.1.0.0	
+# ::edge	method	mod	naive	0.0.0.0	0.0.0.0.0	
+# ::edge	take-10	ARG0	methodology	0	0.1	
+# ::edge	take-10	ARG1	time	0	0.0	
+# ::edge	time	ARG1-of	have-quant-91	0.0	0.0.1	
+# ::edge	time	ARG1-of	instead-of-91	0.0	0.0.0	
+(MRPNode-0 / take-10
+      :ARG1 (MRPNode-1 / time
+            :ARG1-of (MRPNode-2 / instead-of-91
+                  :ARG2 (MRPNode-3 / method
+                        :mod (MRPNode-4 / naive)))
+            :ARG1-of (MRPNode-5 / have-quant-91
+                  :ARG3 (MRPNode-6 / less
+                        :quant (MRPNode-7 / much))))
+      :ARG0 (MRPNode-8 / methodology))
+
+# ::id 9
+# ::snt A hyperlink to a page counts as a vote of support.
+# ::tok A hyperlink to a page counts as a vote of support .
+# ::alignments 5-6|0 8-9|0.1 10-11|0.1.0 1-2|0.0 4-5|0.0.0 ::annotator Aligner v.03 ::date 2021-01-21T20:07:54.754
+# ::node	0	count-04	5-6
+# ::node	0.0	hyperlink	1-2
+# ::node	0.0.0	page	4-5
+# ::node	0.1	vote-01	8-9
+# ::node	0.1.0	support-01	10-11
+# ::root	0	count-04
+# ::edge	count-04	ARG1	hyperlink	0	0.0	
+# ::edge	count-04	ARG2	vote-01	0	0.1	
+# ::edge	hyperlink	destination	page	0.0	0.0.0	
+# ::edge	vote-01	ARG1	support-01	0.1	0.1.0	
+(MRPNode-0 / count-04
+      :ARG1 (MRPNode-1 / hyperlink
+            :destination (MRPNode-2 / page))
+      :ARG2 (MRPNode-3 / vote-01
+            :ARG1 (MRPNode-4 / support-01)))
+
+# ::id 10
+# ::snt Russian opposition leader under house arrest
+# ::tok Russian opposition leader under house arrest
+# ::alignments 0-1|0.0+0.0.0+0.0.0.0+0.0.0.0.0 5-6|0 4-5|0.1 2-3|0.0.1 1-2|0.0.1.0 ::annotator Aligner v.03 ::date 2021-01-21T20:07:54.764
+# ::node	0	arrest-01	5-6
+# ::node	0.0	person	0-1
+# ::node	0.0.0	country	0-1
+# ::node	0.0.0.0	name	0-1
+# ::node	0.0.0.0.0	russia	0-1
+# ::node	0.0.1	lead-02	2-3
+# ::node	0.0.1.0	oppose-01	1-2
+# ::node	0.1	house	4-5
+# ::root	0	arrest-01
+# ::edge	arrest-01	ARG1	person	0	0.0	
+# ::edge	arrest-01	location	house	0	0.1	
+# ::edge	country	name	name	0.0.0	0.0.0.0	
+# ::edge	lead-02	ARG1	oppose-01	0.0.1	0.0.1.0	
+# ::edge	name	op1	russia	0.0.0.0	0.0.0.0.0	
+# ::edge	person	ARG0-of	country	0.0	0.0.0	
+# ::edge	person	ARG0-of	lead-02	0.0	0.0.1	
+(MRPNode-0 / arrest-01
+      :ARG1 (MRPNode-1 / person
+            :ARG0-of (MRPNode-2 / country
+                  :name (MRPNode-3 / name :op1 russia))
+            :ARG0-of (MRPNode-4 / lead-02
+                  :ARG1 (MRPNode-5 / oppose-01)))
+      :location (MRPNode-6 / house))
+
+# ::id 11
+# ::snt You do not need to worry.
+# ::tok You do not need to worry .
+# ::alignments 3-4|0 5-6|0.1 0-1|0.1.0 2-3|0.0 ::annotator Aligner v.03 ::date 2021-01-21T20:07:54.775
+# ::node	0	need-01	3-4
+# ::node	0.0	-	2-3
+# ::node	0.1	worry-01	5-6
+# ::node	0.1.0	you	0-1
+# ::root	0	need-01
+# ::edge	need-01	ARG0	you	0	0.1.0	
+# ::edge	need-01	ARG1	worry-01	0	0.1	
+# ::edge	need-01	polarity	-	0	0.0	
+# ::edge	worry-01	ARG1	you	0.1	0.1.0	
+(MRPNode-0 / need-01 :polarity -
+      :ARG1 (MRPNode-1 / worry-01
+            :ARG1 (MRPNode-2 / you))
+      :ARG0 MRPNode-2)
+
+# ::id 12
+# ::snt I was in a similar situation.
+# ::tok I was in a similar situation .
+# ::alignments 0-1|0.0 5-6|0.1 4-5|0.1.0 ::annotator Aligner v.03 ::date 2021-01-21T20:07:54.784
+# ::node	0	be-located-at-91	
+# ::node	0.0	i	0-1
+# ::node	0.1	situation	5-6
+# ::node	0.1.0	resemble-01	4-5
+# ::root	0	be-located-at-91
+# ::edge	be-located-at-91	ARG1	i	0	0.0	
+# ::edge	be-located-at-91	ARG2	situation	0	0.1	
+# ::edge	situation	ARG1-of	resemble-01	0.1	0.1.0	
+(MRPNode-0 / be-located-at-91
+      :ARG1 (MRPNode-1 / i)
+      :ARG2 (MRPNode-2 / situation
+            :ARG1-of (MRPNode-3 / resemble-01)))
+
+# ::id 13
+# ::snt They decided to protect and polish what remained.
+# ::tok They decided to protect and polish what remained .
+# ::alignments 1-2|0 4-5|0.0 5-6|0.0.1 3-4|0.0.0 0-1|0.0.0.1 7-8|0.0.0.0+0.0.0.0.0 ::annotator Aligner v.03 ::date 2021-01-21T20:07:54.795
+# ::node	0	decide-01	1-2
+# ::node	0.0	and	4-5
+# ::node	0.0.0	protect-01	3-4
+# ::node	0.0.0.0	thing	7-8
+# ::node	0.0.0.0.0	remain-01	7-8
+# ::node	0.0.0.1	they	0-1
+# ::node	0.0.1	polish	5-6
+# ::root	0	decide-01
+# ::edge	and	op1	protect-01	0.0	0.0.0	
+# ::edge	and	op2	polish	0.0	0.0.1	
+# ::edge	decide-01	ARG0	they	0	0.0.0.1	
+# ::edge	decide-01	ARG1	and	0	0.0	
+# ::edge	polish	ARG0	they	0.0.1	0.0.0.1	
+# ::edge	polish	topic	thing	0.0.1	0.0.0.0	
+# ::edge	protect-01	ARG0	they	0.0.0	0.0.0.1	
+# ::edge	protect-01	ARG1	thing	0.0.0	0.0.0.0	
+# ::edge	thing	ARG1-of	remain-01	0.0.0.0	0.0.0.0.0	
+(MRPNode-0 / decide-01
+      :ARG1 (MRPNode-1 / and
+            :op1 (MRPNode-2 / protect-01
+                  :ARG1 (MRPNode-3 / thing
+                        :ARG1-of (MRPNode-4 / remain-01))
+                  :ARG0 (MRPNode-6 / they))
+            :op2 (MRPNode-5 / polish
+                  :topic MRPNode-3
+                  :ARG0 MRPNode-6))
+      :ARG0 MRPNode-6)
+
+# ::id 14
+# ::snt The final chapter in the trilogy, The Matrix Revolutions, is out in November.
+# ::tok The final chapter in the trilogy , The Matrix Revolutions , is out in November .
+# ::alignments 7-10|0.0+0.0.1+0.0.1.0+0.0.1.1+0.0.1.2 14-15|0.1+0.1.0 12-13|0 2-3|0.0.0 5-6|0.0.0.1 1-2|0.0.0.0 ::annotator Aligner v.03 ::date 2021-01-21T20:07:54.816
+# ::node	0	out-05	12-13
+# ::node	0.0	event	7-10
+# ::node	0.0.0	chapter	2-3
+# ::node	0.0.0.0	final	1-2
+# ::node	0.0.0.1	trilogy	5-6
+# ::node	0.0.1	name	7-10
+# ::node	0.0.1.0	the	7-10
+# ::node	0.0.1.1	matrix	7-10
+# ::node	0.0.1.2	revolutions	7-10
+# ::node	0.1	date-entity	14-15
+# ::node	0.1.0	11	14-15
+# ::root	0	out-05
+# ::edge	chapter	part-of	final	0.0.0	0.0.0.0	
+# ::edge	chapter	part-of	trilogy	0.0.0	0.0.0.1	
+# ::edge	date-entity	month	11	0.1	0.1.0	
+# ::edge	event	mod	chapter	0.0	0.0.0	
+# ::edge	event	name	name	0.0	0.0.1	
+# ::edge	name	op1	the	0.0.1	0.0.1.0	
+# ::edge	name	op2	matrix	0.0.1	0.0.1.1	
+# ::edge	name	op3	revolutions	0.0.1	0.0.1.2	
+# ::edge	out-05	ARG1	event	0	0.0	
+# ::edge	out-05	time	date-entity	0	0.1	
+(MRPNode-0 / out-05
+      :ARG1 (MRPNode-1 / event
+            :mod (MRPNode-2 / chapter
+                  :part-of (MRPNode-3 / final)
+                  :part-of (MRPNode-4 / trilogy))
+            :name (MRPNode-5 / name :op1 the :op2 matrix :op3 revolutions))
+      :time (MRPNode-6 / date-entity :month 11))
+
+# ::id 15
+# ::snt The stock has risen 44 cents in recent days.
+# ::tok The stock has risen 44 cents in recent days .
+# ::alignments 3-4|0 8-9|0.2 7-8|0.2.0 4-5|0.1.0 5-6|0.1+0.1.1 1-2|0.0 ::annotator Aligner v.03 ::date 2021-01-21T20:07:54.824
+# ::node	0	rise-01	3-4
+# ::node	0.0	stock	1-2
+# ::node	0.1	monetary-quantity	5-6
+# ::node	0.1.0	44	4-5
+# ::node	0.1.1	cent	5-6
+# ::node	0.2	day	8-9
+# ::node	0.2.0	recent	7-8
+# ::root	0	rise-01
+# ::edge	day	mod	recent	0.2	0.2.0	
+# ::edge	monetary-quantity	quant	44	0.1	0.1.0	
+# ::edge	monetary-quantity	unit	cent	0.1	0.1.1	
+# ::edge	rise-01	ARG1	stock	0	0.0	
+# ::edge	rise-01	ARG2	monetary-quantity	0	0.1	
+# ::edge	rise-01	time	day	0	0.2	
+(MRPNode-0 / rise-01
+      :ARG1 (MRPNode-1 / stock)
+      :ARG2 (MRPNode-2 / monetary-quantity :quant 44
+            :unit (MRPNode-3 / cent))
+      :time (MRPNode-4 / day
+            :mod (MRPNode-5 / recent)))
+
+# ::id 16
+# ::snt He married Marta Casals, the widow of Pablo Casals.
+# ::tok He married Marta Casals , the widow of Pablo Casals .
+# ::alignments 8-10|0.1.0.0+0.1.0.0.0+0.1.0.0.0.0+0.1.0.0.0.1 2-4|0.1+0.1.1+0.1.1.0+0.1.1.1 1-2|0 6-7|0.1.0+0.1.0.1 0-1|0.0 ::annotator Aligner v.03 ::date 2021-01-21T20:07:54.837
+# ::node	0	marry-01	1-2
+# ::node	0.0	he	0-1
+# ::node	0.1	person	2-4
+# ::node	0.1.0	have-rel-role-91	6-7
+# ::node	0.1.0.0	person	8-10
+# ::node	0.1.0.0.0	name	8-10
+# ::node	0.1.0.0.0.0	pablo	8-10
+# ::node	0.1.0.0.0.1	casals	8-10
+# ::node	0.1.0.1	widow	6-7
+# ::node	0.1.1	name	2-4
+# ::node	0.1.1.0	marta	2-4
+# ::node	0.1.1.1	casals	2-4
+# ::root	0	marry-01
+# ::edge	have-rel-role-91	ARG1	person	0.1.0	0.1.0.0	
+# ::edge	have-rel-role-91	ARG2	widow	0.1.0	0.1.0.1	
+# ::edge	marry-01	ARG1	he	0	0.0	
+# ::edge	marry-01	ARG2	person	0	0.1	
+# ::edge	name	op1	marta	0.1.1	0.1.1.0	
+# ::edge	name	op1	pablo	0.1.0.0.0	0.1.0.0.0.0	
+# ::edge	name	op2	casals	0.1.0.0.0	0.1.0.0.0.1	
+# ::edge	name	op2	casals	0.1.1	0.1.1.1	
+# ::edge	person	ARG0-of	have-rel-role-91	0.1	0.1.0	
+# ::edge	person	name	name	0.1	0.1.1	
+# ::edge	person	name	name	0.1.0.0	0.1.0.0.0	
+(MRPNode-0 / marry-01
+      :ARG1 (MRPNode-1 / he)
+      :ARG2 (MRPNode-2 / person
+            :ARG0-of (MRPNode-3 / have-rel-role-91
+                  :ARG1 (MRPNode-4 / person
+                        :name (MRPNode-5 / name :op1 pablo :op2 casals))
+                  :ARG2 (MRPNode-6 / widow))
+            :name (MRPNode-7 / name :op1 marta :op2 casals)))
+
+# ::id 17
+# ::snt A young cat sprints.
+# ::tok A young cat sprints .
+# ::alignments 2-3|0.0 1-2|0.0.0 ::annotator Aligner v.03 ::date 2021-01-21T20:07:54.841
+# ::node	0	cruise-01	
+# ::node	0.0	cat	2-3
+# ::node	0.0.0	young	1-2
+# ::root	0	cruise-01
+# ::edge	cat	mod	young	0.0	0.0.0	
+# ::edge	cruise-01	ARG0	cat	0	0.0	
+(MRPNode-0 / cruise-01
+      :ARG0 (MRPNode-1 / cat
+            :mod (MRPNode-2 / young)))
+
+# ::id 18
+# ::snt A young cat sprints.
+# ::tok A young cat sprints .
+# ::alignments 2-3|0.0 1-2|0.0.0 ::annotator Aligner v.03 ::date 2021-01-21T20:07:54.847
+# ::node	0	cruise-01	
+# ::node	0.0	cat	2-3
+# ::node	0.0.0	young	1-2
+# ::root	0	cruise-01
+# ::edge	cat	mod	young	0.0	0.0.0	
+# ::edge	cruise-01	ARG0	cat	0	0.0	
+(MRPNode-0 / cruise-01
+      :ARG0 (MRPNode-1 / cat
+            :mod (MRPNode-2 / young)))
+
+# ::id 19
+# ::snt He considered to skip work.
+# ::tok He considered to skip work .
+# ::alignments 1-2|0 3-4|0.0 4-5|0.0.0 0-1|0.0.0.0 ::annotator Aligner v.03 ::date 2021-01-21T20:07:54.859
+# ::node	0	consider-01	1-2
+# ::node	0.0	skip-01	3-4
+# ::node	0.0.0	work-01	4-5
+# ::node	0.0.0.0	he	0-1
+# ::root	0	consider-01
+# ::edge	consider-01	ARG0	he	0	0.0.0.0	
+# ::edge	consider-01	ARG1	skip-01	0	0.0	
+# ::edge	skip-01	ARG0	he	0.0	0.0.0.0	
+# ::edge	skip-01	ARG1	work-01	0.0	0.0.0	
+# ::edge	work-01	ARG0	he	0.0.0	0.0.0.0	
+(MRPNode-0 / consider-01
+      :ARG1 (MRPNode-1 / skip-01
+            :ARG1 (MRPNode-2 / work-01
+                  :ARG0 (MRPNode-3 / he))
+            :ARG0 MRPNode-3)
+      :ARG0 MRPNode-3)
+
+# ::id 20
+# ::snt It had an impact on the outcome.
+# ::tok It had an impact on the outcome .
+# ::alignments 3-4|0 0-1|0.1 6-7|0.0 ::annotator Aligner v.03 ::date 2021-01-21T20:07:54.862
+# ::node	0	impact-01	3-4
+# ::node	0.0	outcome	6-7
+# ::node	0.1	it	0-1
+# ::root	0	impact-01
+# ::edge	impact-01	ARG0	it	0	0.1	
+# ::edge	impact-01	ARG1	outcome	0	0.0	
+(MRPNode-0 / impact-01
+      :ARG1 (MRPNode-1 / outcome)
+      :ARG0 (MRPNode-2 / it))
+
+# ::id 21
+# ::snt It got out of hand.
+# ::tok It got out of hand .
+# ::alignments 0-1|0.0 ::annotator Aligner v.03 ::date 2021-01-21T20:07:54.864
+# ::node	0	hinder-01	
+# ::node	0.0	it	0-1
+# ::root	0	hinder-01
+# ::edge	hinder-01	ARG1	it	0	0.0	
+(MRPNode-0 / hinder-01
+      :ARG1 (MRPNode-1 / it))
+
+# ::id 22
+# ::snt We eat french fries.
+# ::tok We eat french fries .
+# ::alignments 1-2|0 0-1|0.1 3-4|0.0 2-3|0.0.0+0.0.0.0+0.0.0.0.0 ::annotator Aligner v.03 ::date 2021-01-21T20:07:54.873
+# ::node	0	eat-01	1-2
+# ::node	0.0	fry	3-4
+# ::node	0.0.0	country	2-3
+# ::node	0.0.0.0	name	2-3
+# ::node	0.0.0.0.0	france	2-3
+# ::node	0.1	we	0-1
+# ::root	0	eat-01
+# ::edge	country	name	name	0.0.0	0.0.0.0	
+# ::edge	eat-01	ARG0	we	0	0.1	
+# ::edge	eat-01	ARG1	fry	0	0.0	
+# ::edge	fry	mod	country	0.0	0.0.0	
+# ::edge	name	op1	france	0.0.0.0	0.0.0.0.0	
+(MRPNode-0 / eat-01
+      :ARG1 (MRPNode-1 / fry
+            :mod (MRPNode-2 / country
+                  :name (MRPNode-3 / name :op1 france)))
+      :ARG0 (MRPNode-4 / we))
+
+# ::id 23
+# ::snt They broke up.
+# ::tok They broke up .
+# ::alignments 0-1|0.0 1-2|0 ::annotator Aligner v.03 ::date 2021-01-21T20:07:54.875
+# ::node	0	break-up-08	1-2
+# ::node	0.0	they	0-1
+# ::root	0	break-up-08
+# ::edge	break-up-08	ARG1	they	0	0.0	
+(MRPNode-0 / break-up-08
+      :ARG1 (MRPNode-1 / they))
+
+# ::id 24
+# ::snt Have a blast.
+# ::tok Have a blast .
+# ::alignments 0-1|0 2-3|0.2 ::annotator Aligner v.03 ::date 2021-01-21T20:07:54.877
+# ::node	0	have-03	0-1
+# ::node	0.0	imperative	
+# ::node	0.1	you	
+# ::node	0.2	blast-05	2-3
+# ::root	0	have-03
+# ::edge	have-03	ARG0	you	0	0.1	
+# ::edge	have-03	ARG1	blast-05	0	0.2	
+# ::edge	have-03	mode	imperative	0	0.0	
+(MRPNode-0 / have-03 :mode imperative
+      :ARG0 (MRPNode-1 / you)
+      :ARG1 (MRPNode-2 / blast-05))
+
+# ::id 25
+# ::snt You should take a break.
+# ::tok You should take a break .
+# ::alignments 1-2|0 2-3|0.0 4-5|0.0.0 0-1|0.0.0.0 ::annotator Aligner v.03 ::date 2021-01-21T20:07:54.879
+# ::node	0	recommend-01	1-2
+# ::node	0.0	take-01	2-3
+# ::node	0.0.0	break-19	4-5
+# ::node	0.0.0.0	you	0-1
+# ::root	0	recommend-01
+# ::edge	break-19	ARG0	you	0.0.0	0.0.0.0	
+# ::edge	recommend-01	ARG1	take-01	0	0.0	
+# ::edge	recommend-01	ARG2	you	0	0.0.0.0	
+# ::edge	take-01	ARG0	you	0.0	0.0.0.0	
+# ::edge	take-01	ARG1	break-19	0.0	0.0.0	
+(MRPNode-0 / recommend-01
+      :ARG1 (MRPNode-1 / take-01
+            :ARG1 (MRPNode-2 / break-19
+                  :ARG0 (MRPNode-3 / you))
+            :ARG0 MRPNode-3)
+      :ARG2 MRPNode-3)
+
+# ::id 26
+# ::snt He kicked the bucket.
+# ::tok He kicked the bucket .
+# ::alignments 1-2|0 0-1|0.1 3-4|0.0 ::annotator Aligner v.03 ::date 2021-01-21T20:07:54.881
+# ::node	0	kick-01	1-2
+# ::node	0.0	bucket	3-4
+# ::node	0.1	he	0-1
+# ::root	0	kick-01
+# ::edge	kick-01	ARG0	he	0	0.1	
+# ::edge	kick-01	ARG1	bucket	0	0.0	
+(MRPNode-0 / kick-01
+      :ARG1 (MRPNode-1 / bucket)
+      :ARG0 (MRPNode-2 / he))
+
+# ::id 27
+# ::snt Hang in there.
+# ::tok Hang in there .
+# ::alignments 0-1|0 2-3|0.2 ::annotator Aligner v.03 ::date 2021-01-21T20:07:54.883
+# ::node	0	hang-01	0-1
+# ::node	0.0	imperative	
+# ::node	0.1	you	
+# ::node	0.2	there	2-3
+# ::root	0	hang-01
+# ::edge	hang-01	ARG0	you	0	0.1	
+# ::edge	hang-01	ARG2	there	0	0.2	
+# ::edge	hang-01	mode	imperative	0	0.0	
+(MRPNode-0 / hang-01 :mode imperative
+      :ARG0 (MRPNode-1 / you)
+      :ARG2 (MRPNode-2 / there))
+
+# ::id 28
+# ::snt Hit the sack.
+# ::tok Hit the sack .
+# ::alignments 0-1|0 2-3|0.0 ::annotator Aligner v.03 ::date 2021-01-21T20:07:54.884
+# ::node	0	hit-01	0-1
+# ::node	0.0	sack	2-3
+# ::root	0	hit-01
+# ::edge	hit-01	ARG1	sack	0	0.0	
+(MRPNode-0 / hit-01
+      :ARG1 (MRPNode-1 / sack))
+

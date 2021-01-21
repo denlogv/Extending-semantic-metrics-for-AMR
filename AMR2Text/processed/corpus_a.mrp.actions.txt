@@ -1,0 +1,844 @@
+# ::id 0
+# ::tok How do you remove mold from a tent ?
+(MRPNode-0 / remove-01 :ARG1 (MRPNode-1 / mold) :ARG0 (MRPNode-2 / you) :ARG2 (MRPNode-3 / tent) :manner (MRPNode-4 / amr-unknown))
+# ::action CONFIRM	How	amr-unknown
+# ::action SHIFT
+# ::action DROP
+# ::action CONFIRM	you	you
+# ::action SHIFT
+# ::action CONFIRM	remove	remove-01
+# ::action LEFT	ARG0
+# ::action REDUCE
+# ::action LEFT	manner
+# ::action REDUCE
+# ::action SHIFT
+# ::action CONFIRM	mold	mold
+# ::action RIGHT	ARG1
+# ::action SHIFT
+# ::action DROP
+# ::action DROP
+# ::action REDUCE
+# ::action CONFIRM	tent	tent
+# ::action RIGHT	ARG2
+# ::action SHIFT
+# ::action DROP
+# ::action REDUCE
+# ::action LEFT	_ROOT_
+# ::action REDUCE
+# ::action SHIFT
+# ::action REDUCE
+
+# ::id 1
+# ::tok What could be wrong with my air conditioner ?
+(MRPNode-0 / possible-01 :ARG1 (MRPNode-1 / wrong-02 :ARG1 (MRPNode-2 / amr-unknown) :ARG2 (MRPNode-3 / conditioner :mod (MRPNode-4 / i) :mod (MRPNode-5 / air))))
+# ::action CONFIRM	What	amr-unknown
+# ::action SHIFT
+# ::action CONFIRM	could	possible-01
+# ::action SHIFT
+# ::action DROP
+# ::action CONFIRM	wrong	wrong-02
+# ::action RIGHT	ARG1
+# ::action CACHE
+# ::action LEFT	ARG1
+# ::action REDUCE
+# ::action SHIFT
+# ::action DROP
+# ::action CONFIRM	my	i
+# ::action SHIFT
+# ::action CONFIRM	air	air
+# ::action SHIFT
+# ::action CONFIRM	conditioner	conditioner
+# ::action LEFT	mod
+# ::action REDUCE
+# ::action LEFT	mod
+# ::action REDUCE
+# ::action RIGHT	ARG2
+# ::action REDUCE
+# ::action SHIFT
+# ::action DROP
+# ::action REDUCE
+# ::action LEFT	_ROOT_
+# ::action REDUCE
+# ::action SHIFT
+# ::action REDUCE
+
+# ::id 2
+# ::tok Senate confirms Obama nominee to key appeals court
+(MRPNode-0 / confirm-01 :ARG1 (MRPNode-1 / nominate-01 :ARG1 (MRPNode-2 / person :name (MRPNode-3 / name :op1 obama)) :ARG2 (MRPNode-4 / court :mod (MRPNode-5 / appeal-01) :ARG1-of (MRPNode-6 / key-02))) :ARG0 (MRPNode-7 / government-organization :name (MRPNode-8 / name :op1 senate)))
+# ::action ENTITY	government-organization
+# ::action SHIFT
+# ::action CONFIRM	confirms	confirm-01
+# ::action LEFT	ARG0
+# ::action REDUCE
+# ::action SHIFT
+# ::action ENTITY	person
+# ::action SHIFT
+# ::action CONFIRM	nominee	nominate-01
+# ::action LEFT	ARG1
+# ::action REDUCE
+# ::action RIGHT	ARG1
+# ::action SHIFT
+# ::action DROP
+# ::action CONFIRM	key	key-02
+# ::action SHIFT
+# ::action CONFIRM	appeals	appeal-01
+# ::action SHIFT
+# ::action CONFIRM	court	court
+# ::action LEFT	mod
+# ::action REDUCE
+# ::action LEFT	ARG1-of
+# ::action REDUCE
+# ::action RIGHT	ARG2
+# ::action REDUCE
+# ::action SHIFT
+# ::action REDUCE
+# ::action LEFT	_ROOT_
+# ::action REDUCE
+# ::action SHIFT
+# ::action REDUCE
+
+# ::id 3
+# ::tok What more can I do to improve my credit score ?
+(MRPNode-0 / possible-01 :ARG1 (MRPNode-1 / do-02 :ARG1 (MRPNode-2 / improve-01 :ARG1 (MRPNode-3 / score :mod (MRPNode-4 / credit) :poss (MRPNode-7 / i)) :ARG0 MRPNode-7) :ARG0 (MRPNode-5 / amr-unknown :mod (MRPNode-6 / more)) :ARG0 MRPNode-7))
+# ::action CONFIRM	What	amr-unknown
+# ::action SHIFT
+# ::action CONFIRM	more	more
+# ::action RIGHT	mod
+# ::action SHIFT
+# ::action REDUCE
+# ::action CONFIRM	can	possible-01
+# ::action SHIFT
+# ::action CONFIRM	I	i
+# ::action SHIFT
+# ::action CONFIRM	do	do-02
+# ::action LEFT	ARG0
+# ::action CACHE
+# ::action RIGHT	ARG1
+# ::action CACHE
+# ::action LEFT	ARG0
+# ::action REDUCE
+# ::action SHIFT
+# ::action DROP
+# ::action CONFIRM	improve	improve-01
+# ::action RIGHT	ARG1
+# ::action REDUCE
+# ::action LEFT	ARG0
+# ::action SHIFT
+# ::action DROP
+# ::action CONFIRM	credit	credit
+# ::action SHIFT
+# ::action CONFIRM	score	score
+# ::action LEFT	mod
+# ::action REDUCE
+# ::action RIGHT	ARG1
+# ::action REDUCE
+# ::action LEFT	poss
+# ::action REDUCE
+# ::action SHIFT
+# ::action DROP
+# ::action REDUCE
+# ::action LEFT	_ROOT_
+# ::action REDUCE
+# ::action SHIFT
+# ::action REDUCE
+
+# ::id 4
+# ::tok Chinese lunar rover lands on moon
+(MRPNode-0 / land-01 :ARG1 (MRPNode-1 / rover :mod (MRPNode-2 / country) :mod (MRPNode-3 / moon) :mod (MRPNode-4 / name :op1 china)) :location (MRPNode-5 / moon))
+# ::action ENTITY	name
+# ::action SHIFT
+# ::action CONFIRM	lunar	moon
+# ::action SHIFT
+# ::action CONFIRM	rover	rover
+# ::action LEFT	mod
+# ::action REDUCE
+# ::action LEFT	mod
+# ::action REDUCE
+# ::action SHIFT
+# ::action CONFIRM	lands	land-01
+# ::action LEFT	ARG1
+# ::action REDUCE
+# ::action SHIFT
+# ::action DROP
+# ::action CONFIRM	moon	moon
+# ::action RIGHT	location
+# ::action SHIFT
+# ::action REDUCE
+# ::action LEFT	_ROOT_
+# ::action REDUCE
+# ::action SHIFT
+# ::action REDUCE
+
+# ::id 5
+# ::tok How do I pump up water pressure in my shower ?
+(MRPNode-0 / pump-01 :manner (MRPNode-1 / pressure :mod (MRPNode-2 / water)) :ARG0 (MRPNode-3 / i) :ARG2 (MRPNode-4 / shower) :manner (MRPNode-5 / amr-unknown))
+# ::action CONFIRM	How	amr-unknown
+# ::action SHIFT
+# ::action DROP
+# ::action CONFIRM	I	i
+# ::action SHIFT
+# ::action CONFIRM	pump	pump-01
+# ::action LEFT	ARG0
+# ::action REDUCE
+# ::action LEFT	manner
+# ::action REDUCE
+# ::action SHIFT
+# ::action DROP
+# ::action CONFIRM	water	water
+# ::action SHIFT
+# ::action CONFIRM	pressure	pressure
+# ::action LEFT	mod
+# ::action REDUCE
+# ::action RIGHT	manner
+# ::action SHIFT
+# ::action DROP
+# ::action DROP
+# ::action REDUCE
+# ::action CONFIRM	shower	shower
+# ::action RIGHT	ARG2
+# ::action SHIFT
+# ::action DROP
+# ::action REDUCE
+# ::action LEFT	_ROOT_
+# ::action REDUCE
+# ::action SHIFT
+# ::action REDUCE
+
+# ::id 6
+# ::tok How can I locate and repair a leak ?
+(MRPNode-0 / possible-01 :ARG1 (MRPNode-1 / and :op1 (MRPNode-2 / amr-unknown) :op1 (MRPNode-3 / locate-01 :ARG1 (MRPNode-4 / i) :ARG1 (MRPNode-5 / leak)) :op2 (MRPNode-6 / repair-01 :ARG0 MRPNode-4 :ARG1 MRPNode-5)))
+# ::action CONFIRM	How	amr-unknown
+# ::action SHIFT
+# ::action CONFIRM	can	possible-01
+# ::action SHIFT
+# ::action CONFIRM	I	i
+# ::action SHIFT
+# ::action CONFIRM	locate	locate-01
+# ::action LEFT	ARG1
+# ::action SHIFT
+# ::action CONFIRM	and	and
+# ::action LEFT	op1
+# ::action CACHE
+# ::action CACHE
+# ::action RIGHT	ARG1
+# ::action CACHE
+# ::action LEFT	op1
+# ::action REDUCE
+# ::action SHIFT
+# ::action CONFIRM	repair	repair-01
+# ::action RIGHT	op2
+# ::action REDUCE
+# ::action CACHE
+# ::action LEFT	ARG0
+# ::action REDUCE
+# ::action SHIFT
+# ::action DROP
+# ::action CONFIRM	leak	leak
+# ::action RIGHT	ARG1
+# ::action REDUCE
+# ::action RIGHT	ARG1
+# ::action REDUCE
+# ::action SHIFT
+# ::action DROP
+# ::action REDUCE
+# ::action LEFT	_ROOT_
+# ::action REDUCE
+# ::action SHIFT
+# ::action REDUCE
+
+# ::id 7
+# ::tok The way that a ' term ' is defined depends on the application .
+(MRPNode-0 / depend-01 :ARG1 (MRPNode-1 / way :manner-of (MRPNode-2 / define-01 :ARG1 (MRPNode-3 / term))) :ARG1 (MRPNode-4 / application))
+# ::action DROP
+# ::action CONFIRM	way	way
+# ::action SHIFT
+# ::action DROP
+# ::action DROP
+# ::action DROP
+# ::action CONFIRM	term	term
+# ::action SHIFT
+# ::action DROP
+# ::action DROP
+# ::action CONFIRM	defined	define-01
+# ::action LEFT	ARG1
+# ::action REDUCE
+# ::action RIGHT	manner-of
+# ::action SHIFT
+# ::action REDUCE
+# ::action CONFIRM	depends	depend-01
+# ::action LEFT	ARG1
+# ::action REDUCE
+# ::action SHIFT
+# ::action DROP
+# ::action DROP
+# ::action CONFIRM	application	application
+# ::action RIGHT	ARG1
+# ::action SHIFT
+# ::action DROP
+# ::action REDUCE
+# ::action LEFT	_ROOT_
+# ::action REDUCE
+# ::action SHIFT
+# ::action REDUCE
+
+# ::id 8
+# ::tok The methodology takes much less time rather than naive methods .
+(MRPNode-0 / take-10 :ARG1 (MRPNode-1 / time :ARG1-of (MRPNode-2 / instead-of-91 :ARG2 (MRPNode-3 / method :mod (MRPNode-4 / naive))) :ARG1-of (MRPNode-5 / have-quant-91 :ARG3 (MRPNode-6 / less :quant (MRPNode-7 / much)))) :ARG0 (MRPNode-8 / methodology))
+# ::action DROP
+# ::action CONFIRM	methodology	methodology
+# ::action SHIFT
+# ::action CONFIRM	takes	take-10
+# ::action LEFT	ARG0
+# ::action REDUCE
+# ::action SHIFT
+# ::action CONFIRM	much	much
+# ::action SHIFT
+# ::action CONFIRM	less	less
+# ::action LEFT	quant
+# ::action REDUCE
+# ::action SHIFT
+# ::action REDUCE
+# ::action CONFIRM	time	time
+# ::action RIGHT	ARG1
+# ::action SHIFT
+# ::action DROP
+# ::action DROP
+# ::action REDUCE
+# ::action CONFIRM	naive	naive
+# ::action SHIFT
+# ::action CONFIRM	methods	method
+# ::action LEFT	mod
+# ::action REDUCE
+# ::action SHIFT
+# ::action DROP
+# ::action REDUCE
+# ::action LEFT	_ROOT_
+# ::action REDUCE
+# ::action SHIFT
+# ::action REDUCE
+
+# ::id 9
+# ::tok A hyperlink to a page counts as a vote of support .
+(MRPNode-0 / count-04 :ARG1 (MRPNode-1 / hyperlink :destination (MRPNode-2 / page)) :ARG2 (MRPNode-3 / vote-01 :ARG1 (MRPNode-4 / support-01)))
+# ::action DROP
+# ::action CONFIRM	hyperlink	hyperlink
+# ::action SHIFT
+# ::action DROP
+# ::action DROP
+# ::action CONFIRM	page	page
+# ::action RIGHT	destination
+# ::action SHIFT
+# ::action REDUCE
+# ::action CONFIRM	counts	count-04
+# ::action LEFT	ARG1
+# ::action REDUCE
+# ::action SHIFT
+# ::action DROP
+# ::action DROP
+# ::action CONFIRM	vote	vote-01
+# ::action RIGHT	ARG2
+# ::action SHIFT
+# ::action DROP
+# ::action CONFIRM	support	support-01
+# ::action RIGHT	ARG1
+# ::action REDUCE
+# ::action SHIFT
+# ::action DROP
+# ::action REDUCE
+# ::action LEFT	_ROOT_
+# ::action REDUCE
+# ::action SHIFT
+# ::action REDUCE
+
+# ::id 10
+# ::tok Russian opposition leader under house arrest
+(MRPNode-0 / arrest-01 :ARG1 (MRPNode-1 / person :ARG0-of (MRPNode-2 / country :name (MRPNode-3 / name :op1 russia)) :ARG0-of (MRPNode-4 / lead-02 :ARG1 (MRPNode-5 / oppose-01))) :location (MRPNode-6 / house))
+# ::action ENTITY	country
+# ::action NEWNODE	person
+# ::action SHIFT
+# ::action RIGHT	ARG0-of
+# ::action SHIFT
+# ::action REDUCE
+# ::action CONFIRM	opposition	oppose-01
+# ::action SHIFT
+# ::action CONFIRM	leader	lead-02
+# ::action LEFT	ARG1
+# ::action REDUCE
+# ::action RIGHT	ARG0-of
+# ::action SHIFT
+# ::action DROP
+# ::action REDUCE
+# ::action CONFIRM	house	house
+# ::action SHIFT
+# ::action CONFIRM	arrest	arrest-01
+# ::action LEFT	location
+# ::action REDUCE
+# ::action LEFT	ARG1
+# ::action REDUCE
+# ::action SHIFT
+# ::action LEFT	_ROOT_
+# ::action REDUCE
+# ::action SHIFT
+# ::action REDUCE
+
+# ::id 11
+# ::tok You do not need to worry .
+(MRPNode-0 / need-01 :polarity - :ARG1 (MRPNode-1 / worry-01 :ARG1 (MRPNode-2 / you)) :ARG0 MRPNode-2)
+# ::action CONFIRM	You	you
+# ::action SHIFT
+# ::action DROP
+# ::action CONFIRM	not	-
+# ::action SHIFT
+# ::action CONFIRM	need	need-01
+# ::action LEFT	polarity
+# ::action REDUCE
+# ::action LEFT	ARG0
+# ::action SHIFT
+# ::action DROP
+# ::action CONFIRM	worry	worry-01
+# ::action RIGHT	ARG1
+# ::action CACHE
+# ::action LEFT	ARG1
+# ::action REDUCE
+# ::action SHIFT
+# ::action DROP
+# ::action REDUCE
+# ::action LEFT	_ROOT_
+# ::action REDUCE
+# ::action SHIFT
+# ::action REDUCE
+
+# ::id 12
+# ::tok I was in a similar situation .
+(MRPNode-0 / be-located-at-91 :ARG1 (MRPNode-1 / i) :ARG2 (MRPNode-2 / situation :ARG1-of (MRPNode-3 / resemble-01)))
+# ::action CONFIRM	I	i
+# ::action SHIFT
+# ::action DROP
+# ::action CONFIRM	in	be-located-at-91
+# ::action LEFT	ARG1
+# ::action REDUCE
+# ::action SHIFT
+# ::action DROP
+# ::action CONFIRM	similar	resemble-01
+# ::action SHIFT
+# ::action CONFIRM	situation	situation
+# ::action LEFT	ARG1-of
+# ::action REDUCE
+# ::action RIGHT	ARG2
+# ::action SHIFT
+# ::action DROP
+# ::action REDUCE
+# ::action LEFT	_ROOT_
+# ::action REDUCE
+# ::action SHIFT
+# ::action REDUCE
+
+# ::id 13
+# ::tok They decided to protect and polish what remained .
+(MRPNode-0 / decide-01 :ARG1 (MRPNode-1 / and :op1 (MRPNode-2 / protect-01 :ARG1 (MRPNode-3 / thing :ARG1-of (MRPNode-4 / remain-01)) :ARG0 (MRPNode-6 / they)) :op2 (MRPNode-5 / polish :topic MRPNode-3 :ARG0 MRPNode-6)) :ARG0 MRPNode-6)
+# ::action CONFIRM	They	they
+# ::action SHIFT
+# ::action CONFIRM	decided	decide-01
+# ::action LEFT	ARG0
+# ::action SHIFT
+# ::action DROP
+# ::action CONFIRM	protect	protect-01
+# ::action CACHE
+# ::action LEFT	ARG0
+# ::action SHIFT
+# ::action CONFIRM	and	and
+# ::action LEFT	op1
+# ::action CACHE
+# ::action RIGHT	ARG1
+# ::action SHIFT
+# ::action CONFIRM	polish	polish
+# ::action RIGHT	op2
+# ::action REDUCE
+# ::action CACHE
+# ::action CACHE
+# ::action LEFT	ARG0
+# ::action REDUCE
+# ::action SHIFT
+# ::action DROP
+# ::action CONFIRM	remained	remain-01
+# ::action NEWNODE	thing
+# ::action RIGHT	topic
+# ::action REDUCE
+# ::action RIGHT	ARG1
+# ::action REDUCE
+# ::action SHIFT
+# ::action RIGHT	ARG1-of
+# ::action REDUCE
+# ::action SHIFT
+# ::action DROP
+# ::action REDUCE
+# ::action LEFT	_ROOT_
+# ::action REDUCE
+# ::action SHIFT
+# ::action REDUCE
+
+# ::id 14
+# ::tok The final chapter in the trilogy , The Matrix Revolutions , is out in November .
+(MRPNode-0 / out-05 :ARG1 (MRPNode-1 / event :mod (MRPNode-2 / chapter :part-of (MRPNode-3 / final) :part-of (MRPNode-4 / trilogy)) :name (MRPNode-5 / name :op1 the :op2 matrix :op3 revolutions)) :time (MRPNode-6 / date-entity :month 11))
+# ::action DROP
+# ::action CONFIRM	final	final
+# ::action SHIFT
+# ::action CONFIRM	chapter	chapter
+# ::action LEFT	part-of
+# ::action REDUCE
+# ::action SHIFT
+# ::action DROP
+# ::action DROP
+# ::action CONFIRM	trilogy	trilogy
+# ::action RIGHT	part-of
+# ::action SHIFT
+# ::action DROP
+# ::action REDUCE
+# ::action MERGE
+# ::action MERGE
+# ::action ENTITY	event
+# ::action LEFT	mod
+# ::action REDUCE
+# ::action SHIFT
+# ::action DROP
+# ::action DROP
+# ::action CONFIRM	out	out-05
+# ::action LEFT	ARG1
+# ::action REDUCE
+# ::action SHIFT
+# ::action DROP
+# ::action ENTITY	date-entity
+# ::action RIGHT	time
+# ::action SHIFT
+# ::action DROP
+# ::action REDUCE
+# ::action LEFT	_ROOT_
+# ::action REDUCE
+# ::action SHIFT
+# ::action REDUCE
+
+# ::id 15
+# ::tok The stock has risen 44 cents in recent days .
+(MRPNode-0 / rise-01 :ARG1 (MRPNode-1 / stock) :ARG2 (MRPNode-2 / monetary-quantity :quant 44 :unit (MRPNode-3 / cent)) :time (MRPNode-4 / day :mod (MRPNode-5 / recent)))
+# ::action DROP
+# ::action CONFIRM	stock	stock
+# ::action SHIFT
+# ::action DROP
+# ::action CONFIRM	risen	rise-01
+# ::action LEFT	ARG1
+# ::action REDUCE
+# ::action SHIFT
+# ::action CONFIRM	44	44
+# ::action SHIFT
+# ::action CONFIRM	cents	cent
+# ::action NEWNODE	monetary-quantity
+# ::action LEFT	quant
+# ::action REDUCE
+# ::action RIGHT	ARG2
+# ::action SHIFT
+# ::action RIGHT	unit
+# ::action REDUCE
+# ::action SHIFT
+# ::action DROP
+# ::action REDUCE
+# ::action CONFIRM	recent	recent
+# ::action SHIFT
+# ::action CONFIRM	days	day
+# ::action LEFT	mod
+# ::action REDUCE
+# ::action RIGHT	time
+# ::action SHIFT
+# ::action DROP
+# ::action REDUCE
+# ::action LEFT	_ROOT_
+# ::action REDUCE
+# ::action SHIFT
+# ::action REDUCE
+
+# ::id 16
+# ::tok He married Marta Casals , the widow of Pablo Casals .
+(MRPNode-0 / marry-01 :ARG1 (MRPNode-1 / he) :ARG2 (MRPNode-2 / person :ARG0-of (MRPNode-3 / have-rel-role-91 :ARG1 (MRPNode-4 / person :name (MRPNode-5 / name :op1 pablo :op2 casals)) :ARG2 (MRPNode-6 / widow)) :name (MRPNode-7 / name :op1 marta :op2 casals)))
+# ::action CONFIRM	He	he
+# ::action SHIFT
+# ::action CONFIRM	married	marry-01
+# ::action LEFT	ARG1
+# ::action REDUCE
+# ::action SHIFT
+# ::action MERGE
+# ::action ENTITY	person
+# ::action RIGHT	ARG2
+# ::action SHIFT
+# ::action DROP
+# ::action DROP
+# ::action CONFIRM	widow	widow
+# ::action NEWNODE	have-rel-role-91
+# ::action RIGHT	ARG0-of
+# ::action REDUCE
+# ::action SHIFT
+# ::action RIGHT	ARG2
+# ::action SHIFT
+# ::action DROP
+# ::action REDUCE
+# ::action MERGE
+# ::action ENTITY	person
+# ::action RIGHT	ARG1
+# ::action REDUCE
+# ::action SHIFT
+# ::action DROP
+# ::action REDUCE
+# ::action LEFT	_ROOT_
+# ::action REDUCE
+# ::action SHIFT
+# ::action REDUCE
+
+# ::id 17
+# ::tok A young cat sprints .
+(MRPNode-0 / cruise-01 :ARG0 (MRPNode-1 / cat :mod (MRPNode-2 / young)))
+# ::action DROP
+# ::action CONFIRM	young	young
+# ::action SHIFT
+# ::action CONFIRM	cat	cat
+# ::action LEFT	mod
+# ::action REDUCE
+# ::action SHIFT
+# ::action DROP
+# ::action DROP
+# ::action LEFT	_ROOT_
+# ::action REDUCE
+# ::action SHIFT
+# ::action REDUCE
+
+# ::id 18
+# ::tok A young cat sprints .
+(MRPNode-0 / cruise-01 :ARG0 (MRPNode-1 / cat :mod (MRPNode-2 / young)))
+# ::action DROP
+# ::action CONFIRM	young	young
+# ::action SHIFT
+# ::action CONFIRM	cat	cat
+# ::action LEFT	mod
+# ::action REDUCE
+# ::action SHIFT
+# ::action DROP
+# ::action DROP
+# ::action LEFT	_ROOT_
+# ::action REDUCE
+# ::action SHIFT
+# ::action REDUCE
+
+# ::id 19
+# ::tok He considered to skip work .
+(MRPNode-0 / consider-01 :ARG1 (MRPNode-1 / skip-01 :ARG1 (MRPNode-2 / work-01 :ARG0 (MRPNode-3 / he)) :ARG0 MRPNode-3) :ARG0 MRPNode-3)
+# ::action CONFIRM	He	he
+# ::action SHIFT
+# ::action CONFIRM	considered	consider-01
+# ::action LEFT	ARG0
+# ::action SHIFT
+# ::action DROP
+# ::action CONFIRM	skip	skip-01
+# ::action RIGHT	ARG1
+# ::action CACHE
+# ::action LEFT	ARG0
+# ::action SHIFT
+# ::action CONFIRM	work	work-01
+# ::action RIGHT	ARG1
+# ::action REDUCE
+# ::action CACHE
+# ::action LEFT	ARG0
+# ::action REDUCE
+# ::action SHIFT
+# ::action DROP
+# ::action REDUCE
+# ::action LEFT	_ROOT_
+# ::action REDUCE
+# ::action SHIFT
+# ::action REDUCE
+
+# ::id 20
+# ::tok It had an impact on the outcome .
+(MRPNode-0 / impact-01 :ARG1 (MRPNode-1 / outcome) :ARG0 (MRPNode-2 / it))
+# ::action CONFIRM	It	it
+# ::action SHIFT
+# ::action DROP
+# ::action DROP
+# ::action CONFIRM	impact	impact-01
+# ::action LEFT	ARG0
+# ::action REDUCE
+# ::action SHIFT
+# ::action DROP
+# ::action DROP
+# ::action CONFIRM	outcome	outcome
+# ::action RIGHT	ARG1
+# ::action SHIFT
+# ::action DROP
+# ::action REDUCE
+# ::action LEFT	_ROOT_
+# ::action REDUCE
+# ::action SHIFT
+# ::action REDUCE
+
+# ::id 21
+# ::tok It got out of hand .
+(MRPNode-0 / hinder-01 :ARG1 (MRPNode-1 / it))
+# ::action CONFIRM	It	it
+# ::action SHIFT
+# ::action DROP
+# ::action DROP
+# ::action DROP
+# ::action DROP
+# ::action DROP
+# ::action LEFT	_ROOT_
+# ::action REDUCE
+# ::action SHIFT
+# ::action REDUCE
+
+# ::id 22
+# ::tok We eat french fries .
+(MRPNode-0 / eat-01 :ARG1 (MRPNode-1 / fry :mod (MRPNode-2 / country :name (MRPNode-3 / name :op1 france))) :ARG0 (MRPNode-4 / we))
+# ::action CONFIRM	We	we
+# ::action SHIFT
+# ::action CONFIRM	eat	eat-01
+# ::action LEFT	ARG0
+# ::action REDUCE
+# ::action SHIFT
+# ::action ENTITY	country
+# ::action SHIFT
+# ::action CONFIRM	fries	fry
+# ::action LEFT	mod
+# ::action REDUCE
+# ::action RIGHT	ARG1
+# ::action SHIFT
+# ::action DROP
+# ::action REDUCE
+# ::action LEFT	_ROOT_
+# ::action REDUCE
+# ::action SHIFT
+# ::action REDUCE
+
+# ::id 23
+# ::tok They broke up .
+(MRPNode-0 / break-up-08 :ARG1 (MRPNode-1 / they))
+# ::action CONFIRM	They	they
+# ::action SHIFT
+# ::action CONFIRM	broke	break-up-08
+# ::action LEFT	ARG1
+# ::action REDUCE
+# ::action SHIFT
+# ::action DROP
+# ::action DROP
+# ::action LEFT	_ROOT_
+# ::action REDUCE
+# ::action SHIFT
+# ::action REDUCE
+
+# ::id 24
+# ::tok Have a blast .
+(MRPNode-0 / have-03 :mode imperative :ARG0 (MRPNode-1 / you) :ARG1 (MRPNode-2 / blast-05))
+# ::action CONFIRM	Have	you
+# ::action NEWNODE	imperative
+# ::action NEWNODE	have-03
+# ::action SHIFT
+# ::action RIGHT	mode
+# ::action SHIFT
+# ::action REDUCE
+# ::action RIGHT	ARG0
+# ::action SHIFT
+# ::action DROP
+# ::action REDUCE
+# ::action CONFIRM	blast	blast-05
+# ::action RIGHT	ARG1
+# ::action SHIFT
+# ::action DROP
+# ::action REDUCE
+# ::action LEFT	_ROOT_
+# ::action REDUCE
+# ::action SHIFT
+# ::action REDUCE
+
+# ::id 25
+# ::tok You should take a break .
+(MRPNode-0 / recommend-01 :ARG1 (MRPNode-1 / take-01 :ARG1 (MRPNode-2 / break-19 :ARG0 (MRPNode-3 / you)) :ARG0 MRPNode-3) :ARG2 MRPNode-3)
+# ::action CONFIRM	You	you
+# ::action SHIFT
+# ::action CONFIRM	should	recommend-01
+# ::action LEFT	ARG2
+# ::action SHIFT
+# ::action CONFIRM	take	take-01
+# ::action RIGHT	ARG1
+# ::action CACHE
+# ::action LEFT	ARG0
+# ::action SHIFT
+# ::action DROP
+# ::action CONFIRM	break	break-19
+# ::action RIGHT	ARG1
+# ::action REDUCE
+# ::action CACHE
+# ::action LEFT	ARG0
+# ::action REDUCE
+# ::action SHIFT
+# ::action DROP
+# ::action REDUCE
+# ::action LEFT	_ROOT_
+# ::action REDUCE
+# ::action SHIFT
+# ::action REDUCE
+
+# ::id 26
+# ::tok He kicked the bucket .
+(MRPNode-0 / kick-01 :ARG1 (MRPNode-1 / bucket) :ARG0 (MRPNode-2 / he))
+# ::action CONFIRM	He	he
+# ::action SHIFT
+# ::action CONFIRM	kicked	kick-01
+# ::action LEFT	ARG0
+# ::action REDUCE
+# ::action SHIFT
+# ::action DROP
+# ::action CONFIRM	bucket	bucket
+# ::action RIGHT	ARG1
+# ::action SHIFT
+# ::action DROP
+# ::action REDUCE
+# ::action LEFT	_ROOT_
+# ::action REDUCE
+# ::action SHIFT
+# ::action REDUCE
+
+# ::id 27
+# ::tok Hang in there .
+(MRPNode-0 / hang-01 :mode imperative :ARG0 (MRPNode-1 / you) :ARG2 (MRPNode-2 / there))
+# ::action CONFIRM	Hang	you
+# ::action NEWNODE	imperative
+# ::action NEWNODE	hang-01
+# ::action SHIFT
+# ::action RIGHT	mode
+# ::action SHIFT
+# ::action REDUCE
+# ::action RIGHT	ARG0
+# ::action SHIFT
+# ::action DROP
+# ::action REDUCE
+# ::action CONFIRM	there	there
+# ::action RIGHT	ARG2
+# ::action SHIFT
+# ::action DROP
+# ::action REDUCE
+# ::action LEFT	_ROOT_
+# ::action REDUCE
+# ::action SHIFT
+# ::action REDUCE
+
+# ::id 28
+# ::tok Hit the sack .
+(MRPNode-0 / hit-01 :ARG1 (MRPNode-1 / sack))
+# ::action CONFIRM	Hit	hit-01
+# ::action SHIFT
+# ::action DROP
+# ::action CONFIRM	sack	sack
+# ::action RIGHT	ARG1
+# ::action SHIFT
+# ::action DROP
+# ::action REDUCE
+# ::action LEFT	_ROOT_
+# ::action REDUCE
+# ::action SHIFT
+# ::action REDUCE
+

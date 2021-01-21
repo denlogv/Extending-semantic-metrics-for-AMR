@@ -1,0 +1,377 @@
+# ::snt How do you remove mold from a tent?
+# ::tokens ["How", "do", "you", "remove", "mold", "from", "a", "tent", "?"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::ner_iob ["O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::pos_tags ["WRB", "VBP", "PRP", "VB", "NN", "IN", "DT", "NN", "."]
+# ::lemmas ["how", "do", "you", "remove", "mold", "from", "a", "tent", "?"]
+(r0 / remove-01
+      :ARG1 (m0 / mold)
+      :ARG0 (y0 / you)
+      :ARG2 (t0 / tent)
+      :manner (a0 / amr-unknown))
+
+# ::snt What could be wrong with my air conditioner?
+# ::tokens ["What", "could", "be", "wrong", "with", "my", "air", "conditioner", "?"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::ner_iob ["O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::pos_tags ["WP", "MD", "VB", "JJ", "IN", "PRP$", "NN", "NN", "."]
+# ::lemmas ["what", "could", "be", "wrong", "with", "my", "air", "conditioner", "?"]
+(p0 / possible-01
+      :ARG1 (w0 / wrong-02
+            :ARG1 (a0 / amr-unknown)
+            :ARG2 (c0 / conditioner
+                  :mod (i0 / i)
+                  :mod (a1 / air))))
+
+# ::snt Senate confirms Obama nominee to key appeals court
+# ::tokens ["Senate", "confirms", "Obama", "nominee", "to", "key", "appeals", "court"]
+# ::ner_tags ["ORG", "O", "ORG", "O", "O", "O", "O", "O"]
+# ::ner_iob ["B", "O", "B", "O", "O", "O", "O", "O"]
+# ::pos_tags ["NNP", "VBZ", "NNP", "NN", "IN", "JJ", "NNS", "NN"]
+# ::lemmas ["Senate", "confirm", "Obama", "nominee", "to", "key", "appeal", "court"]
+(c0 / confirm-01
+      :ARG1 (n0 / nominate-01
+            :ARG1 (p0 / person
+                  :name (n2 / name
+                        :op1 "Obama" ))
+            :ARG2 (c1 / court
+                  :mod (a0 / appeal-01)
+                  :ARG1-of (k0 / key-02)))
+      :ARG0 (g0 / government-organization
+            :name (n1 / name
+                  :op1 "Senate" )))
+
+# ::snt What more can I do to improve my credit score?
+# ::tokens ["What", "more", "can", "I", "do", "to", "improve", "my", "credit", "score", "?"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::ner_iob ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::pos_tags ["WP", "JJR", "MD", "PRP", "VB", "TO", "VB", "PRP$", "NN", "NN", "."]
+# ::lemmas ["what", "more", "can", "i", "do", "to", "improve", "my", "credit", "score", "?"]
+(p0 / possible-01
+      :ARG1 (d0 / do-02
+            :ARG1 (i0 / improve-01
+                  :ARG0 i1
+                  :ARG1 (s0 / score
+                        :poss i1
+                        :mod (c0 / credit)))
+            :ARG0 (a0 / amr-unknown
+                  :mod (m0 / more))
+            :ARG0 (i1 / i)))
+
+# ::snt Chinese lunar rover lands on moon
+# ::tokens ["Chinese", "lunar", "rover", "lands", "on", "moon"]
+# ::ner_tags ["NORP", "O", "O", "O", "O", "O"]
+# ::ner_iob ["B", "O", "O", "O", "O", "O"]
+# ::pos_tags ["JJ", "JJ", "NN", "NNS", "IN", "NN"]
+# ::lemmas ["Chinese", "lunar", "rover", "land", "on", "moon"]
+(l0 / land-01
+      :ARG1 (r0 / rover
+            :mod (c0 / country)
+            :mod (m1 / moon)
+            :mod (n0 / name
+                  :op1 "China" ))
+      :location (m0 / moon))
+
+# ::snt How do I pump up water pressure in my shower?
+# ::tokens ["How", "do", "I", "pump", "up", "water", "pressure", "in", "my", "shower", "?"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::ner_iob ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::pos_tags ["WRB", "VBP", "PRP", "VB", "RP", "NN", "NN", "IN", "PRP$", "NN", "."]
+# ::lemmas ["how", "do", "i", "pump", "up", "water", "pressure", "in", "my", "shower", "?"]
+(p0 / pump-01
+      :manner (p1 / pressure
+            :mod (w0 / water))
+      :ARG0 (i0 / i)
+      :ARG2 (s0 / shower)
+      :manner (a0 / amr-unknown))
+
+# ::snt How can I locate and repair a leak?
+# ::tokens ["How", "can", "I", "locate", "and", "repair", "a", "leak", "?"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::ner_iob ["O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::pos_tags ["WRB", "MD", "PRP", "VB", "CC", "VB", "DT", "NN", "."]
+# ::lemmas ["how", "can", "i", "locate", "and", "repair", "a", "leak", "?"]
+(p0 / possible-01
+      :ARG1 (a0 / and
+            :op1 (a1 / amr-unknown)
+            :op1 (l0 / locate-01
+                  :ARG1 (i0 / i)
+                  :ARG1 (l1 / leak))
+            :op2 (r0 / repair-01
+                  :ARG0 i0
+                  :ARG1 l1)))
+
+# ::snt The way that a 'term' is defined depends on the application.
+# ::tokens ["The", "way", "that", "a", "'", "term", "'", "is", "defined", "depends", "on", "the", "application", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::ner_iob ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::pos_tags ["DT", "NN", "WDT", "DT", "``", "NN", "''", "VBZ", "VBN", "VBZ", "IN", "DT", "NN", "."]
+# ::lemmas ["the", "way", "that", "a", "'", "term", "'", "be", "define", "depend", "on", "the", "application", "."]
+(d0 / depend-01
+      :ARG1 (w0 / way
+            :manner-of (d1 / define-01
+                  :ARG1 (t0 / term)))
+      :ARG1 (a0 / application))
+
+# ::snt The methodology takes much less time rather than naive methods.
+# ::tokens ["The", "methodology", "takes", "much", "less", "time", "rather", "than", "naive", "methods", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::ner_iob ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::pos_tags ["DT", "NN", "VBZ", "RB", "JJR", "NN", "RB", "IN", "JJ", "NNS", "."]
+# ::lemmas ["the", "methodology", "take", "much", "less", "time", "rather", "than", "naive", "method", "."]
+(t0 / take-10
+      :ARG1 (t1 / time
+            :ARG1-of (i0 / instead-of-91
+                  :ARG2 (m1 / method
+                        :mod (n0 / naive)))
+            :ARG1-of (h0 / have-quant-91
+                  :ARG3 (l0 / less
+                        :quant (m2 / much))))
+      :ARG0 (m0 / methodology))
+
+# ::snt A hyperlink to a page counts as a vote of support.
+# ::tokens ["A", "hyperlink", "to", "a", "page", "counts", "as", "a", "vote", "of", "support", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::ner_iob ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::pos_tags ["DT", "NN", "IN", "DT", "NN", "NNS", "IN", "DT", "NN", "IN", "NN", "."]
+# ::lemmas ["a", "hyperlink", "to", "a", "page", "count", "as", "a", "vote", "of", "support", "."]
+(c0 / count-04
+      :ARG1 (h0 / hyperlink
+            :destination (p0 / page))
+      :ARG2 (v0 / vote-01
+            :ARG1 (s0 / support-01)))
+
+# ::snt Russian opposition leader under house arrest
+# ::tokens ["Russian", "opposition", "leader", "under", "house", "arrest"]
+# ::ner_tags ["NORP", "O", "O", "O", "O", "O"]
+# ::ner_iob ["B", "O", "O", "O", "O", "O"]
+# ::pos_tags ["JJ", "NN", "NN", "IN", "NN", "NN"]
+# ::lemmas ["Russian", "opposition", "leader", "under", "house", "arrest"]
+(a0 / arrest-01
+      :ARG1 (p0 / person
+            :ARG0-of (c0 / country
+                  :name (n0 / name
+                        :op1 "Russia" ))
+            :ARG0-of (l0 / lead-02
+                  :ARG1 (o0 / oppose-01)))
+      :location (h0 / house))
+
+# ::snt You do not need to worry.
+# ::tokens ["You", "do", "not", "need", "to", "worry", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O"]
+# ::ner_iob ["O", "O", "O", "O", "O", "O", "O"]
+# ::pos_tags ["PRP", "VBP", "RB", "VB", "TO", "VB", "."]
+# ::lemmas ["you", "do", "not", "need", "to", "worry", "."]
+(n0 / need-01
+      :ARG1 (w0 / worry-01
+            :ARG1 y0)
+      :ARG0 (y0 / you)
+      :polarity - )
+
+# ::snt I was in a similar situation.
+# ::tokens ["I", "was", "in", "a", "similar", "situation", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O"]
+# ::ner_iob ["O", "O", "O", "O", "O", "O", "O"]
+# ::pos_tags ["PRP", "VBD", "IN", "DT", "JJ", "NN", "."]
+# ::lemmas ["i", "be", "in", "a", "similar", "situation", "."]
+(b0 / be-located-at-91
+      :ARG1 (i0 / i)
+      :ARG2 (s0 / situation
+            :ARG1-of (r0 / resemble-01)))
+
+# ::snt They decided to protect and polish what remained.
+# ::tokens ["They", "decided", "to", "protect", "and", "polish", "what", "remained", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "NORP", "O", "O", "O"]
+# ::ner_iob ["O", "O", "O", "O", "O", "B", "O", "O", "O"]
+# ::pos_tags ["PRP", "VBD", "TO", "VB", "CC", "VB", "WP", "VBD", "."]
+# ::lemmas ["they", "decide", "to", "protect", "and", "polish", "what", "remain", "."]
+(d0 / decide-01
+      :ARG1 (a0 / and
+            :op1 (p0 / protect-01
+                  :ARG0 t0
+                  :ARG1 (t1 / thing
+                        :ARG1-of (r0 / remain-01)))
+            :op2 (p1 / polish
+                  :ARG0 t0
+                  :topic t1))
+      :ARG0 (t0 / they))
+
+# ::snt The final chapter in the trilogy, The Matrix Revolutions, is out in November.
+# ::tokens ["The", "final", "chapter", "in", "the", "trilogy", ",", "The", "Matrix", "Revolutions", ",", "is", "out", "in", "November", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "WORK_OF_ART", "WORK_OF_ART", "WORK_OF_ART", "O", "O", "O", "O", "DATE", "O"]
+# ::ner_iob ["O", "O", "O", "O", "O", "O", "O", "B", "I", "I", "O", "O", "O", "O", "B", "O"]
+# ::pos_tags ["DT", "JJ", "NN", "IN", "DT", "NN", ",", "DT", "NNP", "NNPS", ",", "VBZ", "RB", "IN", "NNP", "."]
+# ::lemmas ["the", "final", "chapter", "in", "the", "trilogy", ",", "The", "Matrix", "Revolutions", ",", "be", "out", "in", "November", "."]
+(o0 / out-05
+      :ARG1 (e0 / event
+            :mod (c0 / chapter
+                  :part-of (f0 / final)
+                  :part-of (t0 / trilogy))
+            :name (n0 / name
+                  :op1 "The" 
+                  :op2 "Matrix" 
+                  :op3 "Revolutions" ))
+      :time (d0 / date-entity
+            :month 11 ))
+
+# ::snt The stock has risen 44 cents in recent days.
+# ::tokens ["The", "stock", "has", "risen", "44", "cents", "in", "recent", "days", "."]
+# ::ner_tags ["O", "O", "O", "O", "MONEY", "MONEY", "O", "DATE", "DATE", "O"]
+# ::ner_iob ["O", "O", "O", "O", "B", "I", "O", "B", "I", "O"]
+# ::pos_tags ["DT", "NN", "VBZ", "VBN", "CD", "NNS", "IN", "JJ", "NNS", "."]
+# ::lemmas ["the", "stock", "have", "rise", "44", "cents", "in", "recent", "days", "."]
+(r0 / rise-01
+      :ARG1 (s0 / stock)
+      :ARG2 (m0 / monetary-quantity
+            :quant 44 
+            :unit (c0 / cent))
+      :time (d0 / day
+            :mod (r1 / recent)))
+
+# ::snt He married Marta Casals, the widow of Pablo Casals.
+# ::tokens ["He", "married", "Marta", "Casals", ",", "the", "widow", "of", "Pablo", "Casals", "."]
+# ::ner_tags ["O", "O", "ORG", "ORG", "O", "O", "O", "O", "ORG", "ORG", "O"]
+# ::ner_iob ["O", "O", "B", "I", "O", "O", "O", "O", "B", "I", "O"]
+# ::pos_tags ["PRP", "VBD", "NNP", "NNP", ",", "DT", "NN", "IN", "NNP", "NNPS", "."]
+# ::lemmas ["he", "marry", "Marta", "Casals", ",", "the", "widow", "of", "Pablo", "Casals", "."]
+(m0 / marry-01
+      :ARG1 (h0 / he)
+      :ARG2 (p0 / person
+            :ARG0-of (h1 / have-rel-role-91
+                  :ARG1 (p1 / person
+                        :name (n1 / name
+                              :op1 "Pablo" 
+                              :op2 "Casals" ))
+                  :ARG2 (w0 / widow))
+            :name (n0 / name
+                  :op1 "Marta" 
+                  :op2 "Casals" )))
+
+# ::snt A young cat sprints.
+# ::tokens ["A", "young", "cat", "sprints", "."]
+# ::ner_tags ["O", "O", "O", "O", "O"]
+# ::ner_iob ["O", "O", "O", "O", "O"]
+# ::pos_tags ["DT", "JJ", "NN", "NNS", "."]
+# ::lemmas ["a", "young", "cat", "sprint", "."]
+(c0 / cruise-01
+      :ARG0 (c1 / cat
+            :mod (y0 / young)))
+
+# ::snt A young cat sprints.
+# ::tokens ["A", "young", "cat", "sprints", "."]
+# ::ner_tags ["O", "O", "O", "O", "O"]
+# ::ner_iob ["O", "O", "O", "O", "O"]
+# ::pos_tags ["DT", "JJ", "NN", "NNS", "."]
+# ::lemmas ["a", "young", "cat", "sprint", "."]
+(c0 / cruise-01
+      :ARG0 (c1 / cat
+            :mod (y0 / young)))
+
+# ::snt He considered to skip work.
+# ::tokens ["He", "considered", "to", "skip", "work", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "O"]
+# ::ner_iob ["O", "O", "O", "O", "O", "O"]
+# ::pos_tags ["PRP", "VBD", "TO", "VB", "NN", "."]
+# ::lemmas ["he", "consider", "to", "skip", "work", "."]
+(c0 / consider-01
+      :ARG1 (s0 / skip-01
+            :ARG0 h0
+            :ARG1 (w0 / work-01
+                  :ARG0 h0))
+      :ARG0 (h0 / he))
+
+# ::snt It had an impact on the outcome.
+# ::tokens ["It", "had", "an", "impact", "on", "the", "outcome", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O"]
+# ::ner_iob ["O", "O", "O", "O", "O", "O", "O", "O"]
+# ::pos_tags ["PRP", "VBD", "DT", "NN", "IN", "DT", "NN", "."]
+# ::lemmas ["it", "have", "an", "impact", "on", "the", "outcome", "."]
+(i0 / impact-01
+      :ARG1 (o0 / outcome)
+      :ARG0 (i1 / it))
+
+# ::snt It got out of hand.
+# ::tokens ["It", "got", "out", "of", "hand", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "O"]
+# ::ner_iob ["O", "O", "O", "O", "O", "O"]
+# ::pos_tags ["PRP", "VBD", "IN", "IN", "NN", "."]
+# ::lemmas ["it", "get", "out", "of", "hand", "."]
+(h0 / hinder-01
+      :ARG1 (i0 / it))
+
+# ::snt We eat french fries.
+# ::tokens ["We", "eat", "french", "fries", "."]
+# ::ner_tags ["O", "O", "NORP", "O", "O"]
+# ::ner_iob ["O", "O", "B", "O", "O"]
+# ::pos_tags ["PRP", "VBP", "JJ", "NNS", "."]
+# ::lemmas ["we", "eat", "french", "fry", "."]
+(e0 / eat-01
+      :ARG1 (f0 / fry
+            :mod (c0 / country
+                  :name (n0 / name
+                        :op1 "France" )))
+      :ARG0 (w0 / we))
+
+# ::snt They broke up.
+# ::tokens ["They", "broke", "up", "."]
+# ::ner_tags ["O", "O", "O", "O"]
+# ::ner_iob ["O", "O", "O", "O"]
+# ::pos_tags ["PRP", "VBD", "RP", "."]
+# ::lemmas ["they", "break", "up", "."]
+(b0 / break-up-08
+      :ARG1 (t0 / they))
+
+# ::snt Have a blast.
+# ::tokens ["Have", "a", "blast", "."]
+# ::ner_tags ["O", "O", "O", "O"]
+# ::ner_iob ["O", "O", "O", "O"]
+# ::pos_tags ["VB", "DT", "NN", "."]
+# ::lemmas ["have", "a", "blast", "."]
+(h0 / have-03
+      :mode imperative 
+      :ARG0 (y0 / you)
+      :ARG1 (b0 / blast-05))
+
+# ::snt You should take a break.
+# ::tokens ["You", "should", "take", "a", "break", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "O"]
+# ::ner_iob ["O", "O", "O", "O", "O", "O"]
+# ::pos_tags ["PRP", "MD", "VB", "DT", "NN", "."]
+# ::lemmas ["you", "should", "take", "a", "break", "."]
+(r0 / recommend-01
+      :ARG1 (t0 / take-01
+            :ARG0 y0
+            :ARG1 (b0 / break-19
+                  :ARG0 y0))
+      :ARG2 (y0 / you))
+
+# ::snt He kicked the bucket.
+# ::tokens ["He", "kicked", "the", "bucket", "."]
+# ::ner_tags ["O", "O", "O", "O", "O"]
+# ::ner_iob ["O", "O", "O", "O", "O"]
+# ::pos_tags ["PRP", "VBD", "DT", "NN", "."]
+# ::lemmas ["he", "kick", "the", "bucket", "."]
+(k0 / kick-01
+      :ARG1 (b0 / bucket)
+      :ARG0 (h0 / he))
+
+# ::snt Hang in there.
+# ::tokens ["Hang", "in", "there", "."]
+# ::ner_tags ["O", "O", "O", "O"]
+# ::ner_iob ["O", "O", "O", "O"]
+# ::pos_tags ["VB", "RB", "RB", "."]
+# ::lemmas ["hang", "in", "there", "."]
+(h0 / hang-01
+      :ARG0 (y0 / you)
+      :ARG2 (t0 / there)
+      :mode imperative )
+
+# ::snt Hit the sack.
+# ::tokens ["Hit", "the", "sack", "."]
+# ::ner_tags ["O", "O", "O", "O"]
+# ::ner_iob ["O", "O", "O", "O"]
+# ::pos_tags ["VB", "DT", "NN", "."]
+# ::lemmas ["hit", "the", "sack", "."]
+(h0 / hit-01
+      :ARG1 (s0 / sack))
+

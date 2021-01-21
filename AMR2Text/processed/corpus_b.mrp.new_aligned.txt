@@ -1,0 +1,529 @@
+# ::id 0
+# ::snt How do I remove mildew from a tent?
+# ::tok How do I remove mildew from a tent ?
+# ::alignments 0-1|0.3 2-3|0.1 3-4|0 4-5|0.0 7-8|0.2 ::annotator aligner3.py ::date 2021-01-21 20:23:07.031429 ::parser eager_oracle ::smatch 1.0 ::n_actions 26
+# ::node	0	remove-01	3-4
+# ::node	0.0	mildew	4-5
+# ::node	0.1	i	2-3
+# ::node	0.2	tent	7-8
+# ::node	0.3	amr-unknown	0-1
+# ::root	0	remove-01
+# ::edge	remove-01	ARG0	i	0	0.1
+# ::edge	remove-01	ARG1	mildew	0	0.0
+# ::edge	remove-01	ARG2	tent	0	0.2
+# ::edge	remove-01	manner	amr-unknown	0	0.3
+(MRPNode-0 / remove-01 :ARG1 (MRPNode-1 / mildew) :ARG0 (MRPNode-2 / i) :ARG2 (MRPNode-3 / tent) :manner (MRPNode-4 / amr-unknown))
+
+# ::id 1
+# ::snt What could be wrong with my A/C unit?
+# ::tok What could be wrong with my A / C unit ?
+# ::alignments 0-1|0.0.0 1-2|0 3-4|0.0 5-6|0.0.1.0 9-10|0.0.1 ::annotator aligner3.py ::date 2021-01-21 20:23:07.035187 ::parser eager_oracle ::smatch 0.9090909090909091 ::n_actions 29
+# ::node	0	possible-01	1-2
+# ::node	0.0	wrong-02	3-4
+# ::node	0.0.0	amr-unknown	0-1
+# ::node	0.0.1	unit	9-10
+# ::node	0.0.1.0	i	5-6
+# ::node	0.0.1.1	air-conditioning	
+# ::root	0	possible-01
+# ::edge	possible-01	ARG1	wrong-02	0	0.0
+# ::edge	unit	mod	air-conditioning	0.0.1	0.0.1.1
+# ::edge	unit	mod	i	0.0.1	0.0.1.0
+# ::edge	wrong-02	ARG1	amr-unknown	0.0	0.0.0
+# ::edge	wrong-02	ARG2	unit	0.0	0.0.1
+(MRPNode-0 / possible-01 :ARG1 (MRPNode-1 / wrong-02 :ARG1 (MRPNode-2 / amr-unknown) :ARG2 (MRPNode-3 / unit :mod (MRPNode-4 / i) :mod (MRPNode-5 / air-conditioning))))
+
+# ::id 2
+# ::snt Senate approves Obama nominee to key appeals court
+# ::tok Senate approves Obama nominee to key appeals court
+# ::alignments 0-1|0.0+0.0.0+0.0.0.0 1-2|0 2-3|0.1.0+0.1.0.0+0.1.0.0.0 3-4|0.1 5-6|0.1.1.1 6-7|0.1.1.0 7-8|0.1.1 ::annotator aligner3.py ::date 2021-01-21 20:23:07.041309 ::parser eager_oracle ::smatch 1.0 ::n_actions 31
+# ::node	0	approve-01	1-2
+# ::node	0.0	government-organization	0-1
+# ::node	0.0.0	name	0-1
+# ::node	0.0.0.0	senate	0-1
+# ::node	0.1	nominate-01	3-4
+# ::node	0.1.0	person	2-3
+# ::node	0.1.0.0	name	2-3
+# ::node	0.1.0.0.0	obama	2-3
+# ::node	0.1.1	court	7-8
+# ::node	0.1.1.0	appeal-01	6-7
+# ::node	0.1.1.1	key-02	5-6
+# ::root	0	approve-01
+# ::edge	approve-01	ARG1	government-organization	0	0.0
+# ::edge	approve-01	ARG1	nominate-01	0	0.1
+# ::edge	court	ARG1-of	key-02	0.1.1	0.1.1.1
+# ::edge	court	mod	appeal-01	0.1.1	0.1.1.0
+# ::edge	government-organization	name	name	0.0	0.0.0
+# ::edge	name	op1	obama	0.1.0.0	0.1.0.0.0
+# ::edge	name	op1	senate	0.0.0	0.0.0.0
+# ::edge	nominate-01	ARG1	person	0.1	0.1.0
+# ::edge	nominate-01	ARG2	court	0.1	0.1.1
+# ::edge	person	name	name	0.1.0	0.1.0.0
+(MRPNode-0 / approve-01 :ARG1 (MRPNode-1 / government-organization :name (MRPNode-2 / name :op1 senate)) :ARG1 (MRPNode-3 / nominate-01 :ARG1 (MRPNode-4 / person :name (MRPNode-5 / name :op1 obama)) :ARG2 (MRPNode-6 / court :mod (MRPNode-7 / appeal-01) :ARG1-of (MRPNode-8 / key-02))))
+
+# ::id 3
+# ::snt What can I realistically do to raise my credit score?
+# ::tok What can I realistically do to raise my credit score ?
+# ::alignments 0-1|0.0.0 1-2|0 2-3|0.0.1 3-4|0.0.2 4-5|0.0 6-7|0.0.3 8-9|0.0.1.0.0 9-10|0.0.1.0 ::annotator aligner3.py ::date 2021-01-21 20:23:07.048629 ::parser eager_oracle ::smatch 1.0 ::n_actions 41
+# ::node	0	possible-01	1-2
+# ::node	0.0	do-02	4-5
+# ::node	0.0.0	amr-unknown	0-1
+# ::node	0.0.1	i	2-3
+# ::node	0.0.1.0	score	9-10
+# ::node	0.0.1.0.0	credit	8-9
+# ::node	0.0.2	realistic-03	3-4
+# ::node	0.0.3	raise-01	6-7
+# ::root	0	possible-01
+# ::edge	do-02	ARG0	i	0.0	0.0.1
+# ::edge	do-02	ARG1	amr-unknown	0.0	0.0.0
+# ::edge	do-02	ARG2	raise-01	0.0	0.0.3
+# ::edge	do-02	ARG2	realistic-03	0.0	0.0.2
+# ::edge	i	poss-of	score	0.0.1	0.0.1.0
+# ::edge	possible-01	ARG1	do-02	0	0.0
+# ::edge	raise-01	ARG0	i	0.0.3	0.0.1
+# ::edge	raise-01	ARG1	score	0.0.3	0.0.1.0
+# ::edge	score	mod	credit	0.0.1.0	0.0.1.0.0
+(MRPNode-0 / possible-01 :ARG1 (MRPNode-1 / do-02 :ARG1 (MRPNode-2 / amr-unknown) :ARG0 (MRPNode-3 / i :poss-of (MRPNode-4 / score :mod (MRPNode-5 / credit))) :ARG2 (MRPNode-6 / realistic-03) :ARG2 (MRPNode-7 / raise-01 :ARG0 MRPNode-3 :ARG1 MRPNode-4)))
+
+# ::id 4
+# ::snt China lands robot rover on moon
+# ::tok China lands robot rover on moon
+# ::alignments 0-1|0.1+0.1.0+0.1.0.0 1-2|0 3-4|0.0 5-6|0.2 ::annotator aligner3.py ::date 2021-01-21 20:23:07.051326 ::parser eager_oracle ::smatch 1.0 ::n_actions 20
+# ::node	0	land-01	1-2
+# ::node	0.0	rover	3-4
+# ::node	0.1	country	0-1
+# ::node	0.1.0	name	0-1
+# ::node	0.1.0.0	china	0-1
+# ::node	0.2	moon	5-6
+# ::root	0	land-01
+# ::edge	country	name	name	0.1	0.1.0
+# ::edge	land-01	ARG0	country	0	0.1
+# ::edge	land-01	ARG1	rover	0	0.0
+# ::edge	land-01	location	moon	0	0.2
+# ::edge	name	op1	china	0.1.0	0.1.0.0
+(MRPNode-0 / land-01 :ARG1 (MRPNode-1 / rover) :ARG0 (MRPNode-2 / country :name (MRPNode-3 / name :op1 china)) :location (MRPNode-4 / moon))
+
+# ::id 5
+# ::snt How can I boost the water pressure in my shower?
+# ::tok How can I boost the water pressure in my shower ?
+# ::alignments 0-1|0.0.1 1-2|0 2-3|0.0.0.1.0 3-4|0.0 5-6|0.0.0.0 6-7|0.0.0 9-10|0.0.0.1 ::annotator aligner3.py ::date 2021-01-21 20:23:07.056930 ::parser eager_oracle ::smatch 1.0 ::n_actions 37
+# ::node	0	possible-01	1-2
+# ::node	0.0	boost-01	3-4
+# ::node	0.0.0	pressure	6-7
+# ::node	0.0.0.0	water	5-6
+# ::node	0.0.0.1	shower	9-10
+# ::node	0.0.0.1.0	i	2-3
+# ::node	0.0.1	amr-unknown	0-1
+# ::root	0	possible-01
+# ::edge	boost-01	ARG0	i	0.0	0.0.0.1.0
+# ::edge	boost-01	ARG1	pressure	0.0	0.0.0
+# ::edge	boost-01	manner	amr-unknown	0.0	0.0.1
+# ::edge	possible-01	ARG1	boost-01	0	0.0
+# ::edge	pressure	location	shower	0.0.0	0.0.0.1
+# ::edge	pressure	mod	water	0.0.0	0.0.0.0
+# ::edge	shower	poss	i	0.0.0.1	0.0.0.1.0
+(MRPNode-0 / possible-01 :ARG1 (MRPNode-1 / boost-01 :ARG1 (MRPNode-2 / pressure :mod (MRPNode-3 / water) :location (MRPNode-4 / shower :poss (MRPNode-5 / i))) :ARG0 MRPNode-5 :manner (MRPNode-6 / amr-unknown)))
+
+# ::id 6
+# ::snt How can I locate and repair a break in a circuit?
+# ::tok How can I locate and repair a break in a circuit ?
+# ::alignments 0-1|0.1 1-2|0 2-3|0.0.0.1 3-4|0.0.0 4-5|0.0 5-6|0.0.1 7-8|0.0.0.0 10-11|0.0.0.0.0 ::annotator aligner3.py ::date 2021-01-21 20:23:07.063445 ::parser eager_oracle ::smatch 1.0 ::n_actions 43
+# ::node	0	possible-01	1-2
+# ::node	0.0	and	4-5
+# ::node	0.0.0	locate-01	3-4
+# ::node	0.0.0.0	break-01	7-8
+# ::node	0.0.0.0.0	circuit	10-11
+# ::node	0.0.0.1	i	2-3
+# ::node	0.0.1	repair-01	5-6
+# ::node	0.1	amr-unknown	0-1
+# ::root	0	possible-01
+# ::edge	and	op1	locate-01	0.0	0.0.0
+# ::edge	and	op2	repair-01	0.0	0.0.1
+# ::edge	break-01	ARG1	circuit	0.0.0.0	0.0.0.0.0
+# ::edge	locate-01	ARG0	i	0.0.0	0.0.0.1
+# ::edge	locate-01	ARG1	break-01	0.0.0	0.0.0.0
+# ::edge	possible-01	ARG1	and	0	0.0
+# ::edge	possible-01	manner	amr-unknown	0	0.1
+# ::edge	repair-01	ARG0	break-01	0.0.1	0.0.0.0
+# ::edge	repair-01	ARG0	i	0.0.1	0.0.0.1
+(MRPNode-0 / possible-01 :ARG1 (MRPNode-1 / and :op1 (MRPNode-2 / locate-01 :ARG1 (MRPNode-3 / break-01 :ARG1 (MRPNode-4 / circuit)) :ARG0 (MRPNode-5 / i)) :op2 (MRPNode-6 / repair-01 :ARG0 MRPNode-3 :ARG0 MRPNode-5)) :manner (MRPNode-7 / amr-unknown))
+
+# ::id 7
+# ::snt The definition of term is dependent on the application.
+# ::tok The definition of term is dependent on the application .
+# ::alignments 1-2|0.1 3-4|0.1.0 5-6|0 8-9|0.0 ::annotator aligner3.py ::date 2021-01-21 20:23:07.066128 ::parser eager_oracle ::smatch 1.0 ::n_actions 24
+# ::node	0	depend-01	5-6
+# ::node	0.0	apply-02	8-9
+# ::node	0.1	define-01	1-2
+# ::node	0.1.0	term	3-4
+# ::root	0	depend-01
+# ::edge	define-01	ARG1	term	0.1	0.1.0
+# ::edge	depend-01	ARG0	define-01	0	0.1
+# ::edge	depend-01	ARG1	apply-02	0	0.0
+(MRPNode-0 / depend-01 :ARG1 (MRPNode-1 / apply-02) :ARG0 (MRPNode-2 / define-01 :ARG1 (MRPNode-3 / term)))
+
+# ::id 8
+# ::snt This is a much quicker method than other more naive methods.
+# ::tok This is a much quicker method than other more naive methods .
+# ::alignments 0-1|0.0.0 3-4|0.2+0.2.0+0.3.1.1+0.3.1.1.0 4-5|0.1 5-6|0.3 7-8|0.3.0 9-10|0.3.1.0 10-11|0.0 ::annotator aligner3.py ::date 2021-01-21 20:23:07.102081 ::parser eager_oracle ::smatch 0.6363636363636364 ::n_actions 43
+# ::node	0	have-degree-91	
+# ::node	0.0	method	10-11
+# ::node	0.0.0	this	0-1
+# ::node	0.1	quick-02	4-5
+# ::node	0.2	more	3-4
+# ::node	0.2.0	much	3-4
+# ::node	0.3	method	5-6
+# ::node	0.3.0	other	7-8
+# ::node	0.3.1	have-degree-91	
+# ::node	0.3.1.0	naive	9-10
+# ::node	0.3.1.1	more	3-4
+# ::node	0.3.1.1.0	much	3-4
+# ::root	0	have-degree-91
+# ::edge	have-degree-91	ARG1	method	0	0.0
+# ::edge	have-degree-91	ARG2	naive	0.3.1	0.3.1.0
+# ::edge	have-degree-91	ARG2	quick-02	0	0.1
+# ::edge	have-degree-91	ARG3	more	0	0.2
+# ::edge	have-degree-91	ARG3	more	0.3.1	0.3.1.1
+# ::edge	have-degree-91	ARG4	method	0	0.3
+# ::edge	method	ARG1-of	have-degree-91	0.3	0.3.1
+# ::edge	method	mod	other	0.3	0.3.0
+# ::edge	method	mod	this	0.0	0.0.0
+# ::edge	more	quant	much	0.2	0.2.0
+# ::edge	more	quant	much	0.3.1.1	0.3.1.1.0
+# ::edge	quick-02	ARG1	method	0.1	0.0
+(MRPNode-0 / have-degree-91 :ARG1 (MRPNode-1 / method :mod (MRPNode-2 / this)) :ARG2 (MRPNode-3 / quick-02 :ARG1 MRPNode-1) :ARG3 (MRPNode-4 / more :quant (MRPNode-5 / much)) :ARG4 (MRPNode-6 / method :mod (MRPNode-7 / other) :ARG1-of (MRPNode-8 / have-degree-91 :ARG2 (MRPNode-9 / naive) :ARG3 (MRPNode-10 / more :quant (MRPNode-11 / much)))))
+
+# ::id 9
+# ::snt A link to a page is seen as a vote of support.
+# ::tok A link to a page is seen as a vote of support .
+# ::alignments 1-2|0.0+0.0.0 4-5|0.0.0.0 6-7|0 9-10|0.1 11-12|0.1.0 ::annotator aligner3.py ::date 2021-01-21 20:23:07.106764 ::parser eager_oracle ::smatch 1.0 ::n_actions 34
+# ::node	0	see-01	6-7
+# ::node	0.0	thing	1-2
+# ::node	0.0.0	link-01	1-2
+# ::node	0.0.0.0	page	4-5
+# ::node	0.1	vote-01	9-10
+# ::node	0.1.0	support-01	11-12
+# ::root	0	see-01
+# ::edge	link-01	ARG1	page	0.0.0	0.0.0.0
+# ::edge	see-01	ARG1	thing	0	0.0
+# ::edge	see-01	ARG2	vote-01	0	0.1
+# ::edge	thing	ARG3-of	link-01	0.0	0.0.0
+# ::edge	vote-01	ARG1	support-01	0.1	0.1.0
+(MRPNode-0 / see-01 :ARG1 (MRPNode-1 / thing :ARG3-of (MRPNode-2 / link-01 :ARG1 (MRPNode-3 / page))) :ARG2 (MRPNode-4 / vote-01 :ARG1 (MRPNode-5 / support-01)))
+
+# ::id 10
+# ::snt Russian Opposition Leader Placed Under House Arrest
+# ::tok Russian Opposition Leader Placed Under House Arrest
+# ::alignments 0-1|0.0+0.0.0+0.0.0.0+0.0.0.0.0 1-2|0.0.1.0 2-3|0.0.1 3-4|0 4-5|0.1 5-6|0.1.0.0+0.1.0.0.0+0.1.0.0.0.0+0.1.0.0.0.1 ::annotator aligner3.py ::date 2021-01-21 20:23:07.113600 ::parser eager_oracle ::smatch 0.8372093023255814 ::n_actions 30
+# ::node	0	place-01	3-4
+# ::node	0.0	person	0-1
+# ::node	0.0.0	country	0-1
+# ::node	0.0.0.0	name	0-1
+# ::node	0.0.0.0.0	russia	0-1
+# ::node	0.0.1	lead-02	2-3
+# ::node	0.0.1.0	oppose-01	1-2
+# ::node	0.1	under	4-5
+# ::node	0.1.0	strike-01	
+# ::node	0.1.0.0	government-organization	5-6
+# ::node	0.1.0.0.0	name	5-6
+# ::node	0.1.0.0.0.0	house	5-6
+# ::node	0.1.0.0.0.1	house	5-6
+# ::root	0	place-01
+# ::edge	country	name	name	0.0.0	0.0.0.0
+# ::edge	government-organization	name	name	0.1.0.0	0.1.0.0.0
+# ::edge	lead-02	ARG1	oppose-01	0.0.1	0.0.1.0
+# ::edge	name	op1	house	0.1.0.0.0	0.1.0.0.0.0
+# ::edge	name	op1	russia	0.0.0.0	0.0.0.0.0
+# ::edge	name	op2	house	0.1.0.0.0	0.1.0.0.0.1
+# ::edge	person	ARG0-of	country	0.0	0.0.0
+# ::edge	person	ARG0-of	lead-02	0.0	0.0.1
+# ::edge	place-01	ARG1	person	0	0.0
+# ::edge	place-01	ARG2	under	0	0.1
+# ::edge	strike-01	ARG0	government-organization	0.1.0	0.1.0.0
+# ::edge	under	op1	strike-01	0.1	0.1.0
+(MRPNode-0 / place-01 :ARG1 (MRPNode-1 / person :ARG0-of (MRPNode-2 / country :name (MRPNode-3 / name :op1 russia)) :ARG0-of (MRPNode-4 / lead-02 :ARG1 (MRPNode-5 / oppose-01))) :ARG2 (MRPNode-6 / under :op1 (MRPNode-7 / strike-01 :ARG0 (MRPNode-8 / government-organization :name (MRPNode-9 / name :op1 house :op2 house)))))
+
+# ::id 11
+# ::snt You don't have to worry.
+# ::tok You do n't have to worry .
+# ::alignments 0-1|0.1 2-3|0.0 3-4|0 5-6|0.2 ::annotator aligner3.py ::date 2021-01-21 20:23:07.115598 ::parser eager_oracle ::smatch 1.0 ::n_actions 23
+# ::node	0	obligate-01	3-4
+# ::node	0.0	-	2-3
+# ::node	0.1	you	0-1
+# ::node	0.2	worry-02	5-6
+# ::root	0	obligate-01
+# ::edge	obligate-01	ARG1	you	0	0.1
+# ::edge	obligate-01	ARG2	worry-02	0	0.2
+# ::edge	obligate-01	polarity	-	0	0.0
+# ::edge	worry-02	ARG0	you	0.2	0.1
+(MRPNode-0 / obligate-01 :polarity - :ARG1 (MRPNode-1 / you) :ARG2 (MRPNode-2 / worry-02 :ARG0 MRPNode-1))
+
+# ::id 12
+# ::snt I had a similar situation.
+# ::tok I had a similar situation .
+# ::alignments 0-1|0.1 1-2|0 3-4|0.0.0 4-5|0.0 ::annotator aligner3.py ::date 2021-01-21 20:23:07.117448 ::parser eager_oracle ::smatch 1.0 ::n_actions 20
+# ::node	0	have-03	1-2
+# ::node	0.0	situation	4-5
+# ::node	0.0.0	resemble-01	3-4
+# ::node	0.1	i	0-1
+# ::root	0	have-03
+# ::edge	have-03	ARG0	i	0	0.1
+# ::edge	have-03	ARG1	situation	0	0.0
+# ::edge	situation	ARG1-of	resemble-01	0.0	0.0.0
+(MRPNode-0 / have-03 :ARG1 (MRPNode-1 / situation :ARG1-of (MRPNode-2 / resemble-01)) :ARG0 (MRPNode-3 / i))
+
+# ::id 13
+# ::snt They made a decision to protect and polish what remained
+# ::tok They made a decision to protect and polish what remained
+# ::alignments 0-1|0.0.0.1 3-4|0 5-6|0.0.0 6-7|0.0 9-10|0.0.0.0+0.0.0.0.0 ::annotator aligner3.py ::date 2021-01-21 20:23:07.122681 ::parser eager_oracle ::smatch 0.8666666666666666 ::n_actions 34
+# ::node	0	decide-01	3-4
+# ::node	0.0	and	6-7
+# ::node	0.0.0	protect-01	5-6
+# ::node	0.0.0.0	thing	9-10
+# ::node	0.0.0.0.0	remain-01	9-10
+# ::node	0.0.0.1	they	0-1
+# ::node	0.0.1	meddle-01	
+# ::root	0	decide-01
+# ::edge	and	op1	protect-01	0.0	0.0.0
+# ::edge	and	op2	meddle-01	0.0	0.0.1
+# ::edge	decide-01	ARG0	they	0	0.0.0.1
+# ::edge	decide-01	ARG1	and	0	0.0
+# ::edge	meddle-01	ARG0	they	0.0.1	0.0.0.1
+# ::edge	meddle-01	ARG1	thing	0.0.1	0.0.0.0
+# ::edge	protect-01	ARG0	they	0.0.0	0.0.0.1
+# ::edge	protect-01	ARG1	thing	0.0.0	0.0.0.0
+# ::edge	thing	ARG1-of	remain-01	0.0.0.0	0.0.0.0.0
+(MRPNode-0 / decide-01 :ARG1 (MRPNode-1 / and :op1 (MRPNode-2 / protect-01 :ARG1 (MRPNode-3 / thing :ARG1-of (MRPNode-4 / remain-01)) :ARG0 (MRPNode-6 / they)) :op2 (MRPNode-5 / meddle-01 :ARG1 MRPNode-3 :ARG0 MRPNode-6)) :ARG0 MRPNode-6)
+
+# ::id 14
+# ::snt The third and final film, "The Matrix Revolutions," will be released in November.
+# ::tok The third and final film , " The Matrix Revolutions , " will be released in November .
+# ::alignments 4-5|0.0 7-10|0.0.1+0.0.1.0+0.0.1.1+0.0.1.2 14-15|0 16-17|0.1+0.1.0 ::annotator aligner3.py ::date 2021-01-21 20:23:07.169043 ::parser eager_oracle ::smatch 0.888888888888889 ::n_actions 32
+# ::node	0	release-01	14-15
+# ::node	0.0	film	4-5
+# ::node	0.0.0	ordinal-entity	
+# ::node	0.0.0.0	3	
+# ::node	0.0.1	name	7-10
+# ::node	0.0.1.0	the	7-10
+# ::node	0.0.1.1	matrix	7-10
+# ::node	0.0.1.2	revolutions	7-10
+# ::node	0.1	date-entity	16-17
+# ::node	0.1.0	11	16-17
+# ::root	0	release-01
+# ::edge	date-entity	month	11	0.1	0.1.0
+# ::edge	film	mod	ordinal-entity	0.0	0.0.0
+# ::edge	film	name	name	0.0	0.0.1
+# ::edge	name	op1	the	0.0.1	0.0.1.0
+# ::edge	name	op2	matrix	0.0.1	0.0.1.1
+# ::edge	name	op3	revolutions	0.0.1	0.0.1.2
+# ::edge	ordinal-entity	value	3	0.0.0	0.0.0.0
+# ::edge	release-01	ARG1	film	0	0.0
+# ::edge	release-01	time	date-entity	0	0.1
+(MRPNode-0 / release-01 :ARG1 (MRPNode-1 / film :mod (MRPNode-2 / ordinal-entity :value 3) :name (MRPNode-3 / name :op1 the :op2 matrix :op3 revolutions)) :time (MRPNode-4 / date-entity :month 11))
+
+# ::id 15
+# ::snt The stock had risen 44 cents in the past four trading sessions.
+# ::tok The stock had risen 44 cents in the past four trading sessions .
+# ::alignments 1-2|0.0 3-4|0 5-6|0.2+0.2.1 9-10|0.2.0 10-11|0.1.0 11-12|0.1 ::annotator aligner3.py ::date 2021-01-21 20:23:07.174780 ::parser eager_oracle ::smatch 0.8666666666666666 ::n_actions 37
+# ::node	0	rise-01	3-4
+# ::node	0.0	stock	1-2
+# ::node	0.1	session	11-12
+# ::node	0.1.0	trade-01	10-11
+# ::node	0.1.1	before	
+# ::node	0.1.1.0	now	
+# ::node	0.2	monetary-quantity	5-6
+# ::node	0.2.0	4	9-10
+# ::node	0.2.1	cent	5-6
+# ::root	0	rise-01
+# ::edge	before	op1	now	0.1.1	0.1.1.0
+# ::edge	monetary-quantity	quant	4	0.2	0.2.0
+# ::edge	monetary-quantity	unit	cent	0.2	0.2.1
+# ::edge	rise-01	ARG1	stock	0	0.0
+# ::edge	rise-01	ARG2	monetary-quantity	0	0.2
+# ::edge	rise-01	ARG2	session	0	0.1
+# ::edge	session	mod	trade-01	0.1	0.1.0
+# ::edge	session	time	before	0.1	0.1.1
+(MRPNode-0 / rise-01 :ARG1 (MRPNode-1 / stock) :ARG2 (MRPNode-2 / session :mod (MRPNode-3 / trade-01) :time (MRPNode-4 / before :op1 (MRPNode-5 / now))) :ARG2 (MRPNode-6 / monetary-quantity :quant 4 :unit (MRPNode-7 / cent)))
+
+# ::id 16
+# ::snt He married Casals‘ widow, Marta, after Casals‘ death.
+# ::tok He married Casals ' widow , Marta , after Casals ' death .
+# ::alignments 0-1|0.0 1-2|0 2-3|0.1.1.0+0.1.1.0.0+0.1.1.0.0.0 4-5|0.1.1+0.1.1.1 6-7|0.1+0.1.2+0.1.2.0 8-9|0.2 11-12|0.1.0 ::annotator aligner3.py ::date 2021-01-21 20:23:07.182505 ::parser eager_oracle ::smatch 1.0 ::n_actions 41
+# ::node	0	marry-01	1-2
+# ::node	0.0	he	0-1
+# ::node	0.1	person	6-7
+# ::node	0.1.0	die-01	11-12
+# ::node	0.1.1	have-rel-role-91	4-5
+# ::node	0.1.1.0	person	2-3
+# ::node	0.1.1.0.0	name	2-3
+# ::node	0.1.1.0.0.0	casals	2-3
+# ::node	0.1.1.1	widow	4-5
+# ::node	0.1.2	name	6-7
+# ::node	0.1.2.0	marta	6-7
+# ::node	0.2	after	8-9
+# ::root	0	marry-01
+# ::edge	have-rel-role-91	ARG0	person	0.1.1	0.1.1.0
+# ::edge	have-rel-role-91	ARG2	widow	0.1.1	0.1.1.1
+# ::edge	marry-01	ARG1	he	0	0.0
+# ::edge	marry-01	ARG2	person	0	0.1
+# ::edge	marry-01	time	after	0	0.2
+# ::edge	name	op1	casals	0.1.1.0.0	0.1.1.0.0.0
+# ::edge	name	op1	marta	0.1.2	0.1.2.0
+# ::edge	person	ARG0-of	have-rel-role-91	0.1	0.1.1
+# ::edge	person	ARG1-of	die-01	0.1	0.1.0
+# ::edge	person	name	name	0.1	0.1.2
+# ::edge	person	name	name	0.1.1.0	0.1.1.0.0
+(MRPNode-0 / marry-01 :ARG1 (MRPNode-1 / he) :ARG2 (MRPNode-2 / person :ARG1-of (MRPNode-3 / die-01) :ARG0-of (MRPNode-4 / have-rel-role-91 :ARG0 (MRPNode-5 / person :name (MRPNode-6 / name :op1 casals)) :ARG2 (MRPNode-7 / widow)) :name (MRPNode-8 / name :op1 marta)) :time (MRPNode-9 / after))
+
+# ::id 17
+# ::snt A kitten runs fast.
+# ::tok A kitten runs fast .
+# ::alignments 1-2|0.0 2-3|0 3-4|0.1 ::annotator aligner3.py ::date 2021-01-21 20:23:07.184068 ::parser eager_oracle ::smatch 1.0 ::n_actions 16
+# ::node	0	run-02	2-3
+# ::node	0.0	kitten	1-2
+# ::node	0.1	fast-02	3-4
+# ::root	0	run-02
+# ::edge	run-02	ARG0	kitten	0	0.0
+# ::edge	run-02	ARG1-of	fast-02	0	0.1
+(MRPNode-0 / run-02 :ARG0 (MRPNode-1 / kitten) :ARG1-of (MRPNode-2 / fast-02))
+
+# ::id 18
+# ::snt A kitten runs.
+# ::tok A kitten runs .
+# ::alignments 1-2|0.0 2-3|0 ::annotator aligner3.py ::date 2021-01-21 20:23:07.185158 ::parser eager_oracle ::smatch 1.0 ::n_actions 12
+# ::node	0	run-02	2-3
+# ::node	0.0	kitten	1-2
+# ::root	0	run-02
+# ::edge	run-02	ARG0	kitten	0	0.0
+(MRPNode-0 / run-02 :ARG0 (MRPNode-1 / kitten))
+
+# ::id 19
+# ::snt He took skipping work into consideration.
+# ::tok He took skipping work into consideration .
+# ::alignments 0-1|0.1 2-3|0.0 3-4|0.0.0 5-6|0 ::annotator aligner3.py ::date 2021-01-21 20:23:07.187514 ::parser eager_oracle ::smatch 1.0 ::n_actions 21
+# ::node	0	consider-02	5-6
+# ::node	0.0	skip-01	2-3
+# ::node	0.0.0	work-01	3-4
+# ::node	0.1	he	0-1
+# ::root	0	consider-02
+# ::edge	consider-02	ARG0	he	0	0.1
+# ::edge	consider-02	ARG1	skip-01	0	0.0
+# ::edge	skip-01	ARG1	work-01	0.0	0.0.0
+(MRPNode-0 / consider-02 :ARG1 (MRPNode-1 / skip-01 :ARG1 (MRPNode-2 / work-01)) :ARG0 (MRPNode-3 / he))
+
+# ::id 20
+# ::snt It affected the outcome.
+# ::tok It affected the outcome .
+# ::alignments 0-1|0.1 1-2|0 3-4|0.0 ::annotator aligner3.py ::date 2021-01-21 20:23:07.188906 ::parser eager_oracle ::smatch 1.0 ::n_actions 16
+# ::node	0	affect-01	1-2
+# ::node	0.0	outcome	3-4
+# ::node	0.1	it	0-1
+# ::root	0	affect-01
+# ::edge	affect-01	ARG0	it	0	0.1
+# ::edge	affect-01	ARG1	outcome	0	0.0
+(MRPNode-0 / affect-01 :ARG1 (MRPNode-1 / outcome) :ARG0 (MRPNode-2 / it))
+
+# ::id 21
+# ::snt It got out of control.
+# ::tok It got out of control .
+# ::alignments 0-1|0.0 1-2|0 2-3|0.1 4-5|0.0.0 ::annotator aligner3.py ::date 2021-01-21 20:23:07.191598 ::parser eager_oracle ::smatch 1.0 ::n_actions 24
+# ::node	0	get-03	1-2
+# ::node	0.0	it	0-1
+# ::node	0.0.0	control-01	4-5
+# ::node	0.1	out-06	2-3
+# ::root	0	get-03
+# ::edge	get-03	ARG1	it	0	0.0
+# ::edge	get-03	ARG2	out-06	0	0.1
+# ::edge	it	ARG1-of	control-01	0.0	0.0.0
+# ::edge	out-06	ARG1	it	0.1	0.0
+# ::edge	out-06	ARG2	control-01	0.1	0.0.0
+(MRPNode-0 / get-03 :ARG1 (MRPNode-1 / it :ARG1-of (MRPNode-2 / control-01)) :ARG2 (MRPNode-3 / out-06 :ARG1 MRPNode-1 :ARG2 MRPNode-2))
+
+# ::id 22
+# ::snt We eat chips.
+# ::tok We eat chips .
+# ::alignments 0-1|0.1 1-2|0 2-3|0.0 ::annotator aligner3.py ::date 2021-01-21 20:23:07.193064 ::parser eager_oracle ::smatch 1.0 ::n_actions 15
+# ::node	0	eat-01	1-2
+# ::node	0.0	chip	2-3
+# ::node	0.1	we	0-1
+# ::root	0	eat-01
+# ::edge	eat-01	ARG0	we	0	0.1
+# ::edge	eat-01	ARG1	chip	0	0.0
+(MRPNode-0 / eat-01 :ARG1 (MRPNode-1 / chip) :ARG0 (MRPNode-2 / we))
+
+# ::id 23
+# ::snt They split.
+# ::tok They split .
+# ::alignments 0-1|0.0 1-2|0 ::annotator aligner3.py ::date 2021-01-21 20:23:07.194023 ::parser eager_oracle ::smatch 1.0 ::n_actions 11
+# ::node	0	split-01	1-2
+# ::node	0.0	they	0-1
+# ::root	0	split-01
+# ::edge	split-01	ARG0	they	0	0.0
+(MRPNode-0 / split-01 :ARG0 (MRPNode-1 / they))
+
+# ::id 24
+# ::snt Have a good time.
+# ::tok Have a good time .
+# ::alignments 0-1|0+0.0+0.2 2-3|0.1.0 3-4|0.1 ::annotator aligner3.py ::date 2021-01-21 20:23:07.195848 ::parser eager_oracle ::smatch 1.0 ::n_actions 24
+# ::node	0	have-03	0-1
+# ::node	0.0	imperative	0-1
+# ::node	0.1	time	3-4
+# ::node	0.1.0	good-02	2-3
+# ::node	0.2	you	0-1
+# ::root	0	have-03
+# ::edge	have-03	ARG0	you	0	0.2
+# ::edge	have-03	ARG1	time	0	0.1
+# ::edge	have-03	mode	imperative	0	0.0
+# ::edge	time	ARG1-of	good-02	0.1	0.1.0
+(MRPNode-0 / have-03 :mode imperative :ARG1 (MRPNode-1 / time :ARG1-of (MRPNode-2 / good-02)) :ARG0 (MRPNode-3 / you))
+
+# ::id 25
+# ::snt You should rest.
+# ::tok You should rest .
+# ::alignments 0-1|0.0.0 1-2|0 2-3|0.0 ::annotator aligner3.py ::date 2021-01-21 20:23:07.197229 ::parser eager_oracle ::smatch 1.0 ::n_actions 16
+# ::node	0	recommend-01	1-2
+# ::node	0.0	rest-01	2-3
+# ::node	0.0.0	you	0-1
+# ::root	0	recommend-01
+# ::edge	recommend-01	ARG1	rest-01	0	0.0
+# ::edge	rest-01	ARG0	you	0.0	0.0.0
+(MRPNode-0 / recommend-01 :ARG1 (MRPNode-1 / rest-01 :ARG0 (MRPNode-2 / you)))
+
+# ::id 26
+# ::snt He died.
+# ::tok He died .
+# ::alignments 0-1|0.0 1-2|0 ::annotator aligner3.py ::date 2021-01-21 20:23:07.198208 ::parser eager_oracle ::smatch 1.0 ::n_actions 11
+# ::node	0	die-01	1-2
+# ::node	0.0	he	0-1
+# ::root	0	die-01
+# ::edge	die-01	ARG1	he	0	0.0
+(MRPNode-0 / die-01 :ARG1 (MRPNode-1 / he))
+
+# ::id 27
+# ::snt Don´t give up.
+# ::tok Do n't give up .
+# ::alignments 1-2|0.0 2-3|0+0.1+0.2 ::annotator aligner3.py ::date 2021-01-21 20:23:07.200276 ::parser eager_oracle ::smatch 1.0 ::n_actions 21
+# ::node	0	give-up-07	2-3
+# ::node	0.0	-	1-2
+# ::node	0.1	imperative	2-3
+# ::node	0.2	you	2-3
+# ::root	0	give-up-07
+# ::edge	give-up-07	ARG0	you	0	0.2
+# ::edge	give-up-07	mode	imperative	0	0.1
+# ::edge	give-up-07	polarity	-	0	0.0
+(MRPNode-0 / give-up-07 :polarity - :mode imperative :ARG0 (MRPNode-1 / you))
+
+# ::id 28
+# ::snt Go to sleep.
+# ::tok Go to sleep .
+# ::alignments 0-1|0+0.0+0.1.0 2-3|0.1 ::annotator aligner3.py ::date 2021-01-21 20:23:07.202362 ::parser eager_oracle ::smatch 1.0 ::n_actions 21
+# ::node	0	go-05	0-1
+# ::node	0.0	imperative	0-1
+# ::node	0.1	sleep-01	2-3
+# ::node	0.1.0	you	0-1
+# ::root	0	go-05
+# ::edge	go-05	ARG0	you	0	0.1.0
+# ::edge	go-05	ARG1	sleep-01	0	0.1
+# ::edge	go-05	mode	imperative	0	0.0
+# ::edge	sleep-01	ARG0	you	0.1	0.1.0
+(MRPNode-0 / go-05 :mode imperative :ARG1 (MRPNode-1 / sleep-01 :ARG0 (MRPNode-2 / you)) :ARG0 MRPNode-2)
+

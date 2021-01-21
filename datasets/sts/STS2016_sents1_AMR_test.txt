@@ -1,0 +1,16 @@
+# ::snt Should I use IRA money to pay down my student loans?
+# ::id 1
+(r0 / recommend-01
+      :ARG1 (u0 / use-01
+            :ARG1 (m0 / money
+                  :source (p1 / product
+                        :name (n0 / name
+                              :op1 "IRA")))
+            :ARG0 (i0 / i
+                  :ARG2-of (l0 / loan-01
+                        :ARG2 (p2 / person
+                              :ARG0-of (s0 / study-01))))
+            :ARG2 (p0 / pay-off-02
+                  :ARG0 i0
+                  :ARG1 l0))
+      :ARG2 (a0 / amr-unknown))

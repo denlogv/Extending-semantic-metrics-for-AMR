@@ -1,0 +1,244 @@
+# ::id 0
+# ::snt How do you remove mold from a tent?
+(MRPNode-0 / remove-01
+      :ARG1 (MRPNode-1 / mold)
+      :ARG0 (MRPNode-2 / you)
+      :ARG2 (MRPNode-3 / tent)
+      :manner (MRPNode-4 / amr-unknown))
+
+# ::id 1
+# ::snt What could be wrong with my air conditioner?
+(MRPNode-0 / possible-01
+      :ARG1 (MRPNode-1 / wrong-02
+            :ARG1 (MRPNode-2 / amr-unknown)
+            :ARG2 (MRPNode-3 / conditioner
+                  :mod (MRPNode-4 / i)
+                  :mod (MRPNode-5 / air))))
+
+# ::id 2
+# ::snt Senate confirms Obama nominee to key appeals court
+(MRPNode-0 / confirm-01
+      :ARG1 (MRPNode-1 / nominate-01
+            :ARG1 (MRPNode-2 / person
+                  :name (MRPNode-3 / name :op1 obama))
+            :ARG2 (MRPNode-4 / court
+                  :mod (MRPNode-5 / appeal-01)
+                  :ARG1-of (MRPNode-6 / key-02)))
+      :ARG0 (MRPNode-7 / government-organization
+            :name (MRPNode-8 / name :op1 senate)))
+
+# ::id 3
+# ::snt What more can I do to improve my credit score?
+(MRPNode-0 / possible-01
+      :ARG1 (MRPNode-1 / do-02
+            :ARG1 (MRPNode-2 / improve-01
+                  :ARG1 (MRPNode-3 / score
+                        :mod (MRPNode-4 / credit)
+                        :poss (MRPNode-7 / i))
+                  :ARG0 MRPNode-7)
+            :ARG0 (MRPNode-5 / amr-unknown
+                  :mod (MRPNode-6 / more))
+            :ARG0 MRPNode-7))
+
+# ::id 4
+# ::snt Chinese lunar rover lands on moon
+(MRPNode-0 / land-01
+      :ARG1 (MRPNode-1 / rover
+            :mod (MRPNode-2 / country)
+            :mod (MRPNode-3 / moon)
+            :mod (MRPNode-4 / name :op1 china))
+      :location (MRPNode-5 / moon))
+
+# ::id 5
+# ::snt How do I pump up water pressure in my shower?
+(MRPNode-0 / pump-01
+      :manner (MRPNode-1 / pressure
+            :mod (MRPNode-2 / water))
+      :ARG0 (MRPNode-3 / i)
+      :ARG2 (MRPNode-4 / shower)
+      :manner (MRPNode-5 / amr-unknown))
+
+# ::id 6
+# ::snt How can I locate and repair a leak?
+(MRPNode-0 / possible-01
+      :ARG1 (MRPNode-1 / and
+            :op1 (MRPNode-2 / amr-unknown)
+            :op1 (MRPNode-3 / locate-01
+                  :ARG1 (MRPNode-4 / i)
+                  :ARG1 (MRPNode-5 / leak))
+            :op2 (MRPNode-6 / repair-01
+                  :ARG0 MRPNode-4
+                  :ARG1 MRPNode-5)))
+
+# ::id 7
+# ::snt The way that a 'term' is defined depends on the application.
+(MRPNode-0 / depend-01
+      :ARG1 (MRPNode-1 / way
+            :manner-of (MRPNode-2 / define-01
+                  :ARG1 (MRPNode-3 / term)))
+      :ARG1 (MRPNode-4 / application))
+
+# ::id 8
+# ::snt The methodology takes much less time rather than naive methods.
+(MRPNode-0 / take-10
+      :ARG1 (MRPNode-1 / time
+            :ARG1-of (MRPNode-2 / instead-of-91
+                  :ARG2 (MRPNode-3 / method
+                        :mod (MRPNode-4 / naive)))
+            :ARG1-of (MRPNode-5 / have-quant-91
+                  :ARG3 (MRPNode-6 / less
+                        :quant (MRPNode-7 / much))))
+      :ARG0 (MRPNode-8 / methodology))
+
+# ::id 9
+# ::snt A hyperlink to a page counts as a vote of support.
+(MRPNode-0 / count-04
+      :ARG1 (MRPNode-1 / hyperlink
+            :destination (MRPNode-2 / page))
+      :ARG2 (MRPNode-3 / vote-01
+            :ARG1 (MRPNode-4 / support-01)))
+
+# ::id 10
+# ::snt Russian opposition leader under house arrest
+(MRPNode-0 / arrest-01
+      :ARG1 (MRPNode-1 / person
+            :ARG0-of (MRPNode-2 / country
+                  :name (MRPNode-3 / name :op1 russia))
+            :ARG0-of (MRPNode-4 / lead-02
+                  :ARG1 (MRPNode-5 / oppose-01)))
+      :location (MRPNode-6 / house))
+
+# ::id 11
+# ::snt You do not need to worry.
+(MRPNode-0 / need-01 :polarity -
+      :ARG1 (MRPNode-1 / worry-01
+            :ARG1 (MRPNode-2 / you))
+      :ARG0 MRPNode-2)
+
+# ::id 12
+# ::snt I was in a similar situation.
+(MRPNode-0 / be-located-at-91
+      :ARG1 (MRPNode-1 / i)
+      :ARG2 (MRPNode-2 / situation
+            :ARG1-of (MRPNode-3 / resemble-01)))
+
+# ::id 13
+# ::snt They decided to protect and polish what remained.
+(MRPNode-0 / decide-01
+      :ARG1 (MRPNode-1 / and
+            :op1 (MRPNode-2 / protect-01
+                  :ARG1 (MRPNode-3 / thing
+                        :ARG1-of (MRPNode-4 / remain-01))
+                  :ARG0 (MRPNode-6 / they))
+            :op2 (MRPNode-5 / polish
+                  :topic MRPNode-3
+                  :ARG0 MRPNode-6))
+      :ARG0 MRPNode-6)
+
+# ::id 14
+# ::snt The final chapter in the trilogy, The Matrix Revolutions, is out in November.
+(MRPNode-0 / out-05
+      :ARG1 (MRPNode-1 / event
+            :mod (MRPNode-2 / chapter
+                  :part-of (MRPNode-3 / final)
+                  :part-of (MRPNode-4 / trilogy))
+            :name (MRPNode-5 / name :op1 the :op2 matrix :op3 revolutions))
+      :time (MRPNode-6 / date-entity :month 11))
+
+# ::id 15
+# ::snt The stock has risen 44 cents in recent days.
+(MRPNode-0 / rise-01
+      :ARG1 (MRPNode-1 / stock)
+      :ARG2 (MRPNode-2 / monetary-quantity :quant 44
+            :unit (MRPNode-3 / cent))
+      :time (MRPNode-4 / day
+            :mod (MRPNode-5 / recent)))
+
+# ::id 16
+# ::snt He married Marta Casals, the widow of Pablo Casals.
+(MRPNode-0 / marry-01
+      :ARG1 (MRPNode-1 / he)
+      :ARG2 (MRPNode-2 / person
+            :ARG0-of (MRPNode-3 / have-rel-role-91
+                  :ARG1 (MRPNode-4 / person
+                        :name (MRPNode-5 / name :op1 pablo :op2 casals))
+                  :ARG2 (MRPNode-6 / widow))
+            :name (MRPNode-7 / name :op1 marta :op2 casals)))
+
+# ::id 17
+# ::snt A young cat sprints.
+(MRPNode-0 / cruise-01
+      :ARG0 (MRPNode-1 / cat
+            :mod (MRPNode-2 / young)))
+
+# ::id 18
+# ::snt A young cat sprints.
+(MRPNode-0 / cruise-01
+      :ARG0 (MRPNode-1 / cat
+            :mod (MRPNode-2 / young)))
+
+# ::id 19
+# ::snt He considered to skip work.
+(MRPNode-0 / consider-01
+      :ARG1 (MRPNode-1 / skip-01
+            :ARG1 (MRPNode-2 / work-01
+                  :ARG0 (MRPNode-3 / he))
+            :ARG0 MRPNode-3)
+      :ARG0 MRPNode-3)
+
+# ::id 20
+# ::snt It had an impact on the outcome.
+(MRPNode-0 / impact-01
+      :ARG1 (MRPNode-1 / outcome)
+      :ARG0 (MRPNode-2 / it))
+
+# ::id 21
+# ::snt It got out of hand.
+(MRPNode-0 / hinder-01
+      :ARG1 (MRPNode-1 / it))
+
+# ::id 22
+# ::snt We eat french fries.
+(MRPNode-0 / eat-01
+      :ARG1 (MRPNode-1 / fry
+            :mod (MRPNode-2 / country
+                  :name (MRPNode-3 / name :op1 france)))
+      :ARG0 (MRPNode-4 / we))
+
+# ::id 23
+# ::snt They broke up.
+(MRPNode-0 / break-up-08
+      :ARG1 (MRPNode-1 / they))
+
+# ::id 24
+# ::snt Have a blast.
+(MRPNode-0 / have-03 :mode imperative
+      :ARG0 (MRPNode-1 / you)
+      :ARG1 (MRPNode-2 / blast-05))
+
+# ::id 25
+# ::snt You should take a break.
+(MRPNode-0 / recommend-01
+      :ARG1 (MRPNode-1 / take-01
+            :ARG1 (MRPNode-2 / break-19
+                  :ARG0 (MRPNode-3 / you))
+            :ARG0 MRPNode-3)
+      :ARG2 MRPNode-3)
+
+# ::id 26
+# ::snt He kicked the bucket.
+(MRPNode-0 / kick-01
+      :ARG1 (MRPNode-1 / bucket)
+      :ARG0 (MRPNode-2 / he))
+
+# ::id 27
+# ::snt Hang in there.
+(MRPNode-0 / hang-01 :mode imperative
+      :ARG0 (MRPNode-1 / you)
+      :ARG2 (MRPNode-2 / there))
+
+# ::id 28
+# ::snt Hit the sack.
+(MRPNode-0 / hit-01
+      :ARG1 (MRPNode-1 / sack))
+
