@@ -385,3 +385,14 @@
       :ARG1 (c0 / compete-01)
       :polarity - )
 
+# ::snt A young cat walks fast.
+# ::tokens ["A", "young", "cat", "walks", "fast", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "O"]
+# ::ner_iob ["O", "O", "O", "O", "O", "O"]
+# ::pos_tags ["DT", "JJ", "NN", "VBZ", "RB", "."]
+# ::lemmas ["a", "young", "cat", "walk", "fast", "."]
+(w0 / walk-01
+      :ARG0 (c0 / cat
+            :mod (y0 / young))
+      :ARG1-of (f0 / fast-02))
+

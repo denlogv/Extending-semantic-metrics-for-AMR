@@ -7,7 +7,7 @@ Chinese lunar rover lands on moon	China lands robot rover on moon	0.750	0.750
 How do I pump up water pressure in my shower?	How can I boost the water pressure in my shower?	0.593	0.593
 How can I locate and repair a leak?	How can I locate and repair a break in a circuit?	0.706	0.706
 The way that a 'term' is defined depends on the application.	The definition of term is dependent on the application.	0.667	0.703
-The methodology takes much less time rather than naive methods.	This is a much quicker method than other more naive methods.	0.326	0.385
+The methodology takes much less time rather than naive methods.	This is a much quicker method than other more naive methods.	0.326	0.393
 A hyperlink to a page counts as a vote of support.	A link to a page is seen as a vote of support.	0.545	0.545
 Russian opposition leader under house arrest	Russian Opposition Leader Placed Under House Arrest	0.579	0.608
 You do not need to worry.	You don't have to worry.	0.375	0.415
@@ -28,4 +28,5 @@ You should take a break.	You should rest.	0.625	0.657
 He kicked the bucket.	He died.	0.200	0.200
 Hang in there.	Don´t give up.	0.462	0.462
 Hit the sack.	Go to sleep.	0.167	0.167
-The competition was not fair.	The competition was unfair.	1.000	1.000
+The competition was not fair.	The competition was unfair.	1.000	.000
+A young cat walks fast.	A kitten runs.	0.167	0.319

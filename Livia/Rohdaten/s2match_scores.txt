@@ -6,7 +6,7 @@ Smatch score F1 0.750
 Smatch score F1 0.593
 Smatch score F1 0.706
 Smatch score F1 0.703
-Smatch score F1 0.385
+Smatch score F1 0.393
 Smatch score F1 0.545
 Smatch score F1 0.608
 Smatch score F1 0.415
@@ -28,4 +28,5 @@ Smatch score F1 0.200
 Smatch score F1 0.462
 Smatch score F1 0.167
 Smatch score F1 1.000
-Document F-score: 1.000, 1.0000
+Smatch score F1 0.319
+Document F-score: 0.319, 0.3194
