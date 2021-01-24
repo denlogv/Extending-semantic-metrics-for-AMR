@@ -1,0 +1,259 @@
+1	How	_	_	_	_	4	advmod	_	_
+2	do	_	_	_	_	4	aux	_	_
+3	I	_	_	_	_	4	nsubj	_	_
+4	remove	_	_	_	_	4	dep	_	_
+5	mildew	_	_	_	_	4	dobj	_	_
+6	from	_	_	_	_	4	prep	_	_
+7	a	_	_	_	_	8	det	_	_
+8	tent?	_	_	_	_	8	amod	_	_
+
+
+1	What	_	_	_	_	4	nsubj	_	_
+2	could	_	_	_	_	4	aux	_	_
+3	be	_	_	_	_	4	cop	_	_
+4	wrong	_	_	_	_	4	csubj	_	_
+5	with	_	_	_	_	4	prep	_	_
+6	my	_	_	_	_	8	poss	_	_
+7	A/C	_	_	_	_	8	nn	_	_
+8	unit?	_	_	_	_	8	amod	_	_
+
+
+1	Senate	_	_	_	_	1	nn	_	_
+2	approves	_	_	_	_	2	dep	_	_
+3	Obama	_	_	_	_	4	nn	_	_
+4	nominee	_	_	_	_	4	dep	_	_
+5	to	_	_	_	_	2	prep	_	_
+6	key	_	_	_	_	8	amod	_	_
+7	appeals	_	_	_	_	8	nn	_	_
+8	court	_	_	_	_	8	nn	_	_
+
+
+1	What	_	_	_	_	5	dobj	_	_
+2	can	_	_	_	_	5	aux	_	_
+3	I	_	_	_	_	5	nsubj	_	_
+4	realistically	_	_	_	_	5	advmod	_	_
+5	do	_	_	_	_	5	aux	_	_
+6	to	_	_	_	_	7	aux	_	_
+7	raise	_	_	_	_	5	xcomp	_	_
+8	my	_	_	_	_	10	poss	_	_
+9	credit	_	_	_	_	10	nn	_	_
+10	score?	_	_	_	_	10	amod	_	_
+
+
+1	China	_	_	_	_	2	nsubj	_	_
+2	lands	_	_	_	_	4	nn	_	_
+3	robot	_	_	_	_	4	nn	_	_
+4	rover	_	_	_	_	4	dep	_	_
+5	on	_	_	_	_	2	prep	_	_
+6	moon	_	_	_	_	5	pobj	_	_
+
+
+1	How	_	_	_	_	4	advmod	_	_
+2	can	_	_	_	_	4	aux	_	_
+3	I	_	_	_	_	4	nsubj	_	_
+4	boost	_	_	_	_	4	dep	_	_
+5	the	_	_	_	_	7	det	_	_
+6	water	_	_	_	_	7	nn	_	_
+7	pressure	_	_	_	_	7	dep	_	_
+8	in	_	_	_	_	7	prep	_	_
+9	my	_	_	_	_	10	poss	_	_
+10	shower?	_	_	_	_	10	amod	_	_
+
+
+1	How	_	_	_	_	4	advmod	_	_
+2	can	_	_	_	_	4	aux	_	_
+3	I	_	_	_	_	4	nsubj	_	_
+4	locate	_	_	_	_	4	dep	_	_
+5	and	_	_	_	_	4	cc	_	_
+6	repair	_	_	_	_	4	conj	_	_
+7	a	_	_	_	_	8	det	_	_
+8	break	_	_	_	_	8	dep	_	_
+9	in	_	_	_	_	8	prep	_	_
+10	a	_	_	_	_	11	det	_	_
+11	circuit?	_	_	_	_	11	amod	_	_
+
+
+1	The	_	_	_	_	2	det	_	_
+2	definition	_	_	_	_	2	dep	_	_
+3	of	_	_	_	_	2	prep	_	_
+4	term	_	_	_	_	3	pobj	_	_
+5	is	_	_	_	_	6	cop	_	_
+6	dependent	_	_	_	_	6	ccomp	_	_
+7	on	_	_	_	_	6	prep	_	_
+8	the	_	_	_	_	9	det	_	_
+9	application.	_	_	_	_	9	amod	_	_
+
+
+1	This	_	_	_	_	6	nsubj	_	_
+2	is	_	_	_	_	6	cop	_	_
+3	a	_	_	_	_	6	det	_	_
+4	much	_	_	_	_	5	advmod	_	_
+5	quicker	_	_	_	_	6	amod	_	_
+6	method	_	_	_	_	6	dep	_	_
+7	than	_	_	_	_	6	prep	_	_
+8	other	_	_	_	_	11	amod	_	_
+9	more	_	_	_	_	10	advmod	_	_
+10	naive	_	_	_	_	11	amod	_	_
+11	methods.	_	_	_	_	11	amod	_	_
+
+
+1	A	_	_	_	_	2	det	_	_
+2	link	_	_	_	_	2	amod	_	_
+3	to	_	_	_	_	2	prep	_	_
+4	a	_	_	_	_	5	det	_	_
+5	page	_	_	_	_	3	pobj	_	_
+6	is	_	_	_	_	7	auxpass	_	_
+7	seen	_	_	_	_	7	dep	_	_
+8	as	_	_	_	_	7	prep	_	_
+9	a	_	_	_	_	10	det	_	_
+10	vote	_	_	_	_	8	pobj	_	_
+11	of	_	_	_	_	10	prep	_	_
+12	support.	_	_	_	_	12	amod	_	_
+
+
+1	Russian	_	_	_	_	3	nn	_	_
+2	Opposition	_	_	_	_	3	nn	_	_
+3	Leader	_	_	_	_	3	nn	_	_
+4	Placed	_	_	_	_	4	dep	_	_
+5	Under	_	_	_	_	4	prep	_	_
+6	House	_	_	_	_	7	nn	_	_
+7	Arrest	_	_	_	_	5	pobj	_	_
+
+
+1	You	_	_	_	_	3	nsubj	_	_
+2	don't	_	_	_	_	3	advmod	_	_
+3	have	_	_	_	_	3	dep	_	_
+4	to	_	_	_	_	5	aux	_	_
+5	worry.	_	_	_	_	5	xcomp	_	_
+
+
+1	I	_	_	_	_	2	nsubj	_	_
+2	had	_	_	_	_	2	ccomp	_	_
+3	a	_	_	_	_	5	det	_	_
+4	similar	_	_	_	_	5	amod	_	_
+5	situation.	_	_	_	_	5	amod	_	_
+
+
+1	They	_	_	_	_	2	nsubj	_	_
+2	made	_	_	_	_	2	ccomp	_	_
+3	a	_	_	_	_	4	det	_	_
+4	decision	_	_	_	_	2	dobj	_	_
+5	to	_	_	_	_	6	aux	_	_
+6	protect	_	_	_	_	4	infmod	_	_
+7	and	_	_	_	_	6	cc	_	_
+8	polish	_	_	_	_	6	conj	_	_
+9	what	_	_	_	_	10	nsubj	_	_
+10	remained	_	_	_	_	10	cop	_	_
+
+
+1	The	_	_	_	_	8	det	_	_
+2	third	_	_	_	_	8	amod	_	_
+3	and	_	_	_	_	2	cc	_	_
+4	final	_	_	_	_	2	conj	_	_
+5	film,	_	_	_	_	8	nn	_	_
+6	"The	_	_	_	_	8	nn	_	_
+7	Matrix	_	_	_	_	8	nn	_	_
+8	Revolutions,"	_	_	_	_	8	dep	_	_
+9	will	_	_	_	_	11	aux	_	_
+10	be	_	_	_	_	11	auxpass	_	_
+11	released	_	_	_	_	11	ccomp	_	_
+12	in	_	_	_	_	11	prep	_	_
+13	November.	_	_	_	_	13	nn	_	_
+
+
+1	The	_	_	_	_	2	det	_	_
+2	stock	_	_	_	_	4	nsubj	_	_
+3	had	_	_	_	_	4	aux	_	_
+4	risen	_	_	_	_	4	dep	_	_
+5	44	_	_	_	_	6	num	_	_
+6	cents	_	_	_	_	6	dep	_	_
+7	in	_	_	_	_	4	prep	_	_
+8	the	_	_	_	_	11	det	_	_
+9	past	_	_	_	_	11	amod	_	_
+10	four	_	_	_	_	12	num	_	_
+11	trading	_	_	_	_	11	nn	_	_
+12	sessions.	_	_	_	_	12	num	_	_
+
+
+1	He	_	_	_	_	2	nsubj	_	_
+2	married	_	_	_	_	2	ccomp	_	_
+3	Casals‘	_	_	_	_	5	nn	_	_
+4	widow,	_	_	_	_	5	nn	_	_
+5	Marta,	_	_	_	_	5	dep	_	_
+6	after	_	_	_	_	2	prep	_	_
+7	Casals‘	_	_	_	_	8	nn	_	_
+8	death.	_	_	_	_	8	nn	_	_
+
+
+1	A	_	_	_	_	2	det	_	_
+2	kitten	_	_	_	_	2	nn	_	_
+3	runs	_	_	_	_	3	ccomp	_	_
+4	fast.	_	_	_	_	3	dobj	_	_
+
+
+1	A	_	_	_	_	3	det	_	_
+2	kitten	_	_	_	_	3	nn	_	_
+3	runs.	_	_	_	_	3	nn	_	_
+
+
+1	He	_	_	_	_	2	nsubj	_	_
+2	took	_	_	_	_	2	ccomp	_	_
+3	skipping	_	_	_	_	4	nn	_	_
+4	work	_	_	_	_	3	dobj	_	_
+5	into	_	_	_	_	3	prep	_	_
+6	consideration.	_	_	_	_	6	amod	_	_
+
+
+1	It	_	_	_	_	2	nsubj	_	_
+2	affected	_	_	_	_	2	dep	_	_
+3	the	_	_	_	_	4	det	_	_
+4	outcome.	_	_	_	_	4	amod	_	_
+
+
+1	It	_	_	_	_	2	nsubj	_	_
+2	got	_	_	_	_	2	dep	_	_
+3	out	_	_	_	_	3	prep	_	_
+4	of	_	_	_	_	3	pcomp	_	_
+5	control.	_	_	_	_	5	amod	_	_
+
+
+1	We	_	_	_	_	2	nsubj	_	_
+2	eat	_	_	_	_	2	dep	_	_
+3	chips.	_	_	_	_	2	dobj	_	_
+
+
+1	They	_	_	_	_	2	nsubj	_	_
+2	split.	_	_	_	_	2	advmod	_	_
+
+
+1	Have	_	_	_	_	1	aux	_	_
+2	a	_	_	_	_	4	det	_	_
+3	good	_	_	_	_	4	amod	_	_
+4	time.	_	_	_	_	4	amod	_	_
+
+
+1	You	_	_	_	_	3	nsubj	_	_
+2	should	_	_	_	_	3	aux	_	_
+3	rest.	_	_	_	_	3	advmod	_	_
+
+
+1	He	_	_	_	_	2	nsubj	_	_
+2	died.	_	_	_	_	2	advmod	_	_
+
+
+1	Don´t	_	_	_	_	2	nsubj	_	_
+2	give	_	_	_	_	2	dep	_	_
+3	up.	_	_	_	_	2	dobj	_	_
+
+
+1	Go	_	_	_	_	1	ccomp	_	_
+2	to	_	_	_	_	1	prep	_	_
+3	sleep.	_	_	_	_	3	num	_	_
+
+
+1	The	_	_	_	_	2	det	_	_
+2	competition	_	_	_	_	2	amod	_	_
+3	was	_	_	_	_	4	cop	_	_
+4	unfair.	_	_	_	_	4	advmod	_	_
+
+
