@@ -374,3 +374,14 @@
 # ::lemmas ["hit", "the", "sack", "."]
 (h0 / hit-01
       :ARG1 (s0 / sack))
+
+# ::snt The competition was not fair.
+# ::tokens ["The", "competition", "was", "not", "fair", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "O"]
+# ::ner_iob ["O", "O", "O", "O", "O", "O"]
+# ::pos_tags ["DT", "NN", "VBD", "RB", "JJ", "."]
+# ::lemmas ["the", "competition", "be", "not", "fair", "."]
+(f0 / fair-01
+      :ARG1 (c0 / compete-01)
+      :polarity - )
+
