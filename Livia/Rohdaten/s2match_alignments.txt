@@ -1,0 +1,93 @@
+('Best node mapping alignment:', 'a0(remove-01)-b0(remove-01) a1(mold)-b1(mildew) a2(you)-b2(i) a3(tent)-b3(tent) a4(amr-unknown)-b4(amr-unknown)') ,
+
+
+('Best node mapping alignment:', 'a0(possible-01)-b0(possible-01) a1(wrong-02)-b1(wrong-02) a2(amr-unknown)-b2(amr-unknown) a3(conditioner)-b3(unit) a4(i)-b4(i) a5(air)-b5(air-conditioning)') ,
+
+
+('Best node mapping alignment:', 'a0(confirm-01)-b0(approve-01) a1(nominate-01)-b3(nominate-01) a2(person)-b4(person) a3(name)-b5(name) a4(court)-b6(court) a5(appeal-01)-b7(appeal-01) a6(key-02)-b8(key-02) a7(government-organization)-b1(government-organization) a8(name)-b2(name)') ,
+
+
+('Best node mapping alignment:', 'a0(possible-01)-b0(possible-01) a1(do-02)-b1(do-02) a2(improve-01)-b7(raise-01) a3(score)-b4(score) a4(credit)-b5(credit) a5(amr-unknown)-b2(amr-unknown) a6(more)-b6(realistic-03) a7(i)-b3(i)') ,
+
+
+('Best node mapping alignment:', 'a0(land-01)-b0(land-01) a1(rover)-b1(rover) a2(country)-b2(country) a3(moon)-Null a4(name)-b3(name) a5(moon)-b4(moon)') ,
+
+
+('Best node mapping alignment:', 'a0(pump-01)-b1(boost-01) a1(pressure)-b2(pressure) a2(water)-b3(water) a3(i)-b5(i) a4(shower)-b4(shower) a5(amr-unknown)-b6(amr-unknown)') ,
+
+
+('Best node mapping alignment:', 'a0(possible-01)-b0(possible-01) a1(and)-b1(and) a2(amr-unknown)-b7(amr-unknown) a3(locate-01)-b2(locate-01) a4(i)-b5(i) a5(leak)-b3(break-01) a6(repair-01)-b6(repair-01)') ,
+
+
+('Best node mapping alignment:', 'a0(depend-01)-b0(depend-01) a1(way)-Null a2(define-01)-b2(define-01) a3(term)-b3(term) a4(application)-b1(apply-02)') ,
+
+
+('Best node mapping alignment:', 'a0(take-10)-b0(have-degree-91) a1(time)-b1(method) a2(instead-of-91)-b3(quick-02) a3(method)-b2(this) a4(naive)-b9(naive) a5(have-quant-91)-b8(have-degree-91) a6(less)-b10(more) a7(much)-b11(much) a8(methodology)-b6(method)') ,
+
+
+('Best node mapping alignment:', 'a0(count-04)-b0(see-01) a1(hyperlink)-b1(thing) a2(page)-b3(page) a3(vote-01)-b4(vote-01) a4(support-01)-b5(support-01)') ,
+
+
+('Best node mapping alignment:', 'a0(arrest-01)-b0(place-01) a1(person)-b1(person) a2(country)-b2(country) a3(name)-b3(name) a4(lead-02)-b4(lead-02) a5(oppose-01)-b5(oppose-01) a6(house)-b8(government-organization)') ,
+
+
+('Best node mapping alignment:', 'a0(need-01)-b2(worry-02) a1(worry-01)-b0(obligate-01) a2(you)-b1(you)') ,
+
+
+('Best node mapping alignment:', 'a0(be-located-at-91)-b0(have-03) a1(i)-b3(i) a2(situation)-b1(situation) a3(resemble-01)-b2(resemble-01)') ,
+
+
+('Best node mapping alignment:', 'a0(decide-01)-b0(decide-01) a1(and)-b1(and) a2(protect-01)-b2(protect-01) a3(thing)-b3(thing) a4(remain-01)-b4(remain-01) a5(polish)-b5(meddle-01) a6(they)-b6(they)') ,
+
+
+('Best node mapping alignment:', 'a0(out-05)-b0(release-01) a1(event)-b1(film) a2(chapter)-b2(ordinal-entity) a3(final)-Null a4(trilogy)-Null a5(name)-b3(name) a6(date-entity)-b4(date-entity)') ,
+
+
+('Best node mapping alignment:', 'a0(rise-01)-b0(rise-01) a1(stock)-b1(stock) a2(monetary-quantity)-b6(monetary-quantity) a3(cent)-b7(cent) a4(day)-b2(session) a5(recent)-b3(trade-01)') ,
+
+
+('Best node mapping alignment:', 'a0(marry-01)-b0(marry-01) a1(he)-b1(he) a2(person)-b2(person) a3(have-rel-role-91)-b4(have-rel-role-91) a4(person)-b5(person) a5(name)-b6(name) a6(widow)-b7(widow) a7(name)-b8(name)') ,
+
+
+('Best node mapping alignment:', 'a0(cruise-01)-b0(run-02) a1(cat)-b1(kitten) a2(young)-b2(fast-02)') ,
+
+
+('Best node mapping alignment:', 'a0(cruise-01)-b0(run-02) a1(cat)-b1(kitten) a2(young)-Null') ,
+
+
+('Best node mapping alignment:', 'a0(consider-01)-b0(consider-02) a1(skip-01)-b1(skip-01) a2(work-01)-b2(work-01) a3(he)-b3(he)') ,
+
+
+('Best node mapping alignment:', 'a0(impact-01)-b0(affect-01) a1(outcome)-b1(outcome) a2(it)-b2(it)') ,
+
+
+('Best node mapping alignment:', 'a0(hinder-01)-b0(get-03) a1(it)-b1(it)') ,
+
+
+('Best node mapping alignment:', 'a0(eat-01)-b0(eat-01) a1(fry)-b1(chip) a2(country)-Null a3(name)-Null a4(we)-b2(we)') ,
+
+
+('Best node mapping alignment:', 'a0(break-up-08)-b0(split-01) a1(they)-b1(they)') ,
+
+
+('Best node mapping alignment:', 'a0(have-03)-b0(have-03) a1(you)-b3(you) a2(blast-05)-b1(time)') ,
+
+
+('Best node mapping alignment:', 'a0(recommend-01)-b0(recommend-01) a1(take-01)-b1(rest-01) a2(break-19)-Null a3(you)-b2(you)') ,
+
+
+('Best node mapping alignment:', 'a0(kick-01)-b0(die-01) a1(bucket)-Null a2(he)-b1(he)') ,
+
+
+('Best node mapping alignment:', 'a0(hang-01)-b0(give-up-07) a1(you)-b1(you) a2(there)-Null') ,
+
+
+('Best node mapping alignment:', 'a0(hit-01)-b0(go-05) a1(sack)-b1(sleep-01)') ,
+
+
+('Best node mapping alignment:', 'a0(fair-01)-b0(fair-01) a1(compete-01)-b1(compete-01)') ,
+
+
+('Best node mapping alignment:', 'a0(walk-01)-b0(run-02) a1(cat)-b1(kitten) a2(young)-Null a3(fast-02)-Null') ,
+
+
