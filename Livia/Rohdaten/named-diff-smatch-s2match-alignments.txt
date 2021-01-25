@@ -1,0 +1,19 @@
+samtch alignment	s2match alignmentWhat more can I do to improve my credit score?	What can I realistically do to raise my credit score?	
+('Best node mapping alignment:', 'a0(possible-01)-b0(possible-01) a1(do-02)-b1(do-02) a2(improve-01)-b7(raise-01) a3(score)-b4(score) a4(credit)-b5(credit) a5(amr-unknown)-b2(amr-unknown) a6(more)-Null a7(i)-b3(i)') ,
+('Best node mapping alignment:', 'a0(possible-01)-b0(possible-01) a1(do-02)-b1(do-02) a2(improve-01)-b7(raise-01) a3(score)-b4(score) a4(credit)-b5(credit) a5(amr-unknown)-b2(amr-unknown) a6(more)-b6(realistic-03) a7(i)-b3(i)') ,
+The way that a 'term' is defined depends on the application.	The definition of term is dependent on the application.
+('Best node mapping alignment:', 'a0(depend-01)-b0(depend-01) a1(way)-b1(apply-02) a2(define-01)-b2(define-01) a3(term)-b3(term) a4(application)-Null') ,
+('Best node mapping alignment:', 'a0(depend-01)-b0(depend-01) a1(way)-Null a2(define-01)-b2(define-01) a3(term)-b3(term) a4(application)-b1(apply-02)') ,
+The methodology takes much less time rather than naive methods.	This is a much quicker method than other more naive methods.
+('Best node mapping alignment:', 'a0(take-10)-b0(have-degree-91) a1(time)-b1(method) a2(instead-of-91)-b3(quick-02) a3(method)-b6(method) a4(naive)-b9(naive) a5(have-quant-91)-b8(have-degree-91) a6(less)-b10(more) a7(much)-b11(much) a8(methodology)-Null') ,
+('Best node mapping alignment:', 'a0(take-10)-b0(have-degree-91) a1(time)-b1(method) a2(instead-of-91)-b3(quick-02) a3(method)-b2(this) a4(naive)-b9(naive) a5(have-quant-91)-b8(have-degree-91) a6(less)-b10(more) a7(much)-b11(much) a8(methodology)-b6(method)') ,
+Russian opposition leader under house arrest	Russian Opposition Leader Placed Under House Arrest
+('Best node mapping alignment:', 'a0(arrest-01)-b0(place-01) a1(person)-b1(person) a2(country)-b2(country) a3(name)-b3(name) a4(lead-02)-b4(lead-02) a5(oppose-01)-b5(oppose-01) a6(house)-Null') ,
+('Best node mapping alignment:', 'a0(arrest-01)-b0(place-01) a1(person)-b1(person) a2(country)-b2(country) a3(name)-b3(name) a4(lead-02)-b4(lead-02) a5(oppose-01)-b5(oppose-01) a6(house)-b8(government-organization)') ,
+A young cat sprints.	A kitten runs fast.
+('Best node mapping alignment:', 'a0(cruise-01)-b0(run-02) a1(cat)-b1(kitten) a2(young)-Null') ,
+('Best node mapping alignment:', 'a0(cruise-01)-b0(run-02) a1(cat)-b1(kitten) a2(young)-b2(fast-02)') ,
+They broke up.	They split.
+('Best node mapping alignment:', 'a0(break-up-08)-Null a1(they)-b1(they)') ,
+('Best node mapping alignment:', 'a0(break-up-08)-b0(split-01) a1(they)-b1(they)') ,
+
