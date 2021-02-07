@@ -1,0 +1,389 @@
+(MRPNode-0 / remove-01
+           :ARG1 (MRPNode-1 / mold)
+           :ARG0 (MRPNode-2 / you)
+           :ARG2 (MRPNode-3 / tent)
+           :manner (MRPNode-4 / amr-unknown))
+
+(MRPNode-0 / remove-01
+           :ARG1 (MRPNode-1 / mold)
+           :ARG0 (MRPNode-2 / you)
+           :ARG2 (MRPNode-3 / tent)
+           :manner (MRPNode-4 / amr-unknown))
+
+(MRPNode-0 / possible-01
+           :ARG1 (MRPNode-1 / wrong-02
+                            :ARG1 (MRPNode-2 / amr-unknown)
+                            :ARG2 (MRPNode-3 / conditioner
+                                             :mod (MRPNode-4 / i)
+                                             :mod (MRPNode-5 / air))))
+
+(MRPNode-0 / possible-01
+           :ARG1 (MRPNode-1 / wrong-02
+                            :ARG1 (MRPNode-2 / amr-unknown)
+                            :ARG2 (MRPNode-3 / my_air_conditioner)))
+
+(MRPNode-0 / confirm-01
+           :ARG1 (MRPNode-1 / nominate-01
+                            :ARG1 (MRPNode-2 / person
+                                             :name (MRPNode-3 / name
+                                                              :op1 (MRPNode-4 / obama)))
+                            :ARG2 (MRPNode-5 / court
+                                             :mod (MRPNode-6 / appeal-01)
+                                             :ARG1-of (MRPNode-7 / key-02)))
+           :ARG0 (MRPNode-8 / government-organization
+                            :name (MRPNode-9 / name
+                                             :op1 (MRPNode-10 / senate))))
+
+(MRPNode-0 / confirm-01
+           :ARG1 (MRPNode-1 / nominate-01
+                            :ARG1 (MRPNode-2 / person
+                                             :name (MRPNode-3 / name
+                                                              :op1 (MRPNode-4 / obama)))
+                            :ARG2 (MRPNode-5 / key_appeals_court))
+           :ARG0 (MRPNode-8 / government-organization
+                            :name (MRPNode-9 / name
+                                             :op1 (MRPNode-10 / senate))))
+
+(MRPNode-0 / possible-01
+           :ARG1 (MRPNode-1 / do-02
+                            :ARG1 (MRPNode-2 / improve-01
+                                             :ARG1 (MRPNode-3 / score
+                                                              :mod (MRPNode-4 / credit)
+                                                              :poss (MRPNode-5 / i))
+                                             :ARG0 MRPNode-5)
+                            :ARG0 (MRPNode-6 / amr-unknown
+                                             :mod (MRPNode-7 / more))
+                            :ARG0 MRPNode-5))
+
+(MRPNode-0 / possible-01
+           :ARG1 (MRPNode-1 / do-02
+                            :ARG1 (MRPNode-2 / improve-01
+                                             :ARG1 (MRPNode-3 / score
+                                                              :mod (MRPNode-4 / credit)
+                                                              :poss (MRPNode-5 / i))
+                                             :ARG0 MRPNode-5)
+                            :ARG0 (MRPNode-6 / what_more)
+                            :ARG0 MRPNode-5))
+
+(MRPNode-0 / land-01
+           :ARG1 (MRPNode-1 / rover
+                            :mod (MRPNode-2 / country)
+                            :mod (MRPNode-3 / moon)
+                            :mod (MRPNode-4 / name
+                                            :op1 (MRPNode-5 / china)))
+           :location (MRPNode-6 / moon))
+
+(MRPNode-0 / land-01
+           :ARG1 (MRPNode-1 / chinese_lunar_rover)
+           :location (MRPNode-6 / moon))
+
+(MRPNode-0 / pump-01
+           :manner (MRPNode-1 / pressure
+                              :mod (MRPNode-2 / water))
+           :ARG0 (MRPNode-3 / i)
+           :ARG2 (MRPNode-4 / shower)
+           :manner (MRPNode-5 / amr-unknown))
+
+(MRPNode-0 / pump-01
+           :manner (MRPNode-1 / water_pressure)
+           :ARG0 (MRPNode-3 / i)
+           :ARG2 (MRPNode-4 / shower)
+           :manner (MRPNode-5 / amr-unknown))
+
+(MRPNode-0 / possible-01
+           :ARG1 (MRPNode-1 / and
+                            :op1 (MRPNode-2 / amr-unknown)
+                            :op1 (MRPNode-3 / locate-01
+                                            :ARG1 (MRPNode-4 / i)
+                                            :ARG1 (MRPNode-5 / leak))
+                            :op2 (MRPNode-6 / repair-01
+                                            :ARG0 MRPNode-4
+                                            :ARG1 MRPNode-5)))
+
+(MRPNode-0 / possible-01
+           :ARG1 (MRPNode-1 / and
+                            :op1 (MRPNode-2 / amr-unknown)
+                            :op1 (MRPNode-3 / locate-01
+                                            :ARG1 (MRPNode-4 / i)
+                                            :ARG1 (MRPNode-5 / leak))
+                            :op2 (MRPNode-6 / repair-01
+                                            :ARG0 MRPNode-4
+                                            :ARG1 MRPNode-5)))
+
+(MRPNode-0 / depend-01
+           :ARG1 (MRPNode-1 / way
+                            :manner-of (MRPNode-2 / define-01
+                                                  :ARG1 (MRPNode-3 / term)))
+           :ARG1 (MRPNode-4 / application))
+
+(MRPNode-0 / depend-01
+           :ARG1 (MRPNode-1 / way
+                            :manner-of (MRPNode-2 / define-01
+                                                  :ARG1 (MRPNode-3 / term)))
+           :ARG1 (MRPNode-4 / application))
+
+(MRPNode-0 / take-10
+           :ARG1 (MRPNode-1 / time
+                            :ARG1-of (MRPNode-2 / instead-of-91
+                                                :ARG2 (MRPNode-3 / method
+                                                                 :mod (MRPNode-4 / naive)))
+                            :ARG1-of (MRPNode-5 / have-quant-91
+                                                :ARG3 (MRPNode-6 / less
+                                                                 :quant (MRPNode-7 / much))))
+           :ARG0 (MRPNode-8 / methodology))
+
+(MRPNode-0 / take-10
+           :ARG1 (MRPNode-1 / time
+                            :ARG1-of (MRPNode-2 / instead-of-91
+                                                :ARG2 (MRPNode-3 / naive_methods))
+                            :ARG1-of (MRPNode-5 / have-quant-91
+                                                :ARG3 (MRPNode-6 / less
+                                                                 :quant (MRPNode-7 / much))))
+           :ARG0 (MRPNode-8 / methodology))
+
+(MRPNode-0 / count-04
+           :ARG1 (MRPNode-1 / hyperlink
+                            :destination (MRPNode-2 / page))
+           :ARG2 (MRPNode-3 / vote-01
+                            :ARG1 (MRPNode-4 / support-01)))
+
+(MRPNode-0 / count-04
+           :ARG1 (MRPNode-1 / hyperlink
+                            :destination (MRPNode-2 / page))
+           :ARG2 (MRPNode-3 / vote-01
+                            :ARG1 (MRPNode-4 / support-01)))
+
+(MRPNode-0 / arrest-01
+           :ARG1 (MRPNode-1 / person
+                            :ARG0-of (MRPNode-2 / country
+                                                :name (MRPNode-3 / name
+                                                                 :op1 (MRPNode-4 / russia)))
+                            :ARG0-of (MRPNode-5 / lead-02
+                                                :ARG1 (MRPNode-6 / oppose-01)))
+           :location (MRPNode-7 / house))
+
+(MRPNode-0 / arrest-01
+           :ARG1 (MRPNode-1 / person
+                            :ARG0-of (MRPNode-2 / country
+                                                :name (MRPNode-3 / name
+                                                                 :op1 (MRPNode-4 / russia)))
+                            :ARG0-of (MRPNode-5 / lead-02
+                                                :ARG1 (MRPNode-6 / oppose-01)))
+           :location (MRPNode-7 / house))
+
+(MRPNode-0 / need-01
+           :polarity (MRPNode-1 / -)
+           :ARG1 (MRPNode-2 / worry-01
+                            :ARG1 (MRPNode-3 / you))
+           :ARG0 MRPNode-3)
+
+(MRPNode-0 / need-01
+           :polarity (MRPNode-1 / -)
+           :ARG1 (MRPNode-2 / worry-01
+                            :ARG1 (MRPNode-3 / you))
+           :ARG0 MRPNode-3)
+
+(MRPNode-0 / be-located-at-91
+           :ARG1 (MRPNode-1 / i)
+           :ARG2 (MRPNode-2 / situation
+                            :ARG1-of (MRPNode-3 / resemble-01)))
+
+(MRPNode-0 / be-located-at-91
+           :ARG1 (MRPNode-1 / i)
+           :ARG2 (MRPNode-2 / situation
+                            :ARG1-of (MRPNode-3 / resemble-01)))
+
+(MRPNode-0 / decide-01
+           :ARG1 (MRPNode-1 / and
+                            :op1 (MRPNode-2 / protect-01
+                                            :ARG1 (MRPNode-3 / thing
+                                                             :ARG1-of (MRPNode-4 / remain-01))
+                                            :ARG0 (MRPNode-5 / they))
+                            :op2 (MRPNode-6 / polish
+                                            :topic MRPNode-3
+                                            :ARG0 MRPNode-5))
+           :ARG0 MRPNode-5)
+
+(MRPNode-0 / decide-01
+           :ARG1 (MRPNode-1 / and
+                            :op1 (MRPNode-2 / protect-01
+                                            :ARG1 (MRPNode-3 / thing
+                                                             :ARG1-of (MRPNode-4 / remain-01))
+                                            :ARG0 (MRPNode-5 / they))
+                            :op2 (MRPNode-6 / polish
+                                            :topic MRPNode-3
+                                            :ARG0 MRPNode-5))
+           :ARG0 MRPNode-5)
+
+(MRPNode-0 / out-05
+           :ARG1 (MRPNode-1 / event
+                            :mod (MRPNode-2 / chapter
+                                            :part-of (MRPNode-3 / final)
+                                            :part-of (MRPNode-4 / trilogy))
+                            :name (MRPNode-5 / name
+                                             :op1 (MRPNode-6 / the)
+                                             :op2 (MRPNode-7 / matrix)
+                                             :op3 (MRPNode-8 / revolutions)))
+           :time (MRPNode-9 / date-entity
+                            :month (MRPNode-10 / 11)))
+
+(MRPNode-0 / out-05
+           :ARG1 (MRPNode-1 / event
+                            :mod (MRPNode-2 / chapter
+                                            :part-of (MRPNode-3 / final)
+                                            :part-of (MRPNode-4 / trilogy))
+                            :name (MRPNode-5 / name
+                                             :op1 (MRPNode-6 / the)
+                                             :op2 (MRPNode-7 / matrix)
+                                             :op3 (MRPNode-8 / revolutions)))
+           :time (MRPNode-9 / date-entity
+                            :month (MRPNode-10 / 11)))
+
+(MRPNode-0 / rise-01
+           :ARG1 (MRPNode-1 / stock)
+           :ARG2 (MRPNode-2 / monetary-quantity
+                            :quant (MRPNode-3 / 44)
+                            :unit (MRPNode-4 / cent))
+           :time (MRPNode-5 / day
+                            :mod (MRPNode-6 / recent)))
+
+(MRPNode-0 / rise-01
+           :ARG1 (MRPNode-1 / stock)
+           :ARG2 (MRPNode-2 / monetary-quantity
+                            :quant (MRPNode-3 / 44)
+                            :unit (MRPNode-4 / cent))
+           :time (MRPNode-5 / recent_days))
+
+(MRPNode-0 / marry-01
+           :ARG1 (MRPNode-1 / he)
+           :ARG2 (MRPNode-2 / person
+                            :ARG0-of (MRPNode-3 / have-rel-role-91
+                                                :ARG1 (MRPNode-4 / person
+                                                                 :name (MRPNode-5 / name
+                                                                                  :op1 (MRPNode-6 / pablo)
+                                                                                  :op2 (MRPNode-7 / casals)))
+                                                :ARG2 (MRPNode-8 / widow))
+                            :name (MRPNode-9 / name
+                                             :op1 (MRPNode-10 / marta)
+                                             :op2 (MRPNode-11 / casals))))
+
+(MRPNode-0 / marry-01
+           :ARG1 (MRPNode-1 / he)
+           :ARG2 (MRPNode-2 / person
+                            :ARG0-of (MRPNode-3 / have-rel-role-91
+                                                :ARG1 (MRPNode-4 / person
+                                                                 :name (MRPNode-5 / name
+                                                                                  :op1 (MRPNode-6 / pablo)
+                                                                                  :op2 (MRPNode-7 / casals)))
+                                                :ARG2 (MRPNode-8 / widow))
+                            :name (MRPNode-9 / name
+                                             :op1 (MRPNode-10 / marta)
+                                             :op2 (MRPNode-11 / casals))))
+
+(MRPNode-0 / cruise-01
+           :ARG0 (MRPNode-1 / cat
+                            :mod (MRPNode-2 / young)))
+
+(MRPNode-0 / cruise-01
+           :ARG0 (MRPNode-1 / young_cat))
+
+(MRPNode-0 / cruise-01
+           :ARG0 (MRPNode-1 / cat
+                            :mod (MRPNode-2 / young)))
+
+(MRPNode-0 / cruise-01
+           :ARG0 (MRPNode-1 / young_cat))
+
+(MRPNode-0 / consider-01
+           :ARG1 (MRPNode-1 / skip-01
+                            :ARG1 (MRPNode-2 / work-01
+                                             :ARG0 (MRPNode-3 / he))
+                            :ARG0 MRPNode-3)
+           :ARG0 MRPNode-3)
+
+(MRPNode-0 / consider-01
+           :ARG1 (MRPNode-1 / skip-01
+                            :ARG1 (MRPNode-2 / work-01
+                                             :ARG0 (MRPNode-3 / he))
+                            :ARG0 MRPNode-3)
+           :ARG0 MRPNode-3)
+
+(MRPNode-0 / impact-01
+           :ARG1 (MRPNode-1 / outcome)
+           :ARG0 (MRPNode-2 / it))
+
+(MRPNode-0 / impact-01
+           :ARG1 (MRPNode-1 / outcome)
+           :ARG0 (MRPNode-2 / it))
+
+(MRPNode-0 / hinder-01
+           :ARG1 (MRPNode-1 / it))
+
+(MRPNode-0 / hinder-01
+           :ARG1 (MRPNode-1 / it))
+
+(MRPNode-0 / eat-01
+           :ARG1 (MRPNode-1 / fry
+                            :mod (MRPNode-2 / country
+                                            :name (MRPNode-3 / name
+                                                             :op1 (MRPNode-4 / france))))
+           :ARG0 (MRPNode-5 / we))
+
+(MRPNode-0 / eat-01
+           :ARG1 (MRPNode-1 / french_fries)
+           :ARG0 (MRPNode-5 / we))
+
+(MRPNode-0 / break-up-08
+           :ARG1 (MRPNode-1 / they))
+
+(MRPNode-0 / break-up-08
+           :ARG1 (MRPNode-1 / they))
+
+(MRPNode-0 / have-03
+           :mode (MRPNode-1 / imperative)
+           :ARG0 (MRPNode-2 / you)
+           :ARG1 (MRPNode-3 / blast-05))
+
+(MRPNode-0 / have-03
+           :mode (MRPNode-1 / imperative)
+           :ARG0 (MRPNode-2 / you)
+           :ARG1 (MRPNode-3 / blast-05))
+
+(MRPNode-0 / recommend-01
+           :ARG1 (MRPNode-1 / take-01
+                            :ARG1 (MRPNode-2 / break-19
+                                             :ARG0 (MRPNode-3 / you))
+                            :ARG0 MRPNode-3)
+           :ARG2 MRPNode-3)
+
+(MRPNode-0 / recommend-01
+           :ARG1 (MRPNode-1 / take-01
+                            :ARG1 (MRPNode-2 / break-19
+                                             :ARG0 (MRPNode-3 / you))
+                            :ARG0 MRPNode-3)
+           :ARG2 MRPNode-3)
+
+(MRPNode-0 / kick-01
+           :ARG1 (MRPNode-1 / bucket)
+           :ARG0 (MRPNode-2 / he))
+
+(MRPNode-0 / kick-01
+           :ARG1 (MRPNode-1 / bucket)
+           :ARG0 (MRPNode-2 / he))
+
+(MRPNode-0 / hang-01
+           :mode (MRPNode-1 / imperative)
+           :ARG0 (MRPNode-2 / you)
+           :ARG2 (MRPNode-3 / there))
+
+(MRPNode-0 / hang-01
+           :mode (MRPNode-1 / imperative)
+           :ARG0 (MRPNode-2 / you)
+           :ARG2 (MRPNode-3 / there))
+
+(MRPNode-0 / hit-01
+           :ARG1 (MRPNode-1 / sack))
+
+(MRPNode-0 / hit-01
+           :ARG1 (MRPNode-1 / sack))
+
