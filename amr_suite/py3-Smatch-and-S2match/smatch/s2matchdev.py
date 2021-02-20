@@ -18,6 +18,8 @@ from scipy.spatial.distance import euclidean, cosine, cityblock
 import numpy as np
 import math
 import re
+import json
+from collections import defaultdict
 
 # total number of iteration in smatch computation
 iteration_num = 5
@@ -42,7 +44,7 @@ pr_flag = False
 ERROR_LOG = sys.stderr
 
 # Debug log location
-DEBUG_LOG = sys.stderr
+DEBUG_LOG = sys.stdout
 
 # dictionary to save pre-computed node mapping and its resulting triple match count
 # key: tuples of node mapping
@@ -59,7 +61,10 @@ def get_amr_line(input_f):
     """
     cur_amr = []
     has_content = False
+    meta = {}
     collapsed_instance_nodes = 0
+    labels_dict, alignments_dict, toks, sent = {}, {}, [], ''
+      
     for line in input_f:
         line = line.strip()
         if line == "":
@@ -71,16 +76,34 @@ def get_amr_line(input_f):
                 break
         if line.strip().startswith("#"):
             # ignore the comment line (starting with "#") in the AMR file
-            # Denis: but don't ignore info about collapsed instance nodes ->
+            # Denis: but don't ignore metadata info about collapsed instance nodes
+            # alignments and labels dictionaries
             # KEY for computing the f-score correctly!!!
-            if "# ::collapsed instance nodes " in line:
+            if "# ::tok" in line:
+                toks = line.split()[2:]
+            elif "# ::snt" in line:
+                sent = line.strip()[len('# ::snt '):]
+            elif "# ::labels_dict" in line:
+                labels_dict = line.strip()[len('# ::labels_dict '):]
+                labels_dict = json.loads(labels_dict)
+                
+            elif "# ::alignments_dict" in line:
+                alignments_dict = line.strip()[len('# ::alignments_dict '):]
+                alignments_dict = json.loads(alignments_dict)
+                
+            elif "# ::collapsed instance nodes" in line:
                 collapsed_instance_nodes = int(line.strip().split()[-1])
-            else:
-                continue
         else:
             has_content = True
             cur_amr.append(line.strip())
-    return "".join(cur_amr), collapsed_instance_nodes
+
+    meta['labels_dict'] = labels_dict
+    meta['alignments_dict'] = alignments_dict
+    meta['collapsed_instance_nodes'] = collapsed_instance_nodes
+    meta['sent'] = sent
+    meta['toks'] = toks
+    
+    return "".join(cur_amr), meta
 
 
 def build_arg_parser():
@@ -91,7 +114,7 @@ def build_arg_parser():
     parser = argparse.ArgumentParser(description="Smatch calculator -- arguments")
     parser.add_argument('-f', nargs=2, required=True, type=argparse.FileType('r'),
                         help='Two files containing AMR pairs. AMRs in each file are separated by a single blank line')
-    parser.add_argument('-vectors', required=False, type=str, default="../vectors/glove.6B.100d.txt",
+    parser.add_argument('-vectors', required=False, type=str, default="../vectors/glove.6B.50d.txt",
                         help='Filepath to Glove vectors')
     parser.add_argument('-similarityfunction', required=False, type=str, default="cosine",
                         help='similarity function')
@@ -206,7 +229,7 @@ def get_best_match(instance1, attribute1, relation1,
         if match_num > best_match_num:
             best_mapping = cur_mapping[:]
             best_match_num = match_num
-    return best_mapping, best_match_num
+    return best_mapping, best_match_num, weight_dict
 
 
 
@@ -905,6 +928,25 @@ def get_sim_fun(string):
         return cityblock_sim
 
 
+def full_span(subtree_token_spans):
+    """
+    Takes a list of token spans of a whole subtree of form:
+    and checks, if there are gaps. 
+    
+    Returns a list of indices if a token span is full, else False.
+    """
+    toks_indices = set()
+    for token_span in subtree_token_spans:
+        spl = token_span.split('-')
+        i1, i2 = int(spl[0]), int(spl[1])
+        indices = set(range(i1, i2))            
+        toks_indices.update(indices)            
+    minimum, maximum = min(toks_indices), max(toks_indices)
+    toks_indices = sorted(list(toks_indices))
+    if toks_indices == list(range(minimum, maximum+1)):
+        return toks_indices
+    return False
+
 
 def main(arguments):
     """
@@ -943,8 +985,9 @@ def main(arguments):
     vectors = load_vecs(arguments.vectors)
     simfun = get_sim_fun(arguments.similarityfunction)
     while True:
-        cur_amr1, collapsed_instance_nodes_a = get_amr_line(args.f[0])
-        cur_amr2, collapsed_instance_nodes_b = get_amr_line(args.f[1])
+        cur_amr1, meta1 = get_amr_line(args.f[0])
+        cur_amr2, meta2 = get_amr_line(args.f[1])        
+        
         if cur_amr1 == "" and cur_amr2 == "":
             break
         if cur_amr1 == "":
@@ -957,12 +1000,16 @@ def main(arguments):
             break
         amr1 = amr.AMR.parse_AMR_line(cur_amr1, arguments.do_not_mark_quotes)
         amr2 = amr.AMR.parse_AMR_line(cur_amr2, arguments.do_not_mark_quotes)
-        prefix1 = "a"
-        prefix2 = "b"
+        #prefix1 = "a"
+        #prefix2 = "b"
+        prefix_pattern = re.compile('(\D+)\d*')
+        prefix1 = re.match(prefix_pattern, amr1.nodes[0]).group(1)
+        prefix2 = re.match(prefix_pattern, amr2.nodes[0]).group(1)
+        
         # Rename node to "a1", "a2", .etc
-        amr1.rename_node(prefix1)
+        #amr1.rename_node(prefix1)
         # Renaming node to "b1", "b2", .etc
-        amr2.rename_node(prefix2)
+        #amr2.rename_node(prefix2)
         (instance1, attributes1, relation1) = amr1.get_triples()
         (instance2, attributes2, relation2) = amr2.get_triples()
         if super_verbose or verbose:
@@ -984,15 +1031,50 @@ def main(arguments):
                 log_helper.debug( attributes2)
                 log_helper.debug( "Relation triples of AMR 2:", len(relation2))
                 log_helper.debug( relation2)
-        (best_mapping, best_match_num_soft) = get_best_match(instance1, attributes1, relation1,
+        (best_mapping, best_match_num_soft, weight_dict) = get_best_match(instance1, attributes1, relation1,
                                                         instance2, attributes2, relation2,
                                                         prefix1, prefix2,vectors,arguments.cutoff, 
                                                         arguments.diffsense, simfun, arguments.multi_token_concept_strategy)
-        if super_verbose or verbose or non_verbose:
-            if super_verbose:
-                log_helper.debug( "best match number", best_match_num_soft)
-                log_helper.debug( "best node mapping", best_mapping)
+                                                        
+        #print(f'{"-"*10}\nBest mapping:\t{best_mapping}\n{"-"*10}\n')
+        # if there are unalinged nodes we try to concatenate them with their parent node
+        # and update the corresponding mapping with a glove or sbert-score of the 
+        # token span of the whole subtree:
+        meta_available = bool(meta1['labels_dict'] and meta2['labels_dict'])
+                              
+        if -1 in best_mapping and meta_available:
+            nodes_unmapped = [f'{prefix1}{i}' for i, mapped_to in enumerate(best_mapping) if mapped_to == -1] 
+            labels_dict = defaultdict(lambda: None, meta1['labels_dict']) # "0.0": "MRPNode-1"
+            labels_dict_reversed = defaultdict(lambda: None, {v:k for k, v in labels_dict.items()}) # "MRPNode-1":"0.0"
+            find_parent = lambda x: labels_dict['.'.join(x.split('.')[:2])] # find_parent("0.0.0") == "MRPNode-0"
+            nodes_with_parents = {node:find_parent(labels_dict_reversed[node])
+                                  for node in nodes_unmapped if find_parent(labels_dict_reversed[node]) != '0'} # except root
+            nodes_with_parents = {k:v for k, v in nodes_with_parents.items() if v is not None} # filter those with no parent found (should actually never be the case but who knows)
+            
+            to_merge = defaultdict(list)
+            for k, v in nodes_with_parents.items():
+                to_merge[v].append(k)
+            
+            subtree_token_spans = {}
+            for k, v in to_merge.items():
+                subtree = tuple([k] + v)
+                #print(meta1['alignments_dict'])
+                span = [meta1['alignments_dict'][node] for node in subtree if meta1['alignments_dict'][node]]
+                token_span = full_span(span)
+                if token_span:
+                    subtree_token_spans[subtree] = ' '.join([meta1['toks'][i] for i in token_span])
+        print(best_match_num_soft)
+        print('\nWEIGHTS DICT:\n', weight_dict, '\nALIGNMENTS:\n', best_mapping)
+
+        if super_verbose:
+            log_helper.debug( "best match number", best_match_num_soft)
+            log_helper.debug( "best node mapping", best_mapping)
             log_helper.debug( "Best node mapping alignment:", print_alignment(best_mapping, instance1, instance2))
+        elif non_verbose or verbose:
+            log_helper.debug( "Best node mapping alignment:", print_alignment(best_mapping, instance1, instance2))
+            
+        collapsed_instance_nodes_a = meta1['collapsed_instance_nodes']
+        collapsed_instance_nodes_b = meta2['collapsed_instance_nodes']
         test_triple_num = len(instance1) + collapsed_instance_nodes_a + len(attributes1) + len(relation1)
         gold_triple_num = len(instance2) + collapsed_instance_nodes_b + len(attributes2) + len(relation2)
         if not single_score:
@@ -1169,7 +1251,7 @@ if __name__ == "__main__":
     parser = build_arg_parser()
     args = parser.parse_args()
     from helpers import LogHelper
-    if args.v:
+    if args.v or args.nv or args.sv:
         ll = 1
     else:
         ll = 5
