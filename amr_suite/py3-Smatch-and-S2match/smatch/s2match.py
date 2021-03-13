@@ -231,9 +231,10 @@ def maybe_get_vec(word,vecs, mwp ="split"):
     return v
       
 # Denis    
-def avg_vector_for_compound(compound, vecs):
-    parts = compound.split('_')
+def avg_vector_for_compound(parts, vecs):
+
     num_nodes = int(parts[-1])
+
     l = []
     found_vecs = 0
     for w in parts[:-1]:
@@ -260,13 +261,17 @@ def maybe_sim(a,b,vecs,cutoff=0.5, diffsense=0.5,simfun=cosine_sim, mwp ="split"
     
     # Denis: if there is a compound, such as :mod x merged with its parent label
     if "_" in a:
-        a_vec, num_nodes = avg_vector_for_compound(a, vecs)
-        found_a_vec = True
+        parts = a.split('_')
+        if parts[-1]:
+            a_vec, num_nodes = avg_vector_for_compound(a, vecs)
+            found_a_vec = True
     if "_" in b:
-        b_vec, num_nodes_b = avg_vector_for_compound(b, vecs)
-        if num_nodes_b > num_nodes:
-            num_nodes = num_nodes_b
-        found_b_vec = True
+        parts = b.split('_')
+        if parts[-1]:
+            b_vec, num_nodes_b = avg_vector_for_compound(b, vecs)
+            if num_nodes_b > num_nodes:
+                num_nodes = num_nodes_b
+            found_b_vec = True
 
     #if it's a pred we remove the sense, for now
     if "-" in a and re.match(".*[0-9]+", a):
@@ -1022,7 +1027,8 @@ def main(arguments):
         if pr_flag:
             print ("Precision: %.3f" % precision)
             print ("Recall: %.3f" % recall)
-    print ("Document F-score: %.3f, %.4f" % (best_f_score, best_f_score))
+    if not non_verbose:
+        print ("Document F-score: %.3f, %.4f" % (best_f_score, best_f_score))
     args.f[0].close()
     args.f[1].close()
 

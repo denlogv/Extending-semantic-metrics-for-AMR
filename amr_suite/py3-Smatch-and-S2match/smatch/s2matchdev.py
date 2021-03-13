@@ -428,7 +428,7 @@ def compute_pool(instance1, attribute1, relation1,
                     weight_dict[node_pair][-1] = 1
             """
 
-            #if both triples are instance triples then we asses the similarity of their value
+            #if both triples are instance triples then we assess the similarity of their value
             if instance1[i][0].lower() == instance2[j][0].lower():
                 value_1 = instance1[i][2].lower()
                 value_2 = instance2[j][2].lower()
@@ -1012,6 +1012,9 @@ def main(arguments):
         #amr2.rename_node(prefix2)
         (instance1, attributes1, relation1) = amr1.get_triples()
         (instance2, attributes2, relation2) = amr2.get_triples()
+        
+        print(instance1, attributes1, relation1, sep='\n')
+        
         if super_verbose or verbose:
             # print parse results of two AMRs
             log_helper.debug( "AMR pair", sent_num)
