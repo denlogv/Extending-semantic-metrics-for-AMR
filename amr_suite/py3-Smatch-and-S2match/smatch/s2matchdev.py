@@ -1046,28 +1046,50 @@ def main(arguments):
         meta_available = bool(meta1['labels_dict'] and meta2['labels_dict'])
                               
         if -1 in best_mapping and meta_available:
-            nodes_unmapped = [f'{prefix1}{i}' for i, mapped_to in enumerate(best_mapping) if mapped_to == -1] 
+            # finds nodes in AMR1, which were not mapped to any nodes in AMR2
+            nodes_unmapped = [f'{prefix1}{i}' for i, mapped_to in enumerate(best_mapping) if mapped_to == -1]
+            
+            # returns 'MRPNode-i' if found in labels dict, else None
             labels_dict = defaultdict(lambda: None, meta1['labels_dict']) # "0.0": "MRPNode-1"
+            
+            # we need to reverse the dictionary to get structure labels instead of MRPNode-i
             labels_dict_reversed = defaultdict(lambda: None, {v:k for k, v in labels_dict.items()}) # "MRPNode-1":"0.0"
+            
+            # parent is the node next to the root, which contains the node in question 
             find_parent = lambda x: labels_dict['.'.join(x.split('.')[:2])] # find_parent("0.0.0") == "MRPNode-0"
+            
+            # we find the parent node for all unlabeled nodes, except for the case when the parent node is the root
+            # because in this case (parent == root), we don't have any information as to how we should align it
             nodes_with_parents = {node:find_parent(labels_dict_reversed[node])
                                   for node in nodes_unmapped if find_parent(labels_dict_reversed[node]) != '0'} # except root
-            nodes_with_parents = {k:v for k, v in nodes_with_parents.items() if v is not None} # filter those with no parent found (should actually never be the case but who knows)
             
+            # filter those with no parent found (should actually never be the case but who knows)
+            nodes_with_parents = {k:v for k, v in nodes_with_parents.items() if v is not None} 
+            
+            # now we create a dictionary, where the key is the parent node, 
+            # and values are its child nodes
             to_merge = defaultdict(list)
             for k, v in nodes_with_parents.items():
                 to_merge[v].append(k)
             
+            # here we get the token span, which corresponds to the list of nodes,
+            # where the 1st value is the parent node and all subsequent nodes
+            # are its children
             subtree_token_spans = {}
             for k, v in to_merge.items():
                 subtree = tuple([k] + v)
                 #print(meta1['alignments_dict'])
+                
+                # extract the information about token spans from the metadata
                 span = [meta1['alignments_dict'][node] for node in subtree if meta1['alignments_dict'][node]]
+                
+                # check whether the found token span is full and complete
                 token_span = full_span(span)
                 if token_span:
                     subtree_token_spans[subtree] = ' '.join([meta1['toks'][i] for i in token_span])
         print(best_match_num_soft)
         print('\nWEIGHTS DICT:\n', weight_dict, '\nALIGNMENTS:\n', best_mapping)
+        print('\nSUBTREE-TOKEN-SPAN:\n', subtree_token_spans)
 
         if super_verbose:
             log_helper.debug( "best match number", best_match_num_soft)
