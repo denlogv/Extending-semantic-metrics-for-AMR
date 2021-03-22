@@ -42,7 +42,7 @@ if __name__ == '__main__':
     commands = [
         f"python3 toolkit/mtool20/main.py --read amr --write mrp {'..//'+args.output}_a.amr {'..//'+args.output}_a.mrp",
         f"python3 toolkit/mtool20/main.py --read amr --write mrp {'..//'+args.output}_b.amr {'..//'+args.output}_b.mrp",
-        #f"bash bash/amr_preprocess.sh {'..//'+args.output}_a.mrp bash/glove.840B.300d.w2v.txt",
+        f"bash bash/amr_preprocess.sh {'..//'+args.output}_a.mrp bash/glove.840B.300d.w2v.txt",
         f"bash bash/amr_preprocess.sh {'..//'+args.output}_b.mrp bash/glove.840B.300d.w2v.txt"
     ]
     
