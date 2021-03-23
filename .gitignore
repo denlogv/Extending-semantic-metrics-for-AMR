@@ -2,7 +2,9 @@
 .ipynb_checkpoints
 /AMR2Text/*
 /amr_suite/vectors
+__pycache__
+.gitignore
 
 # Files not to ignore:
-!/AMR2Text/processed
+#!/AMR2Text/processed
 

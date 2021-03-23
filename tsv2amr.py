@@ -1,17 +1,20 @@
-# -*- coding: utf-8 -*-
 """
-Created on Thu Jan 21 15:18:39 2021
+This script converts a .tsv file with following columns:
 
-@author: Denis Logvinenko
+1) 'sent1'
+2) 'sent2'
+...
+n) ...
+
+to 2 AMR-files, one with all of the first sentences and one with all second sentences.  
+
+Usage example:
+
+python3 tsv2amr.py -i data/SICK2014.tsv -o data/amr/SICK2014_corpus
 """
 import amrlib
 import argparse
 from pathlib import Path
-
-parser = argparse.ArgumentParser()
-parser.add_argument('-i', '--input', help='filename to be converted to AMR')
-parser.add_argument('-o', '--output', help='output filename prefix')
-args = parser.parse_args()
 
 
 def save_amr(amrs, filepath):
@@ -41,4 +44,9 @@ def convert_corpus_to_amr(corpus_path, save_path_prefix='processed/corpus'):
     
     
 if __name__ == '__main__':
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-i', '--input', help='filename to be converted to AMR')
+    parser.add_argument('-o', '--output', help='output filename prefix')
+    args = parser.parse_args()
+    
     convert_corpus_to_amr(args.input, args.output)

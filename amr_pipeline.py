@@ -1,5 +1,5 @@
 """
-This scripts does the following:
+This script does the following:
 
     1) It converts a .tsv corpus with 2 columns corresponding to sentences A and B
        to 2 AMR corpora of these sentences

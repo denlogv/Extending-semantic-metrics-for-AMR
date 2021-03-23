@@ -1,47 +1,38 @@
-**TODO:**:
-- [ ] AMR-related stuff:
-    - [x] Find AMR2TEXT/TEXT2AMR-parser
-    - [x] API for computing SMATCH
-    - [ ] API for computing S^2MATCH
-- [ ] Method:
-    - [x] Find constituency/dependency parser
-    - [x] Dependency or constituency? --> dependency
-    - [ ] Apply Szubert et al. (2018) AMR2DP-mapping
-    - [ ] Map text to DP to AMR
-- [ ] Datasets:
-    - [x] Format STS2016 to a format similar to SICK2014 (s1, s2, theme, score)
-    - [ ] MSRP?
-    - [ ] PAWS?
-- [ ] Analysis:
-    - [x] MSE(relatedness, smatch) on SICK2014 
+## Introduction:
+#### Here is the official repositorium of our team's software project at the **Ruprecht Karl University of Heidelberg**.
 
+Our goal is to extend one of the _AMR_ similarity metrics – **S2Match**, which itself is an extension of **SMatch**.
+**S2Match** makes use of _GloVe_-vectors to represent the semantics of concept nodes in _AMR_. This allows for a better triple comparison than it is possible in **SMatch** (because the latter assigns only 1 or 0 for triple similarity.)
 
-There are currently 2 Jupyter-Notebooks, which showcase the desired functionality of different libraries:
+Our extension to **S2Match** makes it possible not only to compare one triple with another, but also multiple triples from one AMR with one triple from another (gold), thus allowing for the representation of compositional similarity in _AMR_.
 
-In **semrank.ipynb** you'll find:
+## Methods:
+We have implemented 2 ways to achieve this goal.
 
-    1. AMR-Parser (uses _amrlib_), 
-    which parses pairs of sentences in `/datasets/sts/SICK_trial.txt` and for each of 2 columns it produces a .txt-file with AMR graphs in it.
+1. **Merging**  
+We found out that most of the compositionality is attributed to cases, in which phrase adjuncts are present. One of most frequent examples is: <br> <br>
+$`NP = Det + (Adv) + Adj + N`$ (e.g. _'a very interesting proposition'_) <br> <br>
+Such examples are commonly represented using _:mod_-relation in AMR. The idea is to transform an AMR graph in such a way that sentence tokens corresponding to all children nodes of A and A itself ($`= Subtree(A)`$) form a single concept node, which is then to substitute A. <br> $`Subtree(A)`$ is subject to the following conditions:<br>
+    - Parent node X has a _:mod_-relation.
+    - There are no nodes in $`Subtree(A)`$ (except A) that are used outside of $`Subtree(A) =>`$ has no reentrancies.
+    - It corresponds to the complete token span in the sentence.
+<br><br>
 
-    2.  Function that computes a SMATCH-score for each pair of sentences based on 2 files (`datasets/sts/sents_a_amr.txt`, `datasets/sts/sents_b_amr.txt`) with AMR graphs created in them.
-    Then a column with SMATCH-scores is added to SICK, MSE between "relatedness_score" and "f-score" computed, the dataset sorted by MSE, and then everything is saved as `SICK_trial_AMR_SMATCH.tsv`.
+2. **Remapping** <br>
+    One could argue that it may be undesirable to transform graphs in certain cases. To include an option, where this is not necessary we propose a series of steps:
+    - Preprocessing graphs to obtain their alignment metadata.
+    - Running **S2Match**.
+    - Postprocessing **S2Match** in a manner so that a node A in Graph 1 that is currently mapped to _Null_ be remapped according to its alignment metadata. <br> <br>
 
+    These metadata allow us to see whether A has children nodes (similar to Method 1), which together compose a complete token span. We then compute similarity between this token span and a token span that corresponds to a node B in Graph 2.    
+    $`sim(A, B)`$, which contributed to the F-Score gets accordingly updated, but only if $`sim_{updated}(A, B) > sim_{original}(A, B)`$. 
+    This allows us to have better alignment results, because after the execution of _S2Match_ we apply a postprocessing technique in order to revise the mapping for the unmapped nodes.
 
-In **sentsim_test.ipynb**:
+## Tools:
+Here the structure of our repo is presented. <br>
 
-    1. 2 constituency parsers are used (Berkeley Neural Parser – benepar, SuPar) <-- have to decide which one is better
+In the root you can find different scripts which follow the pipeline:
 
-    2. The library `sentence_transformers` is used to compute similarity between NPs
-
-
-Constituency (dependency) parsers:
-
-1. [SuPar (SOTA)](https://parser.readthedocs.io/en/latest/index.html):
-
-2. [Berkeley Neural Parser](https://github.com/nikitakit/self-attentive-parser)
-
-NB:
-
-BNP uses the old version of _tensorflow_, so it throws an error when using with current versions (>=2.0) of `tensorflow`. The error can be mitigated by changing the folowing code in `ProgramData\Anaconda3\(envs\...)\Lib\site-packages\benepar\base_parser.py`:
-
-`import tensorflow as tf` --> `import tensorflow.compat.v1 as tf`
+1. Convert a corpus (a _.txt_-file with a SICK dataset or a folder with an STS dataset) to a _.tsv_ (tab-sepated values)-file. **Functionalities:**
+    1. sts2tsv.py
+    1. sick2tsv

@@ -1,5 +1,5 @@
 """
-This scripts converts the whole folder with a STS dataset to a single
+This script converts the whole folder with a STS dataset to a single
 easily readable .tsv file with following columns:
 
 1) 'sent1'
@@ -57,3 +57,4 @@ if __name__ == '__main__':
     Path(output_path.parent).mkdir(parents=True, exist_ok=True)
     sts_df = sts_df.loc[(sts_df['score'].notnull()) & (sts_df['theme'] != 'postediting')]
     sts_df.sort_values(by=['theme', 'score'], ascending=False).to_csv(output_path, sep='\t', index=False)
+    print(f'File "{args.input}" has been successfully converted to "{args.output}"!')
