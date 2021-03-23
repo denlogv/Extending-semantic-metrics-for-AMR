@@ -14,7 +14,6 @@ python3 sts2tsv.py -i datasets/sts/sts2016-english-with-gs-v1.0 -o data/STS2016_
 
 
 import argparse
-import numpy as np
 import pandas as pd
 from pathlib import Path
 from collections import defaultdict

@@ -1,3 +1,13 @@
+"""
+This script takes one or two AMR2Text-alignment-files and either makes transformations on the graphs 
+(merges subtrees with certain relations (e.g ':mod') according to some rules), or adds
+alingment metadata to these files.
+
+Usage example:
+
+python3 AMRAnalysis.py -i data/amr/SICK2014_corpus_a_aligned.mrp data/amr/SICK2014_corpus_b_aligned.mrp --output_prefix analysis/sick/SICK2014 --extended_meta
+"""
+
 import penman
 from penman import layout
 from penman.graph import Graph

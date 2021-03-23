@@ -29,10 +29,51 @@ Such examples are commonly represented using _:mod_-relation in AMR. The idea is
     This allows us to have better alignment results, because after the execution of _S2Match_ we apply a postprocessing technique in order to revise the mapping for the unmapped nodes.
 
 ## Tools:
-Here the structure of our repo is presented. <br>
+### Root:
+In the root directory you can find different scripts which follow the pipeline, which is presented below. For more information on how to combine all the scripts to do the magic, please consult our Jupyter Notebook  [`walkthrough.ipynb`](https://gitlab.com/denlogv/measuring-variation-in-amr/-/blob/master/walkthrough.ipynb). <br>
+In order to run this pipeline you'll need to ensure that following criteria are met (it is unfortunate that one has to employ multiple vens to ensure multiple penman versions; alternatively, one could try to install one of the versions directly in the project folder and rename it):
 
-In the root you can find different scripts which follow the pipeline:
+| Script|Prerequisites|
+|:----------:|:-------------:|
+|`sts2tsv.py` or `sick2tsv.py`|`pandas`|
+|`tsv2amr.py`|`amrlib`, `penman>=1.0`| 
+|`amr_pipeline.py`|`penman==0.6.2`| <br>
+### Pipeline:
+1. Convert a corpus (a _.txt_-file with a SICK dataset or a folder with an STS dataset) to a _.tsv_ (tab-sepated values)-file. <br> <br> **Functionalities:** <br> <br>
+    - `sts2tsv.py` converts a folder with STS-dataset to a single easily readable _.tsv_-file. <br> <br>
+    - `sick2tsv.py` filters a file (.txt file which has a tab-separated-values-layout with 12 columns) with a SICK-dataset to create a .tsv with columns "sent1", "sent2", "sick" (i.e. relatedness-score) <br> <br>
+    In our experiments we filtered the dataset to exclude examples, where sentence pairs have entailment label 'CONTRADICTION'
+    ```
+    Usage examples:
 
-1. Convert a corpus (a _.txt_-file with a SICK dataset or a folder with an STS dataset) to a _.tsv_ (tab-sepated values)-file. **Functionalities:**
-    1. sts2tsv.py
-    1. sick2tsv
+    python3 sick2tsv.py -i datasets/sick/SICK2014_full.txt -o data/SICK2014.tsv --entailment_exclude contradiction
+    python3 sts2tsv.py -i datasets/sts/sts2016-english-with-gs-v1.0 -o data/STS2016_full.tsv
+    ```
+2. Use the created _.tsv_-file to generate 2 _AMR_-files (for each sentence column).  <br> <br>
+**Functionalities:** <br> <br>
+    - `tsv2amr.py` converts a _.tsv_-file to 2 _AMR_-files
+	```
+    Usage example:
+    
+    python3 tsv2amr.py -i data/SICK2014.tsv -o data/amr/SICK2014_corpus
+    ```
+3. Create alignment files for each _AMR_-file using the _AMR2Text_-alignment tool (TAMR/JAMR) presented in [**HIT-SCIR CoNLL2019 Unified Transition-Parser**](https://github.com/DreamerDeo/HIT-SCIR-CoNLL2019).<br> <br>
+**Functionalities:** <br> <br>
+    - `amr_pipeline.py` converts a _.tsv_-file to 2 _AMR_-files
+	```
+    Usage example:
+    
+    python3 AMR2text/amr_pipeline.py -o data/amr/STS2016_corpus
+    ```
+4. Analyse the alignment files and either transform the _AMR_-graphs according to **Method 1** or add metadata to them according to **Method 2 **. <br> <br>
+**Functionalities:** <br> <br>
+    - `AMRAnalysis.py` takes 1 or 2 _AMR2Text_-alignment-files and either transforms the graphs, or adds metadata to these file. Outputs 1 or 2 _AMR_-files.
+	```
+    Usage example:
+    
+    python3 AMRAnalysis.py -i data/amr/SICK2014_corpus_a_aligned.mrp data/amr/SICK2014_corpus_b_aligned.mrp --output_prefix analysis/sick/SICK2014 --extended_meta
+    ```
+5. Run **S2Match** on  the resulting _AMR_-files.
+6. Evaluate by computing _Spearman rank_ and _Pearson correlation coefficients_ + Visualise the results. <br> <br>
+**Functionalities:** <br> <br>
+    - for steps 5 and 6 please consult our Jupyter Notebook  [`walkthrough.ipynb`](https://gitlab.com/denlogv/measuring-variation-in-amr/-/blob/master/walkthrough.ipynb). Standalone scripts will be added soon. 

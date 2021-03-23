@@ -15,7 +15,6 @@ python3 sick2tsv.py -i datasets/sick/SICK2014_full.txt -o data/SICK2014.tsv --en
 
 
 import argparse
-import numpy as np
 import pandas as pd
 from pathlib import Path
 from collections import defaultdict
