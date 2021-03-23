@@ -29,4 +29,14 @@ Such examples are commonly represented using _:mod_-relation in AMR. The idea is
     This allows us to have better alignment results, because after the execution of _S2Match_ we apply a postprocessing technique in order to revise the mapping for the unmapped nodes.
 
 ## Tools:
+<<<<<<< HEAD
+Here the structure of our repo is presented. <br>
+
+In the root you can find different scripts which follow the pipeline:
+
+1. Convert a corpus (a _.txt_-file with a SICK dataset or a folder with an STS dataset) to a _.tsv_ (tab-sepated values)-file. **Functionalities:**
+    1. sts2tsv.py
+    1. sick2tsv
+=======
 to be completed soon ...
+>>>>>>> 41bb1f945ef6cd05c074c42eb96788256283aeb1
