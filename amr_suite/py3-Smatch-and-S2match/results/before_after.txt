@@ -1,0 +1,15 @@
+How do I pump up water pressure in my shower? vs How can I boost the water pressure in my shower?
+Before: 0.69
+After: 0.6
+
+We eat french fries. vs We eat chips.
+Before: 0.59
+After: 0.88
+
+A young cat sprints. vs A kitten runs.
+Before: 0.37
+After: 0.42
+
+A young cat walks fast. vs A kitten runs. 
+Before: 0.367 
+After: 0.469

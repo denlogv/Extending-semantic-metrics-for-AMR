@@ -1,0 +1,1304 @@
+AMR pair 1
+============================================
+Sentence 1: How do you remove mold from a tent?
+Sentence 2: How do I remove mildew from a tent?
+AMR 1 (one-line): (MRPNode-0 / remove-01:ARG1 (MRPNode-1 / mold):ARG0 (MRPNode-2 / you):ARG2 (MRPNode-3 / tent):manner (MRPNode-4 / amr-unknown))
+AMR 2 (one-line): (MRPNode-0 / remove-01:ARG1 (MRPNode-1 / mildew):ARG0 (MRPNode-2 / i):ARG2 (MRPNode-3 / tent):manner (MRPNode-4 / amr-unknown))
+Similarity remove-01 remove-01 1.0
+Similarity remove-01 mildew 0.38667273013226167
+Similarity remove-01 i 0.26841059067818007
+Similarity remove-01 tent 0.0
+Similarity remove-01 amr-unknown 0.0
+Similarity mold remove-01 0.578012566967878
+Similarity mold mildew 0.7457925837462894
+Similarity mold i 0.31837116140448884
+Similarity mold tent 0.2635619813208696
+Similarity mold amr-unknown 0.0
+Similarity you remove-01 0.33397340885288745
+Similarity you mildew 0.0
+Similarity you i 0.9237291478348695
+Similarity you tent 0.3893840515956837
+Similarity you amr-unknown 0.26477890041637464
+Similarity tent mildew 0.0
+Similarity tent i 0.3337452757846111
+Similarity tent tent 1.0
+Similarity tent amr-unknown 0.0
+Similarity amr-unknown mildew 0.0
+Similarity amr-unknown i 0.35821591488099513
+Similarity amr-unknown amr-unknown 1.0
+Weight dictionary
+{(0, 0): {-1: 2.0, (1, 1): 1, (1, 2): 1, (1, 3): 1, (1, 4): 1, (2, 1): 1, (2, 2): 1, (2, 3): 1, (2, 4): 1, (3, 1): 1, (3, 2): 1, (3, 3): 1, (3, 4): 1, (4, 1): 1, (4, 2): 1, (4, 3): 1, (4, 4): 1}, (0, 1): {-1: 0.38667273013226167}, (0, 2): {-1: 0.26841059067818007}, (0, 3): {-1: 0.0}, (0, 4): {-1: 0.0}, (1, 0): {-1: 0.578012566967878}, (1, 1): {-1: 0.7457925837462894, (0, 0): 1}, (1, 2): {-1: 0.31837116140448884, (0, 0): 1}, (1, 3): {-1: 0.2635619813208696, (0, 0): 1}, (1, 4): {-1: 0.0, (0, 0): 1}, (2, 0): {-1: 0.33397340885288745}, (2, 1): {-1: 0.0, (0, 0): 1}, (2, 2): {-1: 0.9237291478348695, (0, 0): 1}, (2, 3): {-1: 0.3893840515956837, (0, 0): 1}, (2, 4): {-1: 0.26477890041637464, (0, 0): 1}, (3, 0): {-1: 0.0}, (3, 1): {-1: 0.0, (0, 0): 1}, (3, 2): {-1: 0.3337452757846111, (0, 0): 1}, (3, 3): {-1: 1.0, (0, 0): 1}, (3, 4): {-1: 0.0, (0, 0): 1}, (4, 0): {-1: 0.0}, (4, 1): {-1: 0.0, (0, 0): 1}, (4, 2): {-1: 0.35821591488099513, (0, 0): 1}, (4, 3): {-1: 0.0, (0, 0): 1}, (4, 4): {-1: 1.0, (0, 0): 1}}
+Best node mapping alignment:
+[MRPNode-0]('remove-01') --> [MRPNode-0]('remove-01')
+[MRPNode-1]('mold') --> [MRPNode-1]('mildew')
+[MRPNode-2]('you') --> [MRPNode-2]('i')
+[MRPNode-3]('tent') --> [MRPNode-3]('tent')
+[MRPNode-4]('amr-unknown') --> [MRPNode-4]('amr-unknown')
+Smatch score F1 0.967
+AMR pair 2
+============================================
+Sentence 1: What could be wrong with my air conditioner?
+Sentence 2: What could be wrong with my A/C unit?
+AMR 1 (one-line): (MRPNode-0 / possible-01:ARG1 (MRPNode-1 / wrong-02:ARG1 (MRPNode-2 / amr-unknown):ARG2 (MRPNode-3 / conditioner:mod (MRPNode-4 / i):mod (MRPNode-5 / air))))
+AMR 2 (one-line): (MRPNode-0 / possible-01:ARG1 (MRPNode-1 / wrong-02:ARG1 (MRPNode-2 / amr-unknown):ARG2 (MRPNode-3 / unit:mod (MRPNode-4 / i):mod (MRPNode-5 / air-conditioning))))
+Similarity possible-01 possible-01 1.0
+Similarity possible-01 wrong-02 0.30026722343565926
+Similarity possible-01 amr-unknown 0.0
+Similarity possible-01 unit 0.0
+Similarity possible-01 i 0.0
+Similarity possible-01 air-conditioning 0.0
+Similarity wrong-02 wrong-02 1.0
+Similarity wrong-02 amr-unknown 0.0
+Similarity wrong-02 unit 0.0
+Similarity wrong-02 i 0.3080001601185728
+Similarity wrong-02 air-conditioning 0.0
+Similarity amr-unknown amr-unknown 1.0
+Similarity amr-unknown unit 0.442243817263992
+Similarity amr-unknown i 0.35821591488099513
+Similarity amr-unknown air-conditioning 0.0
+Similarity conditioner possible-01 0.0
+Similarity conditioner wrong-02 0.0
+Similarity conditioner amr-unknown 0.0
+Similarity conditioner unit 0.28740450442303234
+Similarity conditioner i 0.0
+Similarity conditioner air-conditioning 0.5844048365080141
+Similarity i unit 0.2615499318120762
+Similarity i i 1.0
+Similarity i air-conditioning 0.0
+Similarity air possible-01 0.0
+Similarity air wrong-02 0.0
+Similarity air amr-unknown 0.3978881576686406
+Similarity air unit 0.679524012503882
+Similarity air i 0.4127538348512154
+Similarity air air-conditioning 0.2850545971378188
+Weight dictionary
+{(0, 0): {-1: 2.0, (1, 1): 1}, (0, 1): {-1: 0.30026722343565926, (1, 2): 1, (1, 3): 1}, (0, 2): {-1: 0.0}, (0, 3): {-1: 0.0, (1, 4): 1, (1, 5): 1}, (0, 4): {-1: 0.0}, (0, 5): {-1: 0.0}, (1, 0): {-1: 0.30026722343565926, (2, 1): 1, (3, 1): 1}, (1, 1): {-1: 1.0, (0, 0): 1, (2, 2): 1, (2, 3): 1, (3, 2): 1, (3, 3): 1}, (1, 2): {-1: 0.0, (0, 1): 1}, (1, 3): {-1: 0.0, (0, 1): 1, (2, 4): 1, (2, 5): 1, (3, 4): 1, (3, 5): 1}, (1, 4): {-1: 0.3080001601185728, (0, 3): 1}, (1, 5): {-1: 0.0, (0, 3): 1}, (2, 0): {-1: 0.0}, (2, 1): {-1: 0.0, (1, 0): 1}, (2, 2): {-1: 1.0, (1, 1): 1}, (2, 3): {-1: 0.442243817263992, (1, 1): 1}, (2, 4): {-1: 0.35821591488099513, (1, 3): 1}, (2, 5): {-1: 0.0, (1, 3): 1}, (3, 0): {-1: 0.0, (4, 1): 1, (5, 1): 1}, (3, 1): {-1: 0.0, (1, 0): 1, (4, 2): 1, (4, 3): 1, (5, 2): 1, (5, 3): 1}, (3, 2): {-1: 0.0, (1, 1): 1}, (3, 3): {-1: 0.28740450442303234, (1, 1): 1, (4, 4): 1, (4, 5): 1, (5, 4): 1, (5, 5): 1}, (3, 4): {-1: 0.0, (1, 3): 1}, (3, 5): {-1: 0.5844048365080141, (1, 3): 1}, (4, 0): {-1: 0.0}, (4, 1): {-1: 0.3080001601185728, (3, 0): 1}, (4, 2): {-1: 0.35821591488099513, (3, 1): 1}, (4, 3): {-1: 0.2615499318120762, (3, 1): 1}, (4, 4): {-1: 1.0, (3, 3): 1}, (4, 5): {-1: 0.0, (3, 3): 1}, (5, 0): {-1: 0.0}, (5, 1): {-1: 0.0, (3, 0): 1}, (5, 2): {-1: 0.3978881576686406, (3, 1): 1}, (5, 3): {-1: 0.679524012503882, (3, 1): 1}, (5, 4): {-1: 0.4127538348512154, (3, 3): 1}, (5, 5): {-1: 0.2850545971378188, (3, 3): 1}}
+Best node mapping alignment:
+[MRPNode-0]('possible-01') --> [MRPNode-0]('possible-01')
+[MRPNode-1]('wrong-02') --> [MRPNode-1]('wrong-02')
+[MRPNode-2]('amr-unknown') --> [MRPNode-2]('amr-unknown')
+[MRPNode-3]('conditioner') --> [MRPNode-3]('unit')
+[MRPNode-4]('i') --> [MRPNode-4]('i')
+[MRPNode-5]('air') --> [MRPNode-5]('air-conditioning')
+Smatch score F1 0.881
+AMR pair 3
+============================================
+Sentence 1: Senate confirms Obama nominee to key appeals court
+Sentence 2: Senate approves Obama nominee to key appeals court
+AMR 1 (one-line): (MRPNode-0 / confirm-01:ARG1 (MRPNode-1 / nominate-01:ARG1 (MRPNode-2 / person:name (MRPNode-3 / name:op1 (MRPNode-4 / obama))):ARG2 (MRPNode-5 / court:mod (MRPNode-6 / appeal-01):ARG1-of (MRPNode-7 / key-02))):ARG0 (MRPNode-8 / government-organization:name (MRPNode-9 / name:op1 (MRPNode-10 / senate))))
+AMR 2 (one-line): (MRPNode-0 / approve-01:ARG1 (MRPNode-1 / government-organization:name (MRPNode-2 / name:op1 (MRPNode-3 / senate))):ARG1 (MRPNode-4 / nominate-01:ARG1 (MRPNode-5 / person:name (MRPNode-6 / name:op1 (MRPNode-7 / obama))):ARG2 (MRPNode-8 / court:mod (MRPNode-9 / appeal-01):ARG1-of (MRPNode-10 / key-02))))
+Similarity confirm-01 approve-01 0.4000254105978191
+Similarity confirm-01 government-organization 0.447172667565422
+Similarity confirm-01 name 0.36315088551944213
+Similarity confirm-01 senate 0.2681009169465243
+Similarity confirm-01 nominate-01 0.20035934465517105
+Similarity confirm-01 person 0.3931344674003889
+Similarity confirm-01 obama 0.3463290410143678
+Similarity confirm-01 court 0.37590654158088493
+Similarity confirm-01 appeal-01 0.46886995234855444
+Similarity confirm-01 key-02 0.2840536144568504
+Similarity nominate-01 approve-01 0.464886621597045
+Similarity nominate-01 government-organization 0.0
+Similarity nominate-01 name 0.0
+Similarity nominate-01 senate 0.42370979901292366
+Similarity nominate-01 nominate-01 1.0
+Similarity nominate-01 person 0.0
+Similarity nominate-01 obama 0.3054526705095042
+Similarity nominate-01 court 0.0
+Similarity nominate-01 appeal-01 0.18444865886808443
+Similarity nominate-01 key-02 0.0
+Similarity person approve-01 0.18889519840571634
+Similarity person government-organization 0.491700112302234
+Similarity person name 0.5772089918664945
+Similarity person senate 0.3849953920487642
+Similarity person person 1.0
+Similarity person obama 0.40774219006363976
+Similarity person court 0.5514832090815946
+Similarity person appeal-01 0.47797152986344205
+Similarity person key-02 0.4450529958407728
+Similarity name approve-01 0.0
+Similarity name government-organization 0.520739723084335
+Similarity name name 1.0
+Similarity name senate 0.31111592488834816
+Similarity name obama 0.34564122185293233
+Similarity name court 0.5268620274822557
+Similarity name appeal-01 0.3493330296178918
+Similarity name key-02 0.45570287580545304
+Similarity obama approve-01 0.3525841217237598
+Similarity obama government-organization 0.5311985340000129
+Similarity obama senate 0.7583299780268045
+Similarity obama obama 1.0
+Similarity obama court 0.36844937694810287
+Similarity obama appeal-01 0.39847765441517125
+Similarity obama key-02 0.20496551130093563
+Similarity court approve-01 0.38921677012388595
+Similarity court government-organization 0.5581363438145468
+Similarity court senate 0.5999171655111479
+Similarity court court 1.0
+Similarity court appeal-01 0.8143112409692628
+Similarity court key-02 0.3815713261033687
+Similarity appeal-01 approve-01 0.4881758647572571
+Similarity appeal-01 government-organization 0.5010569828658913
+Similarity appeal-01 senate 0.5930879162679912
+Similarity appeal-01 appeal-01 1.0
+Similarity appeal-01 key-02 0.365681021825693
+Similarity key-02 approve-01 0.0
+Similarity key-02 government-organization 0.23687773880410398
+Similarity key-02 senate 0.23735062450017255
+Similarity key-02 key-02 1.0
+Similarity government-organization approve-01 0.45154759419921786
+Similarity government-organization government-organization 1.0
+Similarity government-organization senate 0.5437033645739708
+Similarity senate approve-01 0.49599561994975133
+Similarity senate senate 1.0
+Weight dictionary
+{(0, 0): {-1: 0.4000254105978191, (1, 1): 1, (1, 4): 1, (8, 1): 1, (8, 4): 1}, (0, 1): {-1: 0.447172667565422, (1, 2): 1, (8, 2): 1}, (0, 2): {-1: 0.36315088551944213, (1, 3): 1, (8, 3): 1}, (0, 3): {-1: 0.2681009169465243}, (0, 4): {-1: 0.20035934465517105, (1, 5): 1, (1, 8): 1, (8, 5): 1, (8, 8): 1}, (0, 5): {-1: 0.3931344674003889, (1, 6): 1, (8, 6): 1}, (0, 6): {-1: 0.36315088551944213, (1, 7): 1, (8, 7): 1}, (0, 7): {-1: 0.3463290410143678}, (0, 8): {-1: 0.37590654158088493, (1, 9): 1, (8, 9): 1}, (0, 9): {-1: 0.46886995234855444}, (0, 10): {-1: 0.2840536144568504, (1, 8): 1, (8, 8): 1}, (1, 0): {-1: 0.464886621597045, (2, 1): 1, (2, 4): 1, (5, 1): 1, (5, 4): 1}, (1, 1): {-1: 0.0, (0, 0): 1, (2, 2): 1, (5, 2): 1}, (1, 2): {-1: 0.0, (0, 1): 1, (2, 3): 1, (5, 3): 1}, (1, 3): {-1: 0.42370979901292366, (0, 2): 1}, (1, 4): {-1: 1.0, (0, 0): 1, (2, 5): 1, (2, 8): 1, (5, 5): 1, (5, 8): 1}, (1, 5): {-1: 0.0, (0, 4): 1, (2, 6): 1, (5, 6): 1}, (1, 6): {-1: 0.0, (0, 5): 1, (2, 7): 1, (5, 7): 1}, (1, 7): {-1: 0.3054526705095042, (0, 6): 1}, (1, 8): {-1: 0.0, (0, 4): 1, (0, 10): 1, (2, 9): 1, (5, 9): 1}, (1, 9): {-1: 0.18444865886808443, (0, 8): 1}, (1, 10): {-1: 0.0, (2, 8): 1, (5, 8): 1}, (2, 0): {-1: 0.18889519840571634, (3, 1): 1, (3, 4): 1}, (2, 1): {-1: 0.491700112302234, (1, 0): 1, (3, 2): 1}, (2, 2): {-1: 0.5772089918664945, (1, 1): 1, (3, 3): 1}, (2, 3): {-1: 0.3849953920487642, (1, 2): 1}, (2, 4): {-1: 0.0, (1, 0): 1, (3, 5): 1, (3, 8): 1}, (2, 5): {-1: 1.0, (1, 4): 1, (3, 6): 1}, (2, 6): {-1: 0.5772089918664945, (1, 5): 1, (3, 7): 1}, (2, 7): {-1: 0.40774219006363976, (1, 6): 1}, (2, 8): {-1: 0.5514832090815946, (1, 4): 1, (1, 10): 1, (3, 9): 1}, (2, 9): {-1: 0.47797152986344205, (1, 8): 1}, (2, 10): {-1: 0.4450529958407728, (3, 8): 1}, (3, 0): {-1: 0.0, (4, 1): 1, (4, 4): 1}, (3, 1): {-1: 0.520739723084335, (2, 0): 1, (4, 2): 1}, (3, 2): {-1: 1.0, (2, 1): 1, (4, 3): 1}, (3, 3): {-1: 0.31111592488834816, (2, 2): 1}, (3, 4): {-1: 0.0, (2, 0): 1, (4, 5): 1, (4, 8): 1}, (3, 5): {-1: 0.5772089918664945, (2, 4): 1, (4, 6): 1}, (3, 6): {-1: 1.0, (2, 5): 1, (4, 7): 1}, (3, 7): {-1: 0.34564122185293233, (2, 6): 1}, (3, 8): {-1: 0.5268620274822557, (2, 4): 1, (2, 10): 1, (4, 9): 1}, (3, 9): {-1: 0.3493330296178918, (2, 8): 1}, (3, 10): {-1: 0.45570287580545304, (4, 8): 1}, (4, 0): {-1: 0.3525841217237598}, (4, 1): {-1: 0.5311985340000129, (3, 0): 1}, (4, 2): {-1: 0.34564122185293233, (3, 1): 1}, (4, 3): {-1: 0.7583299780268045, (3, 2): 1}, (4, 4): {-1: 0.3054526705095042, (3, 0): 1}, (4, 5): {-1: 0.40774219006363976, (3, 4): 1}, (4, 6): {-1: 0.34564122185293233, (3, 5): 1}, (4, 7): {-1: 1.0, (3, 6): 1}, (4, 8): {-1: 0.36844937694810287, (3, 4): 1, (3, 10): 1}, (4, 9): {-1: 0.39847765441517125, (3, 8): 1}, (4, 10): {-1: 0.20496551130093563}, (5, 0): {-1: 0.38921677012388595, (6, 1): 1, (6, 4): 1}, (5, 1): {-1: 0.5581363438145468, (1, 0): 1, (6, 2): 1, (7, 0): 1}, (5, 2): {-1: 0.5268620274822557, (1, 1): 1, (6, 3): 1, (7, 1): 1}, (5, 3): {-1: 0.5999171655111479, (1, 2): 1, (7, 2): 1}, (5, 4): {-1: 0.0, (1, 0): 1, (6, 5): 1, (6, 8): 1, (7, 0): 1}, (5, 5): {-1: 0.5514832090815946, (1, 4): 1, (6, 6): 1, (7, 4): 1}, (5, 6): {-1: 0.5268620274822557, (1, 5): 1, (6, 7): 1, (7, 5): 1}, (5, 7): {-1: 0.36844937694810287, (1, 6): 1, (7, 6): 1}, (5, 8): {-1: 1.0, (1, 4): 1, (1, 10): 1, (6, 9): 1, (7, 4): 1, (7, 10): 1}, (5, 9): {-1: 0.8143112409692628, (1, 8): 1, (7, 8): 1}, (5, 10): {-1: 0.3815713261033687, (6, 8): 1}, (6, 0): {-1: 0.4881758647572571}, (6, 1): {-1: 0.5010569828658913, (5, 0): 1}, (6, 2): {-1: 0.3493330296178918, (5, 1): 1}, (6, 3): {-1: 0.5930879162679912, (5, 2): 1}, (6, 4): {-1: 0.18444865886808443, (5, 0): 1}, (6, 5): {-1: 0.47797152986344205, (5, 4): 1}, (6, 6): {-1: 0.3493330296178918, (5, 5): 1}, (6, 7): {-1: 0.39847765441517125, (5, 6): 1}, (6, 8): {-1: 0.8143112409692628, (5, 4): 1, (5, 10): 1}, (6, 9): {-1: 1.0, (5, 8): 1}, (6, 10): {-1: 0.365681021825693}, (7, 0): {-1: 0.0, (5, 1): 1, (5, 4): 1}, (7, 1): {-1: 0.23687773880410398, (5, 2): 1}, (7, 2): {-1: 0.45570287580545304, (5, 3): 1}, (7, 3): {-1: 0.23735062450017255}, (7, 4): {-1: 0.0, (5, 5): 1, (5, 8): 1}, (7, 5): {-1: 0.4450529958407728, (5, 6): 1}, (7, 6): {-1: 0.45570287580545304, (5, 7): 1}, (7, 7): {-1: 0.20496551130093563}, (7, 8): {-1: 0.3815713261033687, (5, 9): 1}, (7, 9): {-1: 0.365681021825693}, (7, 10): {-1: 1.0, (5, 8): 1}, (8, 0): {-1: 0.45154759419921786, (9, 1): 1, (9, 4): 1}, (8, 1): {-1: 1.0, (0, 0): 1, (9, 2): 1}, (8, 2): {-1: 0.520739723084335, (0, 1): 1, (9, 3): 1}, (8, 3): {-1: 0.5437033645739708, (0, 2): 1}, (8, 4): {-1: 0.0, (0, 0): 1, (9, 5): 1, (9, 8): 1}, (8, 5): {-1: 0.491700112302234, (0, 4): 1, (9, 6): 1}, (8, 6): {-1: 0.520739723084335, (0, 5): 1, (9, 7): 1}, (8, 7): {-1: 0.5311985340000129, (0, 6): 1}, (8, 8): {-1: 0.5581363438145468, (0, 4): 1, (0, 10): 1, (9, 9): 1}, (8, 9): {-1: 0.5010569828658913, (0, 8): 1}, (8, 10): {-1: 0.23687773880410398, (9, 8): 1}, (9, 0): {-1: 0.0, (10, 1): 1, (10, 4): 1}, (9, 1): {-1: 0.520739723084335, (8, 0): 1, (10, 2): 1}, (9, 2): {-1: 1.0, (8, 1): 1, (10, 3): 1}, (9, 3): {-1: 0.31111592488834816, (8, 2): 1}, (9, 4): {-1: 0.0, (8, 0): 1, (10, 5): 1, (10, 8): 1}, (9, 5): {-1: 0.5772089918664945, (8, 4): 1, (10, 6): 1}, (9, 6): {-1: 1.0, (8, 5): 1, (10, 7): 1}, (9, 7): {-1: 0.34564122185293233, (8, 6): 1}, (9, 8): {-1: 0.5268620274822557, (8, 4): 1, (8, 10): 1, (10, 9): 1}, (9, 9): {-1: 0.3493330296178918, (8, 8): 1}, (9, 10): {-1: 0.45570287580545304, (10, 8): 1}, (10, 0): {-1: 0.49599561994975133}, (10, 1): {-1: 0.5437033645739708, (9, 0): 1}, (10, 2): {-1: 0.31111592488834816, (9, 1): 1}, (10, 3): {-1: 1.0, (9, 2): 1}, (10, 4): {-1: 0.42370979901292366, (9, 0): 1}, (10, 5): {-1: 0.3849953920487642, (9, 4): 1}, (10, 6): {-1: 0.31111592488834816, (9, 5): 1}, (10, 7): {-1: 0.7583299780268045, (9, 6): 1}, (10, 8): {-1: 0.5999171655111479, (9, 4): 1, (9, 10): 1}, (10, 9): {-1: 0.5930879162679912, (9, 8): 1}, (10, 10): {-1: 0.23735062450017255}}
+Best node mapping alignment:
+[MRPNode-0]('confirm-01') --> [MRPNode-0]('approve-01')
+[MRPNode-1]('nominate-01') --> [MRPNode-4]('nominate-01')
+[MRPNode-2]('person') --> [MRPNode-5]('person')
+[MRPNode-3]('name') --> [MRPNode-6]('name')
+[MRPNode-4]('obama') --> [MRPNode-7]('obama')
+[MRPNode-5]('court') --> [MRPNode-8]('court')
+[MRPNode-6]('appeal-01') --> [MRPNode-9]('appeal-01')
+[MRPNode-7]('key-02') --> [MRPNode-10]('key-02')
+[MRPNode-8]('government-organization') --> [MRPNode-1]('government-organization')
+[MRPNode-9]('name') --> [MRPNode-2]('name')
+[MRPNode-10]('senate') --> [MRPNode-3]('senate')
+Smatch score F1 0.927
+AMR pair 4
+============================================
+Sentence 1: What more can I do to improve my credit score?
+Sentence 2: What can I realistically do to raise my credit score?
+AMR 1 (one-line): (MRPNode-0 / possible-01:ARG1 (MRPNode-1 / do-02:ARG1 (MRPNode-2 / improve-01:ARG1 (MRPNode-3 / score:mod (MRPNode-4 / credit):poss (MRPNode-5 / i)):ARG0 MRPNode-5):ARG0 (MRPNode-6 / amr-unknown:mod (MRPNode-7 / more)):ARG0 MRPNode-5))
+AMR 2 (one-line): (MRPNode-0 / possible-01:ARG1 (MRPNode-1 / do-02:ARG1 (MRPNode-2 / amr-unknown):ARG0 (MRPNode-3 / i:poss-of (MRPNode-4 / score:mod (MRPNode-5 / credit))):ARG2 (MRPNode-6 / realistic-03):ARG2 (MRPNode-7 / raise-01:ARG0 MRPNode-3:ARG1 MRPNode-4)))
+Similarity possible-01 possible-01 1.0
+Similarity possible-01 do-02 0.0
+Similarity possible-01 amr-unknown 0.0
+Similarity possible-01 i 0.0
+Similarity possible-01 score 0.0
+Similarity possible-01 credit 0.0
+Similarity possible-01 realistic-03 0.0
+Similarity possible-01 raise-01 0.0
+Similarity do-02 do-02 1.0
+Similarity do-02 amr-unknown 0.2549505296983757
+Similarity do-02 i 0.4004272902842612
+Similarity do-02 score 0.0
+Similarity do-02 credit 0.0
+Similarity do-02 realistic-03 0.22614208406247227
+Similarity do-02 raise-01 0.0
+Similarity improve-01 possible-01 0.0
+Similarity improve-01 do-02 0.0
+Similarity improve-01 amr-unknown 0.0
+Similarity improve-01 i 0.2845697253421759
+Similarity improve-01 score 0.19633011790189028
+Similarity improve-01 credit 0.4029638099534935
+Similarity improve-01 realistic-03 0.3385033402194674
+Similarity improve-01 raise-01 0.4275379027554039
+Similarity score amr-unknown 0.22716000261677793
+Similarity score i 0.4983465889415426
+Similarity score score 1.0
+Similarity score credit 0.3693731950638244
+Similarity score realistic-03 0.3910345527163241
+Similarity score raise-01 0.239819704439615
+Similarity credit amr-unknown 0.31045965944632914
+Similarity credit i 0.3804717600188484
+Similarity credit credit 1.0
+Similarity credit realistic-03 0.23328074626165227
+Similarity credit raise-01 0.6202523251224897
+Similarity i amr-unknown 0.35821591488099513
+Similarity i i 1.0
+Similarity i realistic-03 0.38275005397865863
+Similarity i raise-01 0.36059224561045916
+Similarity amr-unknown amr-unknown 1.0
+Similarity amr-unknown realistic-03 0.0
+Similarity amr-unknown raise-01 0.22118825130767827
+Similarity more possible-01 0.0
+Similarity more do-02 0.22980692417663215
+Similarity more amr-unknown 0.4280668872502118
+Similarity more i 0.6780214802843639
+Similarity more score 0.5167889357585478
+Similarity more credit 0.5873888519805202
+Similarity more realistic-03 0.5236880491180715
+Similarity more raise-01 0.5526480238114391
+Weight dictionary
+{(0, 0): {-1: 2.0, (1, 1): 1}, (0, 1): {-1: 0.0, (1, 2): 1, (1, 3): 1, (1, 6): 1, (1, 7): 1}, (0, 2): {-1: 0.0}, (0, 3): {-1: 0.0}, (0, 4): {-1: 0.0, (1, 3): 1, (1, 5): 1}, (0, 5): {-1: 0.0}, (0, 6): {-1: 0.0}, (0, 7): {-1: 0.0, (1, 3): 1, (1, 4): 1}, (1, 0): {-1: 0.0, (2, 1): 1, (6, 1): 1, (5, 1): 1}, (1, 1): {-1: 1.0, (0, 0): 1, (2, 2): 1, (2, 3): 1, (2, 6): 1, (2, 7): 1, (6, 2): 1, (6, 3): 1, (6, 6): 1, (6, 7): 1, (5, 2): 1, (5, 3): 1, (5, 6): 1, (5, 7): 1}, (1, 2): {-1: 0.2549505296983757, (0, 1): 1}, (1, 3): {-1: 0.4004272902842612, (0, 1): 1, (0, 4): 1, (0, 7): 1}, (1, 4): {-1: 0.0, (0, 7): 1, (2, 3): 1, (2, 5): 1, (6, 3): 1, (6, 5): 1, (5, 3): 1, (5, 5): 1}, (1, 5): {-1: 0.0, (0, 4): 1}, (1, 6): {-1: 0.22614208406247227, (0, 1): 1}, (1, 7): {-1: 0.0, (0, 1): 1, (2, 3): 1, (2, 4): 1, (6, 3): 1, (6, 4): 1, (5, 3): 1, (5, 4): 1}, (2, 0): {-1: 0.0, (3, 1): 1, (5, 1): 1}, (2, 1): {-1: 0.0, (1, 0): 1, (3, 2): 1, (3, 3): 1, (3, 6): 1, (3, 7): 1, (5, 2): 1, (5, 3): 1, (5, 6): 1, (5, 7): 1}, (2, 2): {-1: 0.0, (1, 1): 1}, (2, 3): {-1: 0.2845697253421759, (1, 1): 1, (1, 4): 1, (1, 7): 1}, (2, 4): {-1: 0.19633011790189028, (1, 7): 1, (3, 3): 1, (3, 5): 1, (5, 3): 1, (5, 5): 1}, (2, 5): {-1: 0.4029638099534935, (1, 4): 1}, (2, 6): {-1: 0.3385033402194674, (1, 1): 1}, (2, 7): {-1: 0.4275379027554039, (1, 1): 1, (3, 3): 1, (3, 4): 1, (5, 3): 1, (5, 4): 1}, (3, 0): {-1: 0.0, (4, 1): 1, (5, 1): 1}, (3, 1): {-1: 0.0, (2, 0): 1, (4, 2): 1, (4, 3): 1, (4, 6): 1, (4, 7): 1, (5, 2): 1, (5, 3): 1, (5, 6): 1, (5, 7): 1}, (3, 2): {-1: 0.22716000261677793, (2, 1): 1}, (3, 3): {-1: 0.4983465889415426, (2, 1): 1, (2, 4): 1, (2, 7): 1}, (3, 4): {-1: 1.0, (2, 7): 1, (4, 3): 1, (4, 5): 1, (5, 3): 1, (5, 5): 1}, (3, 5): {-1: 0.3693731950638244, (2, 4): 1}, (3, 6): {-1: 0.3910345527163241, (2, 1): 1}, (3, 7): {-1: 0.239819704439615, (2, 1): 1, (4, 3): 1, (4, 4): 1, (5, 3): 1, (5, 4): 1}, (4, 0): {-1: 0.0}, (4, 1): {-1: 0.0, (3, 0): 1}, (4, 2): {-1: 0.31045965944632914, (3, 1): 1}, (4, 3): {-1: 0.3804717600188484, (3, 1): 1, (3, 4): 1, (3, 7): 1}, (4, 4): {-1: 0.3693731950638244, (3, 7): 1}, (4, 5): {-1: 1.0, (3, 4): 1}, (4, 6): {-1: 0.23328074626165227, (3, 1): 1}, (4, 7): {-1: 0.6202523251224897, (3, 1): 1}, (5, 0): {-1: 0.0}, (5, 1): {-1: 0.4004272902842612, (1, 0): 1, (2, 0): 1, (3, 0): 1}, (5, 2): {-1: 0.35821591488099513, (1, 1): 1, (2, 1): 1, (3, 1): 1}, (5, 3): {-1: 1.0, (1, 1): 1, (1, 4): 1, (1, 7): 1, (2, 1): 1, (2, 4): 1, (2, 7): 1, (3, 1): 1, (3, 4): 1, (3, 7): 1}, (5, 4): {-1: 0.4983465889415426, (1, 7): 1, (2, 7): 1, (3, 7): 1}, (5, 5): {-1: 0.3804717600188484, (1, 4): 1, (2, 4): 1, (3, 4): 1}, (5, 6): {-1: 0.38275005397865863, (1, 1): 1, (2, 1): 1, (3, 1): 1}, (5, 7): {-1: 0.36059224561045916, (1, 1): 1, (2, 1): 1, (3, 1): 1}, (6, 0): {-1: 0.0, (7, 1): 1}, (6, 1): {-1: 0.2549505296983757, (1, 0): 1, (7, 2): 1, (7, 3): 1, (7, 6): 1, (7, 7): 1}, (6, 2): {-1: 1.0, (1, 1): 1}, (6, 3): {-1: 0.35821591488099513, (1, 1): 1, (1, 4): 1, (1, 7): 1}, (6, 4): {-1: 0.22716000261677793, (1, 7): 1, (7, 3): 1, (7, 5): 1}, (6, 5): {-1: 0.31045965944632914, (1, 4): 1}, (6, 6): {-1: 0.0, (1, 1): 1}, (6, 7): {-1: 0.22118825130767827, (1, 1): 1, (7, 3): 1, (7, 4): 1}, (7, 0): {-1: 0.0}, (7, 1): {-1: 0.22980692417663215, (6, 0): 1}, (7, 2): {-1: 0.4280668872502118, (6, 1): 1}, (7, 3): {-1: 0.6780214802843639, (6, 1): 1, (6, 4): 1, (6, 7): 1}, (7, 4): {-1: 0.5167889357585478, (6, 7): 1}, (7, 5): {-1: 0.5873888519805202, (6, 4): 1}, (7, 6): {-1: 0.5236880491180715, (6, 1): 1}, (7, 7): {-1: 0.5526480238114391, (6, 1): 1}}
+Best node mapping alignment:
+[MRPNode-0]('possible-01') --> [MRPNode-0]('possible-01')
+[MRPNode-1]('do-02') --> [MRPNode-1]('do-02')
+[MRPNode-2]('improve-01') --> [MRPNode-7]('raise-01')
+[MRPNode-3]('score') --> [MRPNode-4]('score')
+[MRPNode-4]('credit') --> [MRPNode-5]('credit')
+[MRPNode-5]('i') --> [MRPNode-3]('i')
+[MRPNode-6]('amr-unknown') --> [MRPNode-2]('amr-unknown')
+[MRPNode-7]('more') --> [MRPNode-6]('realistic-03')
+Smatch score F1 0.886
+AMR pair 5
+============================================
+Sentence 1: Chinese lunar rover lands on moon
+Sentence 2: China lands robot rover on moon
+AMR 1 (one-line): (MRPNode-0 / land-01:ARG1 (MRPNode-1 / rover:mod (MRPNode-2 / country):mod (MRPNode-3 / moon):mod (MRPNode-4 / name:op1 (MRPNode-5 / china))):location (MRPNode-6 / moon))
+AMR 2 (one-line): (MRPNode-0 / land-01:ARG1 (MRPNode-1 / rover):ARG0 (MRPNode-2 / country:name (MRPNode-3 / name:op1 (MRPNode-4 / china))):location (MRPNode-5 / moon))
+Similarity land-01 land-01 1.0
+Similarity land-01 rover 0.24949756300163972
+Similarity land-01 country 0.53768819032558
+Similarity land-01 name 0.4838632729208916
+Similarity land-01 china 0.3275002215429482
+Similarity land-01 moon 0.21676380072191598
+Similarity rover rover 1.0
+Similarity rover country 0.0
+Similarity rover name 0.0
+Similarity rover china 0.0
+Similarity rover moon 0.35369284131838563
+Similarity country country 1.0
+Similarity country name 0.5592061896362155
+Similarity country china 0.7457426118453636
+Similarity country moon 0.3730554171210938
+Similarity moon name 0.45822182123821575
+Similarity moon china 0.3857893576018938
+Similarity moon moon 1.0
+Similarity name name 1.0
+Similarity name china 0.42135667012452527
+Similarity china china 1.0
+Weight dictionary
+{(0, 0): {-1: 2.0, (1, 1): 1, (1, 2): 1, (1, 5): 1, (6, 1): 1, (6, 2): 1, (6, 5): 1}, (0, 1): {-1: 0.24949756300163972}, (0, 2): {-1: 0.53768819032558, (1, 3): 1, (6, 3): 1}, (0, 3): {-1: 0.4838632729208916, (1, 4): 1, (6, 4): 1}, (0, 4): {-1: 0.3275002215429482}, (0, 5): {-1: 0.21676380072191598}, (1, 0): {-1: 0.24949756300163972, (2, 1): 1, (2, 2): 1, (2, 5): 1, (3, 1): 1, (3, 2): 1, (3, 5): 1, (4, 1): 1, (4, 2): 1, (4, 5): 1}, (1, 1): {-1: 1.0, (0, 0): 1}, (1, 2): {-1: 0.0, (0, 0): 1, (2, 3): 1, (3, 3): 1, (4, 3): 1}, (1, 3): {-1: 0.0, (0, 2): 1, (2, 4): 1, (3, 4): 1, (4, 4): 1}, (1, 4): {-1: 0.0, (0, 3): 1}, (1, 5): {-1: 0.35369284131838563, (0, 0): 1}, (2, 0): {-1: 0.53768819032558}, (2, 1): {-1: 0.0, (1, 0): 1}, (2, 2): {-1: 1.0, (1, 0): 1}, (2, 3): {-1: 0.5592061896362155, (1, 2): 1}, (2, 4): {-1: 0.7457426118453636, (1, 3): 1}, (2, 5): {-1: 0.3730554171210938, (1, 0): 1}, (3, 0): {-1: 0.21676380072191598}, (3, 1): {-1: 0.35369284131838563, (1, 0): 1}, (3, 2): {-1: 0.3730554171210938, (1, 0): 1}, (3, 3): {-1: 0.45822182123821575, (1, 2): 1}, (3, 4): {-1: 0.3857893576018938, (1, 3): 1}, (3, 5): {-1: 1.0, (1, 0): 1}, (4, 0): {-1: 0.4838632729208916, (5, 1): 1, (5, 2): 1, (5, 5): 1}, (4, 1): {-1: 0.0, (1, 0): 1}, (4, 2): {-1: 0.5592061896362155, (1, 0): 1, (5, 3): 1}, (4, 3): {-1: 1.0, (1, 2): 1, (5, 4): 1}, (4, 4): {-1: 0.42135667012452527, (1, 3): 1}, (4, 5): {-1: 0.45822182123821575, (1, 0): 1}, (5, 0): {-1: 0.3275002215429482}, (5, 1): {-1: 0.0, (4, 0): 1}, (5, 2): {-1: 0.7457426118453636, (4, 0): 1}, (5, 3): {-1: 0.42135667012452527, (4, 2): 1}, (5, 4): {-1: 1.0, (4, 3): 1}, (5, 5): {-1: 0.3857893576018938, (4, 0): 1}, (6, 0): {-1: 0.21676380072191598}, (6, 1): {-1: 0.35369284131838563, (0, 0): 1}, (6, 2): {-1: 0.3730554171210938, (0, 0): 1}, (6, 3): {-1: 0.45822182123821575, (0, 2): 1}, (6, 4): {-1: 0.3857893576018938, (0, 3): 1}, (6, 5): {-1: 1.0, (0, 0): 1}}
+Initial node mapping alignment:
+[MRPNode-0]('land-01') --> [MRPNode-0]('land-01')
+[MRPNode-1]('rover') --> [MRPNode-1]('rover')
+[MRPNode-2]('country') --> [MRPNode-2]('country')
+[MRPNode-3]('moon') --> Null
+[MRPNode-4]('name') --> [MRPNode-3]('name')
+[MRPNode-5]('china') --> [MRPNode-4]('china')
+[MRPNode-6]('moon') --> [MRPNode-5]('moon')
+Updated node mapping alignment:
+['MRPNode-1', 'MRPNode-3']('lunar rover') --> ['MRPNode-1']('rover')
+['MRPNode-0']('lands') --> ['MRPNode-0']('lands')
+['MRPNode-2']('None') --> ['MRPNode-2']('China')
+['MRPNode-4']('Chinese') --> ['MRPNode-3']('China')
+['MRPNode-5']('Chinese') --> ['MRPNode-4']('China')
+['MRPNode-6']('moon') --> ['MRPNode-5']('moon')
+Smatch score F1 0.818
+AMR pair 6
+============================================
+Sentence 1: How do I pump up water pressure in my shower?
+Sentence 2: How can I boost the water pressure in my shower?
+AMR 1 (one-line): (MRPNode-0 / pump-01:manner (MRPNode-1 / pressure:mod (MRPNode-2 / water)):ARG0 (MRPNode-3 / i):ARG2 (MRPNode-4 / shower):manner (MRPNode-5 / amr-unknown))
+AMR 2 (one-line): (MRPNode-0 / possible-01:ARG1 (MRPNode-1 / boost-01:ARG1 (MRPNode-2 / pressure:mod (MRPNode-3 / water):location (MRPNode-4 / shower:poss (MRPNode-5 / i))):ARG0 MRPNode-5:manner (MRPNode-6 / amr-unknown)))
+Similarity pump-01 possible-01 0.0
+Similarity pump-01 boost-01 0.38362843704209415
+Similarity pump-01 pressure 0.49535888754553936
+Similarity pump-01 water 0.5828837933346183
+Similarity pump-01 shower 0.4907761047061801
+Similarity pump-01 i 0.21643997421841152
+Similarity pump-01 amr-unknown 0.0
+Similarity pressure possible-01 0.0
+Similarity pressure boost-01 0.5273944103342778
+Similarity pressure pressure 1.0
+Similarity pressure water 0.6032293064883237
+Similarity pressure shower 0.3482716829374989
+Similarity pressure i 0.5495701415452159
+Similarity pressure amr-unknown 0.35917972034234213
+Similarity water possible-01 0.0
+Similarity water boost-01 0.24896923121477987
+Similarity water water 1.0
+Similarity water shower 0.5584776181166088
+Similarity water i 0.45842758114225246
+Similarity water amr-unknown 0.2382305301726152
+Similarity i possible-01 0.0
+Similarity i boost-01 0.0
+Similarity i shower 0.4066597467032592
+Similarity i i 1.0
+Similarity i amr-unknown 0.35821591488099513
+Similarity shower possible-01 0.0
+Similarity shower boost-01 0.0
+Similarity shower shower 1.0
+Similarity shower amr-unknown 0.0
+Similarity amr-unknown possible-01 0.0
+Similarity amr-unknown boost-01 0.0
+Similarity amr-unknown amr-unknown 1.0
+Weight dictionary
+{(0, 0): {-1: 0.0, (1, 1): 1, (3, 1): 1, (4, 1): 1, (5, 1): 1}, (0, 1): {-1: 0.38362843704209415, (1, 2): 1, (1, 5): 1, (1, 6): 1, (3, 2): 1, (3, 5): 1, (3, 6): 1, (4, 2): 1, (4, 5): 1, (4, 6): 1, (5, 2): 1, (5, 5): 1, (5, 6): 1}, (0, 2): {-1: 0.49535888754553936, (1, 3): 1, (1, 4): 1, (3, 3): 1, (3, 4): 1, (4, 3): 1, (4, 4): 1, (5, 3): 1, (5, 4): 1}, (0, 3): {-1: 0.5828837933346183}, (0, 4): {-1: 0.4907761047061801, (1, 5): 1, (3, 5): 1, (4, 5): 1, (5, 5): 1}, (0, 5): {-1: 0.21643997421841152}, (0, 6): {-1: 0.0}, (1, 0): {-1: 0.0, (2, 1): 1}, (1, 1): {-1: 0.5273944103342778, (0, 0): 1, (2, 2): 1, (2, 5): 1, (2, 6): 1}, (1, 2): {-1: 1.0, (0, 1): 1, (2, 3): 1, (2, 4): 1}, (1, 3): {-1: 0.6032293064883237, (0, 2): 1}, (1, 4): {-1: 0.3482716829374989, (0, 2): 1, (2, 5): 1}, (1, 5): {-1: 0.5495701415452159, (0, 1): 1, (0, 4): 1}, (1, 6): {-1: 0.35917972034234213, (0, 1): 1}, (2, 0): {-1: 0.0}, (2, 1): {-1: 0.24896923121477987, (1, 0): 1}, (2, 2): {-1: 0.6032293064883237, (1, 1): 1}, (2, 3): {-1: 1.0, (1, 2): 1}, (2, 4): {-1: 0.5584776181166088, (1, 2): 1}, (2, 5): {-1: 0.45842758114225246, (1, 1): 1, (1, 4): 1}, (2, 6): {-1: 0.2382305301726152, (1, 1): 1}, (3, 0): {-1: 0.0}, (3, 1): {-1: 0.0, (0, 0): 1}, (3, 2): {-1: 0.5495701415452159, (0, 1): 1}, (3, 3): {-1: 0.45842758114225246, (0, 2): 1}, (3, 4): {-1: 0.4066597467032592, (0, 2): 1}, (3, 5): {-1: 1.0, (0, 1): 1, (0, 4): 1}, (3, 6): {-1: 0.35821591488099513, (0, 1): 1}, (4, 0): {-1: 0.0}, (4, 1): {-1: 0.0, (0, 0): 1}, (4, 2): {-1: 0.3482716829374989, (0, 1): 1}, (4, 3): {-1: 0.5584776181166088, (0, 2): 1}, (4, 4): {-1: 1.0, (0, 2): 1}, (4, 5): {-1: 0.4066597467032592, (0, 1): 1, (0, 4): 1}, (4, 6): {-1: 0.0, (0, 1): 1}, (5, 0): {-1: 0.0}, (5, 1): {-1: 0.0, (0, 0): 1}, (5, 2): {-1: 0.35917972034234213, (0, 1): 1}, (5, 3): {-1: 0.2382305301726152, (0, 2): 1}, (5, 4): {-1: 0.0, (0, 2): 1}, (5, 5): {-1: 0.35821591488099513, (0, 1): 1, (0, 4): 1}, (5, 6): {-1: 1.0, (0, 1): 1}}
+Best node mapping alignment:
+[MRPNode-0]('pump-01') --> [MRPNode-1]('boost-01')
+[MRPNode-1]('pressure') --> [MRPNode-2]('pressure')
+[MRPNode-2]('water') --> [MRPNode-3]('water')
+[MRPNode-3]('i') --> [MRPNode-5]('i')
+[MRPNode-4]('shower') --> [MRPNode-4]('shower')
+[MRPNode-5]('amr-unknown') --> [MRPNode-6]('amr-unknown')
+Smatch score F1 0.695
+AMR pair 7
+============================================
+Sentence 1: How can I locate and repair a leak?
+Sentence 2: How can I locate and repair a break in a circuit?
+AMR 1 (one-line): (MRPNode-0 / possible-01:ARG1 (MRPNode-1 / and:op1 (MRPNode-2 / amr-unknown):op1 (MRPNode-3 / locate-01:ARG1 (MRPNode-4 / i):ARG1 (MRPNode-5 / leak)):op2 (MRPNode-6 / repair-01:ARG0 MRPNode-4:ARG1 MRPNode-5)))
+AMR 2 (one-line): (MRPNode-0 / possible-01:ARG1 (MRPNode-1 / and:op1 (MRPNode-2 / locate-01:ARG1 (MRPNode-3 / break-01:ARG1 (MRPNode-4 / circuit)):ARG0 (MRPNode-5 / i)):op2 (MRPNode-6 / repair-01:ARG0 MRPNode-3:ARG0 MRPNode-5)):manner (MRPNode-7 / amr-unknown))
+Similarity possible-01 possible-01 1.0
+Similarity possible-01 and 0.0
+Similarity possible-01 locate-01 0.0
+Similarity possible-01 break-01 0.0
+Similarity possible-01 circuit 0.0
+Similarity possible-01 i 0.0
+Similarity possible-01 repair-01 0.0
+Similarity possible-01 amr-unknown 0.0
+Similarity and and 1.0
+Similarity and locate-01 0.0
+Similarity and break-01 0.5793481363006662
+Similarity and circuit 0.3611941063572721
+Similarity and i 0.6497846203806839
+Similarity and repair-01 0.3538716414829389
+Similarity and amr-unknown 0.43781104917431723
+Similarity amr-unknown locate-01 0.0
+Similarity amr-unknown break-01 0.0
+Similarity amr-unknown circuit 0.0
+Similarity amr-unknown i 0.35821591488099513
+Similarity amr-unknown repair-01 0.0
+Similarity amr-unknown amr-unknown 1.0
+Similarity locate-01 locate-01 1.0
+Similarity locate-01 break-01 0.0
+Similarity locate-01 circuit 0.0
+Similarity locate-01 i 0.0
+Similarity locate-01 repair-01 0.0
+Similarity i break-01 0.5101622001025543
+Similarity i circuit 0.2951360334458861
+Similarity i i 1.0
+Similarity i repair-01 0.2496997429653595
+Similarity leak possible-01 0.0
+Similarity leak and 0.25367429634338334
+Similarity leak locate-01 0.0
+Similarity leak break-01 0.2882652991942369
+Similarity leak circuit 0.0
+Similarity leak i 0.2656868226667315
+Similarity leak repair-01 0.416409438254328
+Similarity leak amr-unknown 0.2575581515231009
+Similarity repair-01 break-01 0.3783598350297702
+Similarity repair-01 circuit 0.18492476651383016
+Similarity repair-01 repair-01 1.0
+Weight dictionary
+{(0, 0): {-1: 2.0, (1, 1): 1, (1, 7): 1}, (0, 1): {-1: 0.0, (1, 2): 1, (1, 6): 1}, (0, 2): {-1: 0.0, (1, 3): 1, (1, 5): 1}, (0, 3): {-1: 0.0, (1, 4): 1}, (0, 4): {-1: 0.0}, (0, 5): {-1: 0.0}, (0, 6): {-1: 0.0, (1, 3): 1, (1, 5): 1}, (0, 7): {-1: 0.0}, (1, 0): {-1: 0.0, (2, 1): 1, (2, 7): 1, (3, 1): 1, (3, 7): 1, (6, 1): 1, (6, 7): 1}, (1, 1): {-1: 1.0, (0, 0): 1, (2, 2): 1, (2, 6): 1, (3, 2): 1, (3, 6): 1, (6, 2): 1, (6, 6): 1}, (1, 2): {-1: 0.0, (0, 1): 1, (2, 3): 1, (2, 5): 1, (3, 3): 1, (3, 5): 1, (6, 3): 1, (6, 5): 1}, (1, 3): {-1: 0.5793481363006662, (0, 2): 1, (0, 6): 1, (2, 4): 1, (3, 4): 1, (6, 4): 1}, (1, 4): {-1: 0.3611941063572721, (0, 3): 1}, (1, 5): {-1: 0.6497846203806839, (0, 2): 1, (0, 6): 1}, (1, 6): {-1: 0.3538716414829389, (0, 1): 1, (2, 3): 1, (2, 5): 1, (3, 3): 1, (3, 5): 1, (6, 3): 1, (6, 5): 1}, (1, 7): {-1: 0.43781104917431723, (0, 0): 1}, (2, 0): {-1: 0.0}, (2, 1): {-1: 0.43781104917431723, (1, 0): 1}, (2, 2): {-1: 0.0, (1, 1): 1}, (2, 3): {-1: 0.0, (1, 2): 1, (1, 6): 1}, (2, 4): {-1: 0.0, (1, 3): 1}, (2, 5): {-1: 0.35821591488099513, (1, 2): 1, (1, 6): 1}, (2, 6): {-1: 0.0, (1, 1): 1}, (2, 7): {-1: 1.0, (1, 0): 1}, (3, 0): {-1: 0.0, (4, 1): 1, (4, 7): 1, (5, 1): 1, (5, 7): 1}, (3, 1): {-1: 0.0, (1, 0): 1, (4, 2): 1, (4, 6): 1, (5, 2): 1, (5, 6): 1}, (3, 2): {-1: 1.0, (1, 1): 1, (4, 3): 1, (4, 5): 1, (5, 3): 1, (5, 5): 1}, (3, 3): {-1: 0.0, (1, 2): 1, (1, 6): 1, (4, 4): 1, (5, 4): 1}, (3, 4): {-1: 0.0, (1, 3): 1}, (3, 5): {-1: 0.0, (1, 2): 1, (1, 6): 1}, (3, 6): {-1: 0.0, (1, 1): 1, (4, 3): 1, (4, 5): 1, (5, 3): 1, (5, 5): 1}, (3, 7): {-1: 0.0, (1, 0): 1}, (4, 0): {-1: 0.0}, (4, 1): {-1: 0.6497846203806839, (3, 0): 1, (6, 0): 1}, (4, 2): {-1: 0.0, (3, 1): 1, (6, 1): 1}, (4, 3): {-1: 0.5101622001025543, (3, 2): 1, (3, 6): 1, (6, 2): 1, (6, 6): 1}, (4, 4): {-1: 0.2951360334458861, (3, 3): 1, (6, 3): 1}, (4, 5): {-1: 1.0, (3, 2): 1, (3, 6): 1, (6, 2): 1, (6, 6): 1}, (4, 6): {-1: 0.2496997429653595, (3, 1): 1, (6, 1): 1}, (4, 7): {-1: 0.35821591488099513, (3, 0): 1, (6, 0): 1}, (5, 0): {-1: 0.0}, (5, 1): {-1: 0.25367429634338334, (3, 0): 1, (6, 0): 1}, (5, 2): {-1: 0.0, (3, 1): 1, (6, 1): 1}, (5, 3): {-1: 0.2882652991942369, (3, 2): 1, (3, 6): 1, (6, 2): 1, (6, 6): 1}, (5, 4): {-1: 0.0, (3, 3): 1, (6, 3): 1}, (5, 5): {-1: 0.2656868226667315, (3, 2): 1, (3, 6): 1, (6, 2): 1, (6, 6): 1}, (5, 6): {-1: 0.416409438254328, (3, 1): 1, (6, 1): 1}, (5, 7): {-1: 0.2575581515231009, (3, 0): 1, (6, 0): 1}, (6, 0): {-1: 0.0, (4, 1): 1, (4, 7): 1, (5, 1): 1, (5, 7): 1}, (6, 1): {-1: 0.3538716414829389, (1, 0): 1, (4, 2): 1, (4, 6): 1, (5, 2): 1, (5, 6): 1}, (6, 2): {-1: 0.0, (1, 1): 1, (4, 3): 1, (4, 5): 1, (5, 3): 1, (5, 5): 1}, (6, 3): {-1: 0.3783598350297702, (1, 2): 1, (1, 6): 1, (4, 4): 1, (5, 4): 1}, (6, 4): {-1: 0.18492476651383016, (1, 3): 1}, (6, 5): {-1: 0.2496997429653595, (1, 2): 1, (1, 6): 1}, (6, 6): {-1: 1.0, (1, 1): 1, (4, 3): 1, (4, 5): 1, (5, 3): 1, (5, 5): 1}, (6, 7): {-1: 0.0, (1, 0): 1}}
+Best node mapping alignment:
+[MRPNode-0]('possible-01') --> [MRPNode-0]('possible-01')
+[MRPNode-1]('and') --> [MRPNode-1]('and')
+[MRPNode-2]('amr-unknown') --> [MRPNode-7]('amr-unknown')
+[MRPNode-3]('locate-01') --> [MRPNode-2]('locate-01')
+[MRPNode-4]('i') --> [MRPNode-5]('i')
+[MRPNode-5]('leak') --> [MRPNode-3]('break-01')
+[MRPNode-6]('repair-01') --> [MRPNode-6]('repair-01')
+Smatch score F1 0.840
+AMR pair 8
+============================================
+Sentence 1: The way that a 'term' is defined depends on the application.
+Sentence 2: The definition of term is dependent on the application.
+AMR 1 (one-line): (MRPNode-0 / depend-01:ARG1 (MRPNode-1 / way:manner-of (MRPNode-2 / define-01:ARG1 (MRPNode-3 / term))):ARG1 (MRPNode-4 / application))
+AMR 2 (one-line): (MRPNode-0 / depend-01:ARG1 (MRPNode-1 / apply-02):ARG0 (MRPNode-2 / define-01:ARG1 (MRPNode-3 / term)))
+Similarity depend-01 depend-01 1.0
+Similarity depend-01 apply-02 0.5880304642961618
+Similarity depend-01 define-01 0.6194208334179673
+Similarity depend-01 term 0.5973236647693702
+Similarity way depend-01 0.5953938097851447
+Similarity way apply-02 0.5340444832902058
+Similarity way define-01 0.423894026222766
+Similarity way term 0.6287586804580046
+Similarity define-01 apply-02 0.5309821018371902
+Similarity define-01 define-01 1.0
+Similarity define-01 term 0.502928101019786
+Similarity term apply-02 0.5650666184663105
+Similarity term term 1.0
+Similarity application depend-01 0.5076419703458879
+Similarity application apply-02 0.63267102019072
+Similarity application define-01 0.530611298820928
+Similarity application term 0.5944830092303836
+Weight dictionary
+{(0, 0): {-1: 2.0, (1, 1): 1, (1, 2): 1, (4, 1): 1, (4, 2): 1}, (0, 1): {-1: 0.5880304642961618}, (0, 2): {-1: 0.6194208334179673, (1, 3): 1, (4, 3): 1}, (0, 3): {-1: 0.5973236647693702}, (1, 0): {-1: 0.5953938097851447}, (1, 1): {-1: 0.5340444832902058, (0, 0): 1, (2, 0): 1}, (1, 2): {-1: 0.423894026222766, (0, 0): 1, (2, 0): 1}, (1, 3): {-1: 0.6287586804580046, (0, 2): 1, (2, 2): 1}, (2, 0): {-1: 0.6194208334179673, (1, 1): 1, (1, 2): 1, (3, 1): 1, (3, 2): 1}, (2, 1): {-1: 0.5309821018371902}, (2, 2): {-1: 1.0, (1, 3): 1, (3, 3): 1}, (2, 3): {-1: 0.502928101019786}, (3, 0): {-1: 0.5973236647693702}, (3, 1): {-1: 0.5650666184663105, (2, 0): 1}, (3, 2): {-1: 0.502928101019786, (2, 0): 1}, (3, 3): {-1: 1.0, (2, 2): 1}, (4, 0): {-1: 0.5076419703458879}, (4, 1): {-1: 0.63267102019072, (0, 0): 1}, (4, 2): {-1: 0.530611298820928, (0, 0): 1}, (4, 3): {-1: 0.5944830092303836, (0, 2): 1}}
+Best node mapping alignment:
+[MRPNode-0]('depend-01') --> [MRPNode-0]('depend-01')
+[MRPNode-1]('way') --> Null
+[MRPNode-2]('define-01') --> [MRPNode-2]('define-01')
+[MRPNode-3]('term') --> [MRPNode-3]('term')
+[MRPNode-4]('application') --> [MRPNode-1]('apply-02')
+Smatch score F1 0.737
+AMR pair 9
+============================================
+Sentence 1: The methodology takes much less time rather than naive methods.
+Sentence 2: This is a much quicker method than other more naive methods.
+AMR 1 (one-line): (MRPNode-0 / take-10:ARG1 (MRPNode-1 / time:ARG1-of (MRPNode-2 / instead-of-91:ARG2 (MRPNode-3 / method:mod (MRPNode-4 / naive))):ARG1-of (MRPNode-5 / have-quant-91:ARG3 (MRPNode-6 / less:quant (MRPNode-7 / much)))):ARG0 (MRPNode-8 / methodology))
+AMR 2 (one-line): (MRPNode-0 / have-degree-91:ARG1 (MRPNode-1 / method:mod (MRPNode-2 / this)):ARG2 (MRPNode-3 / quick-02:ARG1 MRPNode-1):ARG3 (MRPNode-4 / more:quant (MRPNode-5 / much)):ARG4 (MRPNode-6 / method:mod (MRPNode-7 / other):ARG1-of (MRPNode-8 / have-degree-91:ARG2 (MRPNode-9 / naive):ARG3 (MRPNode-10 / more:quant (MRPNode-11 / much)))))
+Similarity take-10 have-degree-91 0.0
+Similarity take-10 method 0.4842014629852187
+Similarity take-10 this 0.7744672486356423
+Similarity take-10 quick-02 0.4457969780598661
+Similarity take-10 more 0.6435743444350619
+Similarity take-10 much 0.692339053848665
+Similarity take-10 other 0.5452140593441844
+Similarity take-10 naive 0.28023235009070774
+Similarity time have-degree-91 0.0
+Similarity time method 0.5191112316594243
+Similarity time this 0.8834589104309337
+Similarity time quick-02 0.24768065439747072
+Similarity time more 0.7869208990956594
+Similarity time much 0.840031760061935
+Similarity time other 0.7113255465573304
+Similarity time naive 0.21280378207146822
+Similarity instead-of-91 have-degree-91 0.0
+Similarity instead-of-91 method 0.0
+Similarity instead-of-91 this 0.0
+Similarity instead-of-91 quick-02 0.0
+Similarity instead-of-91 more 0.0
+Similarity instead-of-91 much 0.0
+Similarity instead-of-91 other 0.0
+Similarity instead-of-91 naive 0.0
+Similarity method have-degree-91 0.0
+Similarity method method 1.0
+Similarity method this 0.6257751970799518
+Similarity method quick-02 0.0
+Similarity method more 0.5238314110075872
+Similarity method much 0.5045061941467528
+Similarity method other 0.49670678560108283
+Similarity method naive 0.3281357476647082
+Similarity naive have-degree-91 0.0
+Similarity naive this 0.327215565110875
+Similarity naive quick-02 0.0
+Similarity naive more 0.35715339229214693
+Similarity naive much 0.41072172906900806
+Similarity naive other 0.0
+Similarity naive naive 1.0
+Similarity have-quant-91 have-degree-91 0.0
+Similarity have-quant-91 method 0.0
+Similarity have-quant-91 this 0.0
+Similarity have-quant-91 quick-02 0.0
+Similarity have-quant-91 more 0.0
+Similarity have-quant-91 much 0.0
+Similarity have-quant-91 other 0.0
+Similarity have-quant-91 naive 0.0
+Similarity less have-degree-91 0.0
+Similarity less method 0.5754145226230448
+Similarity less this 0.8006605705891126
+Similarity less quick-02 0.0
+Similarity less more 0.9367886860160031
+Similarity less much 0.9115962288783381
+Similarity less other 0.715678782296461
+Similarity less naive 0.46512688778420896
+Similarity much have-degree-91 0.0
+Similarity much this 0.8820252961654607
+Similarity much quick-02 0.0
+Similarity much more 0.9187997058331194
+Similarity much much 1.0
+Similarity much other 0.751703950291672
+Similarity methodology have-degree-91 0.0
+Similarity methodology method 0.7218933951046915
+Similarity methodology this 0.38364537442114266
+Similarity methodology quick-02 0.0
+Similarity methodology more 0.29699505552153527
+Similarity methodology much 0.27158583223609534
+Similarity methodology other 0.2516573232858068
+Similarity methodology naive 0.38477821007023993
+Weight dictionary
+{(0, 0): {-1: 0.0, (1, 1): 1, (1, 3): 1, (1, 4): 1, (1, 6): 1, (8, 1): 1, (8, 3): 1, (8, 4): 1, (8, 6): 1}, (0, 1): {-1: 0.4842014629852187, (1, 2): 1, (8, 2): 1}, (0, 2): {-1: 0.7744672486356423}, (0, 3): {-1: 0.4457969780598661, (1, 1): 1, (8, 1): 1}, (0, 4): {-1: 0.6435743444350619, (1, 5): 1, (8, 5): 1}, (0, 5): {-1: 0.692339053848665}, (0, 6): {-1: 0.4842014629852187, (1, 7): 1, (8, 7): 1}, (0, 7): {-1: 0.5452140593441844}, (0, 8): {-1: 0.0, (1, 6): 1, (1, 9): 1, (1, 10): 1, (8, 6): 1, (8, 9): 1, (8, 10): 1}, (0, 9): {-1: 0.28023235009070774}, (0, 10): {-1: 0.6435743444350619, (1, 11): 1, (8, 11): 1}, (0, 11): {-1: 0.692339053848665}, (1, 0): {-1: 0.0}, (1, 1): {-1: 0.5191112316594243, (0, 0): 1, (0, 3): 1, (2, 0): 1, (2, 3): 1, (5, 0): 1, (5, 3): 1}, (1, 2): {-1: 0.8834589104309337, (0, 1): 1, (2, 1): 1, (5, 1): 1}, (1, 3): {-1: 0.24768065439747072, (0, 0): 1, (2, 0): 1, (5, 0): 1}, (1, 4): {-1: 0.7869208990956594, (0, 0): 1, (2, 0): 1, (5, 0): 1}, (1, 5): {-1: 0.840031760061935, (0, 4): 1, (2, 4): 1, (5, 4): 1}, (1, 6): {-1: 0.5191112316594243, (0, 0): 1, (0, 8): 1, (2, 0): 1, (2, 8): 1, (5, 0): 1, (5, 8): 1}, (1, 7): {-1: 0.7113255465573304, (0, 6): 1, (2, 6): 1, (5, 6): 1}, (1, 8): {-1: 0.0}, (1, 9): {-1: 0.21280378207146822, (0, 8): 1, (2, 8): 1, (5, 8): 1}, (1, 10): {-1: 0.7869208990956594, (0, 8): 1, (2, 8): 1, (5, 8): 1}, (1, 11): {-1: 0.840031760061935, (0, 10): 1, (2, 10): 1, (5, 10): 1}, (2, 0): {-1: 0.0, (1, 1): 1, (1, 3): 1, (1, 4): 1, (1, 6): 1, (3, 1): 1, (3, 3): 1, (3, 4): 1, (3, 6): 1}, (2, 1): {-1: 0.0, (1, 2): 1, (3, 2): 1}, (2, 2): {-1: 0.0}, (2, 3): {-1: 0.0, (1, 1): 1, (3, 1): 1}, (2, 4): {-1: 0.0, (1, 5): 1, (3, 5): 1}, (2, 5): {-1: 0.0}, (2, 6): {-1: 0.0, (1, 7): 1, (3, 7): 1}, (2, 7): {-1: 0.0}, (2, 8): {-1: 0.0, (1, 6): 1, (1, 9): 1, (1, 10): 1, (3, 6): 1, (3, 9): 1, (3, 10): 1}, (2, 9): {-1: 0.0}, (2, 10): {-1: 0.0, (1, 11): 1, (3, 11): 1}, (2, 11): {-1: 0.0}, (3, 0): {-1: 0.0, (4, 1): 1, (4, 3): 1, (4, 4): 1, (4, 6): 1}, (3, 1): {-1: 1.0, (2, 0): 1, (2, 3): 1, (4, 2): 1}, (3, 2): {-1: 0.6257751970799518, (2, 1): 1}, (3, 3): {-1: 0.0, (2, 0): 1, (4, 1): 1}, (3, 4): {-1: 0.5238314110075872, (2, 0): 1, (4, 5): 1}, (3, 5): {-1: 0.5045061941467528, (2, 4): 1}, (3, 6): {-1: 1.0, (2, 0): 1, (2, 8): 1, (4, 7): 1}, (3, 7): {-1: 0.49670678560108283, (2, 6): 1}, (3, 8): {-1: 0.0, (4, 6): 1, (4, 9): 1, (4, 10): 1}, (3, 9): {-1: 0.3281357476647082, (2, 8): 1}, (3, 10): {-1: 0.5238314110075872, (2, 8): 1, (4, 11): 1}, (3, 11): {-1: 0.5045061941467528, (2, 10): 1}, (4, 0): {-1: 0.0}, (4, 1): {-1: 0.3281357476647082, (3, 0): 1, (3, 3): 1}, (4, 2): {-1: 0.327215565110875, (3, 1): 1}, (4, 3): {-1: 0.0, (3, 0): 1}, (4, 4): {-1: 0.35715339229214693, (3, 0): 1}, (4, 5): {-1: 0.41072172906900806, (3, 4): 1}, (4, 6): {-1: 0.3281357476647082, (3, 0): 1, (3, 8): 1}, (4, 7): {-1: 0.0, (3, 6): 1}, (4, 8): {-1: 0.0}, (4, 9): {-1: 1.0, (3, 8): 1}, (4, 10): {-1: 0.35715339229214693, (3, 8): 1}, (4, 11): {-1: 0.41072172906900806, (3, 10): 1}, (5, 0): {-1: 0.0, (1, 1): 1, (1, 3): 1, (1, 4): 1, (1, 6): 1, (6, 1): 1, (6, 3): 1, (6, 4): 1, (6, 6): 1}, (5, 1): {-1: 0.0, (1, 2): 1, (6, 2): 1}, (5, 2): {-1: 0.0}, (5, 3): {-1: 0.0, (1, 1): 1, (6, 1): 1}, (5, 4): {-1: 0.0, (1, 5): 1, (6, 5): 1}, (5, 5): {-1: 0.0}, (5, 6): {-1: 0.0, (1, 7): 1, (6, 7): 1}, (5, 7): {-1: 0.0}, (5, 8): {-1: 0.0, (1, 6): 1, (1, 9): 1, (1, 10): 1, (6, 6): 1, (6, 9): 1, (6, 10): 1}, (5, 9): {-1: 0.0}, (5, 10): {-1: 0.0, (1, 11): 1, (6, 11): 1}, (5, 11): {-1: 0.0}, (6, 0): {-1: 0.0, (7, 1): 1, (7, 3): 1, (7, 4): 1, (7, 6): 1}, (6, 1): {-1: 0.5754145226230448, (5, 0): 1, (5, 3): 1, (7, 2): 1}, (6, 2): {-1: 0.8006605705891126, (5, 1): 1}, (6, 3): {-1: 0.0, (5, 0): 1, (7, 1): 1}, (6, 4): {-1: 0.9367886860160031, (5, 0): 1, (7, 5): 1}, (6, 5): {-1: 0.9115962288783381, (5, 4): 1}, (6, 6): {-1: 0.5754145226230448, (5, 0): 1, (5, 8): 1, (7, 7): 1}, (6, 7): {-1: 0.715678782296461, (5, 6): 1}, (6, 8): {-1: 0.0, (7, 6): 1, (7, 9): 1, (7, 10): 1}, (6, 9): {-1: 0.46512688778420896, (5, 8): 1}, (6, 10): {-1: 0.9367886860160031, (5, 8): 1, (7, 11): 1}, (6, 11): {-1: 0.9115962288783381, (5, 10): 1}, (7, 0): {-1: 0.0}, (7, 1): {-1: 0.5045061941467528, (6, 0): 1, (6, 3): 1}, (7, 2): {-1: 0.8820252961654607, (6, 1): 1}, (7, 3): {-1: 0.0, (6, 0): 1}, (7, 4): {-1: 0.9187997058331194, (6, 0): 1}, (7, 5): {-1: 1.0, (6, 4): 1}, (7, 6): {-1: 0.5045061941467528, (6, 0): 1, (6, 8): 1}, (7, 7): {-1: 0.751703950291672, (6, 6): 1}, (7, 8): {-1: 0.0}, (7, 9): {-1: 0.41072172906900806, (6, 8): 1}, (7, 10): {-1: 0.9187997058331194, (6, 8): 1}, (7, 11): {-1: 1.0, (6, 10): 1}, (8, 0): {-1: 0.0}, (8, 1): {-1: 0.7218933951046915, (0, 0): 1, (0, 3): 1}, (8, 2): {-1: 0.38364537442114266, (0, 1): 1}, (8, 3): {-1: 0.0, (0, 0): 1}, (8, 4): {-1: 0.29699505552153527, (0, 0): 1}, (8, 5): {-1: 0.27158583223609534, (0, 4): 1}, (8, 6): {-1: 0.7218933951046915, (0, 0): 1, (0, 8): 1}, (8, 7): {-1: 0.2516573232858068, (0, 6): 1}, (8, 8): {-1: 0.0}, (8, 9): {-1: 0.38477821007023993, (0, 8): 1}, (8, 10): {-1: 0.29699505552153527, (0, 8): 1}, (8, 11): {-1: 0.27158583223609534, (0, 10): 1}}
+Best node mapping alignment:
+[MRPNode-0]('take-10') --> [MRPNode-8]('have-degree-91')
+[MRPNode-1]('time') --> [MRPNode-6]('method')
+[MRPNode-2]('instead-of-91') --> [MRPNode-3]('quick-02')
+[MRPNode-3]('method') --> [MRPNode-1]('method')
+[MRPNode-4]('naive') --> [MRPNode-2]('this')
+[MRPNode-5]('have-quant-91') --> [MRPNode-0]('have-degree-91')
+[MRPNode-6]('less') --> [MRPNode-4]('more')
+[MRPNode-7]('much') --> [MRPNode-5]('much')
+[MRPNode-8]('methodology') --> [MRPNode-9]('naive')
+Smatch score F1 0.519
+AMR pair 10
+============================================
+Sentence 1: A hyperlink to a page counts as a vote of support.
+Sentence 2: A link to a page is seen as a vote of support.
+AMR 1 (one-line): (MRPNode-0 / count-04:ARG1 (MRPNode-1 / hyperlink:destination (MRPNode-2 / page)):ARG2 (MRPNode-3 / vote-01:ARG1 (MRPNode-4 / support-01)))
+AMR 2 (one-line): (MRPNode-0 / see-01:ARG1 (MRPNode-1 / thing:ARG3-of (MRPNode-2 / link-01:ARG1 (MRPNode-3 / page))):ARG2 (MRPNode-4 / vote-01:ARG1 (MRPNode-5 / support-01)))
+Similarity count-04 see-01 0.3290443738520104
+Similarity count-04 thing 0.3196936450794809
+Similarity count-04 link-01 0.3420299106851647
+Similarity count-04 page 0.27008813885838734
+Similarity count-04 vote-01 0.46635985038058103
+Similarity count-04 support-01 0.21839795093637965
+Similarity hyperlink see-01 0.0
+Similarity hyperlink thing 0.0
+Similarity hyperlink link-01 0.0
+Similarity hyperlink page 0.0
+Similarity hyperlink vote-01 0.0
+Similarity hyperlink support-01 0.0
+Similarity page see-01 0.39779805838629695
+Similarity page thing 0.41515780763069765
+Similarity page link-01 0.44672302544122106
+Similarity page page 1.0
+Similarity page vote-01 0.330411055081875
+Similarity page support-01 0.39526697288166257
+Similarity vote-01 see-01 0.2673604157757084
+Similarity vote-01 thing 0.3043219839294315
+Similarity vote-01 link-01 0.20027467707739863
+Similarity vote-01 vote-01 1.0
+Similarity vote-01 support-01 0.4158990515817962
+Similarity support-01 see-01 0.4836049476083724
+Similarity support-01 thing 0.3083394023790043
+Similarity support-01 link-01 0.5179902165003114
+Similarity support-01 support-01 1.0
+Weight dictionary
+{(0, 0): {-1: 0.3290443738520104, (1, 1): 1, (1, 4): 1, (3, 1): 1, (3, 4): 1}, (0, 1): {-1: 0.3196936450794809}, (0, 2): {-1: 0.3420299106851647, (1, 1): 1, (1, 3): 1, (3, 1): 1, (3, 3): 1}, (0, 3): {-1: 0.27008813885838734}, (0, 4): {-1: 0.46635985038058103, (1, 5): 1, (3, 5): 1}, (0, 5): {-1: 0.21839795093637965}, (1, 0): {-1: 0.0, (2, 1): 1, (2, 4): 1}, (1, 1): {-1: 0.0, (0, 0): 1, (0, 2): 1}, (1, 2): {-1: 0.0, (2, 1): 1, (2, 3): 1}, (1, 3): {-1: 0.0, (0, 2): 1}, (1, 4): {-1: 0.0, (0, 0): 1, (2, 5): 1}, (1, 5): {-1: 0.0, (0, 4): 1}, (2, 0): {-1: 0.39779805838629695}, (2, 1): {-1: 0.41515780763069765, (1, 0): 1, (1, 2): 1}, (2, 2): {-1: 0.44672302544122106}, (2, 3): {-1: 1.0, (1, 2): 1}, (2, 4): {-1: 0.330411055081875, (1, 0): 1}, (2, 5): {-1: 0.39526697288166257, (1, 4): 1}, (3, 0): {-1: 0.2673604157757084, (4, 1): 1, (4, 4): 1}, (3, 1): {-1: 0.3043219839294315, (0, 0): 1, (0, 2): 1}, (3, 2): {-1: 0.20027467707739863, (4, 1): 1, (4, 3): 1}, (3, 3): {-1: 0.330411055081875, (0, 2): 1}, (3, 4): {-1: 1.0, (0, 0): 1, (4, 5): 1}, (3, 5): {-1: 0.4158990515817962, (0, 4): 1}, (4, 0): {-1: 0.4836049476083724}, (4, 1): {-1: 0.3083394023790043, (3, 0): 1, (3, 2): 1}, (4, 2): {-1: 0.5179902165003114}, (4, 3): {-1: 0.39526697288166257, (3, 2): 1}, (4, 4): {-1: 0.4158990515817962, (3, 0): 1}, (4, 5): {-1: 1.0, (3, 4): 1}}
+Best node mapping alignment:
+[MRPNode-0]('count-04') --> [MRPNode-0]('see-01')
+[MRPNode-1]('hyperlink') --> [MRPNode-2]('link-01')
+[MRPNode-2]('page') --> [MRPNode-3]('page')
+[MRPNode-3]('vote-01') --> [MRPNode-4]('vote-01')
+[MRPNode-4]('support-01') --> [MRPNode-5]('support-01')
+Smatch score F1 0.575
+AMR pair 11
+============================================
+Sentence 1: Russian opposition leader under house arrest
+Sentence 2: Russian Opposition Leader Placed Under House Arrest
+AMR 1 (one-line): (MRPNode-0 / arrest-01:ARG1 (MRPNode-1 / person:ARG0-of (MRPNode-2 / country:name (MRPNode-3 / name:op1 (MRPNode-4 / russia))):ARG0-of (MRPNode-5 / lead-02:ARG1 (MRPNode-6 / oppose-01))):location (MRPNode-7 / house))
+AMR 2 (one-line): (MRPNode-0 / place-01:ARG1 (MRPNode-1 / person:ARG0-of (MRPNode-2 / country:name (MRPNode-3 / name:op1 (MRPNode-4 / russia))):ARG0-of (MRPNode-5 / lead-02:ARG1 (MRPNode-6 / oppose-01))):ARG2 (MRPNode-7 / under:op1 (MRPNode-8 / strike-01:ARG0 (MRPNode-9 / government-organization:name (MRPNode-10 / name:op1 (MRPNode-11 / house):op2 (MRPNode-12 / house))))))
+Similarity arrest-01 place-01 0.3548656241685811
+Similarity arrest-01 person 0.38826256588253605
+Similarity arrest-01 country 0.4033581493685339
+Similarity arrest-01 name 0.2200388723702702
+Similarity arrest-01 russia 0.29309359333169155
+Similarity arrest-01 lead-02 0.3716054175413864
+Similarity arrest-01 oppose-01 0.34968995834315614
+Similarity arrest-01 under 0.36760205699843745
+Similarity arrest-01 strike-01 0.57037223735103
+Similarity arrest-01 government-organization 0.4476845284182663
+Similarity arrest-01 house 0.26528772622816316
+Similarity person place-01 0.5602832625695793
+Similarity person person 1.0
+Similarity person country 0.5277433678184756
+Similarity person name 0.5772089918664945
+Similarity person russia 0.34081969487563
+Similarity person lead-02 0.4403594972806061
+Similarity person oppose-01 0.2505944438996868
+Similarity person under 0.5025290082699443
+Similarity person strike-01 0.3226460128259451
+Similarity person government-organization 0.491700112302234
+Similarity person house 0.5050864524506684
+Similarity country place-01 0.6701653852801879
+Similarity country country 1.0
+Similarity country name 0.5592061896362155
+Similarity country russia 0.6230189885779099
+Similarity country lead-02 0.5206464177046626
+Similarity country oppose-01 0.40727240152959404
+Similarity country under 0.7191038697555892
+Similarity country strike-01 0.5146967036170628
+Similarity country government-organization 0.8186167964098929
+Similarity country house 0.5536052690148096
+Similarity name place-01 0.5257918787502018
+Similarity name name 1.0
+Similarity name russia 0.3228365840213743
+Similarity name lead-02 0.33767224706772514
+Similarity name oppose-01 0.21485908676695073
+Similarity name under 0.6448599269225319
+Similarity name strike-01 0.19009882512059373
+Similarity name government-organization 0.520739723084335
+Similarity name house 0.5750542474917905
+Similarity russia place-01 0.38238688989476677
+Similarity russia russia 1.0
+Similarity russia lead-02 0.42071692377422365
+Similarity russia oppose-01 0.4197594682278752
+Similarity russia under 0.4327238470163284
+Similarity russia strike-01 0.4179786895509122
+Similarity russia government-organization 0.5410955694070483
+Similarity russia house 0.2535064363207784
+Similarity lead-02 place-01 0.5469823042721755
+Similarity lead-02 lead-02 1.0
+Similarity lead-02 oppose-01 0.24897384749735327
+Similarity lead-02 under 0.3604340026326773
+Similarity lead-02 strike-01 0.4606046473486517
+Similarity lead-02 government-organization 0.42718004779375096
+Similarity lead-02 house 0.35586781804176354
+Similarity oppose-01 place-01 0.0
+Similarity oppose-01 oppose-01 1.0
+Similarity oppose-01 under 0.2979888238290581
+Similarity oppose-01 strike-01 0.42041018731472835
+Similarity oppose-01 government-organization 0.5122352974052328
+Similarity oppose-01 house 0.27121934354027305
+Similarity house place-01 0.5176463966166786
+Similarity house under 0.6307987882238093
+Similarity house strike-01 0.2884396497379585
+Similarity house government-organization 0.5576618711697274
+Similarity house house 1.0
+Weight dictionary
+{(0, 0): {-1: 0.3548656241685811, (1, 1): 1, (1, 7): 1, (7, 1): 1, (7, 7): 1}, (0, 1): {-1: 0.38826256588253605}, (0, 2): {-1: 0.4033581493685339, (1, 1): 1, (1, 3): 1, (7, 1): 1, (7, 3): 1}, (0, 3): {-1: 0.2200388723702702, (1, 4): 1, (7, 4): 1}, (0, 4): {-1: 0.29309359333169155}, (0, 5): {-1: 0.3716054175413864, (1, 1): 1, (1, 6): 1, (7, 1): 1, (7, 6): 1}, (0, 6): {-1: 0.34968995834315614}, (0, 7): {-1: 0.36760205699843745, (1, 8): 1, (7, 8): 1}, (0, 8): {-1: 0.57037223735103, (1, 9): 1, (7, 9): 1}, (0, 9): {-1: 0.4476845284182663, (1, 10): 1, (7, 10): 1}, (0, 10): {-1: 0.2200388723702702, (1, 11): 1, (1, 12): 1, (7, 11): 1, (7, 12): 1}, (0, 11): {-1: 0.26528772622816316}, (0, 12): {-1: 0.26528772622816316}, (1, 0): {-1: 0.5602832625695793}, (1, 1): {-1: 1.0, (0, 0): 1, (0, 2): 1, (0, 5): 1, (2, 0): 1, (2, 2): 1, (2, 5): 1, (5, 0): 1, (5, 2): 1, (5, 5): 1}, (1, 2): {-1: 0.5277433678184756}, (1, 3): {-1: 0.5772089918664945, (0, 2): 1, (2, 2): 1, (5, 2): 1}, (1, 4): {-1: 0.34081969487563, (0, 3): 1, (2, 3): 1, (5, 3): 1}, (1, 5): {-1: 0.4403594972806061}, (1, 6): {-1: 0.2505944438996868, (0, 5): 1, (2, 5): 1, (5, 5): 1}, (1, 7): {-1: 0.5025290082699443, (0, 0): 1, (2, 0): 1, (5, 0): 1}, (1, 8): {-1: 0.3226460128259451, (0, 7): 1, (2, 7): 1, (5, 7): 1}, (1, 9): {-1: 0.491700112302234, (0, 8): 1, (2, 8): 1, (5, 8): 1}, (1, 10): {-1: 0.5772089918664945, (0, 9): 1, (2, 9): 1, (5, 9): 1}, (1, 11): {-1: 0.5050864524506684, (0, 10): 1, (2, 10): 1, (5, 10): 1}, (1, 12): {-1: 0.5050864524506684, (0, 10): 1, (2, 10): 1, (5, 10): 1}, (2, 0): {-1: 0.6701653852801879, (1, 1): 1, (1, 7): 1, (3, 1): 1, (3, 7): 1}, (2, 1): {-1: 0.5277433678184756}, (2, 2): {-1: 1.0, (1, 1): 1, (1, 3): 1, (3, 1): 1, (3, 3): 1}, (2, 3): {-1: 0.5592061896362155, (1, 4): 1, (3, 4): 1}, (2, 4): {-1: 0.6230189885779099}, (2, 5): {-1: 0.5206464177046626, (1, 1): 1, (1, 6): 1, (3, 1): 1, (3, 6): 1}, (2, 6): {-1: 0.40727240152959404}, (2, 7): {-1: 0.7191038697555892, (1, 8): 1, (3, 8): 1}, (2, 8): {-1: 0.5146967036170628, (1, 9): 1, (3, 9): 1}, (2, 9): {-1: 0.8186167964098929, (1, 10): 1, (3, 10): 1}, (2, 10): {-1: 0.5592061896362155, (1, 11): 1, (1, 12): 1, (3, 11): 1, (3, 12): 1}, (2, 11): {-1: 0.5536052690148096}, (2, 12): {-1: 0.5536052690148096}, (3, 0): {-1: 0.5257918787502018, (4, 1): 1, (4, 7): 1}, (3, 1): {-1: 0.5772089918664945, (2, 0): 1, (2, 2): 1, (2, 5): 1}, (3, 2): {-1: 0.5592061896362155, (4, 1): 1, (4, 3): 1}, (3, 3): {-1: 1.0, (2, 2): 1, (4, 4): 1}, (3, 4): {-1: 0.3228365840213743, (2, 3): 1}, (3, 5): {-1: 0.33767224706772514, (4, 1): 1, (4, 6): 1}, (3, 6): {-1: 0.21485908676695073, (2, 5): 1}, (3, 7): {-1: 0.6448599269225319, (2, 0): 1, (4, 8): 1}, (3, 8): {-1: 0.19009882512059373, (2, 7): 1, (4, 9): 1}, (3, 9): {-1: 0.520739723084335, (2, 8): 1, (4, 10): 1}, (3, 10): {-1: 1.0, (2, 9): 1, (4, 11): 1, (4, 12): 1}, (3, 11): {-1: 0.5750542474917905, (2, 10): 1}, (3, 12): {-1: 0.5750542474917905, (2, 10): 1}, (4, 0): {-1: 0.38238688989476677}, (4, 1): {-1: 0.34081969487563, (3, 0): 1, (3, 2): 1, (3, 5): 1}, (4, 2): {-1: 0.6230189885779099}, (4, 3): {-1: 0.3228365840213743, (3, 2): 1}, (4, 4): {-1: 1.0, (3, 3): 1}, (4, 5): {-1: 0.42071692377422365}, (4, 6): {-1: 0.4197594682278752, (3, 5): 1}, (4, 7): {-1: 0.4327238470163284, (3, 0): 1}, (4, 8): {-1: 0.4179786895509122, (3, 7): 1}, (4, 9): {-1: 0.5410955694070483, (3, 8): 1}, (4, 10): {-1: 0.3228365840213743, (3, 9): 1}, (4, 11): {-1: 0.2535064363207784, (3, 10): 1}, (4, 12): {-1: 0.2535064363207784, (3, 10): 1}, (5, 0): {-1: 0.5469823042721755, (1, 1): 1, (1, 7): 1, (6, 1): 1, (6, 7): 1}, (5, 1): {-1: 0.4403594972806061}, (5, 2): {-1: 0.5206464177046626, (1, 1): 1, (1, 3): 1, (6, 1): 1, (6, 3): 1}, (5, 3): {-1: 0.33767224706772514, (1, 4): 1, (6, 4): 1}, (5, 4): {-1: 0.42071692377422365}, (5, 5): {-1: 1.0, (1, 1): 1, (1, 6): 1, (6, 1): 1, (6, 6): 1}, (5, 6): {-1: 0.24897384749735327}, (5, 7): {-1: 0.3604340026326773, (1, 8): 1, (6, 8): 1}, (5, 8): {-1: 0.4606046473486517, (1, 9): 1, (6, 9): 1}, (5, 9): {-1: 0.42718004779375096, (1, 10): 1, (6, 10): 1}, (5, 10): {-1: 0.33767224706772514, (1, 11): 1, (1, 12): 1, (6, 11): 1, (6, 12): 1}, (5, 11): {-1: 0.35586781804176354}, (5, 12): {-1: 0.35586781804176354}, (6, 0): {-1: 0.0}, (6, 1): {-1: 0.2505944438996868, (5, 0): 1, (5, 2): 1, (5, 5): 1}, (6, 2): {-1: 0.40727240152959404}, (6, 3): {-1: 0.21485908676695073, (5, 2): 1}, (6, 4): {-1: 0.4197594682278752, (5, 3): 1}, (6, 5): {-1: 0.24897384749735327}, (6, 6): {-1: 1.0, (5, 5): 1}, (6, 7): {-1: 0.2979888238290581, (5, 0): 1}, (6, 8): {-1: 0.42041018731472835, (5, 7): 1}, (6, 9): {-1: 0.5122352974052328, (5, 8): 1}, (6, 10): {-1: 0.21485908676695073, (5, 9): 1}, (6, 11): {-1: 0.27121934354027305, (5, 10): 1}, (6, 12): {-1: 0.27121934354027305, (5, 10): 1}, (7, 0): {-1: 0.5176463966166786}, (7, 1): {-1: 0.5050864524506684, (0, 0): 1, (0, 2): 1, (0, 5): 1}, (7, 2): {-1: 0.5536052690148096}, (7, 3): {-1: 0.5750542474917905, (0, 2): 1}, (7, 4): {-1: 0.2535064363207784, (0, 3): 1}, (7, 5): {-1: 0.35586781804176354}, (7, 6): {-1: 0.27121934354027305, (0, 5): 1}, (7, 7): {-1: 0.6307987882238093, (0, 0): 1}, (7, 8): {-1: 0.2884396497379585, (0, 7): 1}, (7, 9): {-1: 0.5576618711697274, (0, 8): 1}, (7, 10): {-1: 0.5750542474917905, (0, 9): 1}, (7, 11): {-1: 1.0, (0, 10): 1}, (7, 12): {-1: 1.0, (0, 10): 1}}
+Best node mapping alignment:
+[MRPNode-0]('arrest-01') --> [MRPNode-0]('place-01')
+[MRPNode-1]('person') --> [MRPNode-1]('person')
+[MRPNode-2]('country') --> [MRPNode-2]('country')
+[MRPNode-3]('name') --> [MRPNode-3]('name')
+[MRPNode-4]('russia') --> [MRPNode-4]('russia')
+[MRPNode-5]('lead-02') --> [MRPNode-5]('lead-02')
+[MRPNode-6]('oppose-01') --> [MRPNode-6]('oppose-01')
+[MRPNode-7]('house') --> [MRPNode-7]('under')
+Smatch score F1 0.666
+AMR pair 12
+============================================
+Sentence 1: You do not need to worry.
+Sentence 2: You don't have to worry.
+AMR 1 (one-line): (MRPNode-0 / need-01:polarity (MRPNode-1 / -):ARG1 (MRPNode-2 / worry-01:ARG1 (MRPNode-3 / you)):ARG0 MRPNode-3)
+AMR 2 (one-line): (MRPNode-0 / obligate-01:polarity (MRPNode-1 / -):ARG1 (MRPNode-2 / you):ARG2 (MRPNode-3 / worry-02:ARG0 MRPNode-2))
+Similarity need-01 obligate-01 0.0
+Similarity need-01 - 0.4881716584918792
+Similarity need-01 you 0.6911544992086646
+Similarity need-01 worry-02 0.6501202636140759
+Similarity - obligate-01 0.0
+Similarity - - 1.0
+Similarity - you 0.5664191192914279
+Similarity - worry-02 0.4346128100172204
+Similarity worry-01 obligate-01 0.0
+Similarity worry-01 - 0.4346128100172204
+Similarity worry-01 you 0.6547833236327945
+Similarity worry-01 worry-02 0.9
+Similarity you obligate-01 0.0
+Similarity you you 1.0
+Similarity you worry-02 0.6547833236327945
+Weight dictionary
+{(0, 0): {-1: 0.0, (1, 1): 1, (1, 2): 1, (1, 3): 1, (2, 1): 1, (2, 2): 1, (2, 3): 1, (3, 1): 1, (3, 2): 1, (3, 3): 1}, (0, 1): {-1: 0.4881716584918792}, (0, 2): {-1: 0.6911544992086646}, (0, 3): {-1: 0.6501202636140759, (1, 2): 1, (2, 2): 1, (3, 2): 1}, (1, 0): {-1: 0.0}, (1, 1): {-1: 1.0, (0, 0): 1}, (1, 2): {-1: 0.5664191192914279, (0, 0): 1, (0, 3): 1}, (1, 3): {-1: 0.4346128100172204, (0, 0): 1}, (2, 0): {-1: 0.0, (3, 1): 1, (3, 2): 1, (3, 3): 1}, (2, 1): {-1: 0.4346128100172204, (0, 0): 1}, (2, 2): {-1: 0.6547833236327945, (0, 0): 1, (0, 3): 1}, (2, 3): {-1: 0.9, (0, 0): 1, (3, 2): 1}, (3, 0): {-1: 0.0}, (3, 1): {-1: 0.5664191192914279, (0, 0): 1, (2, 0): 1}, (3, 2): {-1: 1.0, (0, 0): 1, (0, 3): 1, (2, 0): 1, (2, 3): 1}, (3, 3): {-1: 0.6547833236327945, (0, 0): 1, (2, 0): 1}}
+Best node mapping alignment:
+[MRPNode-0]('need-01') --> [MRPNode-0]('obligate-01')
+[MRPNode-1]('-') --> [MRPNode-1]('-')
+[MRPNode-2]('worry-01') --> [MRPNode-3]('worry-02')
+[MRPNode-3]('you') --> [MRPNode-2]('you')
+Smatch score F1 0.767
+AMR pair 13
+============================================
+Sentence 1: I was in a similar situation.
+Sentence 2: I had a similar situation.
+AMR 1 (one-line): (MRPNode-0 / be-located-at-91:ARG1 (MRPNode-1 / i):ARG2 (MRPNode-2 / situation:ARG1-of (MRPNode-3 / resemble-01)))
+AMR 2 (one-line): (MRPNode-0 / have-03:ARG1 (MRPNode-1 / situation:ARG1-of (MRPNode-2 / resemble-01)):ARG0 (MRPNode-3 / i))
+Similarity be-located-at-91 have-03 0.0
+Similarity be-located-at-91 situation 0.0
+Similarity be-located-at-91 resemble-01 0.0
+Similarity be-located-at-91 i 0.0
+Similarity i have-03 0.44786015959214176
+Similarity i situation 0.6281986171635582
+Similarity i resemble-01 0.35831541968423386
+Similarity i i 1.0
+Similarity situation have-03 0.2846218825007791
+Similarity situation situation 1.0
+Similarity situation resemble-01 0.2517580493951968
+Similarity resemble-01 have-03 0.0
+Similarity resemble-01 resemble-01 1.0
+Weight dictionary
+{(0, 0): {-1: 0.0, (1, 1): 1, (1, 3): 1, (2, 1): 1, (2, 3): 1}, (0, 1): {-1: 0.0}, (0, 2): {-1: 0.0, (1, 1): 1, (2, 1): 1}, (0, 3): {-1: 0.0}, (1, 0): {-1: 0.44786015959214176}, (1, 1): {-1: 0.6281986171635582, (0, 0): 1, (0, 2): 1}, (1, 2): {-1: 0.35831541968423386}, (1, 3): {-1: 1.0, (0, 0): 1}, (2, 0): {-1: 0.2846218825007791}, (2, 1): {-1: 1.0, (0, 0): 1, (0, 2): 1, (3, 0): 1, (3, 2): 1}, (2, 2): {-1: 0.2517580493951968}, (2, 3): {-1: 0.6281986171635582, (0, 0): 1, (3, 0): 1}, (3, 0): {-1: 0.0, (2, 1): 1, (2, 3): 1}, (3, 1): {-1: 0.2517580493951968}, (3, 2): {-1: 1.0, (2, 1): 1}, (3, 3): {-1: 0.35831541968423386}}
+Best node mapping alignment:
+[MRPNode-0]('be-located-at-91') --> [MRPNode-0]('have-03')
+[MRPNode-1]('i') --> [MRPNode-3]('i')
+[MRPNode-2]('situation') --> [MRPNode-1]('situation')
+[MRPNode-3]('resemble-01') --> [MRPNode-2]('resemble-01')
+Smatch score F1 0.750
+AMR pair 14
+============================================
+Sentence 1: They decided to protect and polish what remained.
+Sentence 2: They made a decision to protect and polish what remained
+AMR 1 (one-line): (MRPNode-0 / decide-01:ARG1 (MRPNode-1 / and:op1 (MRPNode-2 / protect-01:ARG1 (MRPNode-3 / thing:ARG1-of (MRPNode-4 / remain-01)):ARG0 (MRPNode-5 / they)):op2 (MRPNode-6 / polish:topic MRPNode-3:ARG0 MRPNode-5)):ARG0 MRPNode-5)
+AMR 2 (one-line): (MRPNode-0 / decide-01:ARG1 (MRPNode-1 / and:op1 (MRPNode-2 / protect-01:ARG1 (MRPNode-3 / thing:ARG1-of (MRPNode-4 / remain-01)):ARG0 (MRPNode-5 / they)):op2 (MRPNode-6 / meddle-01:ARG1 MRPNode-3:ARG0 MRPNode-5)):ARG0 MRPNode-5)
+Similarity decide-01 decide-01 1.0
+Similarity decide-01 and 0.37591574901241387
+Similarity decide-01 protect-01 0.4186021613910405
+Similarity decide-01 thing 0.5200529893000896
+Similarity decide-01 remain-01 0.3246335917494371
+Similarity decide-01 they 0.4833775967358392
+Similarity decide-01 meddle-01 0.20208921982917935
+Similarity and and 1.0
+Similarity and protect-01 0.38767043869965134
+Similarity and thing 0.567510656470935
+Similarity and remain-01 0.5354807824260953
+Similarity and they 0.8358656448577851
+Similarity and meddle-01 0.0
+Similarity protect-01 protect-01 1.0
+Similarity protect-01 thing 0.3359771814488234
+Similarity protect-01 remain-01 0.41966271832667207
+Similarity protect-01 they 0.37592655606717706
+Similarity protect-01 meddle-01 0.0
+Similarity thing thing 1.0
+Similarity thing remain-01 0.5135600267294307
+Similarity thing they 0.7318243076145821
+Similarity thing meddle-01 0.0
+Similarity remain-01 remain-01 1.0
+Similarity remain-01 they 0.5867496164749957
+Similarity remain-01 meddle-01 0.0
+Similarity they they 1.0
+Similarity they meddle-01 0.0
+Similarity polish decide-01 0.0
+Similarity polish and 0.39695922858551347
+Similarity polish protect-01 0.0
+Similarity polish thing 0.0
+Similarity polish remain-01 0.28371677309904414
+Similarity polish they 0.31039275607428496
+Similarity polish meddle-01 0.0
+Weight dictionary
+{(0, 0): {-1: 2.0, (1, 1): 1, (1, 5): 1, (5, 1): 1, (5, 5): 1}, (0, 1): {-1: 0.37591574901241387, (1, 2): 1, (1, 6): 1, (5, 2): 1, (5, 6): 1}, (0, 2): {-1: 0.4186021613910405, (1, 3): 1, (1, 5): 1, (5, 3): 1, (5, 5): 1}, (0, 3): {-1: 0.5200529893000896}, (0, 4): {-1: 0.3246335917494371, (1, 3): 1, (5, 3): 1}, (0, 5): {-1: 0.4833775967358392}, (0, 6): {-1: 0.20208921982917935, (1, 3): 1, (1, 5): 1, (5, 3): 1, (5, 5): 1}, (1, 0): {-1: 0.37591574901241387, (2, 1): 1, (2, 5): 1, (6, 1): 1, (6, 5): 1}, (1, 1): {-1: 1.0, (0, 0): 1, (2, 2): 1, (2, 6): 1, (6, 2): 1, (6, 6): 1}, (1, 2): {-1: 0.38767043869965134, (0, 1): 1, (2, 3): 1, (2, 5): 1, (6, 3): 1, (6, 5): 1}, (1, 3): {-1: 0.567510656470935, (0, 2): 1, (0, 4): 1, (0, 6): 1}, (1, 4): {-1: 0.5354807824260953, (2, 3): 1, (6, 3): 1}, (1, 5): {-1: 0.8358656448577851, (0, 0): 1, (0, 2): 1, (0, 6): 1}, (1, 6): {-1: 0.0, (0, 1): 1, (2, 3): 1, (2, 5): 1, (6, 3): 1, (6, 5): 1}, (2, 0): {-1: 0.4186021613910405, (3, 1): 1, (3, 5): 1, (5, 1): 1, (5, 5): 1}, (2, 1): {-1: 0.38767043869965134, (1, 0): 1, (3, 2): 1, (3, 6): 1, (5, 2): 1, (5, 6): 1}, (2, 2): {-1: 1.0, (1, 1): 1, (3, 3): 1, (3, 5): 1, (5, 3): 1, (5, 5): 1}, (2, 3): {-1: 0.3359771814488234, (1, 2): 1, (1, 4): 1, (1, 6): 1}, (2, 4): {-1: 0.41966271832667207, (3, 3): 1, (5, 3): 1}, (2, 5): {-1: 0.37592655606717706, (1, 0): 1, (1, 2): 1, (1, 6): 1}, (2, 6): {-1: 0.0, (1, 1): 1, (3, 3): 1, (3, 5): 1, (5, 3): 1, (5, 5): 1}, (3, 0): {-1: 0.5200529893000896}, (3, 1): {-1: 0.567510656470935, (2, 0): 1, (4, 0): 1, (6, 0): 1}, (3, 2): {-1: 0.3359771814488234, (2, 1): 1, (4, 1): 1, (6, 1): 1}, (3, 3): {-1: 1.0, (2, 2): 1, (2, 4): 1, (2, 6): 1, (4, 2): 1, (4, 4): 1, (4, 6): 1, (6, 2): 1, (6, 4): 1, (6, 6): 1}, (3, 4): {-1: 0.5135600267294307}, (3, 5): {-1: 0.7318243076145821, (2, 0): 1, (2, 2): 1, (2, 6): 1, (4, 0): 1, (4, 2): 1, (4, 6): 1, (6, 0): 1, (6, 2): 1, (6, 6): 1}, (3, 6): {-1: 0.0, (2, 1): 1, (4, 1): 1, (6, 1): 1}, (4, 0): {-1: 0.3246335917494371, (3, 1): 1, (3, 5): 1}, (4, 1): {-1: 0.5354807824260953, (3, 2): 1, (3, 6): 1}, (4, 2): {-1: 0.41966271832667207, (3, 3): 1, (3, 5): 1}, (4, 3): {-1: 0.5135600267294307}, (4, 4): {-1: 1.0, (3, 3): 1}, (4, 5): {-1: 0.5867496164749957}, (4, 6): {-1: 0.0, (3, 3): 1, (3, 5): 1}, (5, 0): {-1: 0.4833775967358392}, (5, 1): {-1: 0.8358656448577851, (0, 0): 1, (2, 0): 1, (6, 0): 1}, (5, 2): {-1: 0.37592655606717706, (0, 1): 1, (2, 1): 1, (6, 1): 1}, (5, 3): {-1: 0.7318243076145821, (0, 2): 1, (0, 4): 1, (0, 6): 1, (2, 2): 1, (2, 4): 1, (2, 6): 1, (6, 2): 1, (6, 4): 1, (6, 6): 1}, (5, 4): {-1: 0.5867496164749957}, (5, 5): {-1: 1.0, (0, 0): 1, (0, 2): 1, (0, 6): 1, (2, 0): 1, (2, 2): 1, (2, 6): 1, (6, 0): 1, (6, 2): 1, (6, 6): 1}, (5, 6): {-1: 0.0, (0, 1): 1, (2, 1): 1, (6, 1): 1}, (6, 0): {-1: 0.0, (3, 1): 1, (3, 5): 1, (5, 1): 1, (5, 5): 1}, (6, 1): {-1: 0.39695922858551347, (1, 0): 1, (3, 2): 1, (3, 6): 1, (5, 2): 1, (5, 6): 1}, (6, 2): {-1: 0.0, (1, 1): 1, (3, 3): 1, (3, 5): 1, (5, 3): 1, (5, 5): 1}, (6, 3): {-1: 0.0, (1, 2): 1, (1, 4): 1, (1, 6): 1}, (6, 4): {-1: 0.28371677309904414, (3, 3): 1, (5, 3): 1}, (6, 5): {-1: 0.31039275607428496, (1, 0): 1, (1, 2): 1, (1, 6): 1}, (6, 6): {-1: 0.0, (1, 1): 1, (3, 3): 1, (3, 5): 1, (5, 3): 1, (5, 5): 1}}
+Best node mapping alignment:
+[MRPNode-0]('decide-01') --> [MRPNode-0]('decide-01')
+[MRPNode-1]('and') --> [MRPNode-1]('and')
+[MRPNode-2]('protect-01') --> [MRPNode-2]('protect-01')
+[MRPNode-3]('thing') --> [MRPNode-3]('thing')
+[MRPNode-4]('remain-01') --> [MRPNode-4]('remain-01')
+[MRPNode-5]('they') --> [MRPNode-5]('they')
+[MRPNode-6]('polish') --> [MRPNode-6]('meddle-01')
+Smatch score F1 0.941
+AMR pair 15
+============================================
+Sentence 1: The final chapter in the trilogy, The Matrix Revolutions, is out in November.
+Sentence 2: The third and final film, "The Matrix Revolutions," will be released in November.
+AMR 1 (one-line): (MRPNode-0 / out-05:ARG1 (MRPNode-1 / event:mod (MRPNode-2 / chapter:part-of (MRPNode-3 / final):part-of (MRPNode-4 / trilogy)):name (MRPNode-5 / name:op1 (MRPNode-6 / the):op2 (MRPNode-7 / matrix):op3 (MRPNode-8 / revolutions))):time (MRPNode-9 / date-entity:month (MRPNode-10 / 11)))
+AMR 2 (one-line): (MRPNode-0 / release-01:ARG1 (MRPNode-1 / film:mod (MRPNode-2 / ordinal-entity:value (MRPNode-3 / 3)):name (MRPNode-4 / name:op1 (MRPNode-5 / the):op2 (MRPNode-6 / matrix):op3 (MRPNode-7 / revolutions))):time (MRPNode-8 / date-entity:month (MRPNode-9 / 11)))
+Similarity out-05 release-01 0.35673236078359133
+Similarity out-05 film 0.21331596247968346
+Similarity out-05 ordinal-entity 0.0
+Similarity out-05 3 0.39301270830593776
+Similarity out-05 name 0.19157951971375142
+Similarity out-05 the 0.3947566429566509
+Similarity out-05 matrix 0.0
+Similarity out-05 revolutions 0.0
+Similarity out-05 date-entity 0.23912371768847196
+Similarity out-05 11 0.40594224195125206
+Similarity event release-01 0.37365101850766475
+Similarity event film 0.4750527939385172
+Similarity event ordinal-entity 0.0
+Similarity event 3 0.44253377823748075
+Similarity event name 0.36883399892379454
+Similarity event the 0.6260606244297396
+Similarity event matrix 0.0
+Similarity event revolutions 0.21183387216388017
+Similarity event date-entity 0.462974072008673
+Similarity event 11 0.4980404855422662
+Similarity chapter release-01 0.3467948885226223
+Similarity chapter film 0.34591849125158514
+Similarity chapter ordinal-entity 0.2798857975036799
+Similarity chapter 3 0.44990919379457783
+Similarity chapter name 0.4949832159721901
+Similarity chapter the 0.5852606900175925
+Similarity chapter matrix 0.0
+Similarity chapter revolutions 0.0
+Similarity chapter date-entity 0.6175849038683937
+Similarity chapter 11 0.4814719933664571
+Similarity final release-01 0.382459516207774
+Similarity final film 0.40732766300568213
+Similarity final ordinal-entity 0.0
+Similarity final 3 0.6750929713092925
+Similarity final name 0.4373717737777716
+Similarity final the 0.7062341752700714
+Similarity final matrix 0.0
+Similarity final revolutions 0.0
+Similarity final date-entity 0.5439968370780113
+Similarity final 11 0.6705421426827689
+Similarity trilogy release-01 0.27781417535382913
+Similarity trilogy film 0.6128411020978444
+Similarity trilogy ordinal-entity 0.0
+Similarity trilogy 3 0.2048211406744337
+Similarity trilogy name 0.35891404020436135
+Similarity trilogy the 0.3476522102771309
+Similarity trilogy matrix 0.4053564196511974
+Similarity trilogy revolutions 0.27576925672041885
+Similarity trilogy date-entity 0.37317921600303616
+Similarity trilogy 11 0.0
+Similarity name release-01 0.40550335165328494
+Similarity name film 0.5361358258619299
+Similarity name ordinal-entity 0.2841169932181353
+Similarity name 3 0.44243474427641993
+Similarity name name 1.0
+Similarity name the 0.7449673027271317
+Similarity name matrix 0.24994548655720938
+Similarity name revolutions 0.0
+Similarity name date-entity 0.6743260908852139
+Similarity name 11 0.39316792196152606
+Similarity the release-01 0.46422807332552257
+Similarity the film 0.5251562536039326
+Similarity the ordinal-entity 0.2916354079804431
+Similarity the 3 0.57632250749683
+Similarity the the 1.0
+Similarity the matrix 0.2685256679827399
+Similarity the revolutions 0.20526278287454014
+Similarity the date-entity 0.7420510775799783
+Similarity the 11 0.6325428682280053
+Similarity matrix release-01 0.2099671082801442
+Similarity matrix film 0.24861928183958115
+Similarity matrix ordinal-entity 0.6841569666631562
+Similarity matrix 3 0.210601864162836
+Similarity matrix matrix 1.0
+Similarity matrix revolutions 0.3329424532091314
+Similarity matrix date-entity 0.4460107674712397
+Similarity matrix 11 0.0
+Similarity revolutions release-01 0.0
+Similarity revolutions film 0.0
+Similarity revolutions ordinal-entity 0.0
+Similarity revolutions 3 0.0
+Similarity revolutions revolutions 1.0
+Similarity revolutions date-entity 0.0
+Similarity revolutions 11 0.0
+Similarity date-entity release-01 0.5175926339741266
+Similarity date-entity film 0.4310484908616923
+Similarity date-entity ordinal-entity 0.6242522141281318
+Similarity date-entity 3 0.4819946989605812
+Similarity date-entity date-entity 1.0
+Similarity date-entity 11 0.5142971824746583
+Similarity 11 release-01 0.4044277864074088
+Similarity 11 film 0.3525598283482223
+Similarity 11 ordinal-entity 0.0
+Similarity 11 3 0.8747885418253663
+Similarity 11 11 1.0
+Weight dictionary
+{(0, 0): {-1: 0.35673236078359133, (1, 1): 1, (1, 8): 1, (9, 1): 1, (9, 8): 1}, (0, 1): {-1: 0.21331596247968346, (1, 2): 1, (1, 4): 1, (9, 2): 1, (9, 4): 1}, (0, 2): {-1: 0.0, (1, 3): 1, (9, 3): 1}, (0, 3): {-1: 0.39301270830593776}, (0, 4): {-1: 0.19157951971375142, (1, 5): 1, (1, 6): 1, (1, 7): 1, (9, 5): 1, (9, 6): 1, (9, 7): 1}, (0, 5): {-1: 0.3947566429566509}, (0, 6): {-1: 0.0}, (0, 7): {-1: 0.0}, (0, 8): {-1: 0.23912371768847196, (1, 9): 1, (9, 9): 1}, (0, 9): {-1: 0.40594224195125206}, (1, 0): {-1: 0.37365101850766475, (2, 1): 1, (2, 8): 1, (5, 1): 1, (5, 8): 1}, (1, 1): {-1: 0.4750527939385172, (0, 0): 1, (2, 2): 1, (2, 4): 1, (5, 2): 1, (5, 4): 1}, (1, 2): {-1: 0.0, (0, 1): 1, (2, 3): 1, (5, 3): 1}, (1, 3): {-1: 0.44253377823748075, (0, 2): 1}, (1, 4): {-1: 0.36883399892379454, (0, 1): 1, (2, 5): 1, (2, 6): 1, (2, 7): 1, (5, 5): 1, (5, 6): 1, (5, 7): 1}, (1, 5): {-1: 0.6260606244297396, (0, 4): 1}, (1, 6): {-1: 0.0, (0, 4): 1}, (1, 7): {-1: 0.21183387216388017, (0, 4): 1}, (1, 8): {-1: 0.462974072008673, (0, 0): 1, (2, 9): 1, (5, 9): 1}, (1, 9): {-1: 0.4980404855422662, (0, 8): 1}, (2, 0): {-1: 0.3467948885226223}, (2, 1): {-1: 0.34591849125158514, (1, 0): 1, (3, 0): 1, (4, 0): 1}, (2, 2): {-1: 0.2798857975036799, (1, 1): 1, (3, 1): 1, (4, 1): 1}, (2, 3): {-1: 0.44990919379457783, (1, 2): 1, (3, 2): 1, (4, 2): 1}, (2, 4): {-1: 0.4949832159721901, (1, 1): 1, (3, 1): 1, (4, 1): 1}, (2, 5): {-1: 0.5852606900175925, (1, 4): 1, (3, 4): 1, (4, 4): 1}, (2, 6): {-1: 0.0, (1, 4): 1, (3, 4): 1, (4, 4): 1}, (2, 7): {-1: 0.0, (1, 4): 1, (3, 4): 1, (4, 4): 1}, (2, 8): {-1: 0.6175849038683937, (1, 0): 1, (3, 0): 1, (4, 0): 1}, (2, 9): {-1: 0.4814719933664571, (1, 8): 1, (3, 8): 1, (4, 8): 1}, (3, 0): {-1: 0.382459516207774, (2, 1): 1, (2, 8): 1}, (3, 1): {-1: 0.40732766300568213, (2, 2): 1, (2, 4): 1}, (3, 2): {-1: 0.0, (2, 3): 1}, (3, 3): {-1: 0.6750929713092925}, (3, 4): {-1: 0.4373717737777716, (2, 5): 1, (2, 6): 1, (2, 7): 1}, (3, 5): {-1: 0.7062341752700714}, (3, 6): {-1: 0.0}, (3, 7): {-1: 0.0}, (3, 8): {-1: 0.5439968370780113, (2, 9): 1}, (3, 9): {-1: 0.6705421426827689}, (4, 0): {-1: 0.27781417535382913, (2, 1): 1, (2, 8): 1}, (4, 1): {-1: 0.6128411020978444, (2, 2): 1, (2, 4): 1}, (4, 2): {-1: 0.0, (2, 3): 1}, (4, 3): {-1: 0.2048211406744337}, (4, 4): {-1: 0.35891404020436135, (2, 5): 1, (2, 6): 1, (2, 7): 1}, (4, 5): {-1: 0.3476522102771309}, (4, 6): {-1: 0.4053564196511974}, (4, 7): {-1: 0.27576925672041885}, (4, 8): {-1: 0.37317921600303616, (2, 9): 1}, (4, 9): {-1: 0.0}, (5, 0): {-1: 0.40550335165328494, (6, 1): 1, (6, 8): 1, (7, 1): 1, (7, 8): 1, (8, 1): 1, (8, 8): 1}, (5, 1): {-1: 0.5361358258619299, (1, 0): 1, (6, 2): 1, (6, 4): 1, (7, 2): 1, (7, 4): 1, (8, 2): 1, (8, 4): 1}, (5, 2): {-1: 0.2841169932181353, (1, 1): 1, (6, 3): 1, (7, 3): 1, (8, 3): 1}, (5, 3): {-1: 0.44243474427641993, (1, 2): 1}, (5, 4): {-1: 1.0, (1, 1): 1, (6, 5): 1, (6, 6): 1, (6, 7): 1, (7, 5): 1, (7, 6): 1, (7, 7): 1, (8, 5): 1, (8, 6): 1, (8, 7): 1}, (5, 5): {-1: 0.7449673027271317, (1, 4): 1}, (5, 6): {-1: 0.24994548655720938, (1, 4): 1}, (5, 7): {-1: 0.0, (1, 4): 1}, (5, 8): {-1: 0.6743260908852139, (1, 0): 1, (6, 9): 1, (7, 9): 1, (8, 9): 1}, (5, 9): {-1: 0.39316792196152606, (1, 8): 1}, (6, 0): {-1: 0.46422807332552257}, (6, 1): {-1: 0.5251562536039326, (5, 0): 1}, (6, 2): {-1: 0.2916354079804431, (5, 1): 1}, (6, 3): {-1: 0.57632250749683, (5, 2): 1}, (6, 4): {-1: 0.7449673027271317, (5, 1): 1}, (6, 5): {-1: 1.0, (5, 4): 1}, (6, 6): {-1: 0.2685256679827399, (5, 4): 1}, (6, 7): {-1: 0.20526278287454014, (5, 4): 1}, (6, 8): {-1: 0.7420510775799783, (5, 0): 1}, (6, 9): {-1: 0.6325428682280053, (5, 8): 1}, (7, 0): {-1: 0.2099671082801442}, (7, 1): {-1: 0.24861928183958115, (5, 0): 1}, (7, 2): {-1: 0.6841569666631562, (5, 1): 1}, (7, 3): {-1: 0.210601864162836, (5, 2): 1}, (7, 4): {-1: 0.24994548655720938, (5, 1): 1}, (7, 5): {-1: 0.2685256679827399, (5, 4): 1}, (7, 6): {-1: 1.0, (5, 4): 1}, (7, 7): {-1: 0.3329424532091314, (5, 4): 1}, (7, 8): {-1: 0.4460107674712397, (5, 0): 1}, (7, 9): {-1: 0.0, (5, 8): 1}, (8, 0): {-1: 0.0}, (8, 1): {-1: 0.0, (5, 0): 1}, (8, 2): {-1: 0.0, (5, 1): 1}, (8, 3): {-1: 0.0, (5, 2): 1}, (8, 4): {-1: 0.0, (5, 1): 1}, (8, 5): {-1: 0.20526278287454014, (5, 4): 1}, (8, 6): {-1: 0.3329424532091314, (5, 4): 1}, (8, 7): {-1: 1.0, (5, 4): 1}, (8, 8): {-1: 0.0, (5, 0): 1}, (8, 9): {-1: 0.0, (5, 8): 1}, (9, 0): {-1: 0.5175926339741266, (10, 1): 1, (10, 8): 1}, (9, 1): {-1: 0.4310484908616923, (0, 0): 1, (10, 2): 1, (10, 4): 1}, (9, 2): {-1: 0.6242522141281318, (0, 1): 1, (10, 3): 1}, (9, 3): {-1: 0.4819946989605812, (0, 2): 1}, (9, 4): {-1: 0.6743260908852139, (0, 1): 1, (10, 5): 1, (10, 6): 1, (10, 7): 1}, (9, 5): {-1: 0.7420510775799783, (0, 4): 1}, (9, 6): {-1: 0.4460107674712397, (0, 4): 1}, (9, 7): {-1: 0.0, (0, 4): 1}, (9, 8): {-1: 1.0, (0, 0): 1, (10, 9): 1}, (9, 9): {-1: 0.5142971824746583, (0, 8): 1}, (10, 0): {-1: 0.4044277864074088}, (10, 1): {-1: 0.3525598283482223, (9, 0): 1}, (10, 2): {-1: 0.0, (9, 1): 1}, (10, 3): {-1: 0.8747885418253663, (9, 2): 1}, (10, 4): {-1: 0.39316792196152606, (9, 1): 1}, (10, 5): {-1: 0.6325428682280053, (9, 4): 1}, (10, 6): {-1: 0.0, (9, 4): 1}, (10, 7): {-1: 0.0, (9, 4): 1}, (10, 8): {-1: 0.5142971824746583, (9, 0): 1}, (10, 9): {-1: 1.0, (9, 8): 1}}
+Best node mapping alignment:
+[MRPNode-0]('out-05') --> [MRPNode-0]('release-01')
+[MRPNode-1]('event') --> [MRPNode-1]('film')
+[MRPNode-2]('chapter') --> [MRPNode-2]('ordinal-entity')
+[MRPNode-3]('final') --> [MRPNode-3]('3')
+[MRPNode-4]('trilogy') --> Null
+[MRPNode-5]('name') --> [MRPNode-4]('name')
+[MRPNode-6]('the') --> [MRPNode-5]('the')
+[MRPNode-7]('matrix') --> [MRPNode-6]('matrix')
+[MRPNode-8]('revolutions') --> [MRPNode-7]('revolutions')
+[MRPNode-9]('date-entity') --> [MRPNode-8]('date-entity')
+[MRPNode-10]('11') --> [MRPNode-9]('11')
+Smatch score F1 0.752
+AMR pair 16
+============================================
+Sentence 1: The stock has risen 44 cents in recent days.
+Sentence 2: The stock had risen 44 cents in the past four trading sessions.
+AMR 1 (one-line): (MRPNode-0 / rise-01:ARG1 (MRPNode-1 / stock):ARG2 (MRPNode-2 / monetary-quantity:quant (MRPNode-3 / 44):unit (MRPNode-4 / cent)):time (MRPNode-5 / day:mod (MRPNode-6 / recent)))
+AMR 2 (one-line): (MRPNode-0 / rise-01:ARG1 (MRPNode-1 / stock):ARG2 (MRPNode-2 / session:mod (MRPNode-3 / trade-01):time (MRPNode-4 / before:op1 (MRPNode-5 / now))):ARG2 (MRPNode-6 / monetary-quantity:quant (MRPNode-7 / 4):unit (MRPNode-8 / cent)))
+Similarity rise-01 rise-01 1.0
+Similarity rise-01 stock 0.6260028366895382
+Similarity rise-01 session 0.34393850177040836
+Similarity rise-01 trade-01 0.36402387385028223
+Similarity rise-01 before 0.357069285253929
+Similarity rise-01 now 0.40836528007647266
+Similarity rise-01 monetary-quantity 0.42011583582889295
+Similarity rise-01 4 0.41791158969325504
+Similarity rise-01 cent 0.4754770530665717
+Similarity stock stock 1.0
+Similarity stock session 0.5191538466125712
+Similarity stock trade-01 0.6992916024148795
+Similarity stock before 0.5272838314429646
+Similarity stock now 0.5683272992781906
+Similarity stock monetary-quantity 0.5176874171826078
+Similarity stock 4 0.4701554856245638
+Similarity stock cent 0.600478535475443
+Similarity monetary-quantity session 0.3291215614958566
+Similarity monetary-quantity trade-01 0.5589950057268803
+Similarity monetary-quantity before 0.41219454592486726
+Similarity monetary-quantity now 0.49982987206945395
+Similarity monetary-quantity monetary-quantity 1.0
+Similarity monetary-quantity 4 0.22713598705046822
+Similarity monetary-quantity cent 0.38105886731980787
+Similarity 44 rise-01 0.3525912883588072
+Similarity 44 stock 0.3730429149062572
+Similarity 44 session 0.24554482659745536
+Similarity 44 trade-01 0.251437477200813
+Similarity 44 before 0.43834182095310703
+Similarity 44 now 0.45251813670457364
+Similarity 44 monetary-quantity 0.0
+Similarity 44 4 0.6666738163043666
+Similarity 44 cent 0.5678622575882445
+Similarity cent session 0.3574225986253342
+Similarity cent trade-01 0.4614288464278004
+Similarity cent before 0.29856856168356105
+Similarity cent now 0.33349505626164166
+Similarity cent 4 0.5742172258690413
+Similarity cent cent 1.0
+Similarity day rise-01 0.46289542823394836
+Similarity day stock 0.5380491459282323
+Similarity day session 0.7679999840192706
+Similarity day trade-01 0.37254793350968024
+Similarity day before 0.8576661232389464
+Similarity day now 0.7551361923456139
+Similarity day monetary-quantity 0.39000087081847745
+Similarity day 4 0.6249228162180043
+Similarity day cent 0.41044335676946897
+Similarity recent rise-01 0.47793363069374717
+Similarity recent stock 0.5967827305049956
+Similarity recent session 0.6198302742039352
+Similarity recent trade-01 0.45506206309169417
+Similarity recent before 0.6585787768365703
+Similarity recent now 0.6929690715547175
+Similarity recent monetary-quantity 0.5088991382210465
+Similarity recent 4 0.37245271765837273
+Similarity recent cent 0.25550240205893926
+Weight dictionary
+{(0, 0): {-1: 2.0, (1, 1): 1, (1, 2): 1, (1, 6): 1, (2, 1): 1, (2, 2): 1, (2, 6): 1, (5, 1): 1, (5, 2): 1, (5, 6): 1}, (0, 1): {-1: 0.6260028366895382}, (0, 2): {-1: 0.34393850177040836, (1, 3): 1, (1, 4): 1, (2, 3): 1, (2, 4): 1, (5, 3): 1, (5, 4): 1}, (0, 3): {-1: 0.36402387385028223}, (0, 4): {-1: 0.357069285253929, (1, 5): 1, (2, 5): 1, (5, 5): 1}, (0, 5): {-1: 0.40836528007647266}, (0, 6): {-1: 0.42011583582889295, (1, 7): 1, (1, 8): 1, (2, 7): 1, (2, 8): 1, (5, 7): 1, (5, 8): 1}, (0, 7): {-1: 0.41791158969325504}, (0, 8): {-1: 0.4754770530665717}, (1, 0): {-1: 0.6260028366895382}, (1, 1): {-1: 1.0, (0, 0): 1}, (1, 2): {-1: 0.5191538466125712, (0, 0): 1}, (1, 3): {-1: 0.6992916024148795, (0, 2): 1}, (1, 4): {-1: 0.5272838314429646, (0, 2): 1}, (1, 5): {-1: 0.5683272992781906, (0, 4): 1}, (1, 6): {-1: 0.5176874171826078, (0, 0): 1}, (1, 7): {-1: 0.4701554856245638, (0, 6): 1}, (1, 8): {-1: 0.600478535475443, (0, 6): 1}, (2, 0): {-1: 0.42011583582889295, (3, 1): 1, (3, 2): 1, (3, 6): 1, (4, 1): 1, (4, 2): 1, (4, 6): 1}, (2, 1): {-1: 0.5176874171826078, (0, 0): 1}, (2, 2): {-1: 0.3291215614958566, (0, 0): 1, (3, 3): 1, (3, 4): 1, (4, 3): 1, (4, 4): 1}, (2, 3): {-1: 0.5589950057268803, (0, 2): 1}, (2, 4): {-1: 0.41219454592486726, (0, 2): 1, (3, 5): 1, (4, 5): 1}, (2, 5): {-1: 0.49982987206945395, (0, 4): 1}, (2, 6): {-1: 1.0, (0, 0): 1, (3, 7): 1, (3, 8): 1, (4, 7): 1, (4, 8): 1}, (2, 7): {-1: 0.22713598705046822, (0, 6): 1}, (2, 8): {-1: 0.38105886731980787, (0, 6): 1}, (3, 0): {-1: 0.3525912883588072}, (3, 1): {-1: 0.3730429149062572, (2, 0): 1}, (3, 2): {-1: 0.24554482659745536, (2, 0): 1}, (3, 3): {-1: 0.251437477200813, (2, 2): 1}, (3, 4): {-1: 0.43834182095310703, (2, 2): 1}, (3, 5): {-1: 0.45251813670457364, (2, 4): 1}, (3, 6): {-1: 0.0, (2, 0): 1}, (3, 7): {-1: 0.6666738163043666, (2, 6): 1}, (3, 8): {-1: 0.5678622575882445, (2, 6): 1}, (4, 0): {-1: 0.4754770530665717}, (4, 1): {-1: 0.600478535475443, (2, 0): 1}, (4, 2): {-1: 0.3574225986253342, (2, 0): 1}, (4, 3): {-1: 0.4614288464278004, (2, 2): 1}, (4, 4): {-1: 0.29856856168356105, (2, 2): 1}, (4, 5): {-1: 0.33349505626164166, (2, 4): 1}, (4, 6): {-1: 0.38105886731980787, (2, 0): 1}, (4, 7): {-1: 0.5742172258690413, (2, 6): 1}, (4, 8): {-1: 1.0, (2, 6): 1}, (5, 0): {-1: 0.46289542823394836, (6, 1): 1, (6, 2): 1, (6, 6): 1}, (5, 1): {-1: 0.5380491459282323, (0, 0): 1}, (5, 2): {-1: 0.7679999840192706, (0, 0): 1, (6, 3): 1, (6, 4): 1}, (5, 3): {-1: 0.37254793350968024, (0, 2): 1}, (5, 4): {-1: 0.8576661232389464, (0, 2): 1, (6, 5): 1}, (5, 5): {-1: 0.7551361923456139, (0, 4): 1}, (5, 6): {-1: 0.39000087081847745, (0, 0): 1, (6, 7): 1, (6, 8): 1}, (5, 7): {-1: 0.6249228162180043, (0, 6): 1}, (5, 8): {-1: 0.41044335676946897, (0, 6): 1}, (6, 0): {-1: 0.47793363069374717}, (6, 1): {-1: 0.5967827305049956, (5, 0): 1}, (6, 2): {-1: 0.6198302742039352, (5, 0): 1}, (6, 3): {-1: 0.45506206309169417, (5, 2): 1}, (6, 4): {-1: 0.6585787768365703, (5, 2): 1}, (6, 5): {-1: 0.6929690715547175, (5, 4): 1}, (6, 6): {-1: 0.5088991382210465, (5, 0): 1}, (6, 7): {-1: 0.37245271765837273, (5, 6): 1}, (6, 8): {-1: 0.25550240205893926, (5, 6): 1}}
+Best node mapping alignment:
+[MRPNode-0]('rise-01') --> [MRPNode-0]('rise-01')
+[MRPNode-1]('stock') --> [MRPNode-1]('stock')
+[MRPNode-2]('monetary-quantity') --> [MRPNode-6]('monetary-quantity')
+[MRPNode-3]('44') --> [MRPNode-7]('4')
+[MRPNode-4]('cent') --> [MRPNode-8]('cent')
+[MRPNode-5]('day') --> [MRPNode-2]('session')
+[MRPNode-6]('recent') --> [MRPNode-4]('before')
+Smatch score F1 0.818
+AMR pair 17
+============================================
+Sentence 1: He married Marta Casals, the widow of Pablo Casals.
+Sentence 2: He married Casals‘ widow, Marta, after Casals‘ death.
+AMR 1 (one-line): (MRPNode-0 / marry-01:ARG1 (MRPNode-1 / he):ARG2 (MRPNode-2 / person:ARG0-of (MRPNode-3 / have-rel-role-91:ARG1 (MRPNode-4 / person:name (MRPNode-5 / name:op1 (MRPNode-6 / pablo):op2 (MRPNode-7 / casals))):ARG2 (MRPNode-8 / widow)):name (MRPNode-9 / name:op1 (MRPNode-10 / marta):op2 (MRPNode-11 / casals))))
+AMR 2 (one-line): (MRPNode-0 / marry-01:ARG1 (MRPNode-1 / he):ARG2 (MRPNode-2 / person:ARG1-of (MRPNode-3 / die-01):ARG0-of (MRPNode-4 / have-rel-role-91:ARG0 (MRPNode-5 / person:name (MRPNode-6 / name:op1 (MRPNode-7 / casals))):ARG2 (MRPNode-8 / widow)):name (MRPNode-9 / name:op1 (MRPNode-10 / marta))):time (MRPNode-11 / after))
+Similarity marry-01 marry-01 1.0
+Similarity marry-01 he 0.4157621729002355
+Similarity marry-01 person 0.48659557229546996
+Similarity marry-01 die-01 0.36569741341946616
+Similarity marry-01 have-rel-role-91 0.0
+Similarity marry-01 name 0.43808328243155664
+Similarity marry-01 casals 0.2115141806571844
+Similarity marry-01 widow 0.5935186690050918
+Similarity marry-01 marta 0.22309263764827988
+Similarity marry-01 after 0.2890873565569953
+Similarity he he 1.0
+Similarity he person 0.6749816432556962
+Similarity he die-01 0.4333488562425045
+Similarity he have-rel-role-91 0.0
+Similarity he name 0.6837416012943852
+Similarity he casals 0.0
+Similarity he widow 0.4086500106735871
+Similarity he marta 0.0
+Similarity he after 0.8624250123527278
+Similarity person person 1.0
+Similarity person die-01 0.5568003145752176
+Similarity person have-rel-role-91 0.0
+Similarity person name 0.5772089918664945
+Similarity person casals 0.0
+Similarity person widow 0.39965627114049573
+Similarity person marta 0.0
+Similarity person after 0.5054453385860043
+Similarity have-rel-role-91 die-01 0.0
+Similarity have-rel-role-91 have-rel-role-91 1.0
+Similarity have-rel-role-91 name 0.0
+Similarity have-rel-role-91 casals 0.0
+Similarity have-rel-role-91 widow 0.0
+Similarity have-rel-role-91 marta 0.0
+Similarity have-rel-role-91 after 0.0
+Similarity name die-01 0.33310756268106084
+Similarity name name 1.0
+Similarity name casals 0.0
+Similarity name widow 0.45713914062471794
+Similarity name marta 0.0
+Similarity name after 0.5435351861564834
+Similarity pablo marry-01 0.0
+Similarity pablo he 0.0
+Similarity pablo person 0.0
+Similarity pablo die-01 0.0
+Similarity pablo have-rel-role-91 0.0
+Similarity pablo name 0.0
+Similarity pablo casals 0.5673748010797743
+Similarity pablo widow 0.0
+Similarity pablo marta 0.5048430959729935
+Similarity pablo after 0.2424553904183303
+Similarity casals die-01 0.0
+Similarity casals casals 1.0
+Similarity casals widow 0.0
+Similarity casals marta 0.23947570080849978
+Similarity casals after 0.0
+Similarity widow die-01 0.5921290051028544
+Similarity widow widow 1.0
+Similarity widow marta 0.0
+Similarity widow after 0.3728298274563875
+Similarity marta die-01 0.0
+Similarity marta marta 1.0
+Similarity marta after 0.0
+Weight dictionary
+{(0, 0): {-1: 2.0, (1, 1): 1, (1, 2): 1, (1, 11): 1, (2, 1): 1, (2, 2): 1, (2, 11): 1}, (0, 1): {-1: 0.4157621729002355}, (0, 2): {-1: 0.48659557229546996, (1, 9): 1, (2, 9): 1}, (0, 3): {-1: 0.36569741341946616, (1, 2): 1, (2, 2): 1}, (0, 4): {-1: 0.0, (1, 2): 1, (1, 5): 1, (1, 8): 1, (2, 2): 1, (2, 5): 1, (2, 8): 1}, (0, 5): {-1: 0.48659557229546996, (1, 6): 1, (2, 6): 1}, (0, 6): {-1: 0.43808328243155664, (1, 7): 1, (2, 7): 1}, (0, 7): {-1: 0.2115141806571844}, (0, 8): {-1: 0.5935186690050918}, (0, 9): {-1: 0.43808328243155664, (1, 10): 1, (2, 10): 1}, (0, 10): {-1: 0.22309263764827988}, (0, 11): {-1: 0.2890873565569953}, (1, 0): {-1: 0.4157621729002355}, (1, 1): {-1: 1.0, (0, 0): 1}, (1, 2): {-1: 0.6749816432556962, (0, 0): 1, (0, 3): 1, (0, 4): 1}, (1, 3): {-1: 0.4333488562425045}, (1, 4): {-1: 0.0}, (1, 5): {-1: 0.6749816432556962, (0, 4): 1}, (1, 6): {-1: 0.6837416012943852, (0, 5): 1}, (1, 7): {-1: 0.0, (0, 6): 1}, (1, 8): {-1: 0.4086500106735871, (0, 4): 1}, (1, 9): {-1: 0.6837416012943852, (0, 2): 1}, (1, 10): {-1: 0.0, (0, 9): 1}, (1, 11): {-1: 0.8624250123527278, (0, 0): 1}, (2, 0): {-1: 0.48659557229546996, (9, 1): 1, (9, 2): 1, (9, 11): 1}, (2, 1): {-1: 0.6749816432556962, (0, 0): 1, (3, 0): 1}, (2, 2): {-1: 1.0, (0, 0): 1, (0, 3): 1, (0, 4): 1, (9, 9): 1, (3, 0): 1, (3, 3): 1, (3, 4): 1}, (2, 3): {-1: 0.5568003145752176, (9, 2): 1}, (2, 4): {-1: 0.0, (9, 2): 1, (9, 5): 1, (9, 8): 1}, (2, 5): {-1: 1.0, (0, 4): 1, (9, 6): 1, (3, 4): 1}, (2, 6): {-1: 0.5772089918664945, (0, 5): 1, (9, 7): 1, (3, 5): 1}, (2, 7): {-1: 0.0, (0, 6): 1, (3, 6): 1}, (2, 8): {-1: 0.39965627114049573, (0, 4): 1, (3, 4): 1}, (2, 9): {-1: 0.5772089918664945, (0, 2): 1, (9, 10): 1, (3, 2): 1}, (2, 10): {-1: 0.0, (0, 9): 1, (3, 9): 1}, (2, 11): {-1: 0.5054453385860043, (0, 0): 1, (3, 0): 1}, (3, 0): {-1: 0.0, (2, 1): 1, (2, 2): 1, (2, 11): 1, (4, 1): 1, (4, 2): 1, (4, 11): 1, (8, 1): 1, (8, 2): 1, (8, 11): 1}, (3, 1): {-1: 0.0}, (3, 2): {-1: 0.0, (2, 9): 1, (4, 9): 1, (8, 9): 1}, (3, 3): {-1: 0.0, (2, 2): 1, (4, 2): 1, (8, 2): 1}, (3, 4): {-1: 1.0, (2, 2): 1, (2, 5): 1, (2, 8): 1, (4, 2): 1, (4, 5): 1, (4, 8): 1, (8, 2): 1, (8, 5): 1, (8, 8): 1}, (3, 5): {-1: 0.0, (2, 6): 1, (4, 6): 1, (8, 6): 1}, (3, 6): {-1: 0.0, (2, 7): 1, (4, 7): 1, (8, 7): 1}, (3, 7): {-1: 0.0}, (3, 8): {-1: 0.0}, (3, 9): {-1: 0.0, (2, 10): 1, (4, 10): 1, (8, 10): 1}, (3, 10): {-1: 0.0}, (3, 11): {-1: 0.0}, (4, 0): {-1: 0.48659557229546996, (5, 1): 1, (5, 2): 1, (5, 11): 1}, (4, 1): {-1: 0.6749816432556962, (3, 0): 1}, (4, 2): {-1: 1.0, (3, 0): 1, (3, 3): 1, (3, 4): 1, (5, 9): 1}, (4, 3): {-1: 0.5568003145752176, (5, 2): 1}, (4, 4): {-1: 0.0, (5, 2): 1, (5, 5): 1, (5, 8): 1}, (4, 5): {-1: 1.0, (3, 4): 1, (5, 6): 1}, (4, 6): {-1: 0.5772089918664945, (3, 5): 1, (5, 7): 1}, (4, 7): {-1: 0.0, (3, 6): 1}, (4, 8): {-1: 0.39965627114049573, (3, 4): 1}, (4, 9): {-1: 0.5772089918664945, (3, 2): 1, (5, 10): 1}, (4, 10): {-1: 0.0, (3, 9): 1}, (4, 11): {-1: 0.5054453385860043, (3, 0): 1}, (5, 0): {-1: 0.43808328243155664, (6, 1): 1, (6, 2): 1, (6, 11): 1, (7, 1): 1, (7, 2): 1, (7, 11): 1}, (5, 1): {-1: 0.6837416012943852, (4, 0): 1}, (5, 2): {-1: 0.5772089918664945, (4, 0): 1, (4, 3): 1, (4, 4): 1, (6, 9): 1, (7, 9): 1}, (5, 3): {-1: 0.33310756268106084, (6, 2): 1, (7, 2): 1}, (5, 4): {-1: 0.0, (6, 2): 1, (6, 5): 1, (6, 8): 1, (7, 2): 1, (7, 5): 1, (7, 8): 1}, (5, 5): {-1: 0.5772089918664945, (4, 4): 1, (6, 6): 1, (7, 6): 1}, (5, 6): {-1: 1.0, (4, 5): 1, (6, 7): 1, (7, 7): 1}, (5, 7): {-1: 0.0, (4, 6): 1}, (5, 8): {-1: 0.45713914062471794, (4, 4): 1}, (5, 9): {-1: 1.0, (4, 2): 1, (6, 10): 1, (7, 10): 1}, (5, 10): {-1: 0.0, (4, 9): 1}, (5, 11): {-1: 0.5435351861564834, (4, 0): 1}, (6, 0): {-1: 0.0}, (6, 1): {-1: 0.0, (5, 0): 1}, (6, 2): {-1: 0.0, (5, 0): 1, (5, 3): 1, (5, 4): 1}, (6, 3): {-1: 0.0}, (6, 4): {-1: 0.0}, (6, 5): {-1: 0.0, (5, 4): 1}, (6, 6): {-1: 0.0, (5, 5): 1}, (6, 7): {-1: 0.5673748010797743, (5, 6): 1}, (6, 8): {-1: 0.0, (5, 4): 1}, (6, 9): {-1: 0.0, (5, 2): 1}, (6, 10): {-1: 0.5048430959729935, (5, 9): 1}, (6, 11): {-1: 0.2424553904183303, (5, 0): 1}, (7, 0): {-1: 0.2115141806571844}, (7, 1): {-1: 0.0, (5, 0): 1}, (7, 2): {-1: 0.0, (5, 0): 1, (5, 3): 1, (5, 4): 1}, (7, 3): {-1: 0.0}, (7, 4): {-1: 0.0}, (7, 5): {-1: 0.0, (5, 4): 1}, (7, 6): {-1: 0.0, (5, 5): 1}, (7, 7): {-1: 1.0, (5, 6): 1}, (7, 8): {-1: 0.0, (5, 4): 1}, (7, 9): {-1: 0.0, (5, 2): 1}, (7, 10): {-1: 0.23947570080849978, (5, 9): 1}, (7, 11): {-1: 0.0, (5, 0): 1}, (8, 0): {-1: 0.5935186690050918}, (8, 1): {-1: 0.4086500106735871, (3, 0): 1}, (8, 2): {-1: 0.39965627114049573, (3, 0): 1, (3, 3): 1, (3, 4): 1}, (8, 3): {-1: 0.5921290051028544}, (8, 4): {-1: 0.0}, (8, 5): {-1: 0.39965627114049573, (3, 4): 1}, (8, 6): {-1: 0.45713914062471794, (3, 5): 1}, (8, 7): {-1: 0.0, (3, 6): 1}, (8, 8): {-1: 1.0, (3, 4): 1}, (8, 9): {-1: 0.45713914062471794, (3, 2): 1}, (8, 10): {-1: 0.0, (3, 9): 1}, (8, 11): {-1: 0.3728298274563875, (3, 0): 1}, (9, 0): {-1: 0.43808328243155664, (10, 1): 1, (10, 2): 1, (10, 11): 1, (11, 1): 1, (11, 2): 1, (11, 11): 1}, (9, 1): {-1: 0.6837416012943852, (2, 0): 1}, (9, 2): {-1: 0.5772089918664945, (2, 0): 1, (2, 3): 1, (2, 4): 1, (10, 9): 1, (11, 9): 1}, (9, 3): {-1: 0.33310756268106084, (10, 2): 1, (11, 2): 1}, (9, 4): {-1: 0.0, (10, 2): 1, (10, 5): 1, (10, 8): 1, (11, 2): 1, (11, 5): 1, (11, 8): 1}, (9, 5): {-1: 0.5772089918664945, (2, 4): 1, (10, 6): 1, (11, 6): 1}, (9, 6): {-1: 1.0, (2, 5): 1, (10, 7): 1, (11, 7): 1}, (9, 7): {-1: 0.0, (2, 6): 1}, (9, 8): {-1: 0.45713914062471794, (2, 4): 1}, (9, 9): {-1: 1.0, (2, 2): 1, (10, 10): 1, (11, 10): 1}, (9, 10): {-1: 0.0, (2, 9): 1}, (9, 11): {-1: 0.5435351861564834, (2, 0): 1}, (10, 0): {-1: 0.22309263764827988}, (10, 1): {-1: 0.0, (9, 0): 1}, (10, 2): {-1: 0.0, (9, 0): 1, (9, 3): 1, (9, 4): 1}, (10, 3): {-1: 0.0}, (10, 4): {-1: 0.0}, (10, 5): {-1: 0.0, (9, 4): 1}, (10, 6): {-1: 0.0, (9, 5): 1}, (10, 7): {-1: 0.23947570080849978, (9, 6): 1}, (10, 8): {-1: 0.0, (9, 4): 1}, (10, 9): {-1: 0.0, (9, 2): 1}, (10, 10): {-1: 1.0, (9, 9): 1}, (10, 11): {-1: 0.0, (9, 0): 1}, (11, 0): {-1: 0.2115141806571844}, (11, 1): {-1: 0.0, (9, 0): 1}, (11, 2): {-1: 0.0, (9, 0): 1, (9, 3): 1, (9, 4): 1}, (11, 3): {-1: 0.0}, (11, 4): {-1: 0.0}, (11, 5): {-1: 0.0, (9, 4): 1}, (11, 6): {-1: 0.0, (9, 5): 1}, (11, 7): {-1: 1.0, (9, 6): 1}, (11, 8): {-1: 0.0, (9, 4): 1}, (11, 9): {-1: 0.0, (9, 2): 1}, (11, 10): {-1: 0.23947570080849978, (9, 9): 1}, (11, 11): {-1: 0.0, (9, 0): 1}}
+Best node mapping alignment:
+[MRPNode-0]('marry-01') --> [MRPNode-0]('marry-01')
+[MRPNode-1]('he') --> [MRPNode-1]('he')
+[MRPNode-2]('person') --> [MRPNode-2]('person')
+[MRPNode-3]('have-rel-role-91') --> [MRPNode-4]('have-rel-role-91')
+[MRPNode-4]('person') --> [MRPNode-5]('person')
+[MRPNode-5]('name') --> [MRPNode-6]('name')
+[MRPNode-6]('pablo') --> [MRPNode-11]('after')
+[MRPNode-7]('casals') --> [MRPNode-7]('casals')
+[MRPNode-8]('widow') --> [MRPNode-8]('widow')
+[MRPNode-9]('name') --> [MRPNode-9]('name')
+[MRPNode-10]('marta') --> [MRPNode-10]('marta')
+[MRPNode-11]('casals') --> [MRPNode-3]('die-01')
+Smatch score F1 0.843
+AMR pair 18
+============================================
+Sentence 1: A young cat sprints.
+Sentence 2: A kitten runs fast.
+AMR 1 (one-line): (MRPNode-0 / cruise-01:ARG0 (MRPNode-1 / cat:mod (MRPNode-2 / young)))
+AMR 2 (one-line): (MRPNode-0 / run-02:ARG0 (MRPNode-1 / kitten):ARG1-of (MRPNode-2 / fast-02))
+Similarity cruise-01 run-02 0.3218676672440793
+Similarity cruise-01 kitten 0.0
+Similarity cruise-01 fast-02 0.29308981027520514
+Similarity cat run-02 0.2702019204741361
+Similarity cat kitten 0.6386305647068643
+Similarity cat fast-02 0.1895226030151556
+Similarity young run-02 0.41984104257977356
+Similarity young kitten 0.268337956651703
+Similarity young fast-02 0.0
+Weight dictionary
+{(0, 0): {-1: 0.3218676672440793, (1, 1): 1}, (0, 1): {-1: 0.0}, (0, 2): {-1: 0.29308981027520514, (1, 0): 1}, (1, 0): {-1: 0.2702019204741361, (0, 2): 1, (2, 1): 1}, (1, 1): {-1: 0.6386305647068643, (0, 0): 1}, (1, 2): {-1: 0.1895226030151556, (2, 0): 1}, (2, 0): {-1: 0.41984104257977356, (1, 2): 1}, (2, 1): {-1: 0.268337956651703, (1, 0): 1}, (2, 2): {-1: 0.0}}
+Best node mapping alignment:
+[MRPNode-0]('cruise-01') --> [MRPNode-2]('fast-02')
+[MRPNode-1]('cat') --> [MRPNode-0]('run-02')
+[MRPNode-2]('young') --> [MRPNode-1]('kitten')
+Smatch score F1 0.472
+AMR pair 19
+============================================
+Sentence 1: A young cat sprints.
+Sentence 2: A kitten runs.
+AMR 1 (one-line): (MRPNode-0 / cruise-01:ARG0 (MRPNode-1 / cat:mod (MRPNode-2 / young)))
+AMR 2 (one-line): (MRPNode-0 / run-02:ARG0 (MRPNode-1 / kitten))
+Similarity cruise-01 run-02 0.28305527252006507
+Similarity cruise-01 kitten 0.0
+Similarity cat run-02 0.25656388498639154
+Similarity cat kitten 0.6386305647068643
+Similarity young run-02 0.40569129412064275
+Similarity young kitten 0.268337956651703
+Weight dictionary
+{(0, 0): {-1: 0.28305527252006507, (1, 1): 1}, (0, 1): {-1: 0.0}, (1, 0): {-1: 0.25656388498639154, (2, 1): 1}, (1, 1): {-1: 0.6386305647068643, (0, 0): 1}, (2, 0): {-1: 0.40569129412064275}, (2, 1): {-1: 0.268337956651703, (1, 0): 1}}
+Initial node mapping alignment:
+[MRPNode-0]('cruise-01') --> [MRPNode-0]('run-02')
+[MRPNode-1]('cat') --> [MRPNode-1]('kitten')
+[MRPNode-2]('young') --> Null
+Updated node mapping alignment:
+['MRPNode-1', 'MRPNode-2']('young cat') --> ['MRPNode-1']('kitten')
+['MRPNode-0']('None') --> ['MRPNode-0']('runs')
+Smatch score F1 0.457
+AMR pair 20
+============================================
+Sentence 1: He considered to skip work.
+Sentence 2: He took skipping work into consideration.
+AMR 1 (one-line): (MRPNode-0 / consider-01:ARG1 (MRPNode-1 / skip-01:ARG1 (MRPNode-2 / work-01:ARG0 (MRPNode-3 / he)):ARG0 MRPNode-3):ARG0 MRPNode-3)
+AMR 2 (one-line): (MRPNode-0 / consider-02:ARG1 (MRPNode-1 / skip-01:ARG1 (MRPNode-2 / work-01)):ARG0 (MRPNode-3 / he))
+Similarity consider-01 consider-02 0.9
+Similarity consider-01 skip-01 0.0
+Similarity consider-01 work-01 0.5052307442403219
+Similarity consider-01 he 0.48912266686746086
+Similarity skip-01 consider-02 0.0
+Similarity skip-01 skip-01 1.0
+Similarity skip-01 work-01 0.0
+Similarity skip-01 he 0.0
+Similarity work-01 consider-02 0.43430251117803637
+Similarity work-01 work-01 1.0
+Similarity work-01 he 0.588098746074024
+Similarity he consider-02 0.4645505984980369
+Similarity he he 1.0
+Weight dictionary
+{(0, 0): {-1: 0.9, (1, 1): 1, (1, 3): 1, (3, 1): 1, (3, 3): 1}, (0, 1): {-1: 0.0, (1, 2): 1, (3, 2): 1}, (0, 2): {-1: 0.5052307442403219}, (0, 3): {-1: 0.48912266686746086}, (1, 0): {-1: 0.0, (2, 1): 1, (2, 3): 1, (3, 1): 1, (3, 3): 1}, (1, 1): {-1: 1.0, (0, 0): 1, (2, 2): 1, (3, 2): 1}, (1, 2): {-1: 0.0, (0, 1): 1}, (1, 3): {-1: 0.0, (0, 0): 1}, (2, 0): {-1: 0.43430251117803637, (3, 1): 1, (3, 3): 1}, (2, 1): {-1: 0.0, (1, 0): 1, (3, 2): 1}, (2, 2): {-1: 1.0, (1, 1): 1}, (2, 3): {-1: 0.588098746074024, (1, 0): 1}, (3, 0): {-1: 0.4645505984980369}, (3, 1): {-1: 0.0, (0, 0): 1, (1, 0): 1, (2, 0): 1}, (3, 2): {-1: 0.588098746074024, (0, 1): 1, (1, 1): 1, (2, 1): 1}, (3, 3): {-1: 1.0, (0, 0): 1, (1, 0): 1, (2, 0): 1}}
+Best node mapping alignment:
+[MRPNode-0]('consider-01') --> [MRPNode-0]('consider-02')
+[MRPNode-1]('skip-01') --> [MRPNode-1]('skip-01')
+[MRPNode-2]('work-01') --> [MRPNode-2]('work-01')
+[MRPNode-3]('he') --> [MRPNode-3]('he')
+Smatch score F1 0.767
+AMR pair 21
+============================================
+Sentence 1: It had an impact on the outcome.
+Sentence 2: It affected the outcome.
+AMR 1 (one-line): (MRPNode-0 / impact-01:ARG1 (MRPNode-1 / outcome):ARG0 (MRPNode-2 / it))
+AMR 2 (one-line): (MRPNode-0 / affect-01:ARG1 (MRPNode-1 / outcome):ARG0 (MRPNode-2 / it))
+Similarity impact-01 affect-01 0.7159216735356773
+Similarity impact-01 outcome 0.48120162204446343
+Similarity impact-01 it 0.41742466087087543
+Similarity outcome affect-01 0.4712702146941262
+Similarity outcome outcome 1.0
+Similarity outcome it 0.5965800108525009
+Similarity it affect-01 0.5216138564581227
+Similarity it it 1.0
+Weight dictionary
+{(0, 0): {-1: 0.7159216735356773, (1, 1): 1, (1, 2): 1, (2, 1): 1, (2, 2): 1}, (0, 1): {-1: 0.48120162204446343}, (0, 2): {-1: 0.41742466087087543}, (1, 0): {-1: 0.4712702146941262}, (1, 1): {-1: 1.0, (0, 0): 1}, (1, 2): {-1: 0.5965800108525009, (0, 0): 1}, (2, 0): {-1: 0.5216138564581227}, (2, 1): {-1: 0.5965800108525009, (0, 0): 1}, (2, 2): {-1: 1.0, (0, 0): 1}}
+Best node mapping alignment:
+[MRPNode-0]('impact-01') --> [MRPNode-0]('affect-01')
+[MRPNode-1]('outcome') --> [MRPNode-1]('outcome')
+[MRPNode-2]('it') --> [MRPNode-2]('it')
+Smatch score F1 0.786
+AMR pair 22
+============================================
+Sentence 1: It got out of hand.
+Sentence 2: It got out of control.
+AMR 1 (one-line): (MRPNode-0 / hinder-01:ARG1 (MRPNode-1 / it))
+AMR 2 (one-line): (MRPNode-0 / get-03:ARG1 (MRPNode-1 / it:ARG1-of (MRPNode-2 / control-01)):ARG2 (MRPNode-3 / out-06:ARG1 MRPNode-1:ARG2 MRPNode-2))
+Similarity hinder-01 get-03 0.0
+Similarity hinder-01 it 0.0
+Similarity hinder-01 control-01 0.2728591852301516
+Similarity hinder-01 out-06 0.0
+Similarity it get-03 0.7420582487817918
+Similarity it it 1.0
+Similarity it control-01 0.607642566001111
+Similarity it out-06 0.32897159080609595
+Weight dictionary
+{(0, 0): {-1: 0.0, (1, 1): 1, (1, 3): 1}, (0, 1): {-1: 0.0}, (0, 2): {-1: 0.2728591852301516, (1, 1): 1}, (0, 3): {-1: 0.0, (1, 1): 1, (1, 2): 1}, (1, 0): {-1: 0.7420582487817918}, (1, 1): {-1: 1.0, (0, 0): 1, (0, 2): 1, (0, 3): 1}, (1, 2): {-1: 0.607642566001111, (0, 3): 1}, (1, 3): {-1: 0.32897159080609595, (0, 0): 1}}
+Best node mapping alignment:
+[MRPNode-0]('hinder-01') --> [MRPNode-2]('control-01')
+[MRPNode-1]('it') --> [MRPNode-1]('it')
+Smatch score F1 0.325
+AMR pair 23
+============================================
+Sentence 1: We eat french fries.
+Sentence 2: We eat chips.
+AMR 1 (one-line): (MRPNode-0 / eat-01:ARG1 (MRPNode-1 / fry:mod (MRPNode-2 / country:name (MRPNode-3 / name:op1 (MRPNode-4 / france)))):ARG0 (MRPNode-5 / we))
+AMR 2 (one-line): (MRPNode-0 / eat-01:ARG1 (MRPNode-1 / chip):ARG0 (MRPNode-2 / we))
+Similarity eat-01 eat-01 1.0
+Similarity eat-01 chip 0.21844909224655226
+Similarity eat-01 we 0.42987305405757187
+Similarity fry eat-01 0.49449074814588795
+Similarity fry chip 0.0
+Similarity fry we 0.21559734644223238
+Similarity country eat-01 0.23425663074346456
+Similarity country chip 0.25142925932596083
+Similarity country we 0.6820585026154068
+Similarity name eat-01 0.0
+Similarity name chip 0.27649868473957895
+Similarity name we 0.5476228231584972
+Similarity france eat-01 0.0
+Similarity france chip 0.0
+Similarity france we 0.38656283663896207
+Similarity we chip 0.31436549507053524
+Similarity we we 1.0
+Weight dictionary
+{(0, 0): {-1: 2.0, (1, 1): 1, (1, 2): 1, (5, 1): 1, (5, 2): 1}, (0, 1): {-1: 0.21844909224655226}, (0, 2): {-1: 0.42987305405757187}, (1, 0): {-1: 0.49449074814588795, (2, 1): 1, (2, 2): 1}, (1, 1): {-1: 0.0, (0, 0): 1}, (1, 2): {-1: 0.21559734644223238, (0, 0): 1}, (2, 0): {-1: 0.23425663074346456, (3, 1): 1, (3, 2): 1}, (2, 1): {-1: 0.25142925932596083, (1, 0): 1}, (2, 2): {-1: 0.6820585026154068, (1, 0): 1}, (3, 0): {-1: 0.0, (4, 1): 1, (4, 2): 1}, (3, 1): {-1: 0.27649868473957895, (2, 0): 1}, (3, 2): {-1: 0.5476228231584972, (2, 0): 1}, (4, 0): {-1: 0.0}, (4, 1): {-1: 0.0, (3, 0): 1}, (4, 2): {-1: 0.38656283663896207, (3, 0): 1}, (5, 0): {-1: 0.42987305405757187}, (5, 1): {-1: 0.31436549507053524, (0, 0): 1}, (5, 2): {-1: 1.0, (0, 0): 1}}
+Initial node mapping alignment:
+[MRPNode-0]('eat-01') --> [MRPNode-0]('eat-01')
+[MRPNode-1]('fry') --> [MRPNode-1]('chip')
+[MRPNode-2]('country') --> Null
+[MRPNode-3]('name') --> Null
+[MRPNode-4]('france') --> Null
+[MRPNode-5]('we') --> [MRPNode-2]('we')
+Updated node mapping alignment:
+['MRPNode-1', 'MRPNode-2', 'MRPNode-3', 'MRPNode-4']('french fries') --> ['MRPNode-1']('chips')
+['MRPNode-0']('eat') --> ['MRPNode-0']('eat')
+['MRPNode-5']('We') --> ['MRPNode-2']('We')
+Smatch score F1 0.664
+AMR pair 24
+============================================
+Sentence 1: They broke up.
+Sentence 2: They split.
+AMR 1 (one-line): (MRPNode-0 / break-up-08:ARG1 (MRPNode-1 / they))
+AMR 2 (one-line): (MRPNode-0 / split-01:ARG0 (MRPNode-1 / they))
+Similarity break-up-08 split-01 0.3192856313536406
+Similarity break-up-08 they 0.0
+Similarity they split-01 0.396184705187693
+Similarity they they 1.0
+Weight dictionary
+{(0, 0): {-1: 0.3192856313536406, (1, 1): 1}, (0, 1): {-1: 0.0}, (1, 0): {-1: 0.396184705187693}, (1, 1): {-1: 1.0, (0, 0): 1}}
+Best node mapping alignment:
+[MRPNode-0]('break-up-08') --> [MRPNode-0]('split-01')
+[MRPNode-1]('they') --> [MRPNode-1]('they')
+Smatch score F1 0.580
+AMR pair 25
+============================================
+Sentence 1: Have a blast.
+Sentence 2: Have a good time.
+AMR 1 (one-line): (MRPNode-0 / have-03:mode (MRPNode-1 / imperative):ARG0 (MRPNode-2 / you):ARG1 (MRPNode-3 / blast-05))
+AMR 2 (one-line): (MRPNode-0 / have-03:mode (MRPNode-1 / imperative):ARG1 (MRPNode-2 / time:ARG1-of (MRPNode-3 / good-02)):ARG0 (MRPNode-4 / you))
+Similarity have-03 have-03 1.0
+Similarity have-03 imperative 0.2510990358619921
+Similarity have-03 time 0.0
+Similarity have-03 good-02 0.0
+Similarity have-03 you 0.0
+Similarity imperative imperative 1.0
+Similarity imperative time 0.28608728727844324
+Similarity imperative good-02 0.2772805866786898
+Similarity imperative you 0.3991772070865982
+Similarity you time 0.7578553149774957
+Similarity you good-02 0.4635481474305827
+Similarity you you 1.0
+Similarity blast-05 have-03 0.0
+Similarity blast-05 imperative 0.0
+Similarity blast-05 time 0.25245451067518665
+Similarity blast-05 good-02 0.0
+Similarity blast-05 you 0.0
+Weight dictionary
+{(0, 0): {-1: 2.0, (1, 1): 1, (1, 2): 1, (1, 4): 1, (2, 1): 1, (2, 2): 1, (2, 4): 1, (3, 1): 1, (3, 2): 1, (3, 4): 1}, (0, 1): {-1: 0.2510990358619921}, (0, 2): {-1: 0.0}, (0, 3): {-1: 0.0, (1, 2): 1, (2, 2): 1, (3, 2): 1}, (0, 4): {-1: 0.0}, (1, 0): {-1: 0.2510990358619921}, (1, 1): {-1: 1.0, (0, 0): 1}, (1, 2): {-1: 0.28608728727844324, (0, 0): 1, (0, 3): 1}, (1, 3): {-1: 0.2772805866786898}, (1, 4): {-1: 0.3991772070865982, (0, 0): 1}, (2, 0): {-1: 0.0}, (2, 1): {-1: 0.3991772070865982, (0, 0): 1}, (2, 2): {-1: 0.7578553149774957, (0, 0): 1, (0, 3): 1}, (2, 3): {-1: 0.4635481474305827}, (2, 4): {-1: 1.0, (0, 0): 1}, (3, 0): {-1: 0.0}, (3, 1): {-1: 0.0, (0, 0): 1}, (3, 2): {-1: 0.25245451067518665, (0, 0): 1, (0, 3): 1}, (3, 3): {-1: 0.0}, (3, 4): {-1: 0.0, (0, 0): 1}}
+Best node mapping alignment:
+[MRPNode-0]('have-03') --> [MRPNode-0]('have-03')
+[MRPNode-1]('imperative') --> [MRPNode-1]('imperative')
+[MRPNode-2]('you') --> [MRPNode-4]('you')
+[MRPNode-3]('blast-05') --> [MRPNode-2]('time')
+Smatch score F1 0.806
+AMR pair 26
+============================================
+Sentence 1: You should take a break.
+Sentence 2: You should rest.
+AMR 1 (one-line): (MRPNode-0 / recommend-01:ARG1 (MRPNode-1 / take-01:ARG1 (MRPNode-2 / break-19:ARG0 (MRPNode-3 / you)):ARG0 MRPNode-3):ARG2 MRPNode-3)
+AMR 2 (one-line): (MRPNode-0 / recommend-01:ARG1 (MRPNode-1 / rest-01:ARG0 (MRPNode-2 / you)))
+Similarity recommend-01 recommend-01 1.0
+Similarity recommend-01 rest-01 0.2501141353067023
+Similarity recommend-01 you 0.3871938565035605
+Similarity take-01 recommend-01 0.36253998237534385
+Similarity take-01 rest-01 0.5777005481101747
+Similarity take-01 you 0.7165709781131092
+Similarity break-19 recommend-01 0.30685693250555307
+Similarity break-19 rest-01 0.44625017957294305
+Similarity break-19 you 0.5828324881028671
+Similarity you rest-01 0.4254781034467396
+Similarity you you 1.0
+Weight dictionary
+{(0, 0): {-1: 2.0, (1, 1): 1, (3, 1): 1}, (0, 1): {-1: 0.2501141353067023, (1, 2): 1, (3, 2): 1}, (0, 2): {-1: 0.3871938565035605}, (1, 0): {-1: 0.36253998237534385, (2, 1): 1, (3, 1): 1}, (1, 1): {-1: 0.5777005481101747, (0, 0): 1, (2, 2): 1, (3, 2): 1}, (1, 2): {-1: 0.7165709781131092, (0, 1): 1}, (2, 0): {-1: 0.30685693250555307, (3, 1): 1}, (2, 1): {-1: 0.44625017957294305, (1, 0): 1, (3, 2): 1}, (2, 2): {-1: 0.5828324881028671, (1, 1): 1}, (3, 0): {-1: 0.3871938565035605}, (3, 1): {-1: 0.4254781034467396, (0, 0): 1, (1, 0): 1, (2, 0): 1}, (3, 2): {-1: 1.0, (0, 1): 1, (1, 1): 1, (2, 1): 1}}
+Best node mapping alignment:
+[MRPNode-0]('recommend-01') --> [MRPNode-0]('recommend-01')
+[MRPNode-1]('take-01') --> [MRPNode-1]('rest-01')
+[MRPNode-2]('break-19') --> Null
+[MRPNode-3]('you') --> [MRPNode-2]('you')
+Smatch score F1 0.697
+AMR pair 27
+============================================
+Sentence 1: He kicked the bucket.
+Sentence 2: He died.
+AMR 1 (one-line): (MRPNode-0 / kick-01:ARG1 (MRPNode-1 / bucket):ARG0 (MRPNode-2 / he))
+AMR 2 (one-line): (MRPNode-0 / die-01:ARG1 (MRPNode-1 / he))
+Similarity kick-01 die-01 0.0
+Similarity kick-01 he 0.44817658782995917
+Similarity bucket die-01 0.0
+Similarity bucket he 0.0
+Similarity he die-01 0.4016063877530032
+Similarity he he 1.0
+Weight dictionary
+{(0, 0): {-1: 0.0, (1, 1): 1, (2, 1): 1}, (0, 1): {-1: 0.44817658782995917}, (1, 0): {-1: 0.0}, (1, 1): {-1: 0.0, (0, 0): 1}, (2, 0): {-1: 0.4016063877530032}, (2, 1): {-1: 1.0, (0, 0): 1}}
+Best node mapping alignment:
+[MRPNode-0]('kick-01') --> [MRPNode-0]('die-01')
+[MRPNode-1]('bucket') --> Null
+[MRPNode-2]('he') --> [MRPNode-1]('he')
+Smatch score F1 0.400
+AMR pair 28
+============================================
+Sentence 1: Hang in there.
+Sentence 2: Don´t give up.
+AMR 1 (one-line): (MRPNode-0 / hang-01:mode (MRPNode-1 / imperative):ARG0 (MRPNode-2 / you):ARG2 (MRPNode-3 / there))
+AMR 2 (one-line): (MRPNode-0 / give-up-07:polarity (MRPNode-1 / -):mode (MRPNode-2 / imperative):ARG0 (MRPNode-3 / you))
+Similarity hang-01 give-up-07 0.0
+Similarity hang-01 - 0.37838821087771596
+Similarity hang-01 imperative 0.0
+Similarity hang-01 you 0.4117924269168522
+Similarity imperative give-up-07 0.0
+Similarity imperative - 0.0
+Similarity imperative imperative 1.0
+Similarity imperative you 0.3991772070865982
+Similarity you give-up-07 0.0
+Similarity you - 0.5664191192914279
+Similarity you you 1.0
+Similarity there give-up-07 0.0
+Similarity there - 0.5383546501412073
+Similarity there imperative 0.37980272233266565
+Similarity there you 0.7460144239052069
+Weight dictionary
+{(0, 0): {-1: 0.0, (1, 1): 1, (1, 2): 1, (1, 3): 1, (2, 1): 1, (2, 2): 1, (2, 3): 1, (3, 1): 1, (3, 2): 1, (3, 3): 1}, (0, 1): {-1: 0.37838821087771596}, (0, 2): {-1: 0.0}, (0, 3): {-1: 0.4117924269168522}, (1, 0): {-1: 0.0}, (1, 1): {-1: 0.0, (0, 0): 1}, (1, 2): {-1: 1.0, (0, 0): 1}, (1, 3): {-1: 0.3991772070865982, (0, 0): 1}, (2, 0): {-1: 0.0}, (2, 1): {-1: 0.5664191192914279, (0, 0): 1}, (2, 2): {-1: 0.3991772070865982, (0, 0): 1}, (2, 3): {-1: 1.0, (0, 0): 1}, (3, 0): {-1: 0.0}, (3, 1): {-1: 0.5383546501412073, (0, 0): 1}, (3, 2): {-1: 0.37980272233266565, (0, 0): 1}, (3, 3): {-1: 0.7460144239052069, (0, 0): 1}}
+Best node mapping alignment:
+[MRPNode-0]('hang-01') --> [MRPNode-0]('give-up-07')
+[MRPNode-1]('imperative') --> [MRPNode-2]('imperative')
+[MRPNode-2]('you') --> [MRPNode-3]('you')
+[MRPNode-3]('there') --> [MRPNode-1]('-')
+Smatch score F1 0.692
+AMR pair 29
+============================================
+Sentence 1: Hit the sack.
+Sentence 2: Go to sleep.
+AMR 1 (one-line): (MRPNode-0 / hit-01:ARG1 (MRPNode-1 / sack))
+AMR 2 (one-line): (MRPNode-0 / go-05:mode (MRPNode-1 / imperative):ARG1 (MRPNode-2 / sleep-01:ARG0 (MRPNode-3 / you)):ARG0 MRPNode-3)
+Similarity hit-01 go-05 0.37538281139492463
+Similarity hit-01 imperative 0.0
+Similarity hit-01 sleep-01 0.22703437379222782
+Similarity hit-01 you 0.40782603952882074
+Similarity sack go-05 0.26112419473406645
+Similarity sack imperative 0.0
+Similarity sack sleep-01 0.0
+Similarity sack you 0.33801908358677224
+Weight dictionary
+{(0, 0): {-1: 0.37538281139492463, (1, 1): 1, (1, 2): 1, (1, 3): 1}, (0, 1): {-1: 0.0}, (0, 2): {-1: 0.22703437379222782, (1, 3): 1}, (0, 3): {-1: 0.40782603952882074}, (1, 0): {-1: 0.26112419473406645}, (1, 1): {-1: 0.0, (0, 0): 1}, (1, 2): {-1: 0.0, (0, 0): 1}, (1, 3): {-1: 0.33801908358677224, (0, 0): 1, (0, 2): 1}}
+Best node mapping alignment:
+[MRPNode-0]('hit-01') --> [MRPNode-0]('go-05')
+[MRPNode-1]('sack') --> [MRPNode-3]('you')
+Smatch score F1 0.264
+Document F-score: 0.264, 0.2636

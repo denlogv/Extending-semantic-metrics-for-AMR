@@ -1,1 +1,6 @@
+# Files to ignore:
 .ipynb_checkpoints
+/AMR2Text/*
+/amr_suite/vectors
+/__pycache__/*
+.gitignore
