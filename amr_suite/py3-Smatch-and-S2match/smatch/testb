@@ -1,8 +1,0 @@
-# ::id 22
-# ::snt We eat chips.
-# ::tok We eat chips .
-# ::labels_dict {"0": "MRPNode-0", "0.0": "MRPNode-1", "0.1": "MRPNode-2"}
-# ::alignments_dict {"MRPNode-0": "1-2", "MRPNode-1": "2-3", "MRPNode-2": "0-1"}
-(MRPNode-0 / eat-01
-           :ARG1 (MRPNode-1 / chip)
-           :ARG0 (MRPNode-2 / we))
