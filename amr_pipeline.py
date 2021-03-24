@@ -1,13 +1,12 @@
 """
 This script does the following:
-
-    1) It converts a .tsv corpus with 2 columns corresponding to sentences A and B
-       to 2 AMR corpora of these sentences
-    2) It runs the AMR2Text-alignment tool on the AMR corpora.
+    
+    1) It converts .amr-files to MRP-format
+    2) It runs the AMR2Text-alignment tool on the MRP-corpora.
 
 Usage example:
 
-python3 AMR2text/amr_pipeline.py -o data/amr/STS2016_corpus
+amr_pipeline.py -t AMR2Text -o data/amr/STS2016_corpus
 """
 
 """
