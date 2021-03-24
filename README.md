@@ -23,7 +23,7 @@ Such examples are commonly represented using _:mod_-relation in AMR. The idea is
 * Conditions are fulfilled → transformation:
    
 
-![img_2.png](img_2.png  )  
+![img_2.png](img_2.png ) 
        <sub> **Fig. 1:** AMR of _"Chinese lunar rover lands on moon"_ before transformation <endsub>  
         
 ![img_1.png](img_1.png)  
