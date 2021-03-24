@@ -23,20 +23,20 @@ Such examples are commonly represented using _:mod_-relation in AMR. The idea is
 * Conditions are fulfilled → transformation:
    
 
-![img_2.png](img_2.png )    
+![img_2.png](./Figures/img_2.png )    
        <sub> **Fig. 1:** AMR of _"Chinese lunar rover lands on moon"_ before transformation <endsub>  
         
-![img_1.png](img_1.png)  
+![img_1.png](./Figures/img_1.png)  
 <sub> **Fig. 2:** AMR of _"Chinese lunar rover lands on moon"_ after transformation <endsub>  
 
 * Conditions are violated → no transformation:  
 
 
-![img_3.png](img_3.png)  
+![img_3.png](./Figures/img_3.png)  
   <sub> **Fig. 3:** AMR of _"What more can I do to improve my credit score?"_ got a reentrancy of MRPNode-5 <endsub>  
  
  
-  ![img_4.png](img_4.png)  
+  ![img_4.png](./Figures/img_4.png)  
   <sub> **Fig. 4:** AMR of _"The final chapter in the trilogy, The Matrix Revolutions, is out in
   November"_ with incomplete span _"final chapter trilogy the matrix revolutions."_ <endsub>  
   
