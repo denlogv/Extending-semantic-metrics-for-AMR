@@ -29,7 +29,7 @@ iteration_num = 5
 # Default false (no verbose output)
 super_verbose = False
 
-# Denis: keep only necessary details of evaluation
+#SWP: keep only necessary details of evaluation
 verbose = False
 non_verbose = False # only node alignments and score
 
@@ -52,7 +52,7 @@ DEBUG_LOG = sys.stdout
 # value: the matching triple count
 match_triple_dict = {}
 
-
+#SWP (changed to add options for the metadata)
 def get_amr_line(input_f):
     """
     Read the file containing AMRs. AMRs are separated by a blank line.
@@ -125,8 +125,11 @@ def build_arg_parser():
                         help='coefficient of similarity when senses differ, e.g.'\
                                 'hit-01 vs hit-02 ---> coef*1.0 ;;;;; hit-01 vs jump-0x ---> coef*sim(hit,jump)')
     parser.add_argument('-r', type=int, default=4, help='Restart number (Default:4)')
+    #SWP (added option)
     parser.add_argument('-sv', action='store_true', help='Super verbose output with all the details (Default:false)')
+    #SWP (added option)
     parser.add_argument('-v', action='store_true', help='Slightly verbose output, but with important details (Default:true)')
+    #SWP (added option)
     parser.add_argument('-nv', action='store_true', help='Non-verbose output with only node alignments and score (Default:false')
     parser.add_argument('--ms', action='store_true', default=False,
                         help='Output multiple scores (one AMR pair a score)' \
@@ -136,8 +139,7 @@ def build_arg_parser():
     parser.add_argument('--pr', action='store_true', default=False,
                         help="Output precision and recall as well as the f-score. Default: false")
     parser.add_argument('--do_not_mark_quotes', action='store_true',
-                      help=":op1 \"David\" will be treated same as :op1 David")
-    parser.add_argument('--sbert', action='store_true', default=False)            
+                      help=":op1 \"David\" will be treated same as :op1 David")            
 
     return parser
 
@@ -254,7 +256,7 @@ def maybe_get_vec(word,vecs, mwp ="split"):
                 
     return v
       
-# Denis    
+#SWP (added)    
 def avg_vector_for_compound(compound, vecs, split_by='_'):
     parts = compound.split(split_by)
     try:
@@ -290,7 +292,7 @@ def maybe_sim(a, b, vecs, cutoff=0.5, diffsense=0.5, simfun=cosine_sim, mwp ="sp
     a_wo_sense=None
     b_wo_sense=None
     
-    # Denis: if there is a compound, such as :mod x merged with its parent label
+    #SWP (added): if there is a compound, such as :mod x merged with its parent label
     if "_" in a:
         a_vec, num_nodes = avg_vector_for_compound(a, vecs)
         found_a_vec = True
@@ -318,13 +320,13 @@ def maybe_sim(a, b, vecs, cutoff=0.5, diffsense=0.5, simfun=cosine_sim, mwp ="sp
         return 1.00*diffsense
 
     # now we know now that two concepts are different and get their vectors
-    # Denis
+    #SWP (added)
     if not found_a_vec:
         if a_wo_sense:
             a_vec = maybe_get_vec(a_wo_sense,vecs, "None")
         else:
             a_vec = maybe_get_vec(a,vecs, mwp)
-    # Denis
+    #SWP (added)
     if not found_b_vec:
         if b_wo_sense:
             b_vec = maybe_get_vec(b_wo_sense,vecs, "None")
@@ -336,19 +338,19 @@ def maybe_sim(a, b, vecs, cutoff=0.5, diffsense=0.5, simfun=cosine_sim, mwp ="sp
         return 0.00
 
     # if it's a pred, we add the vector for the morphological 3rd person extension
-    # Denis
+    #SWP (added)
     if not found_a_vec:
         if "-" in a and a_wo_sense:
             v = maybe_get_vec(a_wo_sense+"s", vecs, mwp="None")
             if v is not None:
                 a_vec+=v
-    # Denis
+    #SWP (added)
     if not found_b_vec:
         if "-" in b and b_wo_sense:
             v = maybe_get_vec(b_wo_sense+"s", vecs, mwp="None")
             if v is not None:
                 b_vec+=v
-    
+    #SWP (added)
     sim = num_nodes*simfun(a_vec, b_vec)
 
     if not sim:
@@ -875,7 +877,7 @@ def get_best_gain(mapping, candidate_mappings, weight_dict, instance_len, cur_ma
         print( "Current mapping", cur_mapping)
     return largest_gain, cur_mapping
 
-
+#SWP (changed print formatting to more beautiful)
 def print_alignment(mapping, instance1, instance2):
     """
     print the alignment based on a node mapping
@@ -938,7 +940,7 @@ def get_sim_fun(string):
     if string == "cityblock":
         return cityblock_sim
 
-
+#SWP (added)
 def full_span(subtree_token_spans):
     """
     Takes a list of token spans of a whole subtree of form:
@@ -966,6 +968,7 @@ def main(arguments):
     Main function of smatch score calculation
 
     """
+    #SWP (added options)
     global super_verbose
     global verbose
     global non_verbose
@@ -1015,10 +1018,12 @@ def main(arguments):
         amr2 = amr.AMR.parse_AMR_line(cur_amr2, arguments.do_not_mark_quotes)
         #prefix1 = "a"
         #prefix2 = "b"
+        #SWP (added)
         prefix_pattern = re.compile('(\D+)\d*')
         prefix1 = re.match(prefix_pattern, amr1.nodes[0]).group(1)
         prefix2 = re.match(prefix_pattern, amr2.nodes[0]).group(1)
         
+        #SWP (commented out)
         # Rename node to "a1", "a2", .etc
         #amr1.rename_node(prefix1)
         # Renaming node to "b1", "b2", .etc
@@ -1050,11 +1055,13 @@ def main(arguments):
                 print( attributes2)
                 print( "Relation triples of AMR 2:", len(relation2))
                 print( relation2)
+
         (best_mapping, best_match_num_soft, weight_dict) = get_best_match(instance1, attributes1, relation1,
                                                         instance2, attributes2, relation2,
                                                         prefix1, prefix2,vectors,arguments.cutoff, 
                                                         arguments.diffsense, simfun, arguments.multi_token_concept_strategy)
-                                                        
+        
+        #SWP (added the whole if-block)
         #print(f'{"-"*10}\nBest mapping:\t{best_mapping}\n{"-"*10}\n')
         # if there are unalinged nodes we try to concatenate them with their parent node
         # and update the corresponding mapping with a glove or sbert-score of the 
@@ -1110,31 +1117,8 @@ def main(arguments):
                     best_match_num_soft += add_to_score
             updated_best_mapping_to_print = '\n'.join(updated_best_mapping_to_print)
             
-        '''        
-        debugging_output = \
-        f"""{'_'*100}
-        best_match_num_soft = {best_match_num_soft}
-        WEIGHTS DICT:
-        {None}
 
-        ALIGNMENTS:
-        {best_mapping}
-
-        AMR2Text:
-        AMR1:
-        Current:{amr2text_a_current}
-        Updated:{amr2text_a_updated}
-
-        AMR2:
-        Current:{amr2text_b_current}
-
-        AMR2AMR:
-        {updated_best_mapping}
-{'_'*100}
-        """
-        print(debugging_output)
-        '''
-        
+        #SWP (changed)
         if super_verbose:
             print("best match number", best_match_num_soft)
             print("best node mapping", best_mapping)            
@@ -1147,7 +1131,7 @@ def main(arguments):
             else:
                 print("Best node mapping alignment:\n",
                       print_alignment(best_mapping, instance1, instance2), sep='')
-            
+        #SWP (added)    
         collapsed_instance_nodes_a = meta1['collapsed_instance_nodes']
         collapsed_instance_nodes_b = meta2['collapsed_instance_nodes']
         test_triple_num = len(instance1) + collapsed_instance_nodes_a + len(attributes1) + len(relation1)
@@ -1184,7 +1168,7 @@ def main(arguments):
     args.f[0].close()
     args.f[1].close()
 
-    
+#SWP (added)    
 def get_subtree_token_spans(meta, best_mapping, prefix, subtree=True):
     
     # finds nodes in AMR1, which were not mapped to any nodes in AMR2

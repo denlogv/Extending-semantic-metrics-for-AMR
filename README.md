@@ -1,4 +1,3 @@
-
 ## Introduction:
 #### Here is the official repositorium of our team's software project at the **Ruprecht Karl University of Heidelberg**.
 
@@ -18,6 +17,29 @@ Such examples are commonly represented using _:mod_-relation in AMR. The idea is
     - There are no nodes in $`Subtree(A)`$ (except A) that are used outside of $`Subtree(A) =>`$ has no reentrancies.
     - It corresponds to the complete token span in the sentence.
 <br><br>
+   **Examples:**  
+      
+* Conditions are fulfilled → transformation:
+   
+
+![img_2.png](presentation/chinese_lunar_rover.png)    
+<sub> **Fig. 1:** AMR of _"Chinese lunar rover lands on moon"_ before transformation <endsub>  
+        
+![img_1.png](presentation/chinese_lunar_rover_concat.png)  
+<sub> **Fig. 2:** AMR of _"Chinese lunar rover lands on moon"_ after transformation <endsub>  
+
+* Conditions are violated → no transformation:  
+
+
+![img_3.png](presentation/no_concatenation1_arrows.png)  
+<sub> **Fig. 3:** AMR of _"What more can I do to improve my credit score?"_ got a reentrancy of MRPNode-5 <endsub>
+ 
+ 
+![img_4.png](presentation/no_concatenation_arrows.png)  
+<sub> **Fig. 4:** AMR of _"The final chapter in the trilogy, The Matrix Revolutions, is out in
+  November"_ with incomplete span _"final chapter trilogy the matrix revolutions."_ <endsub>  
+  
+  
 
 2. **Remapping** <br>
     One could argue that it may be undesirable to transform graphs in certain cases. To include an option, where this is not necessary we propose a series of steps:
@@ -42,7 +64,7 @@ In order to run this pipeline you'll need to ensure that following criteria are 
 ### Pipeline:
 1. Convert a corpus (a _.txt_-file with a SICK dataset or a folder with an STS dataset) to a _.tsv_ (tab-sepated values)-file. <br> <br> **Functionalities:** <br> <br>
     - `sts2tsv.py` converts a folder with STS-dataset to a single easily readable _.tsv_-file. <br> <br>
-    - `sick2tsv.py` filters a file (.txt file which has a tab-separated-values-layout with 12 columns) with a SICK-dataset to create a .tsv with columns "sent1", "sent2", "sick" (i.e. relatedness-score). <br> <br>
+    - `sick2tsv.py` filters a file (_.txt_-file that has a tab-separated-values-layout with 12 columns) with a SICK-dataset to create a .tsv with columns "sent1", "sent2", "sick" (i.e. relatedness-score). <br> <br>
     In our experiments we filtered the dataset to exclude examples, where sentence pairs have entailment label 'CONTRADICTION'.
     ```
     Usage examples:
@@ -78,10 +100,40 @@ In order to run this pipeline you'll need to ensure that following criteria are 
     python3 AMRAnalysis.py -i data/amr/SICK2014_corpus_a_aligned.mrp data/amr/SICK2014_corpus_b_aligned.mrp --output_prefix analysis/sick/SICK2014 --extended_meta
     ```
 ---    
-5. Run $`S^2Match`$ on  the resulting _AMR_-files.
-6. Evaluate by computing _Spearman rank_ and _Pearson correlation coefficients_ + Visualise the results. <br> <br>
+5. Run $`S^2Match`$ on  the resulting _AMR_-files. Our modified scripts accept 3 kind of inputs without this needing to be explicitly specified: 
+	- Original _AMR_-graphs without any modifications or transformations (associated files in `analysis/sick`, `analysis/sts` have the suffix **_reif.amr** because the graphs are reified – our algorithm needs it for extracting metadata, so we found it more "fair" to compare results, where all initial graphs were the same.)
+	- Graphs, which contain alignment metadata in the typical _AMR_-format (e.g. _# ::labels_dict {"0": "MRPNode-0" ...}_). Associated files in `analysis/sick`, `analysis/sts` have the suffix **_reif_ext.amr**
+	- Transformed graphs with all parent nodes that have a _:mod_-relation merged with their subtree (if there is a corresponding full token span and no reeintrancies.) Associated files in `analysis/sick`, `analysis/sts` have the suffix **_concat.amr** <br>
+There are 2 relevant files in `amr_suite/py3-Smatch-and-S2match/smatch` that are our modified versions of the original $`S^2Match`$-code (all additions/changes are labeled **#SWP**):<br> <br>
+**Functionalities:** <br><br>
+	- `smatchdev_glove.py` uses GloVe-Embeddings
+	- `smatchdev_sbert.py` uses [sentence-transformers](sbert.net)
+	```
+	Usage example:
+	
+	python3 amr_suite/py3-Smatch-and-S2match/smatch/s2matchdev_glove.py \
+    -f analysis/sick/SICK2014_corpus_a_reif.amr analysis/sick/SICK2014_corpus_b_reif.amr \
+    -vectors amr_suite/vectors/glove.6B.100d.txt \
+    -diffsense 0.5 -cutoff 0.5 -v --ms \
+    > analysis/sick/s2match_glove_results/SICK2014_orig_results_full.txt
+	```	
+---	
+6. Evaluate by computing _Spearman rank_ and _Pearson correlation coefficients_ and visualising the results. <br> <br>
 **Functionalities:** <br> <br>
-	- for steps 5 and 6 please consult our Jupyter Notebook  [`walkthrough.ipynb`](https://gitlab.com/denlogv/measuring-variation-in-amr/-/blob/master/walkthrough.ipynb). Standalone scripts will be added soon. 
+	- `results2png` creates 2 heatmaps of the _Pearson/Spearman-correlation coefficients_ using either a _.tsv_-file, where all the necessary scores are available or using a _.tsv_-file and 2 folders (one for the $`S^2Match`$-results with the _GloVe_-Embeddings and another for the results using _SBERT_-models) 
+	```
+	Usage examples:
+	
+	python3 results2png.py --dataset STS --gold data/STS2016_full_fix.tsv \
+    --smatch analysis/sts/s2match_glove_results analysis/sts/s2match_sbert_results \
+    --output analysis/sts/s2match_modification_results.png 
+       
+	python3 results2png.py --dataset SICK --gold analysis/SICK2014_full_scores.tsv \
+    --output analysis/sick/s2match_modification_results.png
+	```	
+<br> <br>
+![Our results on SICK:](analysis/sick/s2match_modification_results.png)<sub> **Fig. 5:** Our results on SICK: <endsub>  
+![Our results on STS:](analysis/sts/s2match_modification_results.png)<sub> **Fig. 6:** Our results on STS: <endsub> 
 ---
 ### Folders:
 We have been working with a lot of data, so we feel that a good overview would facilitate working with this repository. <br>

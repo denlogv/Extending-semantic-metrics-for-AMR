@@ -18,12 +18,30 @@ from pathlib import Path
 
 
 def save_amr(amrs, filepath):
+    """
+    Save AMR to given path
+
+
+    Args:
+        amrs: AMR to be saved
+        filepath: path to save AMR to
+
+    """
+
     with open(filepath, 'w') as f:
         for amr in amrs:
             print(amr, file=f, end='\n\n')
 
 
 def convert_corpus_to_amr(corpus_path, save_path_prefix='processed/corpus'):
+    """
+    Converts given text corpus to AMR format
+
+    Args:
+        corpus_path: Path to text corpus to be converted. Each line in corpus contains one tab separated sentence pair
+        save_path_prefix: Path to save converted corpus to
+
+    """
     
     with open(corpus_path) as f:
         data = {}

@@ -20,6 +20,7 @@ import argparse
 import numpy as np
 from collections import defaultdict
 
+#SWP (added)
 # Sentence-Transformers related imports:
 import torch
 from sentence_transformers import SentenceTransformer
@@ -31,9 +32,9 @@ iteration_num = 5
 # Default false (no verbose output)
 super_verbose = False
 
-# Denis: keep only necessary details of evaluation
+#SWP: keep only necessary details of evaluation
 verbose = False
-non_verbose = False # only node alignments and score
+non_verbose = False # only scores
 
 # single score output switch.
 # Default true (compute a single score for all AMRs in two files)
@@ -48,7 +49,7 @@ pr_flag = False
 # value: the matching triple count
 match_triple_dict = {}
 
-
+#SWP (changed to add options for the metadata)
 def get_amr_line(input_f):
     """
     Read the file containing AMRs. AMRs are separated by a blank line.
@@ -111,6 +112,7 @@ def build_arg_parser():
     parser = argparse.ArgumentParser(description="Smatch calculator -- arguments")
     parser.add_argument('-f', nargs=2, required=True, type=argparse.FileType('r'),
                         help='Two files containing AMR pairs. AMRs in each file are separated by a single blank line')
+    #SWP (added option)
     parser.add_argument('-sbert', required=False, type=str, default='distilbert-base-nli-stsb-mean-tokens',
                         help='Name of the SBert-Model')
     parser.add_argument('-similarityfunction', required=False, type=str, default="cosine",
@@ -121,8 +123,11 @@ def build_arg_parser():
                         help='coefficient of similarity when senses differ, e.g.'\
                                 'hit-01 vs hit-02 ---> coef*1.0 ;;;;; hit-01 vs jump-0x ---> coef*sim(hit,jump)')
     parser.add_argument('-r', type=int, default=4, help='Restart number (Default:4)')
+    #SWP (added option)
     parser.add_argument('-sv', action='store_true', help='Super verbose output with all the details (Default:false)')
+    #SWP (added option)
     parser.add_argument('-v', action='store_true', help='Slightly verbose output, but with important details (Default:true)')
+    #SWP (added option)
     parser.add_argument('-nv', action='store_true', help='Non-verbose output with only node alignments and score (Default:false')
     parser.add_argument('--ms', action='store_true', default=False,
                         help='Output multiple scores (one AMR pair a score)' \
@@ -141,12 +146,12 @@ def cosine_sim(a, b):
     #cosine similarity
     return torch.nn.CosineSimilarity(0)(a, b).item()
 
-
+#SWP (changed, because not implemented)
 def euclidean_sim(a, b):
     #euclidean similarity
     raise NotImplementedError()
 
-
+#SWP (changed, because not implemented)
 def cityblock_sim(a, b):
     #manh similarity
     raise NotImplementedError()
@@ -226,7 +231,8 @@ def get_best_match(instance1, attribute1, relation1,
             best_match_num = match_num
     return best_mapping, best_match_num, weight_dict
 
-
+#SWP (deleted maybe_get_vec() because not relevant for sbert)
+#SWP (added)
 def avg_vector_for_compound(compound, split_by='_'):
     parts = compound.split(split_by)
     try:
@@ -252,7 +258,7 @@ def maybe_sim(a, b, cutoff=0.5, diffsense=0.5, simfun=cosine_sim, mwp ="split"):
     a_wo_sense=None
     b_wo_sense=None
     
-    # Denis: if there is a compound, such as :mod x merged with its parent label
+    #SWP (added): if there is a compound, such as :mod x merged with its parent label
     if "_" in a:
         parts = a.split('_')
         if parts[-1]:
@@ -302,6 +308,7 @@ def maybe_sim(a, b, cutoff=0.5, diffsense=0.5, simfun=cosine_sim, mwp ="split"):
     if a_vec is None or b_vec is None:
         return 0.00
     
+    #SWP (commented out because not relevant for sbert)
     """
     # if it's a pred, we add the vector for the morphological 3rd person extension
     if "-" in a and a_wo_sense:
@@ -314,7 +321,7 @@ def maybe_sim(a, b, cutoff=0.5, diffsense=0.5, simfun=cosine_sim, mwp ="split"):
         if v is not None:
             b_vec+=v
     """
-    
+    #SWP (added)
     sim = num_nodes*simfun(a_vec, b_vec)
 
     if not sim:
@@ -402,13 +409,16 @@ def compute_pool(instance1, attribute1, relation1,
                     weight_dict[node_pair] = {}
                     weight_dict[node_pair][-1] = 1
             """
+            #SWP (added)
             cur_instance_triple1 = instance1[i]
             cur_instance_triple2 = instance2[j]
             #if both triples are instance triples then we assess the similarity of their value
             if cur_instance_triple1[0].lower() == cur_instance_triple2[0].lower():
+                #SWP (added)
                 node1 = cur_instance_triple1[1]
                 node2 = cur_instance_triple2[1]
                 similarity_aligned = 0
+                #SWP (added if block)
                 if node1 in meta[1]['alignments_dict'] and node2 in meta[2]['alignments_dict']:
                     
                     toks1_indices = full_span([meta[1]['alignments_dict'][node1]])
@@ -423,6 +433,7 @@ def compute_pool(instance1, attribute1, relation1,
                 value_2 = instance2[j][2].lower()
                 similarity_normal = maybe_has_sim(value_1, value_2, sim_dict, cutoff=cutoff, 
                                                   diffsense=diffsense, simfun=simfun, mwp=mwp)
+                #SWP (added)
                 similarity = similarity_aligned if similarity_aligned > similarity_normal else similarity_normal
                 # get node index by stripping the prefix
                 node1_index = int(instance1[i][1][len(prefix1):])
@@ -859,7 +870,7 @@ def get_best_gain(mapping, candidate_mappings, weight_dict, instance_len, cur_ma
         print("Current mapping", cur_mapping)
     return largest_gain, cur_mapping
 
-
+#SWP (changed print formatting to more beautiful)
 def print_alignment(mapping, instance1, instance2):
     """
     print the alignment based on a node mapping
@@ -922,7 +933,7 @@ def get_sim_fun(string):
     if string == "cityblock":
         return cityblock_sim
 
-
+#SWP (added)
 def full_span(subtree_token_spans):
     """
     Takes a list of token spans of a whole subtree of form:
@@ -944,7 +955,7 @@ def full_span(subtree_token_spans):
         return toks_indices
     return False
 
-
+#SWP (added)
 def x_in_y(query, base):
     try:
         l = len(query)
@@ -957,7 +968,7 @@ def x_in_y(query, base):
             return list(range(i, i+l))
     return False
 
-
+#SWP (added)
 def sbert_sim(sents_embs, sents_encoded, phrase1, phrase2):
 
     if not (phrase1 and phrase2):
@@ -975,6 +986,7 @@ def sbert_sim(sents_embs, sents_encoded, phrase1, phrase2):
                       torch.mean(sents_embs_new[1, phrase2_embs_indices], 0))
 
 
+#SWP (added)
 def precompute_embeddings(amr_file1, amr_file2):
     with open(amr_file1) as f1, open(amr_file2) as f2:
         amrs1 = f1.read().strip().split('\n\n')
@@ -1005,6 +1017,7 @@ def main(arguments):
     Main function of smatch score calculation
 
     """
+    #SWP (added options)
     global super_verbose
     global verbose
     global non_verbose
@@ -1035,7 +1048,7 @@ def main(arguments):
     sent_num = 1    
     simfun = get_sim_fun(arguments.similarityfunction)
     
-    # SWP
+    #SWP (added)
     # Precompute embeddings for 2 files (for efficiency)
     print('Precomputing embeddings for file 1 and file 2...', file=sys.stderr)
     
@@ -1045,9 +1058,10 @@ def main(arguments):
     
     print(f'Embeddings dims = {sents_embs_all.shape}', file=sys.stderr)  
     
-    # Read amr pairs from two files
+    
     num_amrs = len(sents_encoded_all)/2
-
+    # Read amr pairs from two files
+    #SWP (changed to for-loop)
     for i in range(int(num_amrs)):
         cur_amr1, meta1 = get_amr_line(args.f[0])
         cur_amr2, meta2 = get_amr_line(args.f[1])        
@@ -1064,21 +1078,21 @@ def main(arguments):
             print("Ignoring remaining AMRs", file=sys.stderr)
             break
         
-        
+        #SWP (added)
         sents_encoded = [sents_encoded_all[i], sents_encoded_all[i+1]]
         sents_embs = torch.cat((torch.index_select(sents_embs_all, 0, torch.tensor(i).cuda()), 
                                 torch.index_select(sents_embs_all, 0, torch.tensor(i+1).cuda())), 0)
-                                
-        #print(sents_embs.shape, file=sys.stderr)
         
         amr1 = amr.AMR.parse_AMR_line(cur_amr1, arguments.do_not_mark_quotes)
         amr2 = amr.AMR.parse_AMR_line(cur_amr2, arguments.do_not_mark_quotes)
         #prefix1 = "a"
         #prefix2 = "b"
+        #SWP (added)
         prefix_pattern = re.compile('(\D+)\d*')
         prefix1 = re.match(prefix_pattern, amr1.nodes[0]).group(1)
         prefix2 = re.match(prefix_pattern, amr2.nodes[0]).group(1)
         
+        #SWP (commented out)
         # Rename node to "a1", "a2", .etc
         #amr1.rename_node(prefix1)
         # Renaming node to "b1", "b2", .etc
@@ -1110,14 +1124,14 @@ def main(arguments):
                 print(attributes2)
                 print("Relation triples of AMR 2:", len(relation2))
                 print(relation2)
-        
+        #SWP (added)
         meta = {1:meta1, 2:meta2}
         (best_mapping, best_match_num_soft, weight_dict) = get_best_match(instance1, attributes1, relation1,
                                                         instance2, attributes2, relation2,
                                                         prefix1, prefix2, sents_embs, sents_encoded, meta, arguments.cutoff, 
                                                         arguments.diffsense, simfun, arguments.multi_token_concept_strategy)
                                                         
-        #print(f'{"-"*10}\nBest mapping:\t{best_mapping}\n{"-"*10}\n')
+        #SWP (added the whole if-block)
         # if there are unalinged nodes we try to concatenate them with their parent node
         # and update the corresponding mapping with a glove or sbert-score of the 
         # token span of the whole subtree:  
@@ -1170,31 +1184,7 @@ def main(arguments):
                     best_match_num_soft += add_to_score
             updated_best_mapping_to_print = '\n'.join(updated_best_mapping_to_print)
             
-        '''        
-        debugging_output = \
-        f"""{'_'*100}
-        best_match_num_soft = {best_match_num_soft}
-        WEIGHTS DICT:
-        {None}
-
-        ALIGNMENTS:
-        {best_mapping}
-
-        AMR2Text:
-        AMR1:
-        Current:{amr2text_a_current}
-        Updated:{amr2text_a_updated}
-
-        AMR2:
-        Current:{amr2text_b_current}
-
-        AMR2AMR:
-        {updated_best_mapping}
-{'_'*100}
-        """
-        print(debugging_output)
-        '''
-        
+        #SWP (changed)
         if super_verbose:
             print("best match number", best_match_num_soft)
             print("best node mapping", best_mapping)            
@@ -1207,7 +1197,8 @@ def main(arguments):
             else:
                 print("Best node mapping alignment:\n",
                       print_alignment(best_mapping, instance1, instance2), sep='')
-            
+        
+        #SWP (added)
         collapsed_instance_nodes_a = meta1['collapsed_instance_nodes']
         collapsed_instance_nodes_b = meta2['collapsed_instance_nodes']
         test_triple_num = len(instance1) + collapsed_instance_nodes_a + len(attributes1) + len(relation1)
@@ -1244,7 +1235,7 @@ def main(arguments):
     args.f[0].close()
     args.f[1].close()
 
-    
+#SWP (added)    
 def get_subtree_token_spans(meta, best_mapping, prefix, subtree=True):
     
     # finds nodes in AMR1, which were not mapped to any nodes in AMR2
@@ -1317,11 +1308,11 @@ def get_subtree_token_spans(meta, best_mapping, prefix, subtree=True):
 if __name__ == "__main__":
     parser = None
     args = None
-    # only support python version 2.5 or later
-    
+    #SWP (deleted log_helper because simple prints are easier to handle and everybody understands what it does)
     parser = build_arg_parser()
     args = parser.parse_args()
     
+    #SWP (added)
     sbert_model = SentenceTransformer(args.sbert)
     sbert_tokenizer = sbert_model.tokenize
     main(args)
