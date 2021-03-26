@@ -21,6 +21,15 @@ from collections import defaultdict
 
 
 def save_corpus(path, amr_analysis, concatenation=False):
+    """
+    Saves AMR analysis
+
+    Args:
+        path: Path to store analysis in
+        amr_analysis (instance of AMRAnalysis): AMR analysis to be stored
+        concatenation (bool, optional): If True, analysis of concatenated AMR is stored
+
+    """
     Path(path).parent.mkdir(parents=True, exist_ok=True)
     with open(path, 'w') as f:
         if concatenation:
@@ -39,6 +48,15 @@ def save_corpus(path, amr_analysis, concatenation=False):
 
 
 def pprint(l, reified=False, **args):
+    """
+    Pretty print function
+
+    Args:
+        l (dict/list/penman.Graph/penman.Tree/str): Instance to be pretty printed
+        reified (bool, optional): If False, instances are reified before printing
+        **args: anything to additionally print out
+
+    """
     if isinstance(l, dict):
         print('Key\tValue')
         for k, v in l.items():            
@@ -91,6 +109,13 @@ class AMRAnalysis:
     
     @staticmethod
     def reify_rename_graph_from_string(amr_string):
+        """
+        Reifies graph from AMR string
+
+        Args:
+            amr_string(penman.Graph): AMR to be reified in penman format
+
+        """
     
         g1 = reify_attributes(penman.decode(amr_string))
         t1 = layout.configure(g1)
@@ -101,7 +126,12 @@ class AMRAnalysis:
     
     @staticmethod
     def alignment_labels2mrp_labels(amr_string):
-        """Currently works only on reified graphs"""
+        """
+        Currently works only on reified graphs.
+
+        Args:
+            amr_string(penman.Graph): AMR to be reified in penman format
+            """
 
         amr_graph = AMRAnalysis.reify_rename_graph_from_string(amr_string)
         epidata, triples = amr_graph.epidata, amr_graph.triples
@@ -130,10 +160,11 @@ class AMRAnalysis:
         return labels_dict, amr_graph
     
     @staticmethod
-    def get_alignments_dict_from_string(alignments_string, alignment_pattern, toks, labels_dict):
+    def get_alignments_dict_from_string(alignments_string, alignment_pattern, labels_dict):
         """
         Somehow the alingnments string in 'new_alinged' does not contain
-        all aligned nodes that are specified below ¯\_(ツ)_/¯ 
+        all aligned nodes that are specified below ¯\_(ツ)_/¯
+
         """
         matches = re.match(alignment_pattern, alignments_string)
         if not matches:
@@ -155,8 +186,16 @@ class AMRAnalysis:
     @staticmethod
     def get_alignments_dict(nodes_block, labels_dict, alignments_with_toks=False, toks=None):
         """
+        Creates a dictionary of alignments
         This function deals with the problem that was found while using the 
         function above
+
+        Args:
+            nodes_block (list): Block of nodes to get alignments from
+            labels_dict (dict): Dictionary with nodes and corresponding labels
+            alignments_with_toks(bool, optional): If True tokens get aligned
+            toks (list, optional): List with tokens to be aligned, only needed if 'alignments_with_toks=True'
+
         """
         nodes_block = [spl_line for spl_line in nodes_block if len(spl_line) == 3]
         alignments_dict = {}
@@ -171,7 +210,15 @@ class AMRAnalysis:
             
         return alignments_dict
 
-    def extract_info(self, alignments_with_toks=False):    
+    def extract_info(self, alignments_with_toks=False):
+        """
+        Extracts AMRAnalysis information
+
+
+        Args:
+            alignments_with_toks(bool, optional): If True tokens get aligned
+
+        """
         with open(self.amr2text_alingnment_path) as f:
             amrs = f.read().strip().split('\n\n')
             amrs = [amr.split('\n') for amr in amrs]
@@ -220,21 +267,27 @@ class AMRAnalysis:
     @staticmethod
     def find_below(labels_dict):
         """
-        Finds nodes below a certain node using a dictionary of the following form
-        (located in 'info_dict[amr_id]['labels_dict']'):
-        
-        Key Value
-        0 MRPNode-0
-        0.0 MRPNode-1
-        0.0.0 MRPNode-2
-        0.0.0.0	MRPNode-3
-        0.0.0.0.0 MRPNode-4
-        0.0.0.0.1 MRPNode-5
-        0.0.1 MRPNode-6
-        0.0.1.0 MRPNode-7
-        
-        Returns a dict where the key is the node label (e.g 'MRPNode-2') and
-        the value is a list with all nodes represented as strings below it.
+        Finds nodes below a certain node
+
+
+        Args:
+            labels_dict (dict): Dictionary of the following form
+                                (located in 'info_dict[amr_id]['labels_dict']'):
+
+                                Key Value
+                                0 MRPNode-0
+                                0.0 MRPNode-1
+                                0.0.0 MRPNode-2
+                                0.0.0.0	MRPNode-3
+                                0.0.0.0.0 MRPNode-4
+                                0.0.0.0.1 MRPNode-5
+                                0.0.1 MRPNode-6
+                                0.0.1.0 MRPNode-7
+
+
+        Returns:
+             nodes_below_dict (dict):a dict where the key is the node label (e.g 'MRPNode-2') and
+                                    the value is a list with all nodes represented as strings below it.
         """
         nodes_below_dict = defaultdict(list)
         for key, value in labels_dict.items():
@@ -248,8 +301,14 @@ class AMRAnalysis:
         """
         Takes a list of token spans of a whole subtree
         and checks, if there are gaps. 
-        
-        Returns a list of indices if a token span is full, else False.
+
+
+        Args:
+            subtree_token_spans (list): List of token spans of a whole subtree
+
+        Returns:
+            toks_indices (list): List of indices if a token span is full
+            False: If token span is incomplete
         """
         toks_indices = set()
         for token_span in subtree_token_spans:
@@ -265,7 +324,14 @@ class AMRAnalysis:
             return toks_indices
         return None
     
-    def concat_rel(self, rel=':mod'): 
+    def concat_rel(self, rel=':mod'):
+        """
+        Concatenates specified relation with higher-level tree
+
+        Args:
+            rel (str, optional): Relation to concatenate
+
+        """
         if not self.info_dict:
             self.extract_info()
         self.graphs_concat_rel = {}
@@ -334,7 +400,14 @@ class AMRAnalysis:
 
     
 def do_all_stuff(args):
-        
+        """
+        Function to execute functions of ARMAnalysis and save output
+
+
+        Args:
+            args (ARMAnalyis): AMR of which to store analysis
+
+        """
     if (not args.concat_rel) and (not args.extended_meta):
         output_suffix = 'reif'
       
