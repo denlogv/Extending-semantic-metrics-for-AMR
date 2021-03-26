@@ -22,24 +22,19 @@ Such examples are commonly represented using _:mod_-relation in AMR. The idea is
 * Conditions are fulfilled → transformation:
    
 
-![img_2.png](presentation/chinese_lunar_rover.png)    
-<sub> **Fig. 1:** AMR of _"Chinese lunar rover lands on moon"_ before transformation <endsub>  
+![img_2.png](presentation/chinese_lunar_rover.png)<figcaption>**Fig. 1:** AMR of _"Chinese lunar rover lands on moon"_ before transformation</figcaption>
         
-![img_1.png](presentation/chinese_lunar_rover_concat.png)  
-<sub> **Fig. 2:** AMR of _"Chinese lunar rover lands on moon"_ after transformation <endsub>  
+![img_1.png](presentation/chinese_lunar_rover_concat.png)<figcaption>**Fig. 2:** AMR of _"Chinese lunar rover lands on moon"_ after transformation</figcaption>
 
 * Conditions are violated → no transformation:  
 
 
-![img_3.png](presentation/no_concatenation1_arrows.png)  
-<sub> **Fig. 3:** AMR of _"What more can I do to improve my credit score?"_ got a reentrancy of MRPNode-5 <endsub>
+![img_3.png](presentation/no_concatenation1_arrows.png)**Fig. 3:** AMR of _"What more can I do to improve my credit score?"_ got a reentrancy of MRPNode-5
  
  
-![img_4.png](presentation/no_concatenation_arrows.png)  
-<sub> **Fig. 4:** AMR of _"The final chapter in the trilogy, The Matrix Revolutions, is out in
-  November"_ with incomplete span _"final chapter trilogy the matrix revolutions."_ <endsub>  
+![img_4.png](presentation/no_concatenation_arrows.png)**Fig. 4:** AMR of _"The final chapter in the trilogy, The Matrix Revolutions, is out in November"_ with incomplete span _"final chapter trilogy the matrix revolutions."_   
   
-  
+---  
 
 2. **Remapping** <br>
     One could argue that it may be undesirable to transform graphs in certain cases. To include an option, where this is not necessary we propose a series of steps:
@@ -132,8 +127,10 @@ There are 2 relevant files in `amr_suite/py3-Smatch-and-S2match/smatch` that are
     --output analysis/sick/s2match_modification_results.png
 	```	
 <br> <br>
-![Our results on SICK:](analysis/sick/s2match_modification_results.png)<sub> **Fig. 5:** Our results on SICK: <endsub>  
-![Our results on STS:](analysis/sts/s2match_modification_results.png)<sub> **Fig. 6:** Our results on STS: <endsub> 
+![Our results on SICK:](analysis/sick/s2match_modification_results.png)<figcaption>**Fig. 5:** Our results on SICK</figcaption>
+
+![Our results on STS:](analysis/sts/s2match_modification_results.png)<figcaption>**Fig. 6:** Our results on STS</figcaption>
+
 ---
 ### Folders:
 We have been working with a lot of data, so we feel that a good overview would facilitate working with this repository. <br>
